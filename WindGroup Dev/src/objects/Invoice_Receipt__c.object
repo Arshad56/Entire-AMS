@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Currency_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Currency Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Currency_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Goods_Receipt__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Goods Receipt</label>
+        <referenceTo>Goods_Receipt__c</referenceTo>
+        <relationshipLabel>Invoice Receipts</relationshipLabel>
+        <relationshipName>Invoice_Receipts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Invoice_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoice Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Invoice_Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoice Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Invoice_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoice Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PO_Payment_Arrangement__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>PO Payment Arrangement</label>
+        <referenceTo>PO_Payment_Arrangement__c</referenceTo>
+        <relationshipLabel>Invoice Receipts</relationshipLabel>
+        <relationshipName>Invoice_Receipts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Purchase_Order__c</fullName>
+        <externalId>false</externalId>
+        <label>Purchase Order</label>
+        <referenceTo>Purchase_Order__c</referenceTo>
+        <relationshipLabel>Invoice Receipts</relationshipLabel>
+        <relationshipName>Invoice_Receipts</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>In-Approval</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Paid</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Void</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tax__c</fullName>
+        <externalId>false</externalId>
+        <label>Tax</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Amount__c  +  Tax__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Vendor_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Vendor Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Invoice Receipts</relationshipLabel>
+        <relationshipName>Invoice_Receipts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Void_Datetime__c</fullName>
+        <externalId>false</externalId>
+        <label>Void Datetime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Void_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Void Reason</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Invoice Receipt</label>
+    <nameField>
+        <displayFormat>{YYYY}{MM}-IR-{000000}</displayFormat>
+        <label>Invoice Receipt No</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Invoice Receipts</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Can_only_edited_for_PO_Status_Draft</fullName>
+        <active>false</active>
+        <description>Invoice Receipt can only be edited for PO Status Draft</description>
+        <errorConditionFormula>And(NOT(OR(ISPICKVAL(Purchase_Order__r.Status__c,&apos;Draft&apos;),ISPICKVAL(Purchase_Order__r.Status__c,&apos;Rejected&apos;))),NOT( Purchase_Order__r.PO_Line_Validation_Bypass__c ))</errorConditionFormula>
+        <errorMessage>Invoice Receipt can only be updated if PO Status is &apos;Draft&apos; or &apos;Rejected&apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_for_particular_po_payment_arrang</fullName>
+        <active>false</active>
+        <errorConditionFormula>PO_Payment_Arrangement__r.Invoice_Created__c = True</errorConditionFormula>
+        <errorDisplayField>Amount__c</errorDisplayField>
+        <errorMessage>Invoice is already generated for this Payment Arrangement</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Create_if_PO_status_is_issued</fullName>
+        <active>true</active>
+        <description>Invoice Receipt can only be created if the Purchase Order status is issued</description>
+        <errorConditionFormula>AND(NOT(ISPICKVAL(Purchase_Order__r.Status__c,&apos;Issued&apos;)),ISNEW())</errorConditionFormula>
+        <errorMessage>Invoice Receipt can only be created if PO Status is Issued</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Create_InvoiceReceipt</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Create Invoice Receipt</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/apex/CreateInvoiceReceipt?Id={!Purchase_Order__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Create_Invoice_Receipt</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create Invoice Receipt</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;soap/ajax/24.0/connection.js&quot;)}
+var po = sforce.connection.query(&quot;SELECT id FROM PO_Payment_Arrangement__c WHERE id = &apos;{!PO_Payment_Arrangement__c.Id}&apos; AND Purchase_order__r.status__c = &apos;Issued&apos;&quot;);
+
+if(po.size&gt;0){
+if({!PO_Payment_Arrangement__c.Invoice_Created__c} == true )
+alert(&quot;Invoice Receipt has already been generated for this Payment Arrangement&quot;);
+else{
+window.location.href=&quot;/a29/e?CF00NO0000002ohgN={!PO_Payment_Arrangement__c.Name}&amp;O0000002ohgN_lkid={!PO_Payment_Arrangement__c.Id}&amp;retURL={!PO_Payment_Arrangement__c.Id}&amp;CF00NO0000002oXqX={!PO_Payment_Arrangement__c.Purchase_Order__c}&amp;CF00NO0000002oXqX_lkid={!PO_Payment_Arrangement__c.Purchase_OrderId__c}&amp;00NO0000002oXr6={!PO_Payment_Arrangement__c.PO_Amount__c}&amp;00NO0000002oXrB={!PO_Payment_Arrangement__c.Tax_Amount__c}&amp;CF00NO0000002oXmp={!PO_Payment_Arrangement__c.Vendor_Name_formula__c}&quot;;
+}
+}
+else
+alert(&quot;Purchase Order status should be Issued&quot;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Generate_Full_Invoice</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create Full Invoice</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/apex.js&quot;)}
+
+var inv = sforce.connection.query(&quot;SELECT id from Invoice_Receipt__c where purchase_order__c = &apos;{!Purchase_Order__c.Id}&apos; and Status__c != &apos;Void&apos; limit 1&quot;);
+if(inv.size!=0)
+alert(&quot;Full Invoice Receipt can not be generated, since few Invoice Receipt(s) have already been generated.&quot;);
+else if(&quot;{!Purchase_Order__c.Balance_Quantity__c}&quot; != 0)
+alert(&quot;Purchase Order balance quantity should be 0&quot;);
+else if(&quot;{!Purchase_Order__c.Status__c}&quot; != &quot;Issued&quot;)
+alert(&quot;Purchase Order status should be Issued&quot;);
+else{
+window.location.href=&apos;/apex/GenerateFullInvoiceReciept?poId={!Purchase_Order__c.Id}&apos;;
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Invoice_Receipt</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>New Invoice Receipt</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;soap/ajax/24.0/connection.js&quot;)} 
+var po = sforce.connection.query(&quot;SELECT id FROM Goods_Receipt__c WHERE id = &apos;{!Goods_Receipt__c.Id}&apos; AND Purchase_order__r.status__c = &apos;Issued&apos;&quot;); 
+
+if(po.size&gt;0){ 
+if({!Goods_Receipt__c.Invoice_Created__c} == true ) 
+alert(&quot;Invoice Receipt has already been generated for this Goods Receipt.&quot;); 
+else{ 
+window.location.href=&quot;/a29/e?CF00NO0000002qLby={!Goods_Receipt__c.Name}&amp;CF00NO0000002qLby_lkid={!Goods_Receipt__c.Id}&amp;retURL={!Goods_Receipt__c.Id}&amp;CF00NO0000002oXqX={!Goods_Receipt__c.Purchase_Order__c}&amp;CF00NO0000002oXqX_lkid={!Goods_Receipt__c.Purchase_OrderId__c}&amp;00NO0000002oXr6={!Goods_Receipt__c.GR_Amount__c}&amp;00NO0000002oXrB={!Goods_Receipt__c.Tax_Amount__c}&amp;CF00NO0000002oXmp={!Goods_Receipt__c.Vendor_Name__c}&amp;CF00NO0000002oXmp_lkid={!Goods_Receipt__c.Vendor_NameId__c}&quot;; 
+} 
+} 
+else 
+alert(&quot;Purchase Order status should be Issued.&quot;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Paid</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Paid</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/apex.js&quot;)} 
+
+if(&quot;{!Invoice_Receipt__c.Status__c}&quot; == &quot;Approved&quot; ){ 
+var check = confirm(&quot;Are you sure?&quot;); 
+if(check){ 
+sforce.apex.execute(&quot;InvoiceReceiptController&quot;,&quot;updateRecord&quot;,{irId:&quot;{!Invoice_Receipt__c.Id}&quot;, action:&quot;Paid&quot;, poId:&quot;{!Purchase_Order__c.Id}&quot;}); 
+
+location.reload(); 
+} 
+} 
+else 
+alert(&quot;Paid is not allow.&quot;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Void</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Void</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/apex.js&quot;)} 
+
+if(&quot;{!Invoice_Receipt__c.Status__c}&quot; == &quot;Approved&quot; ){
+	if(&quot;{!Invoice_Receipt__c.Void_Reason__c}&quot; != &apos;&apos;){
+		var check = confirm(&quot;Are you sure?&quot;); 
+		if(check){ 
+		sforce.apex.execute(&quot;InvoiceReceiptController&quot;,&quot;updateRecord&quot;,{irId:&quot;{!Invoice_Receipt__c.Id}&quot;, action:&quot;Void&quot;, poId:&quot;{!Purchase_Order__c.Id}&quot;}); 
+
+		location.reload(); 
+		} 
+	} else
+		alert(&quot;Please enter void reason.&quot;);
+	
+} 
+else 
+	alert(&quot;Void is not allow.&quot;);</url>
+    </webLinks>
+</CustomObject>

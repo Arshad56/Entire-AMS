@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This is to be used at toilet cleanliness system feedback option.</description>
+    <internalUseOnly>false</internalUseOnly>
+    <name>FB No Toilet Paper</name>
+    <public>true</public>
+</Document>

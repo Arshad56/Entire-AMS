@@ -1,0 +1,12 @@
+Dear {!Purchase_Order__c.OwnerFullName}
+
+Request for PO Cancellation has been approved, please see details below: 
+
+PO No. : {!Purchase_Order__c.Name}
+Amount : {!Purchase_Order__c.PO_Amount__c}
+Status : {!Purchase_Order__c.Status__c}
+Expected Delivery Date : {!Purchase_Order__c.PO_End_Date__c}
+
+
+Sincerely,
+System Admin

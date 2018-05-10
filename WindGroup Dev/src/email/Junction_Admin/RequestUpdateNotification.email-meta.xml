@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Internal notification to Person-in-charge when Request is assigned.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Request: Update Notification</name>
+    <style>none</style>
+    <subject>Request # {!Request__c.Name} has been Updated.</subject>
+    <type>text</type>
+</EmailTemplate>

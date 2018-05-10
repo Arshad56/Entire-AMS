@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Balance_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Total_Amount__c -  Received_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total Amount - Received Amount</inlineHelpText>
+        <label>Balance Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Balance_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity__c  -  Received_Quantity__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Quantity - Received Quantity</inlineHelpText>
+        <label>Balance Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Budget_Balance__c</fullName>
+        <externalId>false</externalId>
+        <formula>COA_FY_Balance__r.Budget_Balance__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>From related: COA FY Balance</inlineHelpText>
+        <label>Budget Balance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Budget_Line__c</fullName>
+        <externalId>false</externalId>
+        <label>Budget Line</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Budget_Line</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>COA_FY_Balance__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>COA FY Balance</label>
+        <referenceTo>COA_FY_Balance__c</referenceTo>
+        <relationshipLabel>PO Line Items</relationshipLabel>
+        <relationshipName>PO_Line_Items</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Currency_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Purchase_Order__r.Currency_Code__c)</formula>
+        <label>Currency Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Department__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Purchase_Order__r.Department__c)</formula>
+        <label>Department</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Description</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Item_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Catalogue__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product Catalogue</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Item_Catalogue__c.Status__c</field>
+                <operation>equals</operation>
+                <value>Active</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Item_Catalogue__c</referenceTo>
+        <relationshipLabel>PO Line Items</relationshipLabel>
+        <relationshipName>PO_Line_Items</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Product_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Purchase_Order__c</fullName>
+        <externalId>false</externalId>
+        <label>PO No.</label>
+        <referenceTo>Purchase_Order__c</referenceTo>
+        <relationshipLabel>PO Line Items</relationshipLabel>
+        <relationshipName>PO_Line_Items</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Received_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Received Amount</label>
+        <summarizedField>GR_Line_Item__c.Total_Amount__c</summarizedField>
+        <summaryFilterItems>
+            <field>GR_Line_Item__c.Void__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryForeignKey>GR_Line_Item__c.PO_Line_Item__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Received_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Received Quantity</label>
+        <summarizedField>GR_Line_Item__c.Quantity__c</summarizedField>
+        <summaryFilterItems>
+            <field>GR_Line_Item__c.Void__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryForeignKey>GR_Line_Item__c.PO_Line_Item__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TodayDate__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <externalId>false</externalId>
+        <label>TodayDate</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Total_Amount__c</fullName>
+        <description>Amount * Quantity</description>
+        <externalId>false</externalId>
+        <formula>Amount__c *  Quantity__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Amount * Quantity</inlineHelpText>
+        <label>Total Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>PO Line Item</label>
+    <nameField>
+        <displayFormat>{000000}</displayFormat>
+        <label>No.</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>PO Line Items</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Amount_is_Mandate_with_Item_Cat_isBlank</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+ISNEW(), 
+ISBLANK(Product_Catalogue__c),
+OR
+(
+ISPICKVAL(Product_Type__c ,&quot;&quot;),
+ISBLANK( Amount__c )
+))</errorConditionFormula>
+        <errorMessage>Product Type and Amount cannot be left Blank.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>COA_FY_Balance_Cannot_Be_Empty</fullName>
+        <active>true</active>
+        <description>COA FY Balance in PO Line Item should not allow empty.</description>
+        <errorConditionFormula>ISBLANK( COA_FY_Balance__c  )</errorConditionFormula>
+        <errorMessage>There’s no COA FY Balance for selected Dept and Budget Line. Kindly create new record to proceed.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Update_Create_if_PO_status_draft_Reject</fullName>
+        <active>true</active>
+        <description>Records can only be updated if the purchase order status is draft</description>
+        <errorConditionFormula>And(NOT(OR(ISPICKVAL(Purchase_Order__r.Status__c,&apos;Draft&apos;),ISPICKVAL(Purchase_Order__r.Status__c,&apos;Rejected&apos;))),NOT( Purchase_Order__r.PO_Line_Validation_Bypass__c ))</errorConditionFormula>
+        <errorMessage>PO Line Item can only be created or updated if PO Status is &apos;Draft&apos; or &apos;Rejected&apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Validation_Product_Type_Consumable</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF( TEXT(Product_Type__c) == &apos;Consumable&apos;,IF( Amount__c &gt; 200, TRUE, FALSE),FALSE)</errorConditionFormula>
+        <errorMessage>Product Type Consumable should be below $200.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>New_PO_Line_Item</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>New PO Line Item</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>if(&quot;{!Purchase_Order__c.Status__c}&quot; == &quot;Draft&quot; || &quot;{!Purchase_Order__c.Status__c}&quot; == &quot;Rejected&quot; )
+window.location.href=&quot;/a24/e?CF00NO0000002oDdY={!Purchase_Order__c.Name}&amp;CF00NO0000002oDdY_lkid={!Purchase_Order__c.Id}&amp;00NO0000002pHMT={!Purchase_Order__c.Department__c}&amp;retURL={!Purchase_Order__c.Id}&quot;;
+else
+alert(&quot;PO status must be Draft or Rejected to create a new record&quot;);</url>
+    </webLinks>
+</CustomObject>

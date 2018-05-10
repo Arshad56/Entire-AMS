@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>PO Line Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>PO Line Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Amount - Received Amount --></help>
+        <label><!-- Balance Amount --></label>
+        <name>Balance_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Quantity - Received Quantity --></help>
+        <label><!-- Balance Quantity --></label>
+        <name>Balance_Quantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- From related: COA FY Balance --></help>
+        <label><!-- Budget Balance --></label>
+        <name>Budget_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Line --></label>
+        <name>Budget_Line__c</name>
+    </fields>
+    <fields>
+        <label><!-- COA FY Balance --></label>
+        <name>COA_FY_Balance__c</name>
+        <relationshipLabel><!-- PO Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Name --></label>
+        <name>Item_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Catalogue --></label>
+        <name>Product_Catalogue__c</name>
+        <relationshipLabel><!-- PO Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>Product_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO No. --></label>
+        <name>Purchase_Order__c</name>
+        <relationshipLabel><!-- PO Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Received Amount --></label>
+        <name>Received_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Received Quantity --></label>
+        <name>Received_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- TodayDate --></label>
+        <name>TodayDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Amount * Quantity --></help>
+        <label><!-- Total Amount --></label>
+        <name>Total_Amount__c</name>
+    </fields>
+    <layouts>
+        <layout>PO Line Item Layout</layout>
+        <sections>
+            <label><!-- COA FY Balance Info --></label>
+            <section>COA FY Balance Info</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Quantity Details --></label>
+            <section>Quantity Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Product Type and Amount cannot be left Blank. --></errorMessage>
+        <name>Amount_is_Mandate_with_Item_Cat_isBlank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- There’s no COA FY Balance for selected Dept and Budget Line. Kindly create new record to proceed. --></errorMessage>
+        <name>COA_FY_Balance_Cannot_Be_Empty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- PO Line Item can only be created or updated if PO Status is &apos;Draft&apos; or &apos;Rejected&apos; --></errorMessage>
+        <name>Update_Create_if_PO_status_draft_Reject</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product Type Consumable should be below $200. --></errorMessage>
+        <name>Validation_Product_Type_Consumable</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_PO_Line_Item --></label>
+        <name>New_PO_Line_Item</name>
+    </webLinks>
+</CustomObjectTranslation>

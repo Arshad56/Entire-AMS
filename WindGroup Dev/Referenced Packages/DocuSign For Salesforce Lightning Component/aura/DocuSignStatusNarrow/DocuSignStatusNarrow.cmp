@@ -1,0 +1,96 @@
+<!-- This component represents one DocuSign status-->
+<aura:component access="public">
+
+    <!-- Internal properties -->
+    <aura:attribute name="envelope" type="Object" access="public" /> 
+    <aura:attribute name="ArrayOfInfo" type="String[]" access="public" /> <!-- This is UIEnvelope -->
+    <!-- The component body starts here-->
+    <div class="slds-card__body">        
+        <div class="slds-card__body--inner">
+          <div class="slds-tile">
+            <h3 class="slds-truncate" title="{!v.envelope.subject}"><a href="javascript:void(0)" onclick="{!c.redirectToSObject}" data-sfid="{!v.envelope.salesforceEnvelopeId}">{!v.envelope.subject}</a></h3>
+            <div class="slds-tile__detail slds-text-body--small">
+              <dl class="slds-list--horizontal slds-wrap">
+                <dt class="slds-item--label slds-text-color--weak slds-truncate" title="From">From:</dt>
+                <dd class="slds-item--detail slds-truncate"><a href="javascript:void(0)" onclick="{!c.redirectToSObject}" data-sfid="{!v.envelope.envelopeCreaterId}">{!v.envelope.envelopeCreaterName}</a></dd>
+                <dt class="slds-item--label slds-text-color--weak slds-truncate" title="Last Recipient Activity">Last Activity:</dt>
+                <dd class="slds-item--detail slds-truncate" data-label="Last Activity">
+                    <div class="slds-truncate" title="{!v.envelope.status}">
+                        <a href="javascript:void(0)" onclick="{!c.openDetailModal}" data-sfid="lastActivity">{!v.envelope.timestamp}</a>
+                    </div>  
+                </dd>                                                    
+                <dt class="slds-item--label slds-text-color--weak slds-truncate" title="Envelope Status">Status:</dt>
+                <dd class="slds-item--detail slds-truncate">
+                    <div class="slds-truncate" title="{!v.envelope.status}">
+                        <!--  <a href="javascript:void(0)" onclick="{!c.openDetailModal}" data-sfid="routingOrder">{!v.envelope.status}</a> -->
+                        {!v.envelope.status}
+                    </div>  
+                </dd>                                         
+              </dl>
+            </div>
+          </div>
+        </div>
+        <hr/> 
+    </div> 
+<!-- Routing Details Modal dialog starts here -->
+    <div aria-hidden="true" role="dialog" class="slds-modal slds-fade-in-hide" aura:id="viewAllContentRoutingOrder" >
+        <div class="slds-modal__container">                    
+            <div class="slds-modal__content slds-p-around--medium">
+                <!-- Modal content starts here -->
+                <div class="header-label">
+                    <img class="logo" src="/resource/dsfs__m_DocuSign_Logo" alt="Logo"  width="24" height="24" style="float: left;"/>
+                    <div class="dsfstViewAllFooterButton">
+                         <a href="javascript:void(0)" onclick="{!c.closeDetailModal}">
+                            <img src="{!$Resource.dsfs__Delete}"/>
+                         </a>   
+                    </div>                              
+                    &nbsp;<a href="javascript:void(0)" onclick="{!c.redirectToSObject}" data-sfid="{!v.envelope.salesforceEnvelopeId}">{!v.envelope.shortSubject}</a>
+
+
+                </div>
+                <div class="error dsfstHidden" aura:id="dsfstViewAllError">
+                    {!v.envelopesListViewAll.error}
+                </div>
+                <div class="info" aura:id="dsfstViewAllLoading">
+                    <!-- Loading... -->
+                </div>
+                <div class="contentContainer">
+                    <div aura:id="dsfstViewRoutingOrderModal" class="dsfstHidden">
+                            <div>
+                                <dsfslt:RoutingOrder envelopeRecipients="{!v.envelope.recipientsList}" envelope="{!v.envelope}"/>
+                            </div>
+                    </div> 
+
+                <!-- Last activity-->
+                    <div aura:id="dsfstViewLastActivityModal" class="dsfstHidden">
+                        <div >
+                            <div role="dialog">
+                                <div class="slds-popover__body"> 
+                                    <div class="slds-p-horizontal--small slds-size--1-of-2 slds-p-bottom--x-small">
+                                        <tr class="slds-hint-parent" role="row" aria-level="1">
+                                            <dt> 
+                                                <aura:if isTrue="{!or(v.envelope.lastActivityRecipient.status=='Sent',v.envelope.lastActivityRecipient.status == 'Delivered')}">
+                                                    {!v.envelope.lastActivityRecipient.status} to {!v.envelope.lastActivityRecipient.name}
+                                                <aura:set attribute="else">
+                                                    {!v.envelope.lastActivityRecipient.status} by {!v.envelope.lastActivityRecipient.name}
+                                                </aura:set>
+                                                </aura:if>
+                                            </dt>
+                                        </tr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+               </div>                          
+            </div>
+
+             <!-- Modal content ends here -->
+        </div>
+    </div>
+    <div class="slds-backdrop slds-backdrop--hide" aura:id="viewAllContentBackdrop" onclick="{!c.closeViewAll}">
+         
+    </div>
+    <!-- Modal dialog ends here -->     
+    <!-- The component body ends here-->
+</aura:component>

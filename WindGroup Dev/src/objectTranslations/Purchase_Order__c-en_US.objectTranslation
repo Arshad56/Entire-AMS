@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Purchase Order</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Purchase Orders</value>
+    </caseValues>
+    <fields>
+        <label><!-- Attention To --></label>
+        <name>Attention_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Balance Amount --></label>
+        <name>Balance_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Balance Quantity --></label>
+        <name>Balance_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>Company_Name__c</name>
+        <relationshipLabel><!-- Purchase Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery City --></label>
+        <name>Delivery_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Country --></label>
+        <name>Delivery_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Phone --></label>
+        <name>Delivery_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Street --></label>
+        <name>Delivery_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Zip/Postal Code --></label>
+        <name>Delivery_Zip_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generate PO PDF --></label>
+        <name>Generate_PO_PDF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min Quote Amount --></label>
+        <name>Min_Quote_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll-up from Line Items --></help>
+        <label><!-- PO Amount --></label>
+        <name>PO_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Delivery Date --></label>
+        <name>PO_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Frequency --></label>
+        <name>PO_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Half-Yearly</masterLabel>
+            <translation><!-- Half-Yearly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yearly</masterLabel>
+            <translation><!-- Yearly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PO Line Items --></label>
+        <name>PO_Line_Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Line Validation Bypass --></label>
+        <name>PO_Line_Validation_Bypass__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Date --></label>
+        <name>PO_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+        <relationshipLabel><!-- Purchase Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Received Amount --></label>
+        <name>Received_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll-up from PO Line Items --></help>
+        <label><!-- Received Quantity --></label>
+        <name>Received_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recommendation --></label>
+        <name>Recommendation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancel In-Approval</masterLabel>
+            <translation><!-- Cancel In-Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-Approval</masterLabel>
+            <translation><!-- In-Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issued</masterLabel>
+            <translation><!-- Issued --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- PO Amount * Tax Rate --></help>
+        <label><!-- Tax Amount --></label>
+        <name>Tax_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Applicable --></label>
+        <name>Tax_Applicable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Rate --></label>
+        <name>Tax_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- PO Amount + Tax Amount --></help>
+        <label><!-- Total PO Amount --></label>
+        <name>Total_PO_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll-up from related Line Items: Quantity --></help>
+        <label><!-- Total Quantity --></label>
+        <name>Total_Quantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll-up from related Invoice Receipt(s): Total Amount --></help>
+        <label><!-- Total Receipt Amount (With Tax) --></label>
+        <name>Total_Receipt_Amount_With_Tax__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll-up of Amount from related Invoice Receipt --></help>
+        <label><!-- Total Receipt Amount (W/O Tax) --></label>
+        <name>Total_Receipt_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- UOM --></label>
+        <name>UOM__c</name>
+        <picklistValues>
+            <masterLabel>DY</masterLabel>
+            <translation><!-- DY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR</masterLabel>
+            <translation><!-- HR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MH</masterLabel>
+            <translation><!-- MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WK</masterLabel>
+            <translation><!-- WK --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Vendor Contact --></label>
+        <name>Vendor_Contact__c</name>
+        <relationshipLabel><!-- Purchase Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vendor Name --></label>
+        <name>Vendor_Name__c</name>
+        <relationshipLabel><!-- Purchase Orders (Vendor Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select this and attach 3 Quotes --></help>
+        <label><!-- 3 Quotes --></label>
+        <name>X3_Quotes__c</name>
+    </fields>
+    <layouts>
+        <layout>One-Time Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Delivery Address --></label>
+            <section>Delivery Address</section>
+        </sections>
+        <sections>
+            <label><!-- Invoice Receipt Information --></label>
+            <section>Invoice Receipt Information</section>
+        </sections>
+        <sections>
+            <label><!-- Received and Balance Information --></label>
+            <section>Received and Balance Information</section>
+        </sections>
+        <sections>
+            <label><!-- Recommendation --></label>
+            <section>Recommendation</section>
+        </sections>
+        <sections>
+            <label><!-- Vendor Information --></label>
+            <section>Vendor Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Recurring Svc Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Delivery Address --></label>
+            <section>Delivery Address</section>
+        </sections>
+        <sections>
+            <label><!-- Invoice Receipt Information --></label>
+            <section>Invoice Receipt Information</section>
+        </sections>
+        <sections>
+            <label><!-- Recommendation --></label>
+            <section>Recommendation</section>
+        </sections>
+        <sections>
+            <label><!-- Vendor Information --></label>
+            <section>Vendor Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- One Time --></label>
+        <name>One_Time</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Recurring Svc --></label>
+        <name>Services</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Whitelisted vendor is not allowed! --></errorMessage>
+        <name>Whitelist_vendor_is_not_allowed</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Cancel --></label>
+        <name>Cancel</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Close_PO --></label>
+        <name>Close_PO</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_PO_PDF --></label>
+        <name>Generate_PO_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Payment_Arrangement --></label>
+        <name>Generate_Payment_Arrangement</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Purchase_Order --></label>
+        <name>New_Purchase_Order</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_PDF --></label>
+        <name>View_PDF</name>
+    </webLinks>
+</CustomObjectTranslation>

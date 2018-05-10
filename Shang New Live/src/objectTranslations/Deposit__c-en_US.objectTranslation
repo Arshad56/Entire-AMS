@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Deposit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Deposits</value>
+    </caseValues>
+    <fields>
+        <label><!-- Tenant --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Deposits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Amount Paid (Foreign) --></label>
+        <name>Amount_Paid_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Paid (Local) --></label>
+        <name>Amount_Paid_Local__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll-up from related Cash Details --></help>
+        <label><!-- Amount Paid --></label>
+        <name>Amount_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved Amount --></label>
+        <name>Approved_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Method --></label>
+        <name>Charge_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Amount (Foreign) --></label>
+        <name>Deposit_Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Amount (Local) --></label>
+        <name>Deposit_Amount_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Amount --></label>
+        <name>Deposit_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Date --></label>
+        <name>Deposit_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Formula Type --></label>
+        <name>Deposit_Formula_Type__c</name>
+        <picklistValues>
+            <masterLabel>By Area</masterLabel>
+            <translation><!-- By Area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>By Base Rent</masterLabel>
+            <translation><!-- By Base Rent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>By Fixed</masterLabel>
+            <translation><!-- By Fixed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Deposit Generated --></label>
+        <name>Deposit_Generated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Index --></label>
+        <name>Deposit_Index__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Rate --></label>
+        <name>Deposit_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Type --></label>
+        <name>Deposit_Type__c</name>
+        <picklistValues>
+            <masterLabel>Fit-out</masterLabel>
+            <translation><!-- Fit-out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renovation</masterLabel>
+            <translation><!-- Renovation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Security</masterLabel>
+            <translation><!-- Security --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Formula Description from related Lease Charge --></help>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate --></label>
+        <name>Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- JV Status --></label>
+        <name>JV_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOI Unit --></label>
+        <name>LOI_Unit__c</name>
+        <relationshipLabel><!-- Deposits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LOI --></label>
+        <name>LOI__c</name>
+        <relationshipLabel><!-- Deposits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Landlord --></label>
+        <name>Landlord__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show related Lease Unit&apos;s &gt; Lease Charges with Type as &apos;LOI&apos; --></help>
+        <label><!-- Lease Charge --></label>
+        <name>Lease_Charge__c</name>
+        <relationshipLabel><!-- Deposits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lease Unit --></label>
+        <name>Lease_Unit__c</name>
+        <relationshipLabel><!-- Deposits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lease --></label>
+        <name>Lease__c</name>
+        <relationshipLabel><!-- Deposits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Number of Months --></label>
+        <name>Number_of_Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outstanding Amount (Foreign) --></label>
+        <name>Outstanding_Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outstanding Amount (Local) --></label>
+        <name>Outstanding_Amount_Local__c</name>
+    </fields>
+    <fields>
+        <help><!-- (Deposit Amount - Amount Paid) - Total Refunded Amount --></help>
+        <label><!-- Outstanding Amount --></label>
+        <name>Outstanding_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Refund Currency Code --></label>
+        <name>PV_Currency_Code__c</name>
+        <picklistValues>
+            <masterLabel>MMK</masterLabel>
+            <translation><!-- MMK --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Due Date --></label>
+        <name>Payment_Due_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is populated by W/F rule --></help>
+        <label><!-- Property Name Text --></label>
+        <name>Property_Name_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lease Unit &gt; Lease Agreement &gt; Property --></help>
+        <label><!-- Property ID --></label>
+        <name>Property__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Refund Mode --></label>
+        <name>Refund_Mode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Refund Status should be &apos;Requested&apos; with Requested Amount to Submit for an Approval --></help>
+        <label><!-- Last Refund Status --></label>
+        <name>Refund_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Amount Paid - Total Refunded Amount --></help>
+        <label><!-- Remaining Deposit --></label>
+        <name>Remaining_Deposit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Amount --></label>
+        <name>Requested_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Balance</masterLabel>
+            <translation><!-- Balance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outstanding</masterLabel>
+            <translation><!-- Outstanding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid</masterLabel>
+            <translation><!-- Paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partially Paid</masterLabel>
+            <translation><!-- Partially Paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tenant Name --></label>
+        <name>Tenant_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lease Unit &gt; Lease Agreement &gt; Tenant --></help>
+        <label><!-- Tenant ID --></label>
+        <name>Tenant__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll-up from related Deposit Refund --></help>
+        <label><!-- Total Refunded Amount --></label>
+        <name>Total_Refunded_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit --></label>
+        <name>Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Void Datetime --></label>
+        <name>Void_Datetime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Void Reason --></label>
+        <name>Void_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Voided --></label>
+        <name>Voided__c</name>
+    </fields>
+    <layouts>
+        <layout>Deposit Charge Layout</layout>
+        <sections>
+            <label><!-- Currency Information --></label>
+            <section>Currency Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Refund --></label>
+            <section>Refund</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Read Only Deposit Charge Layout</layout>
+        <sections>
+            <label><!-- Currency Information --></label>
+            <section>Currency Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- LOI Details --></label>
+            <section>LOI Details</section>
+        </sections>
+        <sections>
+            <label><!-- Refund --></label>
+            <section>Refund</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Deposit --></label>
+        <name>Deposit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Pdf --></label>
+        <name>Generate_Pdf</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Deposit --></label>
+        <name>New_Deposit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Un_Void --></label>
+        <name>Un_Void</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_PDF --></label>
+        <name>View_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Void --></label>
+        <name>Void</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_ID</field>
+    </columns>
+    <columns>
+        <field>Rent_Schedules__c.Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>Rent_Schedules__c.End_Date__c</field>
+    </columns>
+    <columns>
+        <field>Rent_Schedules__c.Billing_Date__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 or 2</booleanFilter>
+        <criteriaItems>
+            <column>Rent_Schedules__c.Property__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Shenton</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Rent_Schedules__c.Property__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>orchard</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>demo rent schedules</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Rent_Schedules__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Rent_Schedules__c.Start_Date__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Rent_Schedules__c.Billed_Month__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

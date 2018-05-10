@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Foreign__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount (Foreign)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Amount_Local__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount (Local)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Amount__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <externalId>false</externalId>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Approved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Approved</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Area_ft__c</fullName>
+        <externalId>false</externalId>
+        <formula>Unit__r.NLA_SQF__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Area (ft)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billed_Month__c</fullName>
+        <externalId>false</externalId>
+        <formula>Start_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Billed Month</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Billing_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Billing_Month__c</fullName>
+        <externalId>false</externalId>
+        <formula>MONTH(Billing_Date__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Billing Month</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billing_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Rent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Monthly</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Debit Note</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Credit Note</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ad-Hoc Invoice</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Late Charge</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Calc_Cumulative_Tiered__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Total_Units_p__c &gt; Lease_Charge__r.Charge__r.Tier_5_Upper_Limit__c &amp;&amp; Lease_Charge__r.Charge__r.Tier_5_Upper_Limit__c &gt; 0, 
+( Lease_Charge__r.Charge__r.Tier_6_Rate__c * (Total_Units_p__c - Lease_Charge__r.Charge__r.Tier_5_Upper_Limit__c + Lease_Charge__r.Charge__r.Tier_4_Upper_Limit__c + Lease_Charge__r.Charge__r.Tier_3_Upper_Limit__c +  Lease_Charge__r.Charge__r.Tier_2_Upper_Limit__c + Lease_Charge__r.Charge__r.Tier_1_Upper_Limit__c)  +
+( Lease_Charge__r.Charge__r.Tier_5_Rate__c * Lease_Charge__r.Charge__r.Tier_5_Upper_Limit__c ) +
+( Lease_Charge__r.Charge__r.Tier_4_Rate__c * Lease_Charge__r.Charge__r.Tier_4_Upper_Limit__c ) +
+( Lease_Charge__r.Charge__r.Tier_3_Rate__c * Lease_Charge__r.Charge__r.Tier_3_Upper_Limit__c ) +
+( Lease_Charge__r.Charge__r.Tier_2_Rate__c * Lease_Charge__r.Charge__r.Tier_2_Upper_Limit__c ) +
+( Lease_Charge__r.Charge__r.Tier_1_Rate__c * ( Lease_Charge__r.Charge__r.Tier_1_Upper_Limit__c - Lease_Charge__r.Charge__r.Tiered_Lower_Limit__c ))),
+IF( Total_Units_p__c&gt; Lease_Charge__r.Charge__r.Tier_4_Upper_Limit__c , 
+( Lease_Charge__r.Charge__r.Tier_5_Rate__c * (Total_Units_p__c - Lease_Charge__r.Charge__r.Tier_4_Upper_Limit__c + Lease_Charge__r.Charge__r.Tier_3_Upper_Limit__c +   Lease_Charge__r.Charge__r.Tier_2_Upper_Limit__c + Lease_Charge__r.Charge__r.Tier_1_Upper_Limit__c ) +
+( Lease_Charge__r.Charge__r.Tier_4_Rate__c * Lease_Charge__r.Charge__r.Tier_4_Upper_Limit__c ) +
+( Lease_Charge__r.Charge__r.Tier_3_Rate__c * Lease_Charge__r.Charge__r.Tier_3_Upper_Limit__c ) +
+( Lease_Charge__r.Charge__r.Tier_2_Rate__c * Lease_Charge__r.Charge__r.Tier_2_Upper_Limit__c ) +
+( Lease_Charge__r.Charge__r.Tier_1_Rate__c * ( Lease_Charge__r.Charge__r.Tier_1_Upper_Limit__c - Lease_Charge__r.Charge__r.Tiered_Lower_Limit__c ))),
+IF( Total_Units_p__c &gt; Lease_Charge__r.Charge__r.Tier_3_Upper_Limit__c , 
+( Lease_Charge__r.Charge__r.Tier_4_Rate__c * ( Total_Units_p__c- Lease_Charge__r.Charge__r.Tier_3_Upper_Limit__c + Lease_Charge__r.Charge__r.Tier_2_Upper_Limit__c +  Lease_Charge__r.Charge__r.Tier_1_Upper_Limit__c ) +
+( Lease_Charge__r.Charge__r.Tier_3_Rate__c * Lease_Charge__r.Charge__r.Tier_3_Upper_Limit__c ) +
+( Lease_Charge__r.Charge__r.Tier_2_Rate__c * Lease_Charge__r.Charge__r.Tier_2_Upper_Limit__c ) +
+( Lease_Charge__r.Charge__r.Tier_1_Rate__c * ( Lease_Charge__r.Charge__r.Tier_1_Upper_Limit__c - Lease_Charge__r.Charge__r.Tiered_Lower_Limit__c ))),
+IF( Total_Units_p__c &gt; Lease_Charge__r.Charge__r.Tier_2_Upper_Limit__c , 
+( Lease_Charge__r.Charge__r.Tier_3_Rate__c * ( Total_Units_p__c- ( Lease_Charge__r.Charge__r.Tier_2_Upper_Limit__c + Lease_Charge__r.Charge__r.Tier_1_Upper_Limit__c) ) ) +
+( Lease_Charge__r.Charge__r.Tier_2_Rate__c * Lease_Charge__r.Charge__r.Tier_2_Upper_Limit__c ) +
+( Lease_Charge__r.Charge__r.Tier_1_Rate__c * ( Lease_Charge__r.Charge__r.Tier_1_Upper_Limit__c - Lease_Charge__r.Charge__r.Tiered_Lower_Limit__c )),
+IF( Total_Units_p__c &gt; Lease_Charge__r.Charge__r.Tier_1_Upper_Limit__c , 
+( Lease_Charge__r.Charge__r.Tier_2_Rate__c * ( Total_Units_p__c - Lease_Charge__r.Charge__r.Tier_1_Upper_Limit__c )) +
+( Lease_Charge__r.Charge__r.Tier_1_Rate__c * ( Lease_Charge__r.Charge__r.Tier_1_Upper_Limit__c - Lease_Charge__r.Charge__r.Tiered_Lower_Limit__c )) , 
+Lease_Charge__r.Charge__r.Tier_1_Rate__c * Total_Units_p__c )))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Calc - Cumulative - Tiered</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Calc_No_of_Days_Pro_Rated__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF((CONTAINS( UPPER( Lease_Charge__r.Name ) , &quot;ADVANCE&quot;) &amp;&amp; NOT  ISPICKVAL(Lease_Charge__r.Billing_Frequency__c, &quot;Monthly&quot;) ) || 
+ ISPICKVAL(Lease_Charge__r.Type__c, &quot;Meter Units&quot;)  , 
+1, 
+IF(Billing_Month__c == 2, 
+(( End_Date__c -  Start_Date__c ) + 1 ) / 28,
+IF( Billing_Month__c == 1 || Billing_Month__c == 3 ||Billing_Month__c == 5 ||Billing_Month__c == 7 ||Billing_Month__c == 12 ||Billing_Month__c == 8||Billing_Month__c == 10  ,
+(( End_Date__c -  Start_Date__c ) + 1 )/ 31,
+IF(Billing_Month__c == 4 || Billing_Month__c == 6 ||Billing_Month__c == 11||Billing_Month__c == 9 ,
+(( End_Date__c -  Start_Date__c ) + 1 )/ 30,
+1))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Calc - No of Days (Pro-Rated)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Calc_Non_Cumulative_Tiered__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Total_Units_p__c&gt; Lease_Charge__r.Charge__r.Tier_8_Upper_Limit__c &amp;&amp; Lease_Charge__r.Charge__r.Tier_8_Upper_Limit__c &gt; 0  , 
+Lease_Charge__r.Charge__r.Tier_8_Rate__c * Total_Units_p__c / 100,
+IF( Total_Units_p__c&gt; Lease_Charge__r.Charge__r.Tier_7_Upper_Limit__c &amp;&amp; Lease_Charge__r.Charge__r.Tier_7_Upper_Limit__c &gt; 0 , 
+Lease_Charge__r.Charge__r.Tier_7_Rate__c * Total_Units_p__c / 100,
+IF( Total_Units_p__c&gt; Lease_Charge__r.Charge__r.Tier_6_Upper_Limit__c &amp;&amp; Lease_Charge__r.Charge__r.Tier_6_Upper_Limit__c &gt; 0 , 
+Lease_Charge__r.Charge__r.Tier_6_Rate__c * Total_Units_p__c / 100,
+IF( Total_Units_p__c&gt; Lease_Charge__r.Charge__r.Tier_5_Upper_Limit__c &amp;&amp; Lease_Charge__r.Charge__r.Tier_5_Upper_Limit__c &gt; 0 , 
+Lease_Charge__r.Charge__r.Tier_5_Rate__c * Total_Units_p__c / 100,
+IF( Total_Units_p__c&gt; Lease_Charge__r.Charge__r.Tier_4_Upper_Limit__c &amp;&amp; Lease_Charge__r.Charge__r.Tier_4_Upper_Limit__c &gt; 0 , 
+Lease_Charge__r.Charge__r.Tier_4_Rate__c * Total_Units_p__c / 100,
+IF( Total_Units_p__c&gt; Lease_Charge__r.Charge__r.Tier_3_Upper_Limit__c &amp;&amp; Lease_Charge__r.Charge__r.Tier_3_Upper_Limit__c &gt; 0 , 
+Lease_Charge__r.Charge__r.Tier_3_Rate__c * Total_Units_p__c / 100,
+IF( Total_Units_p__c&gt; Lease_Charge__r.Charge__r.Tier_2_Upper_Limit__c &amp;&amp; Lease_Charge__r.Charge__r.Tier_2_Upper_Limit__c &gt; 0 , 
+Lease_Charge__r.Charge__r.Tier_2_Rate__c * Total_Units_p__c / 100 ,
+IF( Total_Units_p__c&gt; Lease_Charge__r.Charge__r.Tier_1_Upper_Limit__c &amp;&amp; Lease_Charge__r.Charge__r.Tier_1_Upper_Limit__c &gt; 0 , 
+Lease_Charge__r.Charge__r.Tier_1_Rate__c * Total_Units_p__c / 100,
+Lease_Charge__r.Charge__r.Tiered_Lower_Limit__c * Total_Units_p__c / 100))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Calc - Non Cumulative Tiered</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Calculated_Utility_Non_Tiered__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( ( CONTAINS( UPPER( Lease_Charge__r.Name ) , &quot;WATER&quot;) || CONTAINS( UPPER( Lease_Charge__r.Name ) , &quot;GAS&quot; )) &amp;&amp; NOT( Lease_Charge__r.Charge__r.Tiered_Limit__c  ) &amp;&amp; 
+ISPICKVAL( Lease_Charge__r.Multiple_of_Parameter__c , &quot;Meter Units&quot;),
+Lease_Charge__r.Charge_Rate__c * Total_Units_p__c , 0 )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Calculated Utility Non Tiered</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Charge_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Charge Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Charge_Types</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Comm_Tax_Amount_Foreign__c</fullName>
+        <externalId>false</externalId>
+        <label>Comm Tax Amount (Foreign)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comm_Tax_Amount_Local__c</fullName>
+        <externalId>false</externalId>
+        <label>Comm Tax Amount (Local)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comm_Tax_Amount__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <externalId>false</externalId>
+        <label>Comm Tax Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Comments updated from Generate Invoice Interface</inlineHelpText>
+        <label>Rejection Reasons</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Cumulative__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lease_Charge__r.Charge__r.Cumulative_for_each_Tier__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cumulative</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Currency_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Currency Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Currency_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Current_Base_Rent__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lease_Unit__r.Current_Base_Rent__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current Base Rent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Default_Days__c</fullName>
+        <externalId>false</externalId>
+        <label>Due Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Electric_Meter_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Electric Meter Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Electric_Meter__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Electric Meter</label>
+        <referenceTo>Electric_Meter__c</referenceTo>
+        <relationshipLabel>Rent Roll Details</relationshipLabel>
+        <relationshipName>Rent_Roll_Details</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Exchange_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Exchange Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expected_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Expected Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Expected_Charge__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lease_Charge__r.Expected_Charge__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Expected Charge</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>GTO_Amount__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Rent Schedule GTO Amount. Used in backend code. Hide it from layout</inlineHelpText>
+        <label>GTO Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>GTO_Rent_By__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Value taken from associated rent schedule</inlineHelpText>
+        <label>GTO Rent By</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hold__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Hold</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Invoice_Line_Item__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Invoice Line Item</label>
+        <referenceTo>Invoice_Line_Item__c</referenceTo>
+        <relationshipLabel>Rent Roll Details</relationshipLabel>
+        <relationshipName>Rent_Roll_Details</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Invoice_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoice Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Invoice_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Invoice__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Invoice</label>
+        <referenceTo>Invoice__c</referenceTo>
+        <relationshipLabel>Rent Roll Details</relationshipLabel>
+        <relationshipName>Rent_Roll_Details</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Late_Percent_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Late % Rate</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lease_Charge__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lease Charge</label>
+        <referenceTo>Lease_Charges__c</referenceTo>
+        <relationshipLabel>Rent Roll Details</relationshipLabel>
+        <relationshipName>Rent_Roll_Details</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Lease_Unit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lease Unit</label>
+        <referenceTo>Lease_Unit__c</referenceTo>
+        <relationshipLabel>Rent Roll Details</relationshipLabel>
+        <relationshipName>Rent_Roll_Details</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Level__c</fullName>
+        <externalId>false</externalId>
+        <formula>Unit__r.Level__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Level</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Amount_Not_Matched__c</fullName>
+        <externalId>false</externalId>
+        <formula>Amount_Local__c  &lt;&gt;  Invoice_Line_Item__r.Amount_Local__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Local Amount Not Matched</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Outstanding_Amount__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is populated from Late Charge Invoice creation process (CR Interface and monthly batch) and is used to populate &apos;Outstanding Amount&apos; from Previous Invoice.</inlineHelpText>
+        <label>Outstanding Amount</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>POS_Sales_Amount__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Sum of POS transaction amount. Used in backend code hide it from layout.</inlineHelpText>
+        <label>POS Sales Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Invoice__r.Payment_Due_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Payment Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Property_Name_Text__c</fullName>
+        <description>This field is populated by W/F rule</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is populated by W/F rule</inlineHelpText>
+        <label>Property Name Text</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Short_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Unit__r.Property_Short_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Property Short Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property__c</fullName>
+        <externalId>false</externalId>
+        <formula>Unit__r.Property__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Property</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Remarks__c</fullName>
+        <externalId>false</externalId>
+        <label>Remarks</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Rent_Roll__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Rent Roll</label>
+        <referenceTo>Rent_Roll__c</referenceTo>
+        <relationshipLabel>Rent Roll Details</relationshipLabel>
+        <relationshipName>Rent_Roll_Details</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Rent_Schedule__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Rent Schedule</label>
+        <referenceTo>Rent_Schedules__c</referenceTo>
+        <relationshipLabel>Rent Roll Details</relationshipLabel>
+        <relationshipName>Rent_Roll_Details</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Rs_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Rs Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Vacancy</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>In-Tenancy</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No Rent Roll</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rent Roll Generated</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Invoiced</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Payment Received</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TEst__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+    (
+    CONTAINS( UPPER( Lease_Charge__r.Name ) , &quot;ADVANCE&quot;) 
+    &amp;&amp; 
+    NOT ISPICKVAL(Lease_Charge__r.Billing_Frequency__c, &quot;Monthly&quot;) 
+    ) || 
+    CONTAINS( TEXT ( Lease_Charge__r.Multiple_of_Parameter__c ), &quot;Unit&quot;) 
+      || 
+    CONTAINS( UPPER( Lease_Charge__r.Name ) , &quot;GTO&quot;) , 
+ 1,
+0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TEst</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Target_Rental__c</fullName>
+        <externalId>false</externalId>
+        <formula>Unit__r.Target_Rental__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Target Rental</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Temp_Cumulative_Cur__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Lease_Charge__r.Charge__r.Tier_3_Rate__c * ( Total_Units_p__c- Lease_Charge__r.Charge__r.Tier_2_Upper_Limit__c ) ) + 
+( Lease_Charge__r.Charge__r.Tier_2_Rate__c * ( Lease_Charge__r.Charge__r.Tier_2_Upper_Limit__c - Lease_Charge__r.Charge__r.Tier_1_Upper_Limit__c ) ) + 
+( Lease_Charge__r.Charge__r.Tier_1_Rate__c * ( Lease_Charge__r.Charge__r.Tier_1_Upper_Limit__c - Lease_Charge__r.Charge__r.Tiered_Lower_Limit__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Temp_Cumulative_Cur</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Tenancy_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Status__c , &apos;Vacancy&apos;, 0, 1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tenancy Status</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tenant_Name__c</fullName>
+        <description>Created to be managed in Reports and for Late charge process. Later can be deleted</description>
+        <externalId>false</externalId>
+        <formula>Invoice__r.Tenant_Name__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tenant Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tenant__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lease_Unit__r.Tenant__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tenant</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier2_Upper_Limit__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lease_Charge__r.Charge__r.Tier_2_Upper_Limit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tier2_Upper_Limit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_2_Rate__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lease_Charge__r.Charge__r.Tier_2_Rate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tier 2 Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Tiered__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lease_Charge__r.Charge__r.Tiered_Limit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tiered</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Total_Amount_Foreign__c</fullName>
+        <externalId>false</externalId>
+        <formula>Amount_Foreign__c + Comm_Tax_Amount_Foreign__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Amount (Foreign)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Amount_Local__c</fullName>
+        <externalId>false</externalId>
+        <formula>Amount_Local__c + Comm_Tax_Amount_Local__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Amount (Local)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Amount__c +  Comm_Tax_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Units_p__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Units Physical</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Trading_Day_s__c</fullName>
+        <externalId>false</externalId>
+        <label>Trading Day(s)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transaction_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Transaction End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Transaction_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Transaction Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Unit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Unit</label>
+        <referenceTo>Units__c</referenceTo>
+        <relationshipLabel>Rent Roll Details</relationshipLabel>
+        <relationshipName>Rent_Roll_Details</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Void_Datetime__c</fullName>
+        <externalId>false</externalId>
+        <label>Void Datetime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Voided__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Voided</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Withholding_Tax_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Withholding Tax Rate</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <label>Rent Roll Detail</label>
+    <nameField>
+        <displayFormat>{YYYY}{MM}-RRD-{000000}</displayFormat>
+        <label>RRD ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Rent Roll Details</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+</CustomObject>

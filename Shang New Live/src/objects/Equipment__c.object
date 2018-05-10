@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>AEI_Work_Update__c</fullName>
+        <externalId>false</externalId>
+        <label>AEI Work Update</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Air_Flow_Rate_CMH__c</fullName>
+        <externalId>false</externalId>
+        <label>Air Flow Rate (CMH)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Air_Off_Coil_Deg_C__c</fullName>
+        <externalId>false</externalId>
+        <label>Air - Off Coil (Deg C)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Air_On_Coil_Deg_C__c</fullName>
+        <externalId>false</externalId>
+        <label>Air - On Coil (Deg C)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Capacity_KW__c</fullName>
+        <externalId>false</externalId>
+        <label>Capacity (KW)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Capacity_Litres__c</fullName>
+        <externalId>false</externalId>
+        <label>Capacity (Litres)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Capacity_RT__c</fullName>
+        <externalId>false</externalId>
+        <formula>Capacity_KW__c * 0.284345136094</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Capacity (RT)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Capacity__c</fullName>
+        <externalId>false</externalId>
+        <label>Capacity (Channels)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Checklist__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Checklist</label>
+        <referenceTo>Checklist__c</referenceTo>
+        <relationshipLabel>Equipments</relationshipLabel>
+        <relationshipName>Equipments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Control_Panel_Tag__c</fullName>
+        <externalId>false</externalId>
+        <label>Control Panel Tag</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_of_Purchase__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of Purchase</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Discharge_Location__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The location of the sischarge line or pipe for the Equipment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The location of the sischarge line or pipe for the Equipment</inlineHelpText>
+        <label>Discharge Location</label>
+        <referenceTo>Location__c</referenceTo>
+        <relationshipLabel>Equipments (Discharge Location)</relationshipLabel>
+        <relationshipName>Equipments2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Efficiency__c</fullName>
+        <externalId>false</externalId>
+        <label>Efficiency (%)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Equipment_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Equipment Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Chiller</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AHU</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>FCU</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Electrical System</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fire System</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Plumbing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lifts &amp; Escaltors</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Air-Con</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>CCTV</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Escalator</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Fan</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Generator</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>HVAC</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Lifts</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Lifts &amp; Escalators</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>System</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Equipment_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Equipment ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Equipment_Level__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Equipment Level</label>
+        <referenceTo>Level__c</referenceTo>
+        <relationshipLabel>Equipments</relationshipLabel>
+        <relationshipName>Equipments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Equipment_Location__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Location where Equipment is installed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Location where Equipment is installed</inlineHelpText>
+        <label>Equipment Location</label>
+        <referenceTo>Location__c</referenceTo>
+        <relationshipLabel>Equipments</relationshipLabel>
+        <relationshipName>Equipments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Equipment_Mode__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Mode for AHU and FCU</inlineHelpText>
+        <label>Equipment Mode</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Equipment_Category__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bas</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Manual</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>AHU</controllingFieldValue>
+                <controllingFieldValue>FCU</controllingFieldValue>
+                <valueName>Bas</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AHU</controllingFieldValue>
+                <controllingFieldValue>FCU</controllingFieldValue>
+                <valueName>Manual</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Equipment_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Equipment Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Equipment_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Equipment Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Equipment_Category__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Screw Compressor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Close Loop</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Chilled Water</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Direct Expansion</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Open Loop</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4 Way Cassette</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Automation System</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Axial</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>BIF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>CHW Ducted Horizontal Floormounted AHU</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>CHW Ducted Vertical AHU</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>CIL</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Ceiling Cassette Type</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Ceiling Fan</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Condenser Water</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Duct Type</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Jet</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Outdoor</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Propeller Fan</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Public Address System</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Vane Axial</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Wallmounted</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Chiller</controllingFieldValue>
+                <valueName>Screw Compressor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Chiller</controllingFieldValue>
+                <valueName>Close Loop</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Chiller</controllingFieldValue>
+                <valueName>Open Loop</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AHU</controllingFieldValue>
+                <controllingFieldValue>FCU</controllingFieldValue>
+                <valueName>Chilled Water</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AHU</controllingFieldValue>
+                <controllingFieldValue>FCU</controllingFieldValue>
+                <valueName>Direct Expansion</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Equipment_Unit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Unit the Equipment is located</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Unit the Equipment is located</inlineHelpText>
+        <label>Equipment Unit</label>
+        <referenceTo>Units__c</referenceTo>
+        <relationshipLabel>Equipments</relationshipLabel>
+        <relationshipName>Equipments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Equipment_Value__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Equipment Value</inlineHelpText>
+        <label>Equipment Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>External_Static_Pressure_PA__c</fullName>
+        <externalId>false</externalId>
+        <label>External Static Pressure (PA)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fan_Speed_RPM__c</fullName>
+        <externalId>false</externalId>
+        <label>Fan Speed (RPM)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fixed_Asset_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Fixed Asset ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fresh_Air_Flow_Rate_CMH__c</fullName>
+        <externalId>false</externalId>
+        <label>Fresh Air Flow Rate (CMH)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Impeller_Diameter_mm__c</fullName>
+        <externalId>false</externalId>
+        <label>Impeller Diameter (mm)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Installation_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Installation Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Life_Span_years__c</fullName>
+        <externalId>false</externalId>
+        <label>Life Span (years)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Manufacturer__c</fullName>
+        <externalId>false</externalId>
+        <label>Manufacturer</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mobile_Module__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Mobile Module</label>
+        <referenceTo>Mobile_Module__c</referenceTo>
+        <relationshipLabel>Equipments</relationshipLabel>
+        <relationshipName>Equipments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Model__c</fullName>
+        <description>Manufacturer Model</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Manufacturer Model</inlineHelpText>
+        <label>Model</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Motor_KW__c</fullName>
+        <externalId>false</externalId>
+        <label>Motor (KW)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Person_in_charge__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Person in charge</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Equipments</relationshipLabel>
+        <relationshipName>Equipments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Picture__c</fullName>
+        <externalId>false</externalId>
+        <label>Picture</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Power_Supply_V_Ph_Hz__c</fullName>
+        <externalId>false</externalId>
+        <label>Power Supply (V/Ph/Hz)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Name_Text__c</fullName>
+        <description>This field is populated by W/F rule</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is populated by W/F rule</inlineHelpText>
+        <label>Property Name Text</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Property</label>
+        <referenceTo>Property__c</referenceTo>
+        <relationshipLabel>Equipments</relationshipLabel>
+        <relationshipName>Equipments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Remarks__c</fullName>
+        <externalId>false</externalId>
+        <label>Remarks</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Replacement_Parts__c</fullName>
+        <externalId>false</externalId>
+        <label>Replacement Parts</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Sensible_Capacity_KW__c</fullName>
+        <externalId>false</externalId>
+        <label>Sensible Capacity (KW)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Serial_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Serial No.</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Servicing_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Servicing Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Servicing_Intervals_days__c</fullName>
+        <externalId>false</externalId>
+        <label>Servicing Intervals (days)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Servicing_Intervals_months__c</fullName>
+        <externalId>false</externalId>
+        <label>Servicing Intervals (months)</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Servicing_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Servicing Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Servicing_Vendor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Servicing Vendor</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Equipments</relationshipLabel>
+        <relationshipName>Equipments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Servicing__c</fullName>
+        <externalId>false</externalId>
+        <label>Servicing</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Serving_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Serving Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Serving_Level__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Level the Equipment is serving</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Level the Equipment is serving</inlineHelpText>
+        <label>Serving Level</label>
+        <referenceTo>Level__c</referenceTo>
+        <relationshipLabel>Equipments (Serving Level)</relationshipLabel>
+        <relationshipName>Equipments1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Serving_Location__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Location the Equipment is Serving</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Location the Equipment is Serving</inlineHelpText>
+        <label>Serving Location</label>
+        <referenceTo>Location__c</referenceTo>
+        <relationshipLabel>Equipments (Serving Location)</relationshipLabel>
+        <relationshipName>Equipments1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Serving_Unit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Unit the Equipment is serving</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Unit the Equipment is serving</inlineHelpText>
+        <label>Serving Unit</label>
+        <referenceTo>Units__c</referenceTo>
+        <relationshipLabel>Equipments (Serving Unit)</relationshipLabel>
+        <relationshipName>Equipments1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sound_Power_3_M__c</fullName>
+        <externalId>false</externalId>
+        <label>Sound Power @3 M</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stater_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Stater Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>DOL</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Isolator</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SD</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>VSD</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Unit_Dimension_L_x_W_x_H__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>For example, 1090X600X425</inlineHelpText>
+        <label>Unit Dimension (L x W x H)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Voltage_Phase__c</fullName>
+        <externalId>false</externalId>
+        <label>Voltage (Phase)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Warranty_Expiry__c</fullName>
+        <externalId>false</externalId>
+        <label>Warranty Expiry</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Warranty_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Warranty Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Water_Flow_Rate_L_s__c</fullName>
+        <externalId>false</externalId>
+        <label>Water Flow Rate (L/s)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Water_Off_Coil_Deg_C__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>For example, 14.24</inlineHelpText>
+        <label>Water - Off Coil (Deg C)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Water_On_Coil_Deg_C__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>For example. 14.23</inlineHelpText>
+        <label>Water - On Coil (Deg C)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Equipment</label>
+    <nameField>
+        <label>Equipment Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Equipments</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Property__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Serial_No__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Date_of_Purchase__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Manufacturer__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <webLinks>
+        <fullName>New_Equipment</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Equipment</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/a0e/e?CF00N7F00000HCf8H={!Property__c.Name}&amp;CF00N7F00000HCf8H_lkid={!Property__c.Id}&amp;retURL=%2F{!Property__c.Id}&amp;00N7F00000HCf7u=--System Generated--</url>
+    </webLinks>
+</CustomObject>

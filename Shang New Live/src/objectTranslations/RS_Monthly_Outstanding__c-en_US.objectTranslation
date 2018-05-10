@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RS Monthly Outstanding</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RS Monthly Outstanding</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount (Foreign) --></label>
+        <name>Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount (Local) --></label>
+        <name>Amount_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Paid (Foreign) --></label>
+        <name>Amount_Paid_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Paid (Local) --></label>
+        <name>Amount_Paid_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comm Tax Amount (Foreign) --></label>
+        <name>Comm_Tax_Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comm Tax Amount (Local) --></label>
+        <name>Comm_Tax_Amount_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outstanding Amount (Foreign) --></label>
+        <name>Outstanding_Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outstanding Amount (Local) --></label>
+        <name>Outstanding_Amount_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount (Foreign) --></label>
+        <name>Total_Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount (Local) --></label>
+        <name>Total_Amount_Local__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

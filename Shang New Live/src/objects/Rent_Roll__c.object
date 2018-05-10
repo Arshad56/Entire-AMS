@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Actual_Invoice_Date__c</fullName>
+        <description>Actual Invoice Date - This field is populated from &apos;Approve Rent Roll&apos; page after &apos;Approval&apos; and will further be used in Invoice trigger to populate Invoice Date on Invoice creation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Actual Invoice Date</inlineHelpText>
+        <label>Invoice Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Foreign__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount (Foreign)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Amount_Local__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount (Local)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Approved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Approved</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Approver__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Approved By (Operations Manager)</description>
+        <externalId>false</externalId>
+        <label>Approver</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Rent_Roll</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Billing_Type__c</fullName>
+        <description>Populated via Generate Rent Roll process</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Populated via Generate Rent Roll process</inlineHelpText>
+        <label>Billing Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ad-Hoc Invoice</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Credit Note</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Debit Note</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>GTO Rent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Late Charge</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Miscellaneous</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Monthly</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rent</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Comm_Tax_Applicable__c</fullName>
+        <externalId>false</externalId>
+        <label>Comm Tax Applicable</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Currency_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Currency Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Currency_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Ex_Rate_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Exchange Rate Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Exchange_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Exchange Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expected_Invoice_Date__c</fullName>
+        <description>Populated via GenerateRentRoll Page</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is populated from &apos;Generate Rent Roll&apos; Page</inlineHelpText>
+        <label>Invoice Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Invoice_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoice Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Invoice_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Invoices_Emailed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Invoices Emailed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Invoices_Generated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Invoices Generated</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Invoices_Printed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Invoices Printed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Notified_Billing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Notified Billing</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Notified_Finance__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Notified Finance</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Property_Name_Text__c</fullName>
+        <description>This field is populated by W/F rule.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is populated by W/F rule.</inlineHelpText>
+        <label>Property Name Text</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Property__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Property Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Property</label>
+        <referenceTo>Property__c</referenceTo>
+        <relationshipLabel>Rent Roll</relationshipLabel>
+        <relationshipName>Rent_Roll</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Rejected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Rent Roll is completely rejected</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Rent Roll is completely rejected</inlineHelpText>
+        <label>Rejected</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Rent_Roll_Auto__c</fullName>
+        <displayFormat>{00000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Rent Roll Auto</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Rent_Roll_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Rent Roll Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Rent_Roll_Index__c</fullName>
+        <externalId>false</externalId>
+        <label>Rent Roll Index</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rent_Roll_MM__c</fullName>
+        <description>To be generated from Generate RR page. this will be later used for Inv ID creation</description>
+        <externalId>false</externalId>
+        <label>Rent Roll MM</label>
+        <length>2</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rent_Roll_Period__c</fullName>
+        <externalId>false</externalId>
+        <label>Rent Roll Period</label>
+        <length>7</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rent_Roll_YYYY__c</fullName>
+        <description>To be generated from Generate RR page. this will be later used for Inv ID creation</description>
+        <externalId>false</externalId>
+        <label>Rent Roll YYYY</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Amount_Foreign__c</fullName>
+        <externalId>false</externalId>
+        <formula>Amount_Foreign__c + Total_Comm_Tax_Foreign__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Amount (Foreign)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Amount_Formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>Total_Amount__c + Total_Comm_Tax__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Amount + Comm Tax</inlineHelpText>
+        <label>Total Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Amount__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll-up up from related RRD</inlineHelpText>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Comm_Tax_Foreign__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Comm Tax (Foreign)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Comm_Tax_Local__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Comm Tax (Local)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Comm_Tax__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll-up up from related RRD</inlineHelpText>
+        <label>Comm Tax</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Diesel_Rate_Foreign__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Diesel Rate (Foreign)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Diesel_Rate_Local__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Diesel Rate (Local)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Diesel_Rate__c</fullName>
+        <description>Total Diesel Rate for the Month.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Diesel Rate for the Month.</inlineHelpText>
+        <label>Total Diesel Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Leased_Area_Sq_Ft__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Leased Area (Sq. Ft.)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Rent Roll</label>
+    <listViews>
+        <fullName>All_Rent_Rolls</fullName>
+        <columns>NAME</columns>
+        <columns>Approved__c</columns>
+        <columns>Property__c</columns>
+        <columns>Total_Amount__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Property_Name__c</field>
+            <operation>notContain</operation>
+            <value>Training</value>
+        </filters>
+        <label>All Rent Rolls</label>
+    </listViews>
+    <listViews>
+        <fullName>JC_Rent_Rolls</fullName>
+        <columns>NAME</columns>
+        <columns>Approved__c</columns>
+        <columns>Property__c</columns>
+        <columns>Total_Amount__c</columns>
+        <columns>Rejected__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Actual_Invoice_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Property_Name__c</field>
+            <operation>contains</operation>
+            <value>Junction City</value>
+        </filters>
+        <label>JC - Rent Rolls</label>
+    </listViews>
+    <listViews>
+        <fullName>JC_This_Month_Rent_Rolls</fullName>
+        <columns>NAME</columns>
+        <columns>Approved__c</columns>
+        <columns>Property__c</columns>
+        <columns>Total_Amount__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Property_Name__c</field>
+            <operation>contains</operation>
+            <value>Junction City</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>JC - This Month Rent Rolls</label>
+    </listViews>
+    <listViews>
+        <fullName>JMT_Rent_Rolls</fullName>
+        <columns>NAME</columns>
+        <columns>Approved__c</columns>
+        <columns>Property__c</columns>
+        <columns>Total_Amount__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Property_Name__c</field>
+            <operation>contains</operation>
+            <value>Junction Maw Tin</value>
+        </filters>
+        <label>JMT Rent Rolls</label>
+    </listViews>
+    <listViews>
+        <fullName>JMT_This_Month_Rent_Rolls</fullName>
+        <columns>NAME</columns>
+        <columns>Approved__c</columns>
+        <columns>Property__c</columns>
+        <columns>Total_Amount__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Property_Name__c</field>
+            <operation>contains</operation>
+            <value>Junction Maw Tin</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>JMT - This Month Rent Rolls</label>
+    </listViews>
+    <listViews>
+        <fullName>Rent_Rolls_Created_Today</fullName>
+        <columns>NAME</columns>
+        <columns>Billing_Type__c</columns>
+        <columns>Approved__c</columns>
+        <columns>Approver__c</columns>
+        <columns>Property__c</columns>
+        <columns>Rent_Roll_Date__c</columns>
+        <columns>Total_Amount__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Property_Name__c</field>
+            <operation>notContain</operation>
+            <value>Training</value>
+        </filters>
+        <label>Rent Rolls Created Today</label>
+    </listViews>
+    <nameField>
+        <label>Rent Roll ID</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Rent Roll</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Property__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Rent_Roll_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Approved__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Actual_Invoice_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Invoices_Generated__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Invoices_Emailed__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Total_Amount__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Property__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Rent_Roll_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Total_Amount__c</lookupDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <webLinks>
+        <fullName>View_PDF</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>View PDF</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/connection.js&quot;)}
+
+try{
+    var results = 
+        sforce.connection.query(
+            &quot;SELECT Id &quot; + 
+            &quot;FROM Attachment &quot; + 
+            &quot;WHERE &quot; + 
+            &quot;(ParentId = &apos;{!Rent_Roll__c.Id}&apos;) &quot; + 
+            &quot;ORDER BY CreatedDate DESC LIMIT 1&quot;
+        );
+
+    if(results.getInt(&quot;size&quot;) ==1 ){
+        var attachment = results.getArray(&quot;records&quot;);
+
+        window.open(
+            &quot;/servlet/servlet.FileDownload?file=&quot; + attachment[0].Id
+        );
+    }
+    else{
+        alert(&quot;Please generate PDF first.&quot;);
+    }
+}
+catch(e){
+    alert(&quot;Please contact system administrator!&quot; + e);
+}</url>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,51 @@
+<aura:component access="public">
+
+    <!-- Internal properties -->
+    <aura:attribute name="envelope" type="Object" access="public" />
+    <aura:attribute name="envelopeRecipients" type="Object" access="public" />
+    <!-- <div class="slds-media__body"> -->
+            <div class="slds-media__body">
+                <p class="slds-text-heading--x-small">SIGNING ORDER</p>
+            </div>
+
+            <div class="slds-p-horizontal--small slds-size--1-of-2 slds-p-bottom--x-small">
+
+                    <aura:iteration items="{!v.envelopeRecipients}" var="rl"> 
+                        {!rl.length} 
+                        <tr>
+                            <dt>
+                                <div class="slds-media__figure">
+                                    <span class="slds-icon_container">
+                                        <!--Display image in front of routing order Starts-->
+                                        <aura:if isTrue="{!rl.AllSignersSignedFlag }">
+                                            <span> <img  width="14" height="14" src="/resource/RoutingOrderChecked" alt="RoutingOrderChecked" /></span>
+                                        <aura:set attribute="else">
+                                           <span> <img  width="14" height="14" src="/resource/RoutingOrderUnChecked" alt="RoutingOrderChecked" /></span>
+                                        </aura:set>
+                                        </aura:if>
+                                        <!--Display image in front of routing order end-->
+
+                                        <!--Display Routing order Starts-->
+                                        <aura:iteration items="{!rl.recipients}" var="recipient" indexVar="i"> 
+                                            <span class="slds-truncate" title="Recipient Name">
+                                                <aura:if isTrue="{!rl.recipients.length == 1}">
+                                                    &nbsp; {!recipient.name} 
+                                                <aura:set attribute="else">
+                                                    <aura:if isTrue="{!rl.recipients.length-1 == i}">
+                                                             {!recipient.name}
+                                                    <aura:set attribute="else">
+                                                            &nbsp;{!recipient.name},
+                                                    </aura:set>
+                                                    </aura:if>
+                                                </aura:set>
+                                                </aura:if>
+                                            </span> 
+                                        </aura:iteration>
+                                       <!--Display Routing order Ends-->
+                                    </span>
+                                </div>
+                            </dt>
+                        </tr>
+                    </aura:iteration>
+                </div>
+</aura:component>

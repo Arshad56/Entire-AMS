@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Invoice__c.Currency_Code__c</field>
+    </columns>
+    <columns>
+        <field>Invoice__c.Amount__c</field>
+    </columns>
+    <columns>
+        <field>Invoice__c.Comm_Tax_Amount__c</field>
+    </columns>
+    <columns>
+        <field>Invoice__c.Total_Amount__c</field>
+    </columns>
+    <columns>
+        <field>Invoice__c.Amount_Paid__c</field>
+    </columns>
+    <columns>
+        <field>Invoice__c.Outstanding_Amount__c</field>
+    </columns>
+    <description>Temp Report for evaluation</description>
+    <filter>
+        <criteriaItems>
+            <column>Invoice__c.Currency_Code__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>USD</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Invoice__c.Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Partially Paid</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Update Invoice and CR Records</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Invoice__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Invoice__c.Invoice_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

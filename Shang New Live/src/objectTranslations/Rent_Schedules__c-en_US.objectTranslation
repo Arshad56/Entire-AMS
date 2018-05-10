@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Rent Schedule</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Rent Schedules</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active Unit --></label>
+        <name>Active_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rounded Amount --></label>
+        <name>AmountRounding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount (Foreign) --></label>
+        <name>Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount (Local) --></label>
+        <name>Amount_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved --></label>
+        <name>Approved__c</name>
+    </fields>
+    <fields>
+        <help><!-- From related (Lookup) Unit --></help>
+        <label><!-- Area (ft) --></label>
+        <name>Area_ft__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base Rent (By Lease Unit) (Local) --></label>
+        <name>Base_Rent_By_LU_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base Rent (By Lease) (Local) --></label>
+        <name>Base_Rent_By_Lease_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base Rent (LC) --></label>
+        <name>Base_Rent_LC__c</name>
+        <relationshipLabel><!-- Rent Schedules (Base Rent (LC)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Extracting Value from Base Rent (LC) * Calc - No of Days (Pro-Rated) --></help>
+        <label><!-- Base Rent (Local) --></label>
+        <name>Base_Rent_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base Rent RS 1 --></label>
+        <name>Base_Rent_RS_1__c</name>
+        <relationshipLabel><!-- Rent Schedules (Base Rent RS 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Base Rent RS 2 --></label>
+        <name>Base_Rent_RS_2__c</name>
+        <relationshipLabel><!-- Rent Schedules (Base Rent RS 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Extracting Value from Base Rent (LC) * Calc - No of Days (Pro-Rated) --></help>
+        <label><!-- Base Rent --></label>
+        <name>Base_Rent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billed Month --></label>
+        <name>Billed_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Date --></label>
+        <name>Billing_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Month --></label>
+        <name>Billing_Month__c</name>
+    </fields>
+    <fields>
+        <help><!-- Loaded automatically via system automation. Shows Billing Type of related Rent Roll! --></help>
+        <label><!-- Billing Type --></label>
+        <name>Billing_Type__c</name>
+        <picklistValues>
+            <masterLabel>Ad-Hoc Invoice</masterLabel>
+            <translation><!-- Ad-Hoc Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Note</masterLabel>
+            <translation><!-- Credit Note --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debit Note</masterLabel>
+            <translation><!-- Debit Note --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late Charge</masterLabel>
+            <translation><!-- Late Charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous</masterLabel>
+            <translation><!-- Miscellaneous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent</masterLabel>
+            <translation><!-- Rent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Show update value when both &apos;Tiered&apos; and &apos;Cumulative&apos; are checked!! --></help>
+        <label><!-- Calc - Cumulative - Tiered --></label>
+        <name>Calc_Cumulative_Tiered__c</name>
+    </fields>
+    <fields>
+        <help><!-- Managed by Trigger --></help>
+        <label><!-- Calc - No of Days (Pro-Rated) 2 --></label>
+        <name>Calc_No_of_Days_Pro_Rated_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calc - No of Days (Pro-Rated) --></label>
+        <name>Calc_No_of_Days_Pro_Rated__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows Calculations only when &apos;Tiered&apos; is checked! --></help>
+        <label><!-- Calc - Non Cumulative Tiered --></label>
+        <name>Calc_NonCumulative_Tiered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calculated Amount (Foreign) --></label>
+        <name>Calculated_Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gross Rent (Cap) - Base Rent 
+If Gross Rent (Cap) is less than Base Rent then we consider the value as 0. 
+(Managed by Trigger) --></help>
+        <label><!-- GTO Rent --></label>
+        <name>Calculated_Amount_Higher_or_Sum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calculated Amount (Local) --></label>
+        <name>Calculated_Amount_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calculated Amount --></label>
+        <name>Calculated_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calculated Utility Non Tiered --></label>
+        <name>Calculated_Utility_Non_Tiered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cap Amount (By Lease) --></label>
+        <name>Cap_Amount_By_Lease__c</name>
+    </fields>
+    <fields>
+        <help><!-- Cap Value * Area (ft) --></help>
+        <label><!-- Cap Amount --></label>
+        <name>Cap_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cap Applicable --></label>
+        <name>Cap_Applicable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cap Value (By Lease) --></label>
+        <name>Cap_Value_By_Lease__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please define Rate in this field. As this value will be multiplied by Unit Area to extract Cap value.
+This field is populate from relate LC (Cap Value) on RS creation. (Managed by Trigger) --></help>
+        <label><!-- Cap Value --></label>
+        <name>Cap_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Type --></label>
+        <name>Charge_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comm Tax --></label>
+        <name>Comm_Tax_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comm Tax Amount (Foreign) --></label>
+        <name>Comm_Tax_Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comm Tax Amount (Local) --></label>
+        <name>Comm_Tax_Amount_Local__c</name>
+    </fields>
+    <fields>
+        <help><!-- Amount * Comm Tax (%) --></help>
+        <label><!-- Comm Tax Amount --></label>
+        <name>Comm_Tax_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comm Tax (LC) --></label>
+        <name>Comm_Tax_LC__c</name>
+    </fields>
+    <fields>
+        <help><!-- Controlled by related Lease Charge --></help>
+        <label><!-- Comm Tax (%) --></label>
+        <name>Comm_Tax__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comments updated from related Rent Roll Details (only if RRD was Rejected from Generate Invoice Interface) --></help>
+        <label><!-- Rejection Reasons --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Converted Base Rent (By Lease) --></label>
+        <name>Converted_Base_Rent_By_Lease__c</name>
+    </fields>
+    <fields>
+        <help><!-- Primarily used for A&amp;P and GTO Calculations
+Extracting Value from Base Rent RS 1 &amp; 2 * Calc - No of Days (Pro-Rated) --></help>
+        <label><!-- Converted Base Rent --></label>
+        <name>Converted_Base_Rent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Controlled by related LC --></help>
+        <label><!-- Cumulative --></label>
+        <name>Cumulative__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Base Rent --></label>
+        <name>Current_Base_Rent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day --></label>
+        <name>Day__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is referred in Trigger code Electric_Trax_linkWithRentSchedules --></help>
+        <label><!-- Ele Transaction Count --></label>
+        <name>Ele_Transaction_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Electric Meter Number --></label>
+        <name>Electric_Meter_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Electric Meter --></label>
+        <name>Electric_Meter__c</name>
+        <relationshipLabel><!-- Rent Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- look into using function of fields instead of this --></help>
+        <label><!-- Est Calc - Cumulative - Tiered --></label>
+        <name>Est_Calc_Cumulative_Tiered__c</name>
+    </fields>
+    <fields>
+        <help><!-- look into using function of fields instead of this --></help>
+        <label><!-- Est Calc - Non Cumulative Tiered --></label>
+        <name>Est_Calc_Non_Cumulative_Tiered__c</name>
+    </fields>
+    <fields>
+        <help><!-- Estimated GTO Amount after tier and cumulative calculation (if any)
+Managed by Trigger. --></help>
+        <label><!-- Estimated GTO Amount --></label>
+        <name>Estimated_GTO_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Apply formula based on GTO Billed type.
+Gross Rent (Cap) - Base Rent 
+If Gross Rent (Cap) is less than Base Rent then we consider the value as 0. --></help>
+        <label><!-- Estimated GTO Rent --></label>
+        <name>Estimated_GTO_Rent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Managed By Trigger.
+Depend on GTO Billed Type and GTO Type.
+
+Gross Rent after comparison with Cap Amount
+Show Lower Value (Between Gross Rent &amp; Cap Amount.
+IF Cap Amount is 0, then we show Gross Rent as it is --></help>
+        <label><!-- Estimated Gross Rent (Cap) --></label>
+        <name>Estimated_Gross_Rent_Cap__c</name>
+    </fields>
+    <fields>
+        <help><!-- Managed by trigger.
+Based on GTO Billed type and GTO Type.
+
+IF GTO (Sum): GTO + Base Rent
+IF GTO (Higher): Pickup Greater Value (between Base Rent &amp; GTO Amount) --></help>
+        <label><!-- Estimated Gross Rent --></label>
+        <name>Estimated_Gross_Rent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate --></label>
+        <name>Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Amount --></label>
+        <name>Expected_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Charge --></label>
+        <name>Expected_Charge__c</name>
+    </fields>
+    <fields>
+        <label><!-- FM Start Date --></label>
+        <name>FM_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Managed by Trigger. --></help>
+        <label><!-- GTO Amount --></label>
+        <name>GTO_Amount1__c</name>
+    </fields>
+    <fields>
+        <label><!-- GTO Revenue Sharing Amount (By Lease) --></label>
+        <name>GTO_Amount_By_Lease__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total GTO (Converted) --></label>
+        <name>GTO_Monthly_Total_Converted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll-Up of &apos;GTO&apos; from related POS Transaction(s) --></help>
+        <label><!-- Total GTO --></label>
+        <name>GTO_Monthly_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- GTO Rent (By Lease) --></label>
+        <name>GTO_Rent_By_Lease__c</name>
+    </fields>
+    <fields>
+        <label><!-- GTO Rent By --></label>
+        <name>GTO_Rent_By__c</name>
+        <picklistValues>
+            <masterLabel>Audited GTO</masterLabel>
+            <translation><!-- Audited GTO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Estimated GTO</masterLabel>
+            <translation><!-- Estimated GTO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POS GTO</masterLabel>
+            <translation><!-- POS GTO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field is referred in Trigger code Gas_Trax_linkWithRentSchedules --></help>
+        <label><!-- Gas Transaction Count --></label>
+        <name>Gas_Transaction_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- IF GTO (Sum): GTO + Base Rent 
+IF GTO (Higher): Pickup Greater Value (between Base Rent &amp; GTO Amount) --></help>
+        <label><!-- Gross Rent (By Lease) --></label>
+        <name>Gross_Rent_By_Lease__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gross Rent after comparison with Cap Amount 
+Show Lower Value (Between Gross Rent &amp; Cap Amount. 
+IF Cap Amount is 0, then we show Gross Rent as it is --></help>
+        <label><!-- Gross Rent (Cap) (By Lease) --></label>
+        <name>Gross_Rent_Cap_By_Lease__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gross Rent after comparison with Cap Amount
+Show Lower Value (Between Gross Rent &amp; Cap Amount.
+IF Cap Amount is 0, then we show Gross Rent as it is --></help>
+        <label><!-- Gross Rent (Cap) --></label>
+        <name>Gross_Rent_Cap__c</name>
+    </fields>
+    <fields>
+        <help><!-- IF GTO (Sum): GTO + Base Rent
+IF GTO (Higher): Pickup Greater Value (between Base Rent &amp; GTO Amount) --></help>
+        <label><!-- Gross Rent --></label>
+        <name>Gross_Rent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hold --></label>
+        <name>Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Horse Power --></label>
+        <name>Horse_Power__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Line Item --></label>
+        <name>Invoice_Line_Item__c</name>
+        <relationshipLabel><!-- Rent Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoice Type --></label>
+        <name>Invoice_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leap Year --></label>
+        <name>Leap_Year__c</name>
+    </fields>
+    <fields>
+        <help><!-- from related Lease Unit --></help>
+        <label><!-- Lease Agreement No. --></label>
+        <name>Lease_Agreement_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease Charge Id --></label>
+        <name>Lease_Charge_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease Charge --></label>
+        <name>Lease_Charge__c</name>
+        <relationshipLabel><!-- Rent Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- from related Lease Unit &gt; Property --></help>
+        <label><!-- Lease Unit Property --></label>
+        <name>Lease_Unit_Property__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease Unit --></label>
+        <name>Lease_Unit__c</name>
+        <relationshipLabel><!-- Rent Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Level --></label>
+        <name>Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maintenance Fee --></label>
+        <name>Maintenance_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- NLA (SQF) (By Lease) --></label>
+        <name>NLA_SQF_By_Lease__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occupied Area (Sqft) --></label>
+        <name>Occupied_Area__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is referred in Trigger code POSFieldPolulateTrigger --></help>
+        <label><!-- POS Transaction Count --></label>
+        <name>POS_Transaction_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Rent Schedule --></label>
+        <name>Parent_Rent_Schedule__c</name>
+        <relationshipLabel><!-- Rent Schedules (Child) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field is referred in Trigger code Phone_Trax_linkWithRentSchedules --></help>
+        <label><!-- Phone transaction Count --></label>
+        <name>Phone_transaction_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>PropertyLU__c</name>
+        <relationshipLabel><!-- Rent Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field is populated by W/F rule --></help>
+        <label><!-- Property Name Text --></label>
+        <name>Property_Name_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- from related Unit --></help>
+        <label><!-- Property Short Code --></label>
+        <name>Property_Short_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- from related Unit --></help>
+        <label><!-- Unit Property --></label>
+        <name>Property__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rent Roll Detail Id is stored in this field when voided --></help>
+        <label><!-- RRD Text --></label>
+        <name>RRD_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rent Roll Id is stored in this field when voided --></help>
+        <label><!-- RR Text --></label>
+        <name>RR_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Roll Detail --></label>
+        <name>Rent_Roll_Detail__c</name>
+        <relationshipLabel><!-- Rent Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rent Roll --></label>
+        <name>Rent_Roll__c</name>
+        <relationshipLabel><!-- Rent Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rent Schedules Month/Year --></label>
+        <name>Rent_Schedules_Month_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-Tenancy</masterLabel>
+            <translation><!-- In-Tenancy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Received</masterLabel>
+            <translation><!-- Payment Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent Roll Generated</masterLabel>
+            <translation><!-- Rent Roll Generated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminated</masterLabel>
+            <translation><!-- Terminated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vacancy</masterLabel>
+            <translation><!-- Vacancy --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TEst --></label>
+        <name>TEst__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Rental --></label>
+        <name>Target_Rental__c</name>
+    </fields>
+    <fields>
+        <label><!-- Temp Calculated Amount --></label>
+        <name>Temp_Calculated_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Temp_Cumulative_Cur --></label>
+        <name>Temp_Cumulative_Cur__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tenancy Status --></label>
+        <name>Tenancy_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tenant --></label>
+        <name>TenantLU__c</name>
+        <relationshipLabel><!-- Rent Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Tenant --></label>
+        <name>Tenant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Terminated Month --></label>
+        <name>Terminated_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier2_Upper_Limit --></label>
+        <name>Tier2_Upper_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 2 Rate --></label>
+        <name>Tier_2_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Controlled by related LC --></help>
+        <label><!-- Tiered --></label>
+        <name>Tiered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount (Foreign) --></label>
+        <name>Total_Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount (Local) --></label>
+        <name>Total_Amount_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount --></label>
+        <name>Total_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Electric Units --></label>
+        <name>Total_Electric_Units__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Estimated GTO (Converted) --></label>
+        <name>Total_Estimated_GTO_Converted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total estimated GTO sales --></help>
+        <label><!-- Total Estimated GTO --></label>
+        <name>Total_Estimated_GTO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total GTO Rent (By Lease) --></label>
+        <name>Total_GTO_Rent_By_Lease__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Gas Units --></label>
+        <name>Total_Gas_Units__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Phone Units --></label>
+        <name>Total_Phone_Units__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Units --></label>
+        <name>Total_Units__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Units Physical --></label>
+        <name>Total_Units_p__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Water Units --></label>
+        <name>Total_Water_Units__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trading Day(s) --></label>
+        <name>Trading_Day_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction End Date --></label>
+        <name>Transaction_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Start Date --></label>
+        <name>Transaction_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Status --></label>
+        <name>Transaction_Status__c</name>
+        <picklistValues>
+            <masterLabel>Applicable - Imported</masterLabel>
+            <translation><!-- Applicable - Imported --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Applicable - Not Imported</masterLabel>
+            <translation><!-- Applicable - Not Imported --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transaction Unit --></label>
+        <name>Transaction_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit Id --></label>
+        <name>Unit_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit --></label>
+        <name>Unit__c</name>
+        <relationshipLabel><!-- Rent Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field is referred in Trigger code Water_Trax_linkWithRentSchedules --></help>
+        <label><!-- Water Transaction Count --></label>
+        <name>Water_Transaction_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Withholding Tax Rate --></label>
+        <name>Withholding_Tax_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check --></label>
+        <name>check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days --></label>
+        <name>days__c</name>
+    </fields>
+    <fields>
+        <label><!-- first RentalSchedule --></label>
+        <name>first_RentalSchedule__c</name>
+    </fields>
+    <fields>
+        <label><!-- last RentalSchedule --></label>
+        <name>last_RentalSchedule__c</name>
+    </fields>
+    <fields>
+        <label><!-- % of Converted Base Rent --></label>
+        <name>of_Converted_Base_Rent__c</name>
+    </fields>
+    <fields>
+        <label><!-- rent roll casesafe --></label>
+        <name>rent_roll_casesafe__c</name>
+    </fields>
+    <layouts>
+        <layout>Discount</layout>
+        <sections>
+            <label><!-- Billing Information --></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Currency Information --></label>
+            <section>Currency Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Utility Usage --></label>
+            <section>Utility Usage</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Monthly</layout>
+        <sections>
+            <label><!-- Billing Information --></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Property - Lease Unit / Charges --></label>
+            <section>Property - Lease Unit / Charges</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Read Only Rent Schedule Layout</layout>
+        <sections>
+            <label><!-- Base Rent (RS) Infrormation --></label>
+            <section>Base Rent (RS) Infrormation</section>
+        </sections>
+        <sections>
+            <label><!-- Billing Information --></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- GTO Additional Information (By Lease Unit) --></label>
+            <section>GTO Additional Information (By Lease Unit)</section>
+        </sections>
+        <sections>
+            <label><!-- GTO Additional Information (By Lease) --></label>
+            <section>GTO Additional Information (By Lease)</section>
+        </sections>
+        <sections>
+            <label><!-- Utility Usage --></label>
+            <section>Utility Usage</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Rent</layout>
+        <sections>
+            <label><!-- Billing Information --></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Property - Lease Unit / Charges --></label>
+            <section>Property - Lease Unit / Charges</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Rent Schedule Layout</layout>
+        <sections>
+            <label><!-- Base Rent (RS) Infrormation --></label>
+            <section>Base Rent (RS) Infrormation</section>
+        </sections>
+        <sections>
+            <label><!-- Billing Information --></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- GTO Additional Information (By Lease Unit) --></label>
+            <section>GTO Additional Information (By Lease Unit)</section>
+        </sections>
+        <sections>
+            <label><!-- GTO Additional Information (By Lease) --></label>
+            <section>GTO Additional Information (By Lease)</section>
+        </sections>
+        <sections>
+            <label><!-- GTO Estimation --></label>
+            <section>GTO Estimation</section>
+        </sections>
+        <sections>
+            <label><!-- Utility Usage --></label>
+            <section>Utility Usage</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Discount --></label>
+        <name>Discount</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Monthly --></label>
+        <name>Monthly</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Rent --></label>
+        <name>Rent</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please fill Cap Value since Cap is Applicable! --></errorMessage>
+        <name>Cap_Applicable_and_Value</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Refresh_Rental_Schedules --></label>
+        <name>Refresh_Rental_Schedules</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This is used to track Exchange Rate for Multi-Currency process</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Applicable_Function__c</fullName>
+        <description>Lease - Applicable Charge, Lease Charge, Rent Schedule, Rent Roll, Rent Roll Details, Invoice, Invoice Line Items
+Cash Receipt - Cash Receipt &amp; Cash Details
+Accounts Posting - TBD
+Default - If the value is not found in case 1 &amp; 2 (either no record or no date range), then get this value
+
+Lease
+Cash Receipt
+Accounts Posting
+Default</description>
+        <externalId>false</externalId>
+        <label>Applicable Function</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Operations</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Finance</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Conversion_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Conversion Rate</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>8</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Currency_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Currency Code</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>USD</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Duplicate_Check__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>This field is refered n Backend Populate Duplicate_Check Workflow</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is refered n Backend Populate Duplicate_Check Workflow</inlineHelpText>
+        <label>Duplicate Check</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Start_Date_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date/Time</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <label>Exchange Rate</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Currency_Code__c</columns>
+        <columns>Applicable_Function__c</columns>
+        <columns>Conversion_Rate__c</columns>
+        <columns>Start_Date_Time__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>AllUSD</fullName>
+        <columns>NAME</columns>
+        <columns>Currency_Code__c</columns>
+        <columns>Applicable_Function__c</columns>
+        <columns>Start_Date_Time__c</columns>
+        <columns>Conversion_Rate__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Currency_Code__c</field>
+            <operation>equals</operation>
+            <value>USD</value>
+        </filters>
+        <label>All USD</label>
+    </listViews>
+    <nameField>
+        <displayFormat>{YYYYMM}-ER-{000000}</displayFormat>
+        <label>Rate ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Exchange Rates</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Currency_Code__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Applicable_Function__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Conversion_Rate__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Start_Date_Time__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

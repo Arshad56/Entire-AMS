@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Permission Set</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Permission Sets</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accessible Checklist --></label>
+        <name>Accessible_Checklist__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accessible Daily Cheklist --></label>
+        <name>Accessible_Daily_Cheklist__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile Module --></label>
+        <name>Mobile_Module__c</name>
+        <relationshipLabel><!-- Permission Sets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+        <relationshipLabel><!-- Operation Assignment --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- S/N --></label>
+        <name>S_N__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Permission Set Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

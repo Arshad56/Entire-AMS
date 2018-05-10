@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Applicable Charge</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Applicable Charges</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicable for Fit-out --></label>
+        <name>Applicable_for_Fit_out__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pls select Base Charge Type if the bill is based on other Charge Type. (eg. for GTO and A&amp;P, select Base Charge Type as Advance Rental). --></help>
+        <label><!-- Base Charge Type --></label>
+        <name>Base_Charge_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base Value --></label>
+        <name>Base_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is Checked the Charge Formula includes the Base which to be entered at the Leasing Screen. --></help>
+        <label><!-- Base included --></label>
+        <name>Base_included__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select &quot;31&quot; if you want to set the billing date at the end of the month. --></help>
+        <label><!-- Billing Days --></label>
+        <name>Billing_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Frequency --></label>
+        <name>Billing_Frequency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Prorate (1st and last month)
+Non-prorate (full month) --></help>
+        <label><!-- Billing Terms --></label>
+        <name>Billing_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cap Applicable --></label>
+        <name>Cap_Applicable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cap Value --></label>
+        <name>Cap_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Amount Input Required --></label>
+        <name>Charge_Amount_Applicable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Description --></label>
+        <name>Charge_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Method --></label>
+        <name>Charge_Method__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum : Amount + Caculated Field
+Multiple : Amount x Parameter
+Highest : Highest of either Amount or Calculated Field
+Special Formula: Excecute Defined special Formula (e.g. aggregate GTO calculation 
+Lowest : Lowest of either Amount or Calculated Field --></help>
+        <label><!-- Charge Operator --></label>
+        <name>Charge_Operator__c</name>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation><!-- Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Highest</masterLabel>
+            <translation><!-- Highest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lowest</masterLabel>
+            <translation><!-- Lowest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiple</masterLabel>
+            <translation><!-- Multiple --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Formula</masterLabel>
+            <translation><!-- Special Formula --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sum</masterLabel>
+            <translation><!-- Sum --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Charge Rate Description --></label>
+        <name>Charge_Rate_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Rate Input Required --></label>
+        <name>Charge_Rate_Input_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Rate --></label>
+        <name>Charge_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Charge Start Day&quot; if it&apos;s special billing terms. 
+eg. Electric, Water, Gas,.. billing starts with 26 ~ 25 of the month. --></help>
+        <label><!-- Charge Start Day --></label>
+        <name>Charge_Start_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Type --></label>
+        <name>Charge_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comm Tax --></label>
+        <name>Commercial_Tax_Apply__c</name>
+    </fields>
+    <fields>
+        <help><!-- If Cumulative we will calculate the Total at each Tier &amp; Summarize them.
+Example 
+If the Maximum Tier is Tier 2,
+If Cumulative:
+      Tier 1 Total + Tier 2 Total
+If NOT Cumulative:
+      Tier 2 Total
+      Which --></help>
+        <label><!-- Cumulative for each Tier --></label>
+        <name>Cumulative_for_each_Tier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Charge --></label>
+        <name>Default_Charge__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is to set up billing date for rent schedule.
+(eg. -1: 1 month before rent month; 0: same month as rent month; 1: 1 month after rent month) --></help>
+        <label><!-- Due Month Formula --></label>
+        <name>Due_Month_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected GTO Amount --></label>
+        <name>Expected_GTO_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Accounts Code --></label>
+        <name>Finance_Accounts_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Accounts Desc --></label>
+        <name>Finance_Accounts_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Schedule Frequency --></label>
+        <name>Frequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- GTO Comparison --></label>
+        <name>GTO_Comparison__c</name>
+        <picklistValues>
+            <masterLabel>At Lease</masterLabel>
+            <translation><!-- At Lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>At Lease Unit</masterLabel>
+            <translation><!-- At Lease Unit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- GTO Percent --></label>
+        <name>GTO_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease Type --></label>
+        <name>Lease_Type__c</name>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOI</masterLabel>
+            <translation><!-- LOI --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Multiple Rental Schedule (only for MEPE) --></label>
+        <name>Multiple_Rental_Schedule__c</name>
+    </fields>
+    <fields>
+        <label><!-- Multiple of Parameter --></label>
+        <name>Multiple_of_Parameter__c</name>
+        <picklistValues>
+            <masterLabel>Area</masterLabel>
+            <translation><!-- Area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meter Units</masterLabel>
+            <translation><!-- Meter Units --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly Base Rent</masterLabel>
+            <translation><!-- Monthly Base Rent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly GTO</masterLabel>
+            <translation><!-- Monthly GTO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Units (Local)</masterLabel>
+            <translation><!-- Phone Units (Local) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Units (Trunk)</masterLabel>
+            <translation><!-- Phone Units (Trunk) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Property Short Code --></label>
+        <name>Property_Short_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+        <relationshipLabel><!-- Applicable Charges --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rate --></label>
+        <name>Rate__c</name>
+        <picklistValues>
+            <masterLabel>10%</masterLabel>
+            <translation><!-- 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>110</masterLabel>
+            <translation><!-- 110 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>330</masterLabel>
+            <translation><!-- 330 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>400</masterLabel>
+            <translation><!-- 400 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6%</masterLabel>
+            <translation><!-- 6% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60</masterLabel>
+            <translation><!-- 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>600</masterLabel>
+            <translation><!-- 600 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8%</masterLabel>
+            <translation><!-- 8% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90</masterLabel>
+            <translation><!-- 90 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please update % in decimal value in this field
+e.g. For 10 Percent, add decimal: 0.10
+e.g. For 5 Percent, add decimal: 0.05 --></help>
+        <label><!-- Tier 1 Rate --></label>
+        <name>Tier_1_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 1 Upper Limit --></label>
+        <name>Tier_1_Upper_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 2 Rate --></label>
+        <name>Tier_2_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 2 Upper Limit --></label>
+        <name>Tier_2_Upper_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 3 Rate --></label>
+        <name>Tier_3_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 3 Upper Limit --></label>
+        <name>Tier_3_Upper_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 4 Rate --></label>
+        <name>Tier_4_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 4 Upper Limit --></label>
+        <name>Tier_4_Upper_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 5 Rate --></label>
+        <name>Tier_5_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 5 Upper Limit --></label>
+        <name>Tier_5_Upper_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 6 Rate --></label>
+        <name>Tier_6_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 6 Upper Limit --></label>
+        <name>Tier_6_Upper_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 7 Rate --></label>
+        <name>Tier_7_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 7 Upper Limit --></label>
+        <name>Tier_7_Upper_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 8 Rate --></label>
+        <name>Tier_8_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 8 Upper Limit --></label>
+        <name>Tier_8_Upper_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 9 Rate --></label>
+        <name>Tier_9_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Apply Tier Formula --></label>
+        <name>Tiered_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier Lower Limit --></label>
+        <name>Tiered_Lower_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>By Area</masterLabel>
+            <translation><!-- By Area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>By Percent</masterLabel>
+            <translation><!-- By Percent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation><!-- Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GTO</masterLabel>
+            <translation><!-- GTO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GTO (Higher)</masterLabel>
+            <translation><!-- GTO (Higher) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GTO (Sum)</masterLabel>
+            <translation><!-- GTO (Sum) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meter Units</masterLabel>
+            <translation><!-- Meter Units --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special</masterLabel>
+            <translation><!-- Special --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Monthly</layout>
+        <sections>
+            <label><!-- Charge Details (Managed by Lease Admin) --></label>
+            <section>Charge Details (Managed by Lease Admin)</section>
+        </sections>
+        <sections>
+            <label><!-- Charge Formula (Managed by Lease Admin) --></label>
+            <section>Charge Formula (Managed by Lease Admin)</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Finance Setup (Managed by Finance) --></label>
+            <section>Finance Setup (Managed by Finance)</section>
+        </sections>
+        <sections>
+            <label><!-- MEPE Configuration (Managed by Lease Admin) --></label>
+            <section>MEPE Configuration (Managed by Lease Admin)</section>
+        </sections>
+        <sections>
+            <label><!-- Tier Formula (Managed by Lease Admin) --></label>
+            <section>Tier Formula (Managed by Lease Admin)</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Rent</layout>
+        <sections>
+            <label><!-- Charge Details --></label>
+            <section>Charge Details</section>
+        </sections>
+        <sections>
+            <label><!-- Charge Formula --></label>
+            <section>Charge Formula</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Finance Setup (Manage by Finance) --></label>
+            <section>Finance Setup (Manage by Finance)</section>
+        </sections>
+        <sections>
+            <label><!-- MEPE Setup (Manage by Lease Admin) --></label>
+            <section>MEPE Setup (Manage by Lease Admin)</section>
+        </sections>
+        <sections>
+            <label><!-- Tiered Rates --></label>
+            <section>Tiered Rates</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Monthly --></label>
+        <name>Monthly</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Rent --></label>
+        <name>Rent</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please fine Cap Value since Cap is Applicable. --></errorMessage>
+        <name>Cap_Applicable_and_Value</name>
+    </validationRules>
+</CustomObjectTranslation>

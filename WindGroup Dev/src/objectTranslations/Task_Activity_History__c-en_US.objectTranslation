@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Task Activity History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Task Activity History</value>
+    </caseValues>
+    <fields>
+        <label><!-- Comment --></label>
+        <name>Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date/Time --></label>
+        <name>Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equipment --></label>
+        <name>Equipment__c</name>
+        <relationshipLabel><!-- Task Activity History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Estimated Completion --></label>
+        <name>Estimated_Completion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Cost --></label>
+        <name>Estimated_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Work Days --></label>
+        <name>Estimated_Work_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+        <relationshipLabel><!-- Task Activity History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+        <relationshipLabel><!-- Task Activity History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Request ID --></label>
+        <name>Request_ID__c</name>
+        <relationshipLabel><!-- Task Activity History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Task ID --></label>
+        <name>Task_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Record ID --></label>
+        <name>Task_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tasklist --></label>
+        <name>Tasklist__c</name>
+        <relationshipLabel><!-- Task Activity History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User Name --></label>
+        <name>User_Name__c</name>
+        <relationshipLabel><!-- Task Activity History --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Task Activity History Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

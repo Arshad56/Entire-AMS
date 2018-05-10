@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Vaap EVoucher Reconciliation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Vaap EVoucher Reconciliation</value>
+    </caseValues>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Datetime --></label>
+        <name>Issue_Datetime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Mode --></label>
+        <name>Payment_Mode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Reference Number --></label>
+        <name>Payment_Reference_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Short Code --></label>
+        <name>Property_Short_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ready to Reconcile --></label>
+        <name>Ready_to_Reconcile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reconciled Date --></label>
+        <name>Reconciled_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Amount --></label>
+        <name>Transaction_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- WireCard Amount --></label>
+        <name>WireCard_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- WireCard Currency Code --></label>
+        <name>WireCard_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- WireCard Payment Mode --></label>
+        <name>WireCard_Payment_Mode__c</name>
+    </fields>
+    <fields>
+        <label><!-- WireCard Reference Number --></label>
+        <name>WireCard_Reference_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- WireCard Transaction Datetime --></label>
+        <name>WireCard_Transaction_Datetime__c</name>
+    </fields>
+    <fields>
+        <label><!-- WireCard Transaction Status --></label>
+        <name>WireCard_Transaction_Status__c</name>
+        <picklistValues>
+            <masterLabel>FAILED</masterLabel>
+            <translation><!-- FAILED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUCCESS</masterLabel>
+            <translation><!-- SUCCESS --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Vaap EVoucher Reconciliation Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Vaap and WireCard data are not matched. Please review and amend before Reconcile. --></errorMessage>
+        <name>Vaap_Validate_Vaap_and_WireCard_Data</name>
+    </validationRules>
+</CustomObjectTranslation>

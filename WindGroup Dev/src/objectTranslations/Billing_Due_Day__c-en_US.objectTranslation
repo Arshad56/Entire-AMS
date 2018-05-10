@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Billing Due Day</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Billing Due Days</value>
+    </caseValues>
+    <fields>
+        <label><!-- Billing Due Days --></label>
+        <name>Billing_Due_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Type --></label>
+        <name>Billing_Type__c</name>
+        <picklistValues>
+            <masterLabel>Ad-Hoc Invoice</masterLabel>
+            <translation><!-- Ad-Hoc Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Note</masterLabel>
+            <translation><!-- Credit Note --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debit Note</masterLabel>
+            <translation><!-- Debit Note --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GTO Rent</masterLabel>
+            <translation><!-- GTO Rent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late Charge</masterLabel>
+            <translation><!-- Late Charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous</masterLabel>
+            <translation><!-- Miscellaneous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent</masterLabel>
+            <translation><!-- Rent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+        <relationshipLabel><!-- Billing Due Days --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

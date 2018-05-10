@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>This is to be used for iOPS configuration.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Afternoon_Shift_Interval__c</fullName>
+        <externalId>false</externalId>
+        <label>Afternoon Shift Interval</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Morning_Shift_Interval__c</fullName>
+        <externalId>false</externalId>
+        <label>Morning Shift Interval</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Night_Shift_Interval__c</fullName>
+        <externalId>false</externalId>
+        <label>Night Shift Interval</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>iOPS Configuration</label>
+    <visibility>Protected</visibility>
+</CustomObject>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This is used in LOI PDF for leasing for myanmar clause.</description>
+    <internalUseOnly>false</internalUseOnly>
+    <keywords>LOI Myanmar Clause</keywords>
+    <name>JC - LOI Myanmar Clause</name>
+    <public>true</public>
+</Document>

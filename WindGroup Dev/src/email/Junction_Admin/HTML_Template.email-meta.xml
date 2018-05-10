@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Standard HTML Template for all.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Std_Template</letterhead>
+    <name>HTML Template</name>
+    <style>freeForm</style>
+    <subject>iRequest: {!Request__c.Name} has been assigned.</subject>
+    <textOnly>Description                        : {!Request__c.Description__c}
+Status                                : {!Request__c.Status__c}
+Date/Time Opened            : {!Request__c.Date_Time_Opened__c}
+Action Remarks                 : {!Request__c.Action_Remarks__c}
+
+Click on the link for details:  {!Request__c.Link}
+
+Regards
+Operation Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

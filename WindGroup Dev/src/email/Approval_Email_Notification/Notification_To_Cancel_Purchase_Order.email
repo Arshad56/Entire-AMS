@@ -1,0 +1,16 @@
+Dear {!Purchase_Order__c.OwnerFullName}, 
+
+Please proceed to approve PO Cancellation for Purchase Order: {!Purchase_Order__c.Name}.
+Please see details below: 
+
+Company Name: {!Purchase_Order__c.Company_Name__c}
+Vendor: {!Purchase_Order__c.Vendor_Name__c}
+Currency Code: {!Purchase_Order__c.Currency_Code__c}
+Total PO Amount: {!Purchase_Order__c.Total_PO_Amount__c}
+Recommendation: {!Purchase_Order__c.Recommendation__c}
+PO Date: {!Purchase_Order__c.PO_Start_Date__c}
+Expected Delivery Date: {!Purchase_Order__c.PO_End_Date__c}
+
+
+Thank you. 
+System Admin

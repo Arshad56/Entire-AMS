@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Daily Checklist</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Daily Checklists</value>
+    </caseValues>
+    <fields>
+        <label><!-- Authorised Person 2 Email --></label>
+        <name>AP_2_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorised Person 2 NRIC --></label>
+        <name>AP_2_NRIC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorised Person 2 Name --></label>
+        <name>AP_2_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorised Person 2 Phone --></label>
+        <name>AP_2_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorised Person 2 Position --></label>
+        <name>AP_2_Position__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorised Person 2 Signature Image Url --></label>
+        <name>AP_2_Sign_Img_Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorised Person 2 Signature --></label>
+        <name>AP_2_Signature__c</name>
+    </fields>
+    <fields>
+        <help><!-- Project Manager&apos;s contact information. --></help>
+        <label><!-- Authorised Person 2 --></label>
+        <name>AP_2__c</name>
+        <relationshipLabel><!-- Daily Checklists (Authorised Person 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Authorised Person Email --></label>
+        <name>AP_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorised Person NRIC --></label>
+        <name>AP_NRIC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorised Person Name --></label>
+        <name>AP_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorised Person Phone --></label>
+        <name>AP_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorised Person Position --></label>
+        <name>AP_Position__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorised Person Signature Image Url --></label>
+        <name>AP_Sign_Img_Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorised Person Signature --></label>
+        <name>AP_Sign_Img__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contractor/Tenanct&apos;s contact information. --></help>
+        <label><!-- Authorised Person --></label>
+        <name>AP__c</name>
+        <relationshipLabel><!-- Daily Checklists (Authorised Person) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- AWS ID --></label>
+        <name>AWS_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- AWS Mobile Module --></label>
+        <name>AWS_Mobile_Module__c</name>
+    </fields>
+    <fields>
+        <label><!-- Acceptance of Unit --></label>
+        <name>Acceptance_of_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Backend Last Updated DateTime --></label>
+        <name>Backend_Last_Updated_DateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checklist Master --></label>
+        <name>Checklist_Master__c</name>
+        <relationshipLabel><!-- Daily Checklists --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Company Stamp Image Url --></label>
+        <name>Company_Stamp_Image_Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Stamp --></label>
+        <name>Company_Stamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delay --></label>
+        <name>Delay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equipment --></label>
+        <name>Equipment__c</name>
+        <relationshipLabel><!-- Daily Checklists --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Expected Date --></label>
+        <name>Expected_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Last Updated DateTime at IOPS. --></help>
+        <label><!-- Last Update Date/Time --></label>
+        <name>Last_Update_Date_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Last updated at IOPS. --></help>
+        <label><!-- Last Updated By --></label>
+        <name>Last_Updated_By__c</name>
+        <relationshipLabel><!-- Daily Checklists (Last Updated By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Updated From --></label>
+        <name>Last_Updated_From__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease Unit --></label>
+        <name>Lease_Unit__c</name>
+        <relationshipLabel><!-- Daily Checklists --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+        <relationshipLabel><!-- Daily Checklists --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Display --></label>
+        <name>Mobile_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile Module --></label>
+        <name>Mobile_Module__c</name>
+        <relationshipLabel><!-- Daily Checklists --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- No of Completed Items --></label>
+        <name>No_of_Completed_Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- PDF Document No --></label>
+        <name>PDF_Document_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- PDF Url --></label>
+        <name>PDF_Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person In Charge 2 Email --></label>
+        <name>PIC_2_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person In Charge 2 NRIC --></label>
+        <name>PIC_2_NRIC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person In Charge 2 Name --></label>
+        <name>PIC_2_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person In Charge 2 Phone --></label>
+        <name>PIC_2_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person In Charge 2 Position --></label>
+        <name>PIC_2_Position__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person In Charge 2 Signature Image Url --></label>
+        <name>PIC_2_Sign_Img_Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person In Charge 2 Signature --></label>
+        <name>PIC_2_Signature__c</name>
+    </fields>
+    <fields>
+        <help><!-- Operation&apos;s contact information. --></help>
+        <label><!-- Person In Charge 2 --></label>
+        <name>PIC_2__c</name>
+        <relationshipLabel><!-- Daily Checklists (Person In Charge 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Person In Charge Email --></label>
+        <name>PIC_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person In Charge NRIC --></label>
+        <name>PIC_NRIC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person In Charge Name --></label>
+        <name>PIC_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person In Charge Phone --></label>
+        <name>PIC_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person In Charge Position --></label>
+        <name>PIC_Position__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person In Charge Signature Image Url --></label>
+        <name>PIC_Sign_Img_Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person In Charge Signature --></label>
+        <name>PIC_Signature__c</name>
+    </fields>
+    <fields>
+        <help><!-- Operation&apos;s contact information. --></help>
+        <label><!-- Person In Charge --></label>
+        <name>PIC__c</name>
+        <relationshipLabel><!-- Daily Checklists (Person In Charge) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Percentage Completed --></label>
+        <name>Percentage_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Name --></label>
+        <name>Property_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session --></label>
+        <name>Session__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signed Off Date --></label>
+        <name>Signed_Off_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Updated automatically when &apos;Signed Off Date&apos; is updated. --></help>
+        <label><!-- Signed off --></label>
+        <name>Signed_off__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-Progress</masterLabel>
+            <translation><!-- In-Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Target Date --></label>
+        <name>Target_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit --></label>
+        <name>Unit__c</name>
+        <relationshipLabel><!-- Daily Checklists --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- no of items --></label>
+        <name>no_of_items__c</name>
+    </fields>
+    <layouts>
+        <layout>Daily Checklist Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

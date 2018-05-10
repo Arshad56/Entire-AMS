@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Lease Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Lease Plans</value>
+    </caseValues>
+    <fields>
+        <label><!-- Base Rent --></label>
+        <name>Base_Rent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commited --></label>
+        <name>Commited__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 10 --></label>
+        <name>Daily_Committed_Rate_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 11 --></label>
+        <name>Daily_Committed_Rate_11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 12 --></label>
+        <name>Daily_Committed_Rate_12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 13 --></label>
+        <name>Daily_Committed_Rate_13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 14 --></label>
+        <name>Daily_Committed_Rate_14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 15 --></label>
+        <name>Daily_Committed_Rate_15__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 16 --></label>
+        <name>Daily_Committed_Rate_16__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 17 --></label>
+        <name>Daily_Committed_Rate_17__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 18 --></label>
+        <name>Daily_Committed_Rate_18__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 19 --></label>
+        <name>Daily_Committed_Rate_19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 1 --></label>
+        <name>Daily_Committed_Rate_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 20 --></label>
+        <name>Daily_Committed_Rate_20__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 21 --></label>
+        <name>Daily_Committed_Rate_21__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 22 --></label>
+        <name>Daily_Committed_Rate_22__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 23 --></label>
+        <name>Daily_Committed_Rate_23__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 24 --></label>
+        <name>Daily_Committed_Rate_24__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 25 --></label>
+        <name>Daily_Committed_Rate_25__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 26 --></label>
+        <name>Daily_Committed_Rate_26__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 27 --></label>
+        <name>Daily_Committed_Rate_27__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 28 --></label>
+        <name>Daily_Committed_Rate_28__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 29 --></label>
+        <name>Daily_Committed_Rate_29__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 2 --></label>
+        <name>Daily_Committed_Rate_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 30 --></label>
+        <name>Daily_Committed_Rate_30__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 31 --></label>
+        <name>Daily_Committed_Rate_31__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 3 --></label>
+        <name>Daily_Committed_Rate_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 4 --></label>
+        <name>Daily_Committed_Rate_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 5 --></label>
+        <name>Daily_Committed_Rate_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 6 --></label>
+        <name>Daily_Committed_Rate_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 7 --></label>
+        <name>Daily_Committed_Rate_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 8 --></label>
+        <name>Daily_Committed_Rate_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Committed Rate 9 --></label>
+        <name>Daily_Committed_Rate_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 10 --></label>
+        <name>Daily_LOI_Rate_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 11 --></label>
+        <name>Daily_LOI_Rate_11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 12 --></label>
+        <name>Daily_LOI_Rate_12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 13 --></label>
+        <name>Daily_LOI_Rate_13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 14 --></label>
+        <name>Daily_LOI_Rate_14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 15 --></label>
+        <name>Daily_LOI_Rate_15__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 16 --></label>
+        <name>Daily_LOI_Rate_16__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 17 --></label>
+        <name>Daily_LOI_Rate_17__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 18 --></label>
+        <name>Daily_LOI_Rate_18__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 19 --></label>
+        <name>Daily_LOI_Rate_19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 1 --></label>
+        <name>Daily_LOI_Rate_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 20 --></label>
+        <name>Daily_LOI_Rate_20__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 21 --></label>
+        <name>Daily_LOI_Rate_21__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 22 --></label>
+        <name>Daily_LOI_Rate_22__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 23 --></label>
+        <name>Daily_LOI_Rate_23__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 24 --></label>
+        <name>Daily_LOI_Rate_24__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 25 --></label>
+        <name>Daily_LOI_Rate_25__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 26 --></label>
+        <name>Daily_LOI_Rate_26__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 27 --></label>
+        <name>Daily_LOI_Rate_27__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 28 --></label>
+        <name>Daily_LOI_Rate_28__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 29 --></label>
+        <name>Daily_LOI_Rate_29__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 2 --></label>
+        <name>Daily_LOI_Rate_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 30 --></label>
+        <name>Daily_LOI_Rate_30__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 31 --></label>
+        <name>Daily_LOI_Rate_31__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 3 --></label>
+        <name>Daily_LOI_Rate_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 4 --></label>
+        <name>Daily_LOI_Rate_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 5 --></label>
+        <name>Daily_LOI_Rate_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 6 --></label>
+        <name>Daily_LOI_Rate_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 7 --></label>
+        <name>Daily_LOI_Rate_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 8 --></label>
+        <name>Daily_LOI_Rate_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily LOI Rate 9 --></label>
+        <name>Daily_LOI_Rate_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 10 --></label>
+        <name>Daily_Rate_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 11 --></label>
+        <name>Daily_Rate_11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 12 --></label>
+        <name>Daily_Rate_12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 13 --></label>
+        <name>Daily_Rate_13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 14 --></label>
+        <name>Daily_Rate_14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 15 --></label>
+        <name>Daily_Rate_15__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 16 --></label>
+        <name>Daily_Rate_16__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 17 --></label>
+        <name>Daily_Rate_17__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 18 --></label>
+        <name>Daily_Rate_18__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 19 --></label>
+        <name>Daily_Rate_19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 1 --></label>
+        <name>Daily_Rate_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 20 --></label>
+        <name>Daily_Rate_20__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 21 --></label>
+        <name>Daily_Rate_21__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 22 --></label>
+        <name>Daily_Rate_22__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 23 --></label>
+        <name>Daily_Rate_23__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 24 --></label>
+        <name>Daily_Rate_24__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 25 --></label>
+        <name>Daily_Rate_25__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 26 --></label>
+        <name>Daily_Rate_26__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 27 --></label>
+        <name>Daily_Rate_27__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 28 --></label>
+        <name>Daily_Rate_28__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 29 --></label>
+        <name>Daily_Rate_29__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 2 --></label>
+        <name>Daily_Rate_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 30 --></label>
+        <name>Daily_Rate_30__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 31 --></label>
+        <name>Daily_Rate_31__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 3 --></label>
+        <name>Daily_Rate_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 4 --></label>
+        <name>Daily_Rate_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 5 --></label>
+        <name>Daily_Rate_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 6 --></label>
+        <name>Daily_Rate_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 7 --></label>
+        <name>Daily_Rate_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 8 --></label>
+        <name>Daily_Rate_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate 9 --></label>
+        <name>Daily_Rate_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 10 --></label>
+        <name>Day_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 11 --></label>
+        <name>Day_11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 12 --></label>
+        <name>Day_12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 13 --></label>
+        <name>Day_13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 14 --></label>
+        <name>Day_14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 15 --></label>
+        <name>Day_15__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 16 --></label>
+        <name>Day_16__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 17 --></label>
+        <name>Day_17__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 18 --></label>
+        <name>Day_18__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 19 --></label>
+        <name>Day_19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 1 --></label>
+        <name>Day_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 20 --></label>
+        <name>Day_20__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 21 --></label>
+        <name>Day_21__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 22 --></label>
+        <name>Day_22__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 23 --></label>
+        <name>Day_23__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 24 --></label>
+        <name>Day_24__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 25 --></label>
+        <name>Day_25__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 26 --></label>
+        <name>Day_26__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 27 --></label>
+        <name>Day_27__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 28 --></label>
+        <name>Day_28__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 29 --></label>
+        <name>Day_29__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 2 --></label>
+        <name>Day_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 30 --></label>
+        <name>Day_30__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 31 --></label>
+        <name>Day_31__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 3 --></label>
+        <name>Day_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 4 --></label>
+        <name>Day_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 5 --></label>
+        <name>Day_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 6 --></label>
+        <name>Day_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 7 --></label>
+        <name>Day_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 8 --></label>
+        <name>Day_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 9 --></label>
+        <name>Day_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate --></label>
+        <name>Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Rental --></label>
+        <name>Expected_Rental__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fit out --></label>
+        <name>Fit_out__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOI Monthly Budget --></label>
+        <name>LOI_Monthly_Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOI Unit --></label>
+        <name>LOI_Unit__c</name>
+        <relationshipLabel><!-- Lease Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LOI --></label>
+        <name>LOI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease Unit --></label>
+        <name>Lease_Unit__c</name>
+        <relationshipLabel><!-- Lease Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Monthly Budget --></label>
+        <name>Monthly_Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Committed Budget --></label>
+        <name>Monthly_Committed_Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- N/A --></label>
+        <name>N_A__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unit &gt; Property &gt; Short Code --></help>
+        <label><!-- Property Short Code --></label>
+        <name>Property_Short_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Hurdle --></label>
+        <name>Rent_Hurdle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 10 --></label>
+        <name>Status_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 11 --></label>
+        <name>Status_11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 12 --></label>
+        <name>Status_12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 13 --></label>
+        <name>Status_13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 14 --></label>
+        <name>Status_14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 15 --></label>
+        <name>Status_15__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 16 --></label>
+        <name>Status_16__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 17 --></label>
+        <name>Status_17__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 18 --></label>
+        <name>Status_18__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 19 --></label>
+        <name>Status_19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 1 --></label>
+        <name>Status_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 20 --></label>
+        <name>Status_20__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 21 --></label>
+        <name>Status_21__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 22 --></label>
+        <name>Status_22__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 23 --></label>
+        <name>Status_23__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 24 --></label>
+        <name>Status_24__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 25 --></label>
+        <name>Status_25__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 26 --></label>
+        <name>Status_26__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 27 --></label>
+        <name>Status_27__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 28 --></label>
+        <name>Status_28__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 29 --></label>
+        <name>Status_29__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 2 --></label>
+        <name>Status_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 30 --></label>
+        <name>Status_30__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 31 --></label>
+        <name>Status_31__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 3 --></label>
+        <name>Status_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 4 --></label>
+        <name>Status_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 5 --></label>
+        <name>Status_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 6 --></label>
+        <name>Status_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 7 --></label>
+        <name>Status_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 8 --></label>
+        <name>Status_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 9 --></label>
+        <name>Status_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit --></label>
+        <name>Unit__c</name>
+        <relationshipLabel><!-- Lease Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vacant --></label>
+        <name>Vacant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 10 --></label>
+        <name>Week_Day_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 11 --></label>
+        <name>Week_Day_11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 12 --></label>
+        <name>Week_Day_12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 13 --></label>
+        <name>Week_Day_13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 14 --></label>
+        <name>Week_Day_14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 15 --></label>
+        <name>Week_Day_15__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 16 --></label>
+        <name>Week_Day_16__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 17 --></label>
+        <name>Week_Day_17__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 18 --></label>
+        <name>Week_Day_18__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 19 --></label>
+        <name>Week_Day_19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 1 --></label>
+        <name>Week_Day_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 20 --></label>
+        <name>Week_Day_20__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 21 --></label>
+        <name>Week_Day_21__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 22 --></label>
+        <name>Week_Day_22__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 23 --></label>
+        <name>Week_Day_23__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 24 --></label>
+        <name>Week_Day_24__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 25 --></label>
+        <name>Week_Day_25__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 26 --></label>
+        <name>Week_Day_26__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 27 --></label>
+        <name>Week_Day_27__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 28 --></label>
+        <name>Week_Day_28__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 29 --></label>
+        <name>Week_Day_29__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 2 --></label>
+        <name>Week_Day_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 30 --></label>
+        <name>Week_Day_30__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 31 --></label>
+        <name>Week_Day_31__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 3 --></label>
+        <name>Week_Day_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 4 --></label>
+        <name>Week_Day_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 5 --></label>
+        <name>Week_Day_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 6 --></label>
+        <name>Week_Day_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 7 --></label>
+        <name>Week_Day_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 8 --></label>
+        <name>Week_Day_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Day 9 --></label>
+        <name>Week_Day_9__c</name>
+    </fields>
+    <layouts>
+        <layout>Daily Layout</layout>
+        <sections>
+            <label><!-- Budget Information --></label>
+            <section>Budget Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Daily Budget Rates --></label>
+            <section>Daily Budget Rates</section>
+        </sections>
+        <sections>
+            <label><!-- Daily Committed Rates --></label>
+            <section>Daily Committed Rates</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lease Plan Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Daily Budget Rate --></label>
+            <section>Daily Budget Rate</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Monthly Layout</layout>
+        <sections>
+            <label><!-- Budget Information --></label>
+            <section>Budget Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Daily --></label>
+        <name>Daily</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Monthly --></label>
+        <name>Monthly</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

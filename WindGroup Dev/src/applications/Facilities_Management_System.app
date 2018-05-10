@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <formFactors>Large</formFactors>
+    <label>Facilities Management System</label>
+    <tab>Equipment__c</tab>
+    <tab>Location__c</tab>
+    <tab>Checklist__c</tab>
+    <tab>Property__c</tab>
+    <tab>Request__c</tab>
+    <tab>Work_Order__c</tab>
+    <tab>Planned_Maintenance__c</tab>
+    <tab>Units__c</tab>
+    <tab>Level__c</tab>
+    <tab>Checklist_Master__c</tab>
+    <tab>Rent_Schedules__c</tab>
+    <tab>Checklist_Item__c</tab>
+    <tab>Permission_Set__c</tab>
+    <tab>Mobile_Module__c</tab>
+    <tab>Generate_Rent_Roll</tab>
+    <tab>Integration_AWS_Log__c</tab>
+    <tab>AWS_Integration_Push_Pull</tab>
+    <tab>Generate_Cash_Receipt</tab>
+    <tab>Electric_Transaction__c</tab>
+    <tab>Tasklist_Items__c</tab>
+    <tab>Tasklist_Master__c</tab>
+    <tab>Other_Invoices</tab>
+    <tab>Lease_Plan__c</tab>
+    <tab>HR_Workflow__c</tab>
+    <tab>App_Setting__c</tab>
+    <tab>Daily_Checklist__c</tab>
+    <tab>Generate_Journal_Voucher</tab>
+    <tab>Daily_Lease_Plan</tab>
+    <tab>Generate_LOI</tab>
+    <tab>Checklist_Master_Item__c</tab>
+    <tab>Warranty__c</tab>
+    <tab>Activity</tab>
+    <tab>Daily_Checklist_Item__c</tab>
+    <tab>Payment_Voucher__c</tab>
+    <tab>DOA__c</tab>
+    <tab>LOI_Unit_Template__c</tab>
+    <tab>Stock__c</tab>
+</CustomApplication>

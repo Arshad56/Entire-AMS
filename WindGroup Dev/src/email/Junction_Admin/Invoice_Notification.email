@@ -1,0 +1,8 @@
+Dear Valued Customer,
+
+Your Invoice for {!Invoice__c.Invoice_Date__c} is ready for viewing.
+To view the invoice, please click on the attached PDF.
+
+If you need any assistance, please call us at 1800-2222 333, or send an email XXXXX.
+
+Thank you

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$Units__c.Property__c</field>
+    </columns>
+    <columns>
+        <field>Electric_Meter__c.Meter_No__c</field>
+    </columns>
+    <columns>
+        <field>Electric_Meter__c.Meter_Type__c</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Electric_Meter__c.Property__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Electric Meter with Unit</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Electric_Meter__c@Electric_Meter__c.Unit__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

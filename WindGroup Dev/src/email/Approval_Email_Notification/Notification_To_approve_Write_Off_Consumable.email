@@ -1,0 +1,14 @@
+Dear {!User.Name}, 
+
+Please proceed to approve Write Off for Inventory: {!Inventory__c.Name}.
+Please see details below: 
+
+Requested by: {!User.Name}
+Inventory: {!Inventory__c.Name}
+Product Name: {!Inventory__c.Product_Name__c}
+Write Off Quantity: {!Inventory__c.Write_Off_Qty__c}
+Write Off Remark: {!Inventory__c.Write_Off_Remark__c}
+
+
+Thank you. 
+System Admin

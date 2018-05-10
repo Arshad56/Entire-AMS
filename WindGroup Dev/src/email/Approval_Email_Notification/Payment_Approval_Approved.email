@@ -1,0 +1,12 @@
+Dear {!Invoice_Receipt__c.CreatedBy}, 
+
+Request for Payment Approval has been approved, please see details below: 
+
+Purchase Order: {!Purchase_Order__c.Name}
+Invoice Number: {!Invoice_Receipt__c.Invoice_Number__c}
+Invoice Due Date: {!Invoice_Receipt__c.Invoice_Due_Date__c}
+Invoice Status: {!Invoice_Receipt__c.Status__c}
+Total Amount: {!Invoice_Receipt__c.Total_Amount__c}
+
+Thank you. 
+System Admin

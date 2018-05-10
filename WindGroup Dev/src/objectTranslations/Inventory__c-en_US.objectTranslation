@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Inventory</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Inventory</value>
+    </caseValues>
+    <fields>
+        <help><!-- In Qty - Out Qty --></help>
+        <label><!-- Available Qty --></label>
+        <name>Available_Qty__c</name>
+    </fields>
+    <fields>
+        <help><!-- Info from related Stock --></help>
+        <label><!-- Default --></label>
+        <name>Default__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll-up of &apos;In&apos; Qty from related Tracking records --></help>
+        <label><!-- In Qty --></label>
+        <name>In_Qty__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll-up of Out Qty from related Tracking records --></help>
+        <label><!-- Out Qty --></label>
+        <name>Out_Qty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Description --></label>
+        <name>Product_Decription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Name --></label>
+        <name>Product_Name__c</name>
+        <relationshipLabel><!-- Inventory --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- From related Product Name --></help>
+        <label><!-- Product Type --></label>
+        <name>Product_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+        <relationshipLabel><!-- Inventory --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Write Off In-Approval</masterLabel>
+            <translation><!-- Write Off In-Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Write-off Approved</masterLabel>
+            <translation><!-- Write-off Approved --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Warehouse/Store --></label>
+        <name>Stock_Warehouse__c</name>
+        <relationshipLabel><!-- Inventory --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Write Off Qty --></label>
+        <name>Write_Off_Qty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Write Off Remark --></label>
+        <name>Write_Off_Remark__c</name>
+    </fields>
+    <layouts>
+        <layout>Consumable Inventory</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inventory Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Consumable --></label>
+        <name>Consumable</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Equipment --></label>
+        <name>Equipment</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- New_Inventory --></label>
+        <name>New_Inventory</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Stock_In --></label>
+        <name>Stock_In</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Stock_Out --></label>
+        <name>Stock_Out</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Transfer --></label>
+        <name>Transfer</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Write_Off --></label>
+        <name>Write_Off</name>
+    </webLinks>
+</CustomObjectTranslation>

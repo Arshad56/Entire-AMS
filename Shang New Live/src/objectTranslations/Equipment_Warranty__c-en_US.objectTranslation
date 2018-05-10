@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Equipment Warranty</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Equipment Warranties</value>
+    </caseValues>
+    <fields>
+        <label><!-- Equipment --></label>
+        <name>Equipment__c</name>
+        <relationshipLabel><!-- Equipment Warranties --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Warranty --></label>
+        <name>Warranty__c</name>
+        <relationshipLabel><!-- Equipment Warranties --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

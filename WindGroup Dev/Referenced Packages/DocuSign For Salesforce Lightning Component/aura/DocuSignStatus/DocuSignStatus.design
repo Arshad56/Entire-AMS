@@ -1,0 +1,3 @@
+<design:component label="DocuSign Status">
+	<design:attribute name="showRecipients" label="Show Recipients" description="Show recipients list" />    
+</design:component>

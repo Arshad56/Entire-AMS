@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>COA Master</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>COA Master</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Type --></label>
+        <name>Account_Type__c</name>
+        <picklistValues>
+            <masterLabel>A&amp;P  MMK0.00 Income  N-T MMK  N</masterLabel>
+            <translation><!-- A&amp;P  MMK0.00 Income  N-T MMK  N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accounts Payable-MMK</masterLabel>
+            <translation><!-- Accounts Payable-MMK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accounts Payable-MMK Exch</masterLabel>
+            <translation><!-- Accounts Payable-MMK Exch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accounts Payable-USD</masterLabel>
+            <translation><!-- Accounts Payable-USD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accounts Receivable -USD</masterLabel>
+            <translation><!-- Accounts Receivable -USD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accounts Receivable -USD Exc</masterLabel>
+            <translation><!-- Accounts Receivable -USD Exc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accounts Receivable-MMK</masterLabel>
+            <translation><!-- Accounts Receivable-MMK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accounts Receivable-MMK Exch</masterLabel>
+            <translation><!-- Accounts Receivable-MMK Exch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adv Rental Received  USD Exch</masterLabel>
+            <translation><!-- Adv Rental Received  USD Exch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advance Income Received</masterLabel>
+            <translation><!-- Advance Income Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advance Rental Received  MMK</masterLabel>
+            <translation><!-- Advance Rental Received  MMK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advance Rental Received  USD</masterLabel>
+            <translation><!-- Advance Rental Received  USD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advance Revenue</masterLabel>
+            <translation><!-- Advance Revenue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assets</masterLabel>
+            <translation><!-- Assets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank</masterLabel>
+            <translation><!-- Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CB (0010101200310123)MMK Exch</masterLabel>
+            <translation><!-- CB (0010101200310123)MMK Exch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CB (0010101200310123)USD</masterLabel>
+            <translation><!-- CB (0010101200310123)USD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CB BankMMK (0010100500010038)</masterLabel>
+            <translation><!-- CB BankMMK (0010100500010038) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CB BankMMK (0010100500010138)</masterLabel>
+            <translation><!-- CB BankMMK (0010100500010138) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash at Bank  CB MMK</masterLabel>
+            <translation><!-- Cash at Bank  CB MMK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash at Bank  CB USD</masterLabel>
+            <translation><!-- Cash at Bank  CB USD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash at Site MMK</masterLabel>
+            <translation><!-- Cash at Site MMK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash at Site USD Exchange</masterLabel>
+            <translation><!-- Cash at Site USD Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash in Hand USD</masterLabel>
+            <translation><!-- Cash in Hand USD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash in Hand USD Exch</masterLabel>
+            <translation><!-- Cash in Hand USD Exch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cast at Site USD</masterLabel>
+            <translation><!-- Cast at Site USD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Tax Payable</masterLabel>
+            <translation><!-- Commercial Tax Payable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial tax payable MMK</masterLabel>
+            <translation><!-- Commercial tax payable MMK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial tax payable USD</masterLabel>
+            <translation><!-- Commercial tax payable USD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial tax payable USD Exc</masterLabel>
+            <translation><!-- Commercial tax payable USD Exc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communication  MMK0.00 Income  N-T MMK  N</masterLabel>
+            <translation><!-- Communication  MMK0.00 Income  N-T MMK  N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cost - Discount allowed</masterLabel>
+            <translation><!-- Cost - Discount allowed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Assets</masterLabel>
+            <translation><!-- Current Assets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Liabilities</masterLabel>
+            <translation><!-- Current Liabilities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Receivables</masterLabel>
+            <translation><!-- Current Receivables --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deposit Receivable -MMK</masterLabel>
+            <translation><!-- Deposit Receivable -MMK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deposit Receivable -MMK Exc</masterLabel>
+            <translation><!-- Deposit Receivable -MMK Exc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deposit Receivable -USD</masterLabel>
+            <translation><!-- Deposit Receivable -USD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deposit Receivable -USD Exc</masterLabel>
+            <translation><!-- Deposit Receivable -USD Exc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Depreciation</masterLabel>
+            <translation><!-- Depreciation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diesel  MMK0.00 Income  N-T MMK  N</masterLabel>
+            <translation><!-- Diesel  MMK0.00 Income  N-T MMK  N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Cost</masterLabel>
+            <translation><!-- Direct Cost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dividends</masterLabel>
+            <translation><!-- Dividends --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equity</masterLabel>
+            <translation><!-- Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exchange Gain</masterLabel>
+            <translation><!-- Exchange Gain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exchange Gain/Loss</masterLabel>
+            <translation><!-- Exchange Gain/Loss --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exchange Loss</masterLabel>
+            <translation><!-- Exchange Loss --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expenses</masterLabel>
+            <translation><!-- Expenses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facility Income H MMK0.00 Income   MMK  N     Y</masterLabel>
+            <translation><!-- Facility Income H MMK0.00 Income   MMK  N     Y --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fit Out Dep ReceivUSD Exch</masterLabel>
+            <translation><!-- Fit Out Dep ReceivUSD Exch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fit Out Dep Received-MMK Exch</masterLabel>
+            <translation><!-- Fit Out Dep Received-MMK Exch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fit Out Deposit Received  MMK</masterLabel>
+            <translation><!-- Fit Out Deposit Received  MMK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fit Out Deposit Received USD</masterLabel>
+            <translation><!-- Fit Out Deposit Received USD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed Assets</masterLabel>
+            <translation><!-- Fixed Assets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GTO Income</masterLabel>
+            <translation><!-- GTO Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GTO Income-GTO Compare</masterLabel>
+            <translation><!-- GTO Income-GTO Compare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GTO Income-Plus</masterLabel>
+            <translation><!-- GTO Income-Plus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gas  MMK0.00 Income  N-T MMK  N</masterLabel>
+            <translation><!-- Gas  MMK0.00 Income  N-T MMK  N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Income - Commercial &amp; Office H MMK0.00 Income   MMK  N     Y</masterLabel>
+            <translation><!-- Income - Commercial &amp; Office H MMK0.00 Income   MMK  N     Y --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEPE  MMK0.00 Income  N-T MMK  N</masterLabel>
+            <translation><!-- MEPE  MMK0.00 Income  N-T MMK  N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Current Assets</masterLabel>
+            <translation><!-- Non-Current Assets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Revenue</masterLabel>
+            <translation><!-- Other Revenue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overhead</masterLabel>
+            <translation><!-- Overhead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refundable Security Dep MMK</masterLabel>
+            <translation><!-- Refundable Security Dep MMK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refundable Security Dep USD</masterLabel>
+            <translation><!-- Refundable Security Dep USD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refundable Security Dep USD Ex</masterLabel>
+            <translation><!-- Refundable Security Dep USD Ex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refundable Security Deposit</masterLabel>
+            <translation><!-- Refundable Security Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental  P &amp; A Space  MMK0.00 Income  N-T MMK  N</masterLabel>
+            <translation><!-- Rental  P &amp; A Space  MMK0.00 Income  N-T MMK  N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental Income H MMK0.00 Income   MMK  N     Y</masterLabel>
+            <translation><!-- Rental Income H MMK0.00 Income   MMK  N     Y --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental Shop  MMK0.00 Income  N-T MMK  N</masterLabel>
+            <translation><!-- Rental Shop  MMK0.00 Income  N-T MMK  N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retained Earnings</masterLabel>
+            <translation><!-- Retained Earnings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revenue</masterLabel>
+            <translation><!-- Revenue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salary and Benefits</masterLabel>
+            <translation><!-- Salary and Benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Security Deposit Received</masterLabel>
+            <translation><!-- Security Deposit Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Charge  MMK0.00 Income  N-T MMK  N</masterLabel>
+            <translation><!-- Service Charge  MMK0.00 Income  N-T MMK  N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax</masterLabel>
+            <translation><!-- Tax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Water  MMK0.00 Income  N-T MMK  N</masterLabel>
+            <translation><!-- Water  MMK0.00 Income  N-T MMK  N --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- COA Group --></label>
+        <name>COA_Group__c</name>
+        <relationshipLabel><!-- COA Master --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dr/Cr --></label>
+        <name>Dr_Cr__c</name>
+        <picklistValues>
+            <masterLabel>Credit</masterLabel>
+            <translation><!-- Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debit</masterLabel>
+            <translation><!-- Debit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Header/Detail --></label>
+        <name>Header_Detail__c</name>
+        <picklistValues>
+            <masterLabel>Detail</masterLabel>
+            <translation><!-- Detail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Header</masterLabel>
+            <translation><!-- Header --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Level --></label>
+        <name>Level__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sort No. --></label>
+        <name>Sort_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Statement of Cash Flow --></label>
+        <name>Statement_of_Cash_Flow__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tax Code --></label>
+        <name>Tax_Code__c</name>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax Exempt</masterLabel>
+            <translation><!-- Tax Exempt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taxable</masterLabel>
+            <translation><!-- Taxable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zero Rated Tax</masterLabel>
+            <translation><!-- Zero Rated Tax --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Accounts Payable</masterLabel>
+            <translation><!-- Accounts Payable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accounts Receivable</masterLabel>
+            <translation><!-- Accounts Receivable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asset</masterLabel>
+            <translation><!-- Asset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank</masterLabel>
+            <translation><!-- Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cost of Sales</masterLabel>
+            <translation><!-- Cost of Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equity</masterLabel>
+            <translation><!-- Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expense</masterLabel>
+            <translation><!-- Expense --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed Asset</masterLabel>
+            <translation><!-- Fixed Asset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Income</masterLabel>
+            <translation><!-- Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liability</masterLabel>
+            <translation><!-- Liability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Long Term Liability</masterLabel>
+            <translation><!-- Long Term Liability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Asset</masterLabel>
+            <translation><!-- Other Asset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Current Asset</masterLabel>
+            <translation><!-- Other Current Asset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Current Liability</masterLabel>
+            <translation><!-- Other Current Liability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Expense</masterLabel>
+            <translation><!-- Other Expense --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Income</masterLabel>
+            <translation><!-- Other Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Liability</masterLabel>
+            <translation><!-- Other Liability --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>COA Master Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

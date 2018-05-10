@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cash Detail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cash Details</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount Paid (Local) --></label>
+        <name>Amount_Paid_Local_WF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Paid (Local) --></label>
+        <name>Amount_Paid_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Paid --></label>
+        <name>Amount_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Receipt --></label>
+        <name>Cash_Receipt__c</name>
+        <relationshipLabel><!-- Cash Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cheque No --></label>
+        <name>Cheque_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit --></label>
+        <name>Deposit__c</name>
+        <relationshipLabel><!-- Cash Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoice Total Amount (Foreign) --></label>
+        <name>Invoice_Total_Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Total Amount (Local) --></label>
+        <name>Invoice_Total_Amount_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Total Amount --></label>
+        <name>Invoice_Total_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice --></label>
+        <name>Invoice__c</name>
+        <relationshipLabel><!-- Cash Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Paid --></label>
+        <name>Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Exchange Rate --></label>
+        <name>Parent_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Date --></label>
+        <name>Payment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Mode --></label>
+        <name>Payment_Mode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Voucher --></label>
+        <name>Payment_Voucher__c</name>
+        <relationshipLabel><!-- Cash Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Refund Mode --></label>
+        <name>Refund_Mode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Void Datetime --></label>
+        <name>Void_Datetime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Void --></label>
+        <name>Void__c</name>
+    </fields>
+    <layouts>
+        <layout>Cash Detail Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Read Only Cash Detail Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

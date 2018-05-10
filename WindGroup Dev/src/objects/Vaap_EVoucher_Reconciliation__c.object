@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This is used for Finance to reconciliation Vaap EVocher.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Currency_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Currency Code</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Currency_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Issue_Datetime__c</fullName>
+        <externalId>false</externalId>
+        <label>Issue Datetime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Mode__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Mode</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Payment_Mode</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Payment_Reference_Number__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Payment Reference Number</label>
+        <length>22</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Short_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Property Short Code</label>
+        <length>5</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quantity__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Quantity</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ready_to_Reconcile__c</fullName>
+        <externalId>false</externalId>
+        <formula>AND(
+TEXT(Payment_Mode__c)= TEXT(WireCard_Payment_Mode__c) ,  
+Transaction_Amount__c =  WireCard_Amount__c ,   
+TEXT(Currency_Code__c) = TEXT(WireCard_Currency_Code__c),
+Transaction_Amount__c &gt;=0,
+WireCard_Amount__c&gt;=0
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ready to Reconcile</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Reconciled_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Reconciled Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Transaction_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Transaction Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>WireCard_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>WireCard Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>WireCard_Currency_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>WireCard Currency Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Currency_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WireCard_Payment_Mode__c</fullName>
+        <externalId>false</externalId>
+        <label>WireCard Payment Mode</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Payment_Mode</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WireCard_Reference_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>WireCard Reference Number</label>
+        <length>22</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WireCard_Transaction_Datetime__c</fullName>
+        <externalId>false</externalId>
+        <label>WireCard Transaction Datetime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>WireCard_Transaction_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>WireCard Transaction Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SUCCESS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>FAILED</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Vaap EVoucher Reconciliation</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Pending_Reconciliation</fullName>
+        <columns>Ready_to_Reconcile__c</columns>
+        <columns>Reconciled_Date__c</columns>
+        <columns>Payment_Reference_Number__c</columns>
+        <columns>Issue_Datetime__c</columns>
+        <columns>WireCard_Transaction_Datetime__c</columns>
+        <columns>Quantity__c</columns>
+        <columns>Transaction_Amount__c</columns>
+        <columns>WireCard_Amount__c</columns>
+        <columns>Currency_Code__c</columns>
+        <columns>WireCard_Currency_Code__c</columns>
+        <columns>Payment_Mode__c</columns>
+        <columns>WireCard_Payment_Mode__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Reconciled_Date__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Pending Reconciliation</label>
+    </listViews>
+    <listViews>
+        <fullName>This_Month_Reconciled</fullName>
+        <columns>Ready_to_Reconcile__c</columns>
+        <columns>Reconciled_Date__c</columns>
+        <columns>Payment_Reference_Number__c</columns>
+        <columns>Issue_Datetime__c</columns>
+        <columns>WireCard_Transaction_Datetime__c</columns>
+        <columns>Quantity__c</columns>
+        <columns>Transaction_Amount__c</columns>
+        <columns>WireCard_Amount__c</columns>
+        <columns>Currency_Code__c</columns>
+        <columns>WireCard_Currency_Code__c</columns>
+        <columns>Payment_Mode__c</columns>
+        <columns>WireCard_Payment_Mode__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Reconciled_Date__c</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>This Month Reconciled</label>
+    </listViews>
+    <nameField>
+        <displayFormat>{YYYY}-{MM}-VBR-{00000000}</displayFormat>
+        <label>Vaap EVoucher Reco No</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Vaap EVoucher Reconciliation</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Vaap_Validate_Vaap_and_WireCard_Data</fullName>
+        <active>true</active>
+        <description>This is to check if Vaap and Wirecard data are matched before update on Reconciled Date.</description>
+        <errorConditionFormula>AND( 
+NOT(Ready_to_Reconcile__c),  
+NOT(ISBLANK(Reconciled_Date__c))
+)</errorConditionFormula>
+        <errorMessage>Vaap and WireCard data are not matched. Please review and amend before Reconcile.</errorMessage>
+    </validationRules>
+</CustomObject>

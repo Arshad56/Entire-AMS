@@ -1,0 +1,22 @@
+<apex:page controller="LoiLaConversion_Controller"  showHeader="false" sidebar="false"  docType="html-5.0">
+<apex:form id="frm"> 
+<apex:pageMessages ></apex:pageMessages>
+     <apex:pageBlock id="filterblk"> 
+     <apex:actionFunction name="convertToLA" action="{!convertToLA}" />
+         <script> 
+         if ({!closePage}) { 
+         alert('{!messageOnScreen}');
+            window.opener.location.href = "/{!loiId}";
+            window.close();
+         }
+         </script>
+             <apex:pageBlockButtons >
+             	  <apex:commandButton value="Convert to LA" style="width:85px;border-width:1px;text-align: center;" action="null" onclick="if(confirm('Are you sure?')){convertToLA();}return false;" status="Wait.."  reRender="filterblk,listSplit" /> &nbsp;&nbsp;
+                   <apex:commandButton value="Cancel" style="border-width:1px;width:60px;text-align: center;" onClick="window.close();" />
+             </apex:pageBlockButtons>
+         	<apex:pageBlockSection title="LA Conversion" columns="1">
+         		   <apex:inputfield value="{!leaseOnUI.Precedent_Lease__c}" id="unName" style="width: 150px;" /> 
+         	</apex:pageBlockSection>
+        	</apex:pageBlock>
+     </apex:form>
+</apex:page>

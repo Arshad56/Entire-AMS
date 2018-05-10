@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Checklist_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>FM_Service_Contract__r.Checklist_Master__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Checklist Id</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Create_Request__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Generate Request</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Department__c</fullName>
+        <externalId>false</externalId>
+        <label>Department in Charge</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Department</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Department_in_Charge__c</fullName>
+        <externalId>false</externalId>
+        <label>Department in Charge</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Department</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Equipment__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Equipment</label>
+        <referenceTo>Equipment__c</referenceTo>
+        <relationshipLabel>Equipment Service Contracts</relationshipLabel>
+        <relationshipName>Equipment_Service_Contracts</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>FM_Service_Contract__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>FM Service Contract</label>
+        <referenceTo>FM_Service_Contract__c</referenceTo>
+        <relationshipLabel>Equipment Service Contracts</relationshipLabel>
+        <relationshipName>Equipment_Service_Contracts</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Frequency__c</fullName>
+        <externalId>false</externalId>
+        <label>Frequency</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Frequency</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Generate_Request__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Generate Request</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Job_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Job Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Job_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Property_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>FM_Service_Contract__r.Property__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Property_Id</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Short_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>FM_Service_Contract__r.Property__r.Short_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Property Short Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Request_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Request Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Equipment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Equipment Service Contract</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Property_Short_Code__c</columns>
+        <columns>Equipment__c</columns>
+        <columns>Request_Start_Date__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Frequency__c</columns>
+        <columns>Department__c</columns>
+        <columns>Job_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>AnnuallyServiceContract</fullName>
+        <columns>NAME</columns>
+        <columns>Property_Short_Code__c</columns>
+        <columns>Equipment__c</columns>
+        <columns>Request_Start_Date__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Frequency__c</columns>
+        <columns>Create_Request__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Frequency__c</field>
+            <operation>equals</operation>
+            <value>Annually</value>
+        </filters>
+        <label>Annually Service Contract</label>
+    </listViews>
+    <listViews>
+        <fullName>BimonthlyServiceContract</fullName>
+        <columns>NAME</columns>
+        <columns>Property_Short_Code__c</columns>
+        <columns>Equipment__c</columns>
+        <columns>Request_Start_Date__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Frequency__c</columns>
+        <columns>Create_Request__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Frequency__c</field>
+            <operation>equals</operation>
+            <value>Bimonthly</value>
+        </filters>
+        <label>Bimonthly Service Contract</label>
+    </listViews>
+    <listViews>
+        <fullName>DailyServiceContract</fullName>
+        <columns>NAME</columns>
+        <columns>Property_Short_Code__c</columns>
+        <columns>Equipment__c</columns>
+        <columns>Request_Start_Date__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Frequency__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Frequency__c</field>
+            <operation>equals</operation>
+            <value>Daily</value>
+        </filters>
+        <label>Daily Service Contract</label>
+    </listViews>
+    <listViews>
+        <fullName>FortnightlyServiceContract</fullName>
+        <columns>NAME</columns>
+        <columns>Property_Short_Code__c</columns>
+        <columns>Equipment__c</columns>
+        <columns>Request_Start_Date__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Frequency__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Frequency__c</field>
+            <operation>equals</operation>
+            <value>Fortnightly</value>
+        </filters>
+        <label>Fortnightly Service Contract</label>
+    </listViews>
+    <listViews>
+        <fullName>MonthlyServiceContract</fullName>
+        <columns>NAME</columns>
+        <columns>Property_Short_Code__c</columns>
+        <columns>Equipment__c</columns>
+        <columns>Request_Start_Date__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Frequency__c</columns>
+        <columns>Create_Request__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Frequency__c</field>
+            <operation>equals</operation>
+            <value>Monthly</value>
+        </filters>
+        <label>Monthly Service Contract</label>
+    </listViews>
+    <listViews>
+        <fullName>QuarterlyServiceContract</fullName>
+        <columns>NAME</columns>
+        <columns>Property_Short_Code__c</columns>
+        <columns>Equipment__c</columns>
+        <columns>Request_Start_Date__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Frequency__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Frequency__c</field>
+            <operation>equals</operation>
+            <value>Quarterly</value>
+        </filters>
+        <label>Quarterly Service Contract</label>
+    </listViews>
+    <listViews>
+        <fullName>SemiannuallyServiceContract</fullName>
+        <columns>NAME</columns>
+        <columns>Property_Short_Code__c</columns>
+        <columns>Equipment__c</columns>
+        <columns>Request_Start_Date__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Frequency__c</columns>
+        <columns>Create_Request__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Frequency__c</field>
+            <operation>equals</operation>
+            <value>Semiannually</value>
+        </filters>
+        <label>Semiannually Service Contract</label>
+    </listViews>
+    <listViews>
+        <fullName>WeeklyServiceContract</fullName>
+        <columns>NAME</columns>
+        <columns>Property_Short_Code__c</columns>
+        <columns>Equipment__c</columns>
+        <columns>Request_Start_Date__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Frequency__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Frequency__c</field>
+            <operation>equals</operation>
+            <value>Weekly</value>
+        </filters>
+        <label>Weekly Service Contract</label>
+    </listViews>
+    <nameField>
+        <label>Equipment Service Contract Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Equipment Service Contracts</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Check_End_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>End_Date__c &lt; Request_Start_Date__c</errorConditionFormula>
+        <errorMessage>End Date must greater than Request Start Date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Request_Start_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>Request_Start_Date__c &lt; Start_Date__c</errorConditionFormula>
+        <errorMessage>Request Start Date must be after Equipment Contract Start Date</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Create_Request</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create Request</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+
+
+var newRecords = []; 
+var ob=new sforce.SObject(&quot;Equipment_Service_Contract__c&quot;); 
+ob.Id=&quot;{!Equipment_Service_Contract__c.Id}&quot;; 
+ob.Create_Request__c = true; 
+newRecords.push(ob); 
+var result=sforce.connection.update(newRecords); 
+if(!result[0].getBoolean(&quot;success&quot;)){ 
+alert(result[0].errors.message); 
+}else{ 
+location.reload(); 
+}</url>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,10 @@
+Dear Finance,
+
+Please process the billing for below:
+Tenant: {!Lease__c.Tenant__c}
+Lease Agreement No: {!Lease__c.Name}
+Start Date: {!Lease__c.Lease_Start_Date__c}
+End Date: {!Lease__c.Original_End_Date__c}
+Detail: {!Lease__c.Link}
+
+Marketing Department

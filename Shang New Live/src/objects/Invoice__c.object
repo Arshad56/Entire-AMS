@@ -1,0 +1,1818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>Rent_Roll__r.Property__r.Landlord__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Lease__r.Tenant__r.Name &lt;&gt; null, Lease__r.Tenant__r.Name,Tenant_Name__r.Name)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AmountRollupForeign__c</fullName>
+        <externalId>false</externalId>
+        <label>AmountRollupForeign</label>
+        <summarizedField>Invoice_Line_Item__c.Amount_Foreign__c</summarizedField>
+        <summaryFilterItems>
+            <field>Invoice_Line_Item__c.Withholding_Tax__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Invoice_Line_Item__c.Invoice__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>AmountRollupLocal__c</fullName>
+        <externalId>false</externalId>
+        <label>AmountRollupLocal</label>
+        <summarizedField>Invoice_Line_Item__c.Amount_Local__c</summarizedField>
+        <summaryFilterItems>
+            <field>Invoice_Line_Item__c.Withholding_Tax__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Invoice_Line_Item__c.Invoice__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Foreign__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount (Foreign)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Amount_Local__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount (Local)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Amount_Paid_Foreign__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount Paid (Foreign)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Amount_Paid_Local__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount Paid (Local)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Amount_Paid__c</fullName>
+        <description>Managed by Trigger</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll-Up from related Cash Details</inlineHelpText>
+        <label>Amount Paid</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Amount__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll-up of Amount from related Invoice Line Item</inlineHelpText>
+        <label>Amount</label>
+        <summarizedField>Invoice_Line_Item__c.Amount__c</summarizedField>
+        <summaryForeignKey>Invoice_Line_Item__c.Invoice__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Approved_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Approved Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Barcode__c</fullName>
+        <externalId>false</externalId>
+        <formula>IMAGE(&quot;//www.barcodesinc.com/generator_files/image.php?code=&quot;+    Name    +&quot;&amp;style=324&amp;type=C128B&amp;width=200&amp;height=50&amp;xres=1&amp;font=3&quot;,&quot;&quot;,35, 140)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Barcode</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billing_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billing_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (NOT (ISBLANK( Rent_Roll__c )), 
+TEXT( Rent_Roll__r.Billing_Type__c ),
+&quot;Miscellaneous&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>From related Rent Roll</inlineHelpText>
+        <label>Billing Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Charge_Method__c</fullName>
+        <externalId>false</externalId>
+        <label>Charge Method</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Charge_Method</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Comm_Tax_Amount_Foreign__c</fullName>
+        <externalId>false</externalId>
+        <label>Comm Tax Amount (Foreign)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comm_Tax_Amount_Local__c</fullName>
+        <externalId>false</externalId>
+        <label>Comm Tax Amount (Local)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comm_Tax_Amount__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll-Up of Comm Tax Amount from related Invoice Line Item</inlineHelpText>
+        <label>Comm Tax Amount</label>
+        <summarizedField>Invoice_Line_Item__c.Comm_Tax_Amount__c</summarizedField>
+        <summaryForeignKey>Invoice_Line_Item__c.Invoice__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Currency_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Currency Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Currency_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Current__c</fullName>
+        <description>This field is used in Debtor&apos;s Report</description>
+        <externalId>false</externalId>
+        <formula>IF ( Invoice_Due_Age__c &lt; 31 , Outstanding_Amount_Local__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Exchange_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Exchange Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Foreign_Exchange_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Foreign Exchange Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_Auto__c</fullName>
+        <displayFormat>{00000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Invoice Auto</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Invoice_Code_without__c</fullName>
+        <description>This field is referred in the Apex Code</description>
+        <externalId>false</externalId>
+        <formula>SUBSTITUTE(Name, &quot;-&quot;, &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This field is referred in the Backend</inlineHelpText>
+        <label>FM Invoice No</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoice Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Invoice_Due_Age__c</fullName>
+        <description>Shows Age only if Outstanding is Due
+Used in reports</description>
+        <externalId>false</externalId>
+        <formula>IF (
+ Outstanding_Amount__c &gt; 0 &amp;&amp; Payment_Due_Date__c &lt; Today (), 
+ Today () - Payment_Due_Date__c , 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Invoice Due (Age)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_Emailed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>This indicates if the Invoice has been Emailed</inlineHelpText>
+        <label>Invoice Emailed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Invoice_Generated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>This indicates if the Invoice has been generated</inlineHelpText>
+        <label>Invoice Generated</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Invoice_Index__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoice Index</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_Printed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>This indicates if the Invoice has been Printed</inlineHelpText>
+        <label>Invoice Printed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Invoice_Scan_Number__c</fullName>
+        <description>This is used to concatenate 7 characters from left and 6 characters from right for Invoice Scanning. As scanner accepts max 15 characters</description>
+        <externalId>false</externalId>
+        <formula>LEFT(Name, 7)  &amp; RIGHT(Name, 6)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Invoice Scan Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoice Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Adhoc Credit Note</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Adhoc Deposit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Adhoc Invoice</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>System Generated Advance Rental</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>System Generated Deposit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>System Generated Invoice</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>JV_Status__c</fullName>
+        <description>Journal Voucher - Used in Void Validation</description>
+        <externalId>false</externalId>
+        <label>JV Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Generated</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Posted</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>JV_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( CASE (Billing_Type__c,
+	   &quot;Late Charge&quot;, &quot;1&quot;,
+           &quot;Ad-Hoc Invoice&quot;, &quot;1&quot;,
+           &quot;Monthly&quot;, &quot;1&quot;,
+           &quot;Miscellaneous&quot;, &quot;1&quot;,
+&quot;GTO Rent&quot;,&quot;1&quot;,
+           &quot;Debit Note&quot;,&quot;1&quot;,
+           &quot;0&quot; ) == &quot;1&quot; , &quot;Invoice (Normal)&quot;, 
+IF(Billing_Type__c == &quot;Credit Note&quot;, &quot;Credit Note&quot;, 
+   IF(Billing_Type__c == &quot;Late Payment&quot;, &quot;Late Payment&quot;, 
+    IF(Billing_Type__c == &quot;Rent&quot;, &quot;Invoice (Advance Rental)&quot;, &quot;&quot;) )))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This is used for Journal Voucher process. Used to sync/integrate data with JE Logic and configuration objects.</inlineHelpText>
+        <label>JV Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Payment_Date__c</fullName>
+        <description>Created to update Last Payment Date for &apos;Late Charge&apos; invoices Creation. As in this even, system would not calculate Late Payment Interest from Day 1.</description>
+        <externalId>false</externalId>
+        <label>Last Payment Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Late_Charge_Applicable__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>This is checked by Default for all Invoices
+Late Charge Invoices will have this field as unchecked</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is checked by Default for all Invoices (since all Invoices are applicable for Late Charge, provided there&apos;s a delay in payment)
+Late Charge Invoices will have this field as &apos;unchecked&apos;</inlineHelpText>
+        <label>Late Charge Applicable</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Late_Charge_Days__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBlank(Last_Payment_Date__c)), 
+IF((Last_Payment_Date__c - Payment_Due_Date__c) &gt; 0,(Last_Payment_Date__c - Payment_Due_Date__c),0) 
+,IF((TODAY() - Payment_Due_Date__c) &gt; 0,(TODAY() - Payment_Due_Date__c),0) 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Late Charge Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lease__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lease</label>
+        <referenceTo>Lease__c</referenceTo>
+        <relationshipLabel>Invoices</relationshipLabel>
+        <relationshipName>Invoices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Net_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Total_Amount__c  -  Withholding_Tax_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total Amount - Withholding Tax Amount</inlineHelpText>
+        <label>Net Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Outstanding_Amount_Foreign__c</fullName>
+        <externalId>false</externalId>
+        <label>Outstanding Amount (Foreign)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Outstanding_Amount_Local__c</fullName>
+        <externalId>false</externalId>
+        <label>Outstanding Amount (Local)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Outstanding_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Total_Amount__c -  Amount_Paid__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total Amount - Amount Paid</inlineHelpText>
+        <label>Outstanding Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Company__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Lease__r.Tenant__r.Name &lt;&gt; null, if( Lease__r.Tenant__r.Parent.Name &lt;&gt; null ,Lease__r.Tenant__r.Parent.Name , Lease__r.Tenant__r.Name ) , if( Tenant_Name__r.Parent.Name &lt;&gt; null ,Tenant_Name__r.Parent.Name , Tenant_Name__r.Name ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Parent Company</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payment_Due_Date__c</fullName>
+        <defaultValue>$System.OriginDateTime  + 30</defaultValue>
+        <externalId>false</externalId>
+        <label>Payment Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Price_Factor__c</fullName>
+        <description>Created to cater CL process
+Managed by Invoice creation trigger</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used for CL Process
+To be referred in PDF</inlineHelpText>
+        <label>Price Factor</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Name_Text__c</fullName>
+        <description>This field is populated by W/F rule</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is populated by W/F rule</inlineHelpText>
+        <label>Property Name Text</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Created this field to manage Misc Invoice Process - to generate PDF</inlineHelpText>
+        <label>Property</label>
+        <referenceTo>Property__c</referenceTo>
+        <relationshipLabel>Invoices</relationshipLabel>
+        <relationshipName>Invoices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Property_Short_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Lease__r.Property__r.Short_Code__c ),  Property_Name__r.Short_Code__c ,Lease__r.Property__r.Short_Code__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Property Short Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Lease__r.Property__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>from related Lease.
+Used in Cash Receipt Interface</inlineHelpText>
+        <label>Property ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Refund_Currency_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Refund Currency Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>MMK</fullName>
+                    <default>true</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Refund_Mode__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Refund Mode</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Payment_Mode</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Refund_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Refund Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Refund_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Remaining_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( TEXT(Refund_Status__c) = &quot;&quot;,  
+
+-( Outstanding_Amount_Local__c -  (Total_Refunded_Amount__c + Requested_Amount__c)),
+-( Outstanding_Amount_Local__c -  Total_Refunded_Amount__c)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Remaining Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Rent_Roll__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Rent Roll</label>
+        <referenceTo>Rent_Roll__c</referenceTo>
+        <relationshipLabel>Invoices</relationshipLabel>
+        <relationshipName>Invoices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Requested_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Requested Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Outstanding</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Partially Paid</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Paid</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TaxAmountRollupForeign__c</fullName>
+        <externalId>false</externalId>
+        <label>TaxAmountRollupForeign</label>
+        <summarizedField>Invoice_Line_Item__c.Comm_Tax_Amount_Foreign__c</summarizedField>
+        <summaryFilterItems>
+            <field>Invoice_Line_Item__c.Withholding_Tax__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Invoice_Line_Item__c.Invoice__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TaxAmountRollupLocal__c</fullName>
+        <externalId>false</externalId>
+        <label>TaxAmountRollupLocal</label>
+        <summarizedField>Invoice_Line_Item__c.Comm_Tax_Amount_Local__c</summarizedField>
+        <summaryFilterItems>
+            <field>Invoice_Line_Item__c.Withholding_Tax__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Invoice_Line_Item__c.Invoice__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Tenant_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Tenant</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Invoices</relationshipLabel>
+        <relationshipName>Invoices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Tenant_Type__c</fullName>
+        <description>Global Picklist
+Used for CL Process</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used for CL Process
+To be referred in PDF</inlineHelpText>
+        <label>Tenant Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Tenant_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tenant__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Lease__r.Tenant__c)</formula>
+        <inlineHelpText>from related Lease.
+Used in Cash Receipt Interface</inlineHelpText>
+        <label>Tenant ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalAmountRollupForeign__c</fullName>
+        <externalId>false</externalId>
+        <label>TotalAmountRollupForeign</label>
+        <summarizedField>Invoice_Line_Item__c.Total_Amount_Foreign__c</summarizedField>
+        <summaryFilterItems>
+            <field>Invoice_Line_Item__c.Withholding_Tax__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Invoice_Line_Item__c.Invoice__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TotalAmountRollupLocal__c</fullName>
+        <externalId>false</externalId>
+        <label>TotalAmountRollupLocal</label>
+        <summarizedField>Invoice_Line_Item__c.Total_Amount_Local__c</summarizedField>
+        <summaryFilterItems>
+            <field>Invoice_Line_Item__c.Withholding_Tax__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Invoice_Line_Item__c.Invoice__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Amount_Foreign__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Amount (Foreign)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Amount_Local__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Amount (Local)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Amount</label>
+        <summarizedField>Invoice_Line_Item__c.Total_Amount__c</summarizedField>
+        <summaryForeignKey>Invoice_Line_Item__c.Invoice__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Refunded_Amount__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Rollup of Refunded Amount on PV</inlineHelpText>
+        <label>Total Refunded Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Requested_Amount__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Rollup of Amount on PV (Unvoided)</inlineHelpText>
+        <label>Total Requested Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Void_Datetime__c</fullName>
+        <externalId>false</externalId>
+        <label>Void Datetime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Void_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Void Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Voided__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Voided</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Withholding_Tax_Amount__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Applicable for Casual Leasing Invoices only.</inlineHelpText>
+        <label>Withholding Tax Amount</label>
+        <summarizedField>Invoice_Line_Item__c.Amount__c</summarizedField>
+        <summaryFilterItems>
+            <field>Invoice_Line_Item__c.Withholding_Tax__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Invoice_Line_Item__c.Invoice__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>X31_60_days__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( Invoice_Due_Age__c &gt;= 31 &amp;&amp; Invoice_Due_Age__c &lt;=60 ,  Outstanding_Amount_Local__c , 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>31 - 60 days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X61_90_days__c</fullName>
+        <description>Created for reporting purpose</description>
+        <externalId>false</externalId>
+        <formula>IF ( Invoice_Due_Age__c &gt;= 61 &amp;&amp; Invoice_Due_Age__c &lt;=90 ,  Outstanding_Amount_Local__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>61 - 90 days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X90_days__c</fullName>
+        <description>Created for Debtor&apos;s Reporting</description>
+        <externalId>false</externalId>
+        <formula>IF ( Invoice_Due_Age__c &gt;= 91 ,  Outstanding_Amount_Local__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>&gt; 90 days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Invoice</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Billing_Type__c</columns>
+        <columns>Amount__c</columns>
+        <columns>Outstanding_Amount__c</columns>
+        <columns>Invoice_Date__c</columns>
+        <columns>Payment_Due_Date__c</columns>
+        <columns>Lease__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Current_Month_Invoice</fullName>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Billing_Type__c</columns>
+        <columns>Amount__c</columns>
+        <columns>Outstanding_Amount__c</columns>
+        <columns>Status__c</columns>
+        <columns>Invoice_Date__c</columns>
+        <columns>Payment_Due_Date__c</columns>
+        <columns>Lease__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Invoice_Date__c</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <filters>
+            <field>Property_Short_Code__c</field>
+            <operation>equals</operation>
+            <value>JMT</value>
+        </filters>
+        <label>Current Month Invoice</label>
+    </listViews>
+    <listViews>
+        <fullName>JC_Invoices</fullName>
+        <columns>NAME</columns>
+        <columns>Currency_Code__c</columns>
+        <columns>Account__c</columns>
+        <columns>Billing_Type__c</columns>
+        <columns>Amount__c</columns>
+        <columns>Comm_Tax_Amount__c</columns>
+        <columns>Outstanding_Amount__c</columns>
+        <columns>Invoice_Date__c</columns>
+        <columns>Payment_Due_Date__c</columns>
+        <columns>Voided__c</columns>
+        <columns>Status__c</columns>
+        <columns>Lease__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Property_Short_Code__c</field>
+            <operation>equals</operation>
+            <value>JC</value>
+        </filters>
+        <label>JC - Invoices</label>
+    </listViews>
+    <listViews>
+        <fullName>JMT_Invoices</fullName>
+        <columns>NAME</columns>
+        <columns>Currency_Code__c</columns>
+        <columns>Account__c</columns>
+        <columns>Billing_Type__c</columns>
+        <columns>Amount__c</columns>
+        <columns>Comm_Tax_Amount__c</columns>
+        <columns>Outstanding_Amount__c</columns>
+        <columns>Status__c</columns>
+        <columns>Voided__c</columns>
+        <columns>Invoice_Date__c</columns>
+        <columns>Payment_Due_Date__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Lease__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Property_Short_Code__c</field>
+            <operation>equals</operation>
+            <value>JMT</value>
+        </filters>
+        <label>JMT - Invoices</label>
+    </listViews>
+    <listViews>
+        <fullName>Today_s_Invoices</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Billing_Type__c</columns>
+        <columns>Amount__c</columns>
+        <columns>Outstanding_Amount__c</columns>
+        <columns>Payment_Due_Date__c</columns>
+        <columns>Invoice_Date__c</columns>
+        <columns>Lease__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>Today&apos;s Invoices</label>
+    </listViews>
+    <nameField>
+        <label>Invoice Number</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Invoices</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Foreign</fullName>
+        <active>true</active>
+        <label>Foreign</label>
+        <picklistValues>
+            <picklist>Charge_Method</picklist>
+            <values>
+                <fullName>Daily Rate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Rate - CL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Rate - L</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transaction Rate</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_Code</picklist>
+            <values>
+                <fullName>MMK</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>MVR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Invoice_Type__c</picklist>
+            <values>
+                <fullName>Adhoc Credit Note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adhoc Deposit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adhoc Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Generated Advance Rental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Generated Deposit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Generated Invoice</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>JV_Status__c</picklist>
+            <values>
+                <fullName>Generated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Posted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Mode</picklist>
+            <values>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cheque</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quick Pay</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Refund_Currency_Code__c</picklist>
+            <values>
+                <fullName>MMK</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Refund_Status</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requested</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outstanding</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Paid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partially Paid</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Tenant_Type</picklist>
+            <values>
+                <fullName>5%25 Off</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Tenant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Tenant %28Whole Week%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tenant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tenant %28Whole Week%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Local</fullName>
+        <active>true</active>
+        <label>Local</label>
+        <picklistValues>
+            <picklist>Charge_Method</picklist>
+            <values>
+                <fullName>Daily Rate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Rate - CL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Rate - L</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transaction Rate</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_Code</picklist>
+            <values>
+                <fullName>MMK</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>MVR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Invoice_Type__c</picklist>
+            <values>
+                <fullName>Adhoc Credit Note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adhoc Deposit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adhoc Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Generated Advance Rental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Generated Deposit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Generated Invoice</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>JV_Status__c</picklist>
+            <values>
+                <fullName>Generated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Posted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Mode</picklist>
+            <values>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cheque</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quick Pay</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Refund_Currency_Code__c</picklist>
+            <values>
+                <fullName>MMK</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Refund_Status</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requested</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outstanding</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Paid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partially Paid</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Tenant_Type</picklist>
+            <values>
+                <fullName>5%25 Off</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Tenant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Tenant %28Whole Week%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tenant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tenant %28Whole Week%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Account__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Billing_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Amount__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Outstanding_Amount__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Invoice_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Payment_Due_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Lease__c</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>Tenant_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Billing_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Amount__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Outstanding_Amount__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Voided__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <webLinks>
+        <fullName>Generate_PDF</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate PDF</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/apex.js&quot;)} 
+if({!Invoice__c.Invoice_Generated__c}){ 
+alert(&apos;Invoice is already generated!&apos;); 
+} 
+else{ 
+var p = new sforce.SObject(&apos;Invoice__c&apos;); 
+p.id = &quot;{!Invoice__c.Id}&quot;; 
+p.Invoice_Generated__c= &quot;true&quot;; 
+result = sforce.connection.update([p]); 
+window.location.href=&quot;/{!Invoice__c.Id}&quot;; 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Generate_PDF_Invoice</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate PDF Invoice</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/apex.js&quot;)} 
+if({!Invoice__c.Invoice_Generated__c}){ 
+alert(&apos;Invoice is already generated!&apos;); 
+} 
+else{ 
+var p = new sforce.SObject(&apos;Invoice__c&apos;); 
+p.id = &quot;{!Invoice__c.Id}&quot;; 
+p.Invoice_Generated__c= &quot;true&quot;; 
+result = sforce.connection.update([p]); 
+window.location.href=&quot;/{!Invoice__c.Id}&quot;; 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Refund</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Refund</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&apos;/soap/ajax/37.0/connection.js&apos;)}
+
+var totalOutS = 0.0;
+var tenant = String(&apos;{!Invoice__c.Tenant__c}&apos;);
+console.log(tenant);
+if(tenant!= null || tenant!= &apos;&apos;){
+var result = sforce.connection.query(&quot;Select Name, Id, Outstanding_Amount__c,Billing_Type__c from Invoice__c where Tenant_Name__c = \&apos;{!Invoice__c.Tenant__c}\&apos; and Status__c != \&apos;Cancelled\&apos; and Billing_Type__c != \&apos;Credit Note\&apos;&quot;);
+var records = result.getArray(&quot;records&quot;);
+  for (var i=0; i&lt; records.length; i++) {
+    var record = records[i];
+    totalOutS += parseFloat(record.Outstanding_Amount__c);
+    console.log(record.Id+&quot; Name==&gt; &quot;+record.Name + &quot; --ve-&gt; &quot; + record.Outstanding_Amount__c + &quot; ## &quot;+(-1)*record.Outstanding_Amount__c);
+    console.log(totalOutS);
+  }
+}
+
+var balance = parseFloat(&apos;{!Invoice__c.Amount__c}&apos;.replace(&apos;$&apos;,&apos;&apos;).replace(&apos;,&apos;,&apos;&apos;)) + parseFloat(&apos;{!Invoice__c.Amount_Paid__c}&apos;.replace(&apos;$&apos;,&apos;&apos;).replace(&apos;,&apos;,&apos;&apos;));
+
+
+var reqRefAmount = parseFloat(&apos;{!Invoice__c.Total_Refunded_Amount__c}&apos;.replace(&apos;$&apos;,&apos;&apos;).replace(&apos;,&apos;,&apos;&apos;));
+
+
+var outStanding = parseFloat(&apos;{!Invoice__c.Outstanding_Amount__c}&apos;.replace(&apos;$&apos;,&apos;&apos;).replace(&apos;,&apos;,&apos;&apos;));
+
+//alert(reqRefAmount + &quot; -- &quot;+outStanding +&quot; -- &quot;+(-1)*outStanding);
+
+if( &apos;{! Invoice__c.Billing_Type__c}&apos; != &apos;Credit Note&apos;){ 
+alert(&quot;Only Credit Note Invoices can be refunded.&quot;); 
+}else if( &apos;{!Invoice__c.Status__c}&apos; == &apos;Cancelled&apos;){ 
+alert(&quot;The Credit Note is already cancelled and can&apos;t be refunded.&quot;); 
+}else if({!Invoice__c.Voided__c}){ 
+alert(&quot;The Credit Note is already voided and can&apos;t be refunded.&quot;); 
+}else if(&apos;{!Invoice__c.Refund_Status__c}&apos; == &apos;Submitted&apos;){
+alert(&quot;This Invoice record is locked for approval.&quot;); 
+}else if( outStanding &gt;= 0 ){
+alert(&quot;There is no balance for this Credit Note to refund.&quot;); 
+}else if(totalOutS &gt; 0){
+	if(&apos;{!$Profile.Name}&apos; == &apos;System Administrator&apos;){
+		var r = confirm(&quot;There are outstanding payment for the tenant. \nDo you still want to proceed to refund?&quot;);
+		if (r == true) {
+		   window.location=&apos;/apex/InvoiceRefund?id={!Invoice__c.Id}&apos;;
+		}
+	}else{
+		alert(&quot;There are outstanding payments and Credit Note can\&apos;t be refunded for the Tenant.&quot;); 
+	}
+
+}else if(outStanding &gt;= reqRefAmount){
+
+alert(&apos;There is no available balance to be refunded&apos;);
+}else{ 
+window.location=&apos;/apex/InvoiceRefund?id={!Invoice__c.Id}&apos;;
+
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Un_Void</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Un-Void</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/apex.js&quot;)} 
+if((&apos;{!Invoice__c.Voided__c}&apos; == &apos;1&apos;)){ 
+
+var r = confirm(&quot;Are you sure you want to Un-Void this Invoice?&quot;); 
+
+if(r == true){ 
+
+var invoiceObj = new sforce.SObject(&quot;Invoice__c&quot;); 
+invoiceObj.Id = &apos;{!Invoice__c.Id}&apos;; 
+invoiceObj.Voided__c = true; 
+invoiceObj.Void_Datetime__c = null;
+var result = sforce.connection.update([invoiceObj]); 
+sforce.apex.execute(&quot;InvoiceButtonClick&quot;,&quot;unvoidAllInvoices&quot;,{invoiceId:&quot;{!Invoice__c.Id}&quot;}); 
+location.reload(true); 
+} 
+}else{
+alert(&apos;Only voided Invoices can be Un-Voided.&apos;);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>View_PDF</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>View PDF</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/connection.js&quot;)}
+
+try{
+    var results = 
+        sforce.connection.query(
+            &quot;SELECT Id &quot; + 
+            &quot;FROM Attachment &quot; + 
+            &quot;WHERE &quot; + 
+            &quot;(ParentId = &apos;{!Invoice__c.Id}&apos;) &quot; + 
+            &quot;ORDER BY CreatedDate DESC LIMIT 1&quot;
+        );
+
+    if(results.getInt(&quot;size&quot;) ==1 ){
+        var attachment = results.getArray(&quot;records&quot;);
+
+        window.open(
+            &quot;/servlet/servlet.FileDownload?file=&quot; + attachment[0].Id
+        );
+    }
+    else{
+        if({!Invoice__c.Invoice_Generated__c}){
+            alert(&quot;PDF is still processing, Please wait for few more seconds.&quot;);
+        }else{
+            alert(&quot;Please generate PDF Invoice first.&quot;);
+        }
+    }
+}
+catch(e){
+    alert(&quot;Please contact system administrator!&quot; + e);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Void</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Void</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/apex.js&quot;)}
+if((&apos;{!Invoice__c.Voided__c}&apos; == &apos;1&apos;)){ 
+   alert(&apos;This Invoice is already Voided.&apos;);
+}else{
+if((&apos;{!Invoice__c.Amount_Paid__c}&apos;==&apos;$0.00&apos; || &apos;{!Invoice__c.Amount_Paid__c}&apos;==&apos;&apos;) &amp;&amp; (&apos;{!Invoice__c.JV_Status__c}&apos; != &apos;Generated&apos; &amp;&amp; &apos;{!Invoice__c.JV_Status__c}&apos; != &apos;Posted&apos;)){
+	
+		var r = confirm(&quot;Are you sure you want to Void this Invoice?&quot;);
+
+		if(r == true){
+			var retVal; 
+			while (retVal == null || retVal == &apos;&apos;) {
+				retVal = prompt(&quot;Please Enter Void Reason* (mandatory):&quot;, &quot;&quot;);
+			  if(retVal === null){
+				break;
+			  }
+			}
+			if(retVal === null){
+				
+			}else{
+				sforce.apex.execute(&quot;InvoiceButtonClick&quot;,&quot;voidAllInvoices&quot;,{invoiceId:&quot;{!Invoice__c.Id}&quot;,reason:retVal});
+				location.reload(true);
+			}
+		}
+	
+}else if(!(&apos;{!Invoice__c.Amount_Paid__c}&apos;==&apos;$0.00&apos; || &apos;{!Invoice__c.Amount_Paid__c}&apos;==&apos;&apos;)){
+	alert(&quot;Warning : Paid Invoices cannot be Voided.&quot;);
+}else if(&apos;{!Invoice__c.JV_Status__c}&apos;==&apos;Generated&apos; || &apos;{!Invoice__c.JV_Status__c}&apos;==&apos;Posted&apos;){
+	alert(&quot;Warning : Generated/Posted Invoices cannot be Voided.&quot;);
+}
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Void_Invoice</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Void Invoice</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/apex.js&quot;)}
+
+if((&apos;{!Invoice__c.Amount_Paid__c}&apos;==&apos;$0.00&apos; || &apos;{!Invoice__c.Amount_Paid__c}&apos;==&apos;&apos;) &amp;&amp; (&apos;{!Invoice__c.JV_Status__c}&apos; != &apos;Generated&apos; &amp;&amp; &apos;{!Invoice__c.JV_Status__c}&apos; != &apos;Posted&apos;)){
+	
+		var r = confirm(&quot;Are you sure you want to Void this Invoice?&quot;);
+
+		if(r == true){
+			var retVal; 
+			while (retVal == null || retVal == &apos;&apos;) {
+				retVal = prompt(&quot;Please Enter Void Reason* (mandatory):&quot;, &quot;&quot;);
+			  if(retVal === null){
+				break;
+			  }
+			}
+			if(retVal === null){
+				
+			}else{
+				var invoiceObj = new sforce.SObject(&quot;Invoice__c&quot;); 
+				invoiceObj.Id = &apos;{!Invoice__c.Id}&apos;; 
+				invoiceObj.Void_Reason__c = retVal;
+				invoiceObj.Voided__c = true;
+				var result = sforce.connection.update([invoiceObj]);
+sforce.apex.execute(&quot;InvoiceButtonClick&quot;,&quot;voidAllInvoices&quot;,{invoiceId:&quot;{!Invoice__c.Id}&quot;});
+				location.reload(true);
+			}
+		}
+	
+}else if(!(&apos;{!Invoice__c.Amount_Paid__c}&apos;==&apos;$0.00&apos; || &apos;{!Invoice__c.Amount_Paid__c}&apos;==&apos;&apos;)){
+	alert(&quot;Warning : Paid Invoices cannot be Voided.&quot;);
+}else if(&apos;{!Invoice__c.JV_Status__c}&apos;==&apos;Generated&apos; || &apos;{!Invoice__c.JV_Status__c}&apos;==&apos;Posted&apos;){
+	alert(&quot;Warning : Generated/Posted Invoices cannot be Voided.&quot;);
+}</url>
+    </webLinks>
+</CustomObject>

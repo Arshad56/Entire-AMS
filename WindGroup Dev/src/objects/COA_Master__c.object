@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A&amp;P  MMK0.00 Income  N-T MMK  N</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Accounts Payable-MMK</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Accounts Payable-USD</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Accounts Receivable-MMK</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Accounts Receivable-MMK Exch</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Accounts Receivable -USD</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Accounts Receivable -USD Exc</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Advance Income Received</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Advance Rental Received  MMK</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Advance Rental Received  USD</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Advance Revenue</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Adv Rental Received  USD Exch</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Assets</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bank</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cash</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cash at Bank  CB MMK</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cash at Bank  CB USD</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cash at Site MMK</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cash at Site USD Exchange</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cash in Hand USD</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cash in Hand USD Exch</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cast at Site USD</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CB (0010101200310123)MMK Exch</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CB (0010101200310123)USD</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CB BankMMK (0010100500010038)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CB BankMMK (0010100500010138)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Commercial Tax Payable</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Commercial tax payable MMK</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Commercial tax payable USD</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Commercial tax payable USD Exc</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Communication  MMK0.00 Income  N-T MMK  N</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cost - Discount allowed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Current Assets</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Current Liabilities</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Current Receivables</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deposit Receivable -MMK</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deposit Receivable -MMK Exc</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deposit Receivable -USD</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deposit Receivable -USD Exc</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Depreciation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Diesel  MMK0.00 Income  N-T MMK  N</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Direct Cost</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Dividends</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Equity</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Exchange Gain</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Exchange Gain/Loss</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Exchange Loss</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Expenses</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Facility Income H MMK0.00 Income   MMK  N     Y</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fit Out Deposit Received  MMK</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fit Out Deposit Received USD</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fit Out Dep Received-MMK Exch</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fit Out Dep ReceivUSD Exch</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fixed Assets</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gas  MMK0.00 Income  N-T MMK  N</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>GTO Income</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>GTO Income-GTO Compare</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>GTO Income-Plus</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Income - Commercial &amp; Office H MMK0.00 Income   MMK  N     Y</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MEPE  MMK0.00 Income  N-T MMK  N</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Non-Current Assets</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Revenue</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Overhead</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Refundable Security Dep MMK</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Refundable Security Deposit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Refundable Security Dep USD</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Refundable Security Dep USD Ex</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rental Income H MMK0.00 Income   MMK  N     Y</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rental  P &amp; A Space  MMK0.00 Income  N-T MMK  N</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rental Shop  MMK0.00 Income  N-T MMK  N</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Retained Earnings</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Revenue</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Salary and Benefits</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Security Deposit Received</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service Charge  MMK0.00 Income  N-T MMK  N</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tax</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Water  MMK0.00 Income  N-T MMK  N</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Accounts Payable-MMK Exch</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>COA_Group__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>COA Group</label>
+        <referenceTo>COA_Group__c</referenceTo>
+        <relationshipLabel>COA Master</relationshipLabel>
+        <relationshipName>COA_Master</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Currency_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Currency Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Currency_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Dr_Cr__c</fullName>
+        <externalId>false</externalId>
+        <label>Dr/Cr</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Debit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Credit</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Header_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Header/Detail</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Header</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Detail</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Level__c</fullName>
+        <externalId>false</externalId>
+        <label>Level</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sort_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Sort No.</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Statement_of_Cash_Flow__c</fullName>
+        <externalId>false</externalId>
+        <label>Statement of Cash Flow</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tax_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Tax Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Taxable</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tax Exempt</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Zero Rated Tax</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Applicable</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Accounts Payable</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Accounts Receivable</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Asset</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bank</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cost of Sales</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Equity</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Expense</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fixed Asset</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Income</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Liability</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Long Term Liability</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Asset</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Current Asset</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Expense</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Income</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Liability</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Current Liability</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>COA Master</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Account_Type__c</columns>
+        <columns>COA_Group__c</columns>
+        <columns>Description__c</columns>
+        <columns>Dr_Cr__c</columns>
+        <columns>Header_Detail__c</columns>
+        <columns>Level__c</columns>
+        <columns>Sort_No__c</columns>
+        <columns>Tax_Code__c</columns>
+        <columns>Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Account #</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>COA Master</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Account_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Dr_Cr__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Header_Detail__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Level__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Tax_Code__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Account_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>COA_Group__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Dr_Cr__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Header_Detail__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Level__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Tax_Code__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>NAME</lookupFilterFields>
+        <lookupFilterFields>Account_Type__c</lookupFilterFields>
+        <lookupFilterFields>Type__c</lookupFilterFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

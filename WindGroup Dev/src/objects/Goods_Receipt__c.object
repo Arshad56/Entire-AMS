@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Contact_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact Name</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.Vendor_Name__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Goods Receipts</relationshipLabel>
+        <relationshipName>Goods_Receipts</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Currency_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Currency Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Currency_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DO_No__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Delivery Order Number</inlineHelpText>
+        <label>DO No.</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GR_Amount__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>From Related GR Line Items: Total Amount</inlineHelpText>
+        <label>GR Amount</label>
+        <summarizedField>GR_Line_Item__c.Total_Amount__c</summarizedField>
+        <summaryFilterItems>
+            <field>GR_Line_Item__c.Void__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryForeignKey>GR_Line_Item__c.Goods_Receipt__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>GR_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>GR Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>GR_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>From Related GR Line Items: Quantity</inlineHelpText>
+        <label>GR Quantity</label>
+        <summarizedField>GR_Line_Item__c.Quantity__c</summarizedField>
+        <summaryFilterItems>
+            <field>GR_Line_Item__c.Void__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryForeignKey>GR_Line_Item__c.Goods_Receipt__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Invoice_Created__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Invoice Created</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Purchase_Order__c</fullName>
+        <externalId>false</externalId>
+        <label>PO No.</label>
+        <referenceTo>Purchase_Order__c</referenceTo>
+        <relationshipLabel>Goods Receipts</relationshipLabel>
+        <relationshipName>Goods_Receipts</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Remarks__c</fullName>
+        <externalId>false</externalId>
+        <label>Remarks</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Tax_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>GR_Amount__c *  Purchase_Order__r.Tax_Rate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>GR Amount * PO: Tax Rate</inlineHelpText>
+        <label>Tax Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Vendor_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Vendor Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Goods Receipts</relationshipLabel>
+        <relationshipName>Goods_Receipts</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Void__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Void</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Goods Receipt</label>
+    <nameField>
+        <label>Goods Receipt No</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Goods Receipts</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Create_if_PO_status_is_issued</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(NOT(ISPICKVAL(Purchase_Order__r.Status__c,&apos;Issued&apos;)),ISNEW())</errorConditionFormula>
+        <errorDisplayField>Contact_Name__c</errorDisplayField>
+        <errorMessage>Goods Receipt can only be created if Purchase Order Status is Issued</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Generate_GR</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate GR</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>if(&quot;{!Purchase_Order__c.Status__c}&quot; == &apos;Issued&apos;){
+if(&quot;{!Purchase_Order__c.Balance_Quantity__c}&quot; == 0)
+alert(&quot;Good Receipt(s) have already been generated for all PO Line Items.&quot;);
+else if({!ISBLANK(Purchase_Order__c.Property__c)})
+alert(&apos;Purchase Order should be linked with a property.&apos;);
+else
+window.location.href=&quot;/apex/generateGR?poId={!Purchase_Order__c.Id}&quot;;
+}else
+alert(&apos;Purchase Order Status should be Issued&apos;);</url>
+    </webLinks>
+</CustomObject>

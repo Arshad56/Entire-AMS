@@ -1,0 +1,1997 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>WebsiteHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>Account_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Account_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Phone</fields>
+        <fields>BillingAddress</fields>
+        <fields>Website</fields>
+        <fields>OwnerId</fields>
+        <label>Account Compact Layout</label>
+    </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <fields>
+        <fullName>AccountNumber</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>AccountSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Account_Short_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Short Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Company</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Competitor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Landlord</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Management Co.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Prospect</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tenant</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Vendor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Partner</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>AnnualRevenue</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Annual_Turnover__c</fullName>
+        <externalId>false</externalId>
+        <label>Annual Turnover</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BillingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Brand__c</fullName>
+        <externalId>false</externalId>
+        <label>Brand</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Brand</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Business_Registration_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Registration No</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>COA_Group__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Chart of Accounts Group</label>
+        <referenceTo>COA_Group__c</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Country_of_Origin__c</fullName>
+        <externalId>false</externalId>
+        <label>Country of Origin</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Country</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Customer_Code__c</fullName>
+        <displayFormat>C{000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Customer Code</label>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Field1__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK( Logo__c ),&quot;&quot;, IMAGE(Logo__c , &quot;Icon&quot;, 80,300) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>.</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Finance_Company_Code__c</fullName>
+        <description>Accounting System Company Code</description>
+        <externalId>false</externalId>
+        <label>Finance Company Code</label>
+        <length>15</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Finance_Cost_Centre__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Cost Centre</label>
+        <length>15</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Finance_Profit_Centre__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Profit Centre</label>
+        <length>15</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Industry</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Local_Currency__c</fullName>
+        <description>Created to manage Journal Voucher process</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Created to manage Journal Voucher process</inlineHelpText>
+        <label>Local Currency</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Currency_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Logo__c</fullName>
+        <externalId>false</externalId>
+        <label>Logo</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>NumberOfEmployees</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ownership</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Terms__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Terms</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Payment_Due</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <inlineHelpText>Phone numbers are a great way to call people on phones.  Phones are what we call our pocket computers even though we use them for games, selfies, and facebook.</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Rating</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ShippingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Shop_Name_Print__c</fullName>
+        <externalId>false</externalId>
+        <label>Shop Name (Print)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Shop_Name_Printed__c</fullName>
+        <externalId>false</externalId>
+        <label>Shop Name (Printed)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sic</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>SicDesc</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Site</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Sub_Trade_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub Trade Category</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Trade_Category__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Sub_Trade_Category</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Jewellery</controllingFieldValue>
+                <valueName>Jewellery / Watches</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Kids Apparel</controllingFieldValue>
+                <valueName>Kids Apparel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Music &amp; Videos</controllingFieldValue>
+                <valueName>Music &amp; Videos</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Optical</controllingFieldValue>
+                <valueName>Optical</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Shoes &amp; Bags</controllingFieldValue>
+                <valueName>Shoes &amp; Bags</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sporting Goods &amp; Apparel</controllingFieldValue>
+                <valueName>Sporting Goods &amp; Apparel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sundry &amp; Services</controllingFieldValue>
+                <valueName>Sundry &amp; Services</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Arts &amp; Crafts</controllingFieldValue>
+                <valueName>Arts &amp; Crafts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Books &amp; Stationery</controllingFieldValue>
+                <valueName>Books &amp; Stationery</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Department Store</controllingFieldValue>
+                <valueName>Department Store</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Education</controllingFieldValue>
+                <valueName>Education</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electricals / Electronics</controllingFieldValue>
+                <valueName>Electricals / Electronics</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Fashion</controllingFieldValue>
+                <valueName>Fashion &amp; Accessories</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Gifts &amp; Souvenirs</controllingFieldValue>
+                <valueName>Gifts &amp; Souvenirs</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tax_Applicable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Tax Applicable</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Tax_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Tax Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>TickerSymbol</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Trade_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Trade Category</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Trade_Category</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Website</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Whitelisted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Whitelisted</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Witholding_Eligible__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Eligible Witholding</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>domain__c</fullName>
+        <externalId>false</externalId>
+        <label>Domain</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>AllTenants</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Account_Type__c</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>Customer_Code__c</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>Trade_Category__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Type__c</field>
+            <operation>includes</operation>
+            <value>Tenant</value>
+        </filters>
+        <label>All Tenants</label>
+    </listViews>
+    <listViews>
+        <fullName>MyAccounts</fullName>
+        <filterScope>Mine</filterScope>
+        <label>My Accounts</label>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypes>
+        <fullName>Tenant</fullName>
+        <active>true</active>
+        <label>Tenant</label>
+        <picklistValues>
+            <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Google AdWords</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Account_Type__c</picklist>
+            <values>
+                <fullName>Company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Landlord</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management Co%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tenant</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Brand</picklist>
+            <values>
+                <fullName>Brand</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Country</picklist>
+            <values>
+                <fullName>Australia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Austria</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>China</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>India</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indonesia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Italy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Japan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Korea</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lao</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Malaysia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Myanmar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nepal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Philippines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Singapore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sri Lanka</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SwedenSwaziland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Thailand</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>United Kingdom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>United States</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Viet Nam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vietnam</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_Code</picklist>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JPY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MMK</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>SGD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Due</picklist>
+            <values>
+                <fullName>30 Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>90 Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cash On Delivery</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sub_Trade_Category</picklist>
+            <values>
+                <fullName>Arts %26 Crafts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beauty %26 Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Books %26 Stationery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Department Store</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electricals %2F Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fashion %26 Accessories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gifts %26 Souvenirs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Houseware %26 Furnishings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jewellery %2F Watches</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kids Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ladies Fashion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leisure %26 Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Music %26 Videos</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Optical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shoes %26 Bags</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sporting Goods %26 Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sundry %26 Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telco %26 Accessories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Toys %26 Hobbies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Toys %26 Hobbies%2C Books %26 Stationery%2C Arts %26 Crafts</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Trade_Category</picklist>
+            <values>
+                <fullName>Arts %26 Crafts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beauty %26 Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Books %26 Stationery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Department Store</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electricals %2F Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fashion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fashion %26 Accessories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gifts %26 Souvenirs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Houseware %26 Furnishings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jewellery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kids Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leisure %26 Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Music %26 Videos</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Optical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shoes %26 Bags</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sporting Goods %26 Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sundry %26 Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telco %26 Accessories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Toys %26 Hobbies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Toys %26 Hobbies%2C Books %26 Stationery%2C Arts %26 Crafts</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Investor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Landlord</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management Co%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Vendor</fullName>
+        <active>true</active>
+        <label>Vendor</label>
+        <picklistValues>
+            <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Google AdWords</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Account_Type__c</picklist>
+            <values>
+                <fullName>Company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Landlord</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management Co%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tenant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Brand</picklist>
+            <values>
+                <fullName>Brand</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Country</picklist>
+            <values>
+                <fullName>Australia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Austria</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>China</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>India</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indonesia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Italy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Japan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Korea</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lao</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Malaysia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Myanmar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nepal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Philippines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Singapore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sri Lanka</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SwedenSwaziland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Thailand</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>United Kingdom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>United States</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Viet Nam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vietnam</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_Code</picklist>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JPY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MMK</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>SGD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Due</picklist>
+            <values>
+                <fullName>30 Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>90 Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cash On Delivery</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sub_Trade_Category</picklist>
+            <values>
+                <fullName>Arts %26 Crafts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beauty %26 Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Books %26 Stationery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Department Store</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electricals %2F Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fashion %26 Accessories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gifts %26 Souvenirs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Houseware %26 Furnishings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jewellery %2F Watches</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kids Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ladies Fashion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leisure %26 Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Music %26 Videos</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Optical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shoes %26 Bags</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sporting Goods %26 Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sundry %26 Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telco %26 Accessories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Toys %26 Hobbies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Toys %26 Hobbies%2C Books %26 Stationery%2C Arts %26 Crafts</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Trade_Category</picklist>
+            <values>
+                <fullName>Arts %26 Crafts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beauty %26 Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Books %26 Stationery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Department Store</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electricals %2F Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fashion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fashion %26 Accessories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gifts %26 Souvenirs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Houseware %26 Furnishings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jewellery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kids Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leisure %26 Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Music %26 Videos</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Optical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shoes %26 Bags</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sporting Goods %26 Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sundry %26 Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telco %26 Accessories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Toys %26 Hobbies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Toys %26 Hobbies%2C Books %26 Stationery%2C Arts %26 Crafts</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Investor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Landlord</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management Co%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PARENT_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Account_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.PHONE1</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PARENT_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Account_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.PHONE1</lookupDialogsAdditionalFields>
+        <lookupFilterFields>ACCOUNT.NAME</lookupFilterFields>
+        <lookupFilterFields>PARENT_NAME</lookupFilterFields>
+        <lookupFilterFields>Account_Type__c</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.PHONE1</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PARENT_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Account_Type__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
+        <searchFilterFields>PARENT_NAME</searchFilterFields>
+        <searchFilterFields>Account_Type__c</searchFilterFields>
+        <searchFilterFields>ACCOUNT.PHONE1</searchFilterFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PARENT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Account_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.PHONE1</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>Conga_Composer_Composer_SP_Account_Brief</fullName>
+        <availability>online</availability>
+        <description>Created by Conga Solution Manager. Record link: https://apxtconga4.cs5.visual.force.com/a2UO0000000mcMaMAI.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>false</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>660</height>
+        <isResizable>false</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Composer SP Account Brief</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/APXTConga4__Conga_Composer?SolMgr=1
+&amp;serverUrl={!API.Partner_Server_URL_370}
+&amp;Id={!Account.Id}
+
+&amp;QueryId=[Opptys]a2OO0000000xYMk,
+[Contacts]a2OO0000000xYMl,
+[Cases]a2OO0000000xYMm,
+[Activities]a2OO0000000xYMn
+
+&amp;TemplateId=a2WO0000001GQUk
+
+&amp;OFN=Account+Brief+-+{!Account.Name}+-+{!Today}
+&amp;AC0=1
+&amp;AC1=Account+Brief+Created+By+{!User.Name}
+&amp;SC0=1
+&amp;SC1=Attachments
+&amp;DefaultPDF=1
+&amp;TemplateGroup=Account</url>
+        <width>900</width>
+    </webLinks>
+    <webLinks>
+        <fullName>Conga_Composer_Composer_SP_Account_Brief_21Aug2017_03_15_56_PM</fullName>
+        <availability>online</availability>
+        <description>Created by Conga Solution Manager. Record link: https://apxtconga4.cs5.visual.force.com/a2UO0000000mcMkMAI.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>false</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>660</height>
+        <isResizable>false</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Composer SP Account Brief 21Aug2017 03 15 56 PM</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/APXTConga4__Conga_Composer?SolMgr=1
+&amp;serverUrl={!API.Partner_Server_URL_370}
+&amp;Id={!Account.Id}
+
+&amp;QueryId=[Opptys]a2OO0000000xYMp,
+[Contacts]a2OO0000000xYMq,
+[Cases]a2OO0000000xYMr,
+[Activities]a2OO0000000xYMs
+
+&amp;TemplateId=a2WO0000001GQUu
+
+&amp;OFN=Account+Brief+-+{!Account.Name}+-+{!Today}
+&amp;AC0=1
+&amp;AC1=Account+Brief+Created+By+{!User.Name}
+&amp;SC0=1
+&amp;SC1=Attachments
+&amp;DefaultPDF=1
+&amp;TemplateGroup=Account</url>
+        <width>900</width>
+    </webLinks>
+    <webLinks>
+        <fullName>Generate_SOA</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate SOA</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>window.open(&apos;/apex/GenerateCashReceipt?tid={!Account.Id}&apos;, &apos;_blank&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Account_BillingStreet}+{!Account_BillingCity}+{!Account_BillingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/news?&amp;q={!Account_Name}&amp;btnG=Search+News</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>View_PDF</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>View PDF</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/connection.js&quot;)} 
+
+try{ 
+var results = 
+sforce.connection.query( 
+&quot;SELECT Id &quot; + 
+&quot;FROM Attachment &quot; + 
+&quot;WHERE &quot; + 
+&quot;(ParentId = &apos;{!Purchase_Order__c.Id}&apos;) &quot; + 
+&quot;ORDER BY CreatedDate DESC LIMIT 1&quot; 
+); 
+
+if(results.getInt(&quot;size&quot;) ==1 ){ 
+var attachment = results.getArray(&quot;records&quot;); 
+
+window.open( 
+&quot;/servlet/servlet.FileDownload?file=&quot; + attachment[0].Id 
+); 
+} 
+else{ 
+if({!Purchase_Order__c.Generate_PO_PDF__c}){ 
+alert(&quot;PDF is still processing, Please wait for few more seconds.&quot;); 
+}else{ 
+alert(&quot;Please generate Purchase Order PDF first.&quot;); 
+} 
+} 
+} 
+catch(e){ 
+alert(&quot;Please contact system administrator!&quot; + e); 
+}</url>
+    </webLinks>
+</CustomObject>

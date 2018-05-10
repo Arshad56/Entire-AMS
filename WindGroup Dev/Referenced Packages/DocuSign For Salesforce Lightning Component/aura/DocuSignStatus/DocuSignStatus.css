@@ -1,0 +1,260 @@
+.THIS.docusign-component .header-label {
+    font-size: 1.125rem;
+    margin-bottom: 5px;
+}
+
+.THIS.docusign-component .header-label .logo{
+    float: right;
+    height: 29px;
+}
+
+.THIS .dsfstHidden {
+    display: none;
+}
+
+.THIS .dsfstViewAll {
+    padding-left: 8px;
+    padding-top: 12px;
+}
+
+.THIS .dsfstViewAllFooterButton {
+    float: right;
+}
+
+/* line 6, ../sass/app.scss */
+.THIS.docusign-component {
+    margin-bottom: 17px;
+}
+
+/* line 9, ../sass/app.scss */
+.THIS.docusign-component .container {
+    display: flex;
+    flex-flow: column nowrap;
+    /*background-color: #F4F6F9;
+    border: 1px solid #D8DDE7;
+    border-radius: 5px;
+    padding: 20px;*/
+}
+
+/* line 18, ../sass/app.scss */
+.THIS.docusign-component .error {
+    color: #B15942;
+}
+
+/* line 18, ../sass/app.scss */
+.THIS.docusign-component .envelope-info {
+    flex: 0 0 50px;
+    display: flex;
+}
+
+/* line 23, ../sass/app.scss */
+.THIS.docusign-component .envelope-info .icon {
+    flex: 0 0 50px;
+    background: #54698C;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 5px;
+    height: 50px;
+}
+
+/* line 33, ../sass/app.scss */
+.THIS.docusign-component .envelope-info .info {
+    flex: 1 1 auto;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 80px;
+}
+
+/* line 47, ../sass/app.scss */
+.THIS.docusign-component .envelope-info .info .envelope {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* line 47, ../sass/app.scss */
+.THIS.docusign-component .envelope-info .info .name {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* line 42, ../sass/app.scss */
+.THIS.docusign-component .envelope-info .info span {
+    display: block;
+    font-size: .875rem;
+    line-height: 20px;
+    color: #54698D;
+}
+
+.THIS.docusign-component .envelope-info .info .name {
+    color: rgb(22, 50, 92);
+    font-size: .9rem;
+}
+
+/* line 48, ../sass/app.scss */
+.THIS.docusign-component .status {
+    flex: 0 0 40px;
+    border: 0px solid #D8DDE7;
+    border-width: 1px 0;
+    line-height: 40px;
+    font-size: .875rem;
+}
+
+/* line 55, ../sass/app.scss */
+.THIS.docusign-component .recipients {
+    flex: 0 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 16px;
+    font-size: .875rem;
+}
+
+/* line 64, ../sass/app.scss */
+.THIS.docusign-component .recipients .recipient {
+    flex: 0 0 60px;
+    display: flex;
+    margin-bottom: 10px;
+    height: 60px;
+}
+
+/* line 69, ../sass/app.scss */
+.THIS.docusign-component .recipients .recipient:last-child {
+    margin-bottom: 0;
+}
+
+/* line 73, ../sass/app.scss */
+.THIS.docusign-component .recipients .recipient .recipient-avatar {
+    flex: 0 0 35px;
+    display: flex;
+    background: #62B7ED;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-top: 12px;
+    justify-content: center;
+    height: 35px;
+}
+
+/* line 73, ../sass/app.scss */
+.THIS.docusign-component .recipients .recipient .recipient-avatar .routingOrder {
+    color: white;
+    margin-top: 7px;
+}
+
+/* line 79, ../sass/app.scss */
+.THIS.docusign-component .recipients .recipient .recipient-info {
+    flex: 1 1 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 10px;
+}
+
+/* line 82, ../sass/app.scss */
+.THIS.docusign-component .recipients .recipient .recipient-info .nameAndEmail {
+    height: 20px;
+    width: 100%;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* line 90, ../sass/app.scss */
+.THIS.docusign-component .recipients .recipient .recipient-info .date {
+    display: block;
+    color: #54698D;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* line 99, ../sass/app.scss */
+.THIS.docusign-component.horizontal .container {
+    flex-flow: column nowrap;
+    display: flex;
+}
+
+/* line 99, ../sass/app.scss */
+.THIS.docusign-component.horizontal .content {
+    flex-flow: row nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.THIS.docusign-component.horizontal .header-label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    flex: 1 100%;
+}
+
+/* line 103, ../sass/app.scss */
+.THIS.docusign-component.horizontal .envelope-info {
+    flex: 0 0 auto;
+    height: 60px;
+    margin-bottom: 0;
+    margin-right: 1%;
+    width: 38%;
+}
+
+/* line 110, ../sass/app.scss */
+.THIS.docusign-component.horizontal .status {
+    flex: 0 0 20%;
+    border-width: 0 1px;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 20%;
+    text-align: center;
+    flex-flow: column nowrap;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* line 116, ../sass/app.scss */
+.THIS.docusign-component.horizontal .recipients {
+    flex: -1 0;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 0px;
+    margin-left: 1%;
+    font-size: .875rem;
+    width: 38%;
+
+}
+
+/* line 125, ../sass/app.scss */
+.THIS.docusign-component.horizontal .recipients .recipient {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.THIS .uiButton.arrow-down {
+    padding-left: 0;
+    padding-right: 0;
+    border: 7px solid transparent;
+    border-top: 7px solid rgb(0, 112, 210);
+    border-bottom: none;
+    border-radius: 0;
+    background-color: transparent;
+    margin-top: 8px;
+}
+
+.THIS .uiButton.arrow-up {
+    padding-left: 0;
+    padding-right: 0;
+    border: 7px solid transparent;
+    border-bottom: 7px solid rgb(0, 112, 210);
+    border-radius: 0;
+    background-color: transparent;
+    margin-top: 10px;
+}

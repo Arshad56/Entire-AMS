@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Journal Batch</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Journal Batches</value>
+    </caseValues>
+    <fields>
+        <label><!-- Billing Type --></label>
+        <name>Billing_Type__c</name>
+        <picklistValues>
+            <masterLabel>Ad-Hoc Invoice</masterLabel>
+            <translation><!-- Ad-Hoc Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Note</masterLabel>
+            <translation><!-- Credit Note --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debit Note</masterLabel>
+            <translation><!-- Debit Note --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GTO Rent</masterLabel>
+            <translation><!-- GTO Rent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late Charge</masterLabel>
+            <translation><!-- Late Charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous</masterLabel>
+            <translation><!-- Miscellaneous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent</masterLabel>
+            <translation><!-- Rent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- JV Type --></label>
+        <name>JV_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Mode --></label>
+        <name>Payment_Mode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+        <relationshipLabel><!-- Journal Batches --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Transaction --></label>
+        <name>Transaction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <layouts>
+        <layout>Journal Batch Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

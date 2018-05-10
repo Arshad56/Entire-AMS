@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Location</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Locations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Checklist --></label>
+        <name>Checklist__c</name>
+        <relationshipLabel><!-- Locations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level --></label>
+        <name>Level__c</name>
+        <relationshipLabel><!-- Locations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Location Type --></label>
+        <name>Location_Type__c</name>
+        <picklistValues>
+            <masterLabel>Atrium</masterLabel>
+            <translation><!-- Atrium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Car Park</masterLabel>
+            <translation><!-- Car Park --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corridor</masterLabel>
+            <translation><!-- Corridor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Service Counter</masterLabel>
+            <translation><!-- Customer Service Counter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Escalator</masterLabel>
+            <translation><!-- Escalator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facade</masterLabel>
+            <translation><!-- Facade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lift Lobby</masterLabel>
+            <translation><!-- Lift Lobby --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lobby</masterLabel>
+            <translation><!-- Lobby --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Main Atrium</masterLabel>
+            <translation><!-- Main Atrium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promo Hall</masterLabel>
+            <translation><!-- Promo Hall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Side Atrium</masterLabel>
+            <translation><!-- Side Atrium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stairway</masterLabel>
+            <translation><!-- Stairway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Toilet</masterLabel>
+            <translation><!-- Toilet --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mobile Module --></label>
+        <name>Mobile_Module__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+        <relationshipLabel><!-- Locations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Qty --></label>
+        <name>Qty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Intervals (days) --></label>
+        <name>Service_Intervals_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Intervals (months) --></label>
+        <name>Service_Intervals_months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Servicing Description --></label>
+        <name>Servicing_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Servicing Start Date --></label>
+        <name>Servicing_Start_Date__c</name>
+    </fields>
+    <layouts>
+        <layout>Location Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Servicing Schedule --></label>
+            <section>Servicing Schedule</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

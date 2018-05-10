@@ -1,0 +1,48 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<table width="581" cellspacing="0" cellpadding="0" border="0"><colgroup><col style="mso-width-source:userset;mso-width-alt:6371;width:134pt" width="179">
+ <col style="mso-width-source:userset;mso-width-alt:14279;width:301pt" width="402">
+ </colgroup><tbody><tr style="height:14.4pt" height="19">
+  <td class="xl64" style="height:14.4pt;width:134pt" width="179" height="19">Description
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+  <td class="xl64" style="width:301pt" width="402">: {!Request__c.Description__c}</td>
+ </tr>
+ <tr style="height:14.4pt" height="19">
+  <td class="xl64" style="height:14.4pt" height="19">Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;</td>
+  <td class="xl64">: {!Request__c.Status__c}</td>
+ </tr>
+ <tr style="height:14.4pt" height="19">
+  <td class="xl64" style="height:14.4pt" height="19">Date/Time Opened
+  &nbsp;&nbsp;<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td class="xl64">: {!Request__c.Date_Time_Opened__c}</td>
+ </tr>
+ <tr style="height:14.4pt" height="19">
+  <td class="xl64" style="height:14.4pt" height="19">Action
+  Remarks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td class="xl64">: {!Request__c.Action_Remarks__c}</td>
+ </tr>
+ <tr style="height:14.4pt" height="19">
+  <td style="height:14.4pt" height="19"><br></td>
+  <td><br></td>
+ </tr>
+ <tr style="height:14.4pt" height="19">
+  <td class="xl64" colspan="2" style="height:14.4pt;mso-ignore:colspan" height="19">Click
+  on the link for details: {!Request__c.Link}</td>
+ </tr>
+ <tr style="height:14.4pt" height="19">
+  <td class="xl64" style="height:14.4pt" height="19"><br></td>
+  <td class="xl64"><br></td>
+ </tr>
+ <tr style="height:14.4pt" height="19">
+  <td class="xl64" style="height:14.4pt" height="19">Regards</td>
+  <td class="xl64"><br></td>
+ </tr>
+ <tr style="height:14.4pt" height="19">
+  <td class="xl64" style="height:14.4pt" height="19">Operation Team</td>
+  <td class="xl64"><br></td>
+ </tr>
+</tbody></table>]]></td>
+</tr>
+</table>

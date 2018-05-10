@@ -1,0 +1,15 @@
+*** REQUEST UPDATE NOTIFICATION ***  
+
+The following Request has been updated.  
+
+Property : {!Request__c.Property__c}
+Person In Charge : {!Request__c.Person_In_Charge__c}
+Status :  {!Request__c.Status__c}
+Date/Time Opened:  {!Request__c.Date_Time_Opened__c}
+Description: {!Request__c.Description__c}
+Action Remarks: {!Request__c.Action_Remarks__c} 
+
+Click on the link to access the Request Details:  {!Request__c.Link}
+
+Regards
+Operation Team

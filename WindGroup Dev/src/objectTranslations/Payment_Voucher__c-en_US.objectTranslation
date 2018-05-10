@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Payment Voucher</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Payment Vouchers</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount (Foreign) --></label>
+        <name>Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount (Local) --></label>
+        <name>Amount_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Method --></label>
+        <name>Charge_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cheque No --></label>
+        <name>Cheque_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Amount (Foreign) --></label>
+        <name>Default_Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit --></label>
+        <name>Deposit__c</name>
+        <relationshipLabel><!-- Payment Vouchers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate --></label>
+        <name>Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gain/Loss (Foreign) --></label>
+        <name>Gain_Loss__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice --></label>
+        <name>Invoice__c</name>
+        <relationshipLabel><!-- Payment Vouchers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- JV Status --></label>
+        <name>JV_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease Id --></label>
+        <name>Lease_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease --></label>
+        <name>Lease__c</name>
+        <relationshipLabel><!-- Payment Vouchers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Remaining Amount (Foreign) --></label>
+        <name>Outstanding_Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining Amount (Local) --></label>
+        <name>Outstanding_Amount_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining Amount --></label>
+        <name>Outstanding_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Mode --></label>
+        <name>Payment_Mode__c</name>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque</masterLabel>
+            <translation><!-- Cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offset Invoice</masterLabel>
+            <translation><!-- Offset Invoice --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Voucher --></label>
+        <name>Payment_Voucher__c</name>
+        <relationshipLabel><!-- Payment Vouchers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Property Name Text --></label>
+        <name>Property_Name_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Name --></label>
+        <name>Property_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+        <relationshipLabel><!-- Payment Vouchers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Refund Mode --></label>
+        <name>Refund_Mode__c</name>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque</masterLabel>
+            <translation><!-- Cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offset Invoice</masterLabel>
+            <translation><!-- Offset Invoice --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Refunded Amount (Foreign) --></label>
+        <name>Refunded_Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refunded Amount (Local) --></label>
+        <name>Refunded_Amount_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refunded Amount --></label>
+        <name>Refunded_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid</masterLabel>
+            <translation><!-- Paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Void</masterLabel>
+            <translation><!-- Void --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tenant Id --></label>
+        <name>Tenant_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Type --></label>
+        <name>Transaction_Type__c</name>
+        <picklistValues>
+            <masterLabel>Deposit</masterLabel>
+            <translation><!-- Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice</masterLabel>
+            <translation><!-- Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice Receipt</masterLabel>
+            <translation><!-- Invoice Receipt --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Void Datetime --></label>
+        <name>Void_Datetime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Void Reason --></label>
+        <name>Void_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Void --></label>
+        <name>Void__c</name>
+    </fields>
+    <layouts>
+        <layout>Payment Voucher Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Exchange Information --></label>
+            <section>Exchange Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Paid_Cash_Cheque_PV --></label>
+        <name>Paid_Cash_Cheque_PV</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Refund_Offset_PV --></label>
+        <name>Refund_Offset_PV</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Void --></label>
+        <name>Void</name>
+    </webLinks>
+</CustomObjectTranslation>

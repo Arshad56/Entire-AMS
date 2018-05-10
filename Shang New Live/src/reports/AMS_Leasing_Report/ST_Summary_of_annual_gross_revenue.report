@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <acrossGroupingContext>GRAND_SUMMARY</acrossGroupingContext>
+        <calculatedFormula>Lease_Charges__c.Base_Rent__c:SUM / Lease_Unit__c.Area_Sq_Ft__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>Lease_Unit__c$Tenant__c</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Average Base Rent psf</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_22693970</developerName>
+        <masterLabel>Lease Charge</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Lease_Unit__c.Lease_Charges__r$Name</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>A&amp;P (5% of Rent)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>A&amp;P (8% of GTO Rent)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>A&amp;P (8% of GTO higher)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>A&amp;P (8% of Rent)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>A&amp;P (Fixed)</sourceValue>
+            </sourceValues>
+            <value>A&amp;P Fees</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Service Charge</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Service Charge (350)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Service Charge (450)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Service Charge Fixed</sourceValue>
+            </sourceValues>
+            <value>Service Charges</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Base Rent (Fixed)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Base Rent (Promo Space)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Base Rent (Quarterly)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Base Rent (Quarterly) - Stagger</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Base Rent (Yearly)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Base Rent Fixed (Quarterly)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Base Rent Fixed (Yearly)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Base Rent or GTO</sourceValue>
+            </sourceValues>
+            <value>Base Rent</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>F&amp;B Service Charge</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>F&amp;B Tenant Extra</sourceValue>
+            </sourceValues>
+            <value>F&amp;B Charges</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Rent Free (Early Opening)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rent Free</sourceValue>
+            </sourceValues>
+            <value>Rent Free</value>
+        </values>
+    </buckets>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Lease_Unit__c.Lease_Charges__r.Rent_Schedules__r$Amount__c</field>
+    </columns>
+    <columns>
+        <field>Lease_Unit__c$Area_Sq_Ft__c</field>
+    </columns>
+    <columns>
+        <field>Lease_Unit__c$Unit__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Lease_Unit__c$Property__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Junction City</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BucketField_22693970</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Other</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_22693970</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lease_Unit__c$Property__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lease_Unit__c$Tenant__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>ST Summary of annual gross revenue</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>Lease_unit_with_lease_charge_and_Rent_schedule__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Lease_Unit__c.Lease_Charges__r$Start_Date__c</dateColumn>
+        <endDate>2017-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-01-01</startDate>
+    </timeFrameFilter>
+</Report>

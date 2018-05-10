@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Lease_Plan__c.Property__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Units__c.Level__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$Units__c.Location__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Units__c.Space_Type__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Units__c.Charge_Method__c</field>
+    </columns>
+    <columns>
+        <field>Lease_Plan__c.Daily_Rate_1__c</field>
+    </columns>
+    <columns>
+        <field>Lease_Plan__c.Daily_Rate_2__c</field>
+    </columns>
+    <columns>
+        <field>Lease_Plan__c.Monthly_Budget__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <criteriaItems>
+            <column>FK_$Units__c.Property__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Junction City,Junction Maw Tin</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Units__c.Space_Type__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Ad Panel,Promo Space</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lease_Plan__c.Start_Date__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>6/1/2017</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Casual Leasing Rate</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Lease_Plan__c@Lease_Plan__c.Unit__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Lease_Plan__c.Property__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Lease_Plan__c.Start_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

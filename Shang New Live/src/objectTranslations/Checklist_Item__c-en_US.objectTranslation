@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Checklist Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Checklist Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- Action Date/ ime --></label>
+        <name>Action_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Date/Time --></label>
+        <name>Actual_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Backend Last Updated DateTime --></label>
+        <name>Backend_Last_Updated_DateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checklist Master Item --></label>
+        <name>Checklist_Master_Item__c</name>
+        <relationshipLabel><!-- Checklist Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Checklist Type --></label>
+        <name>Checklist_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checklist --></label>
+        <name>Checklist__c</name>
+        <relationshipLabel><!-- Checklist Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Condition --></label>
+        <name>Condition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- S/N --></label>
+        <name>FM_SN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Handover Condition --></label>
+        <name>Handover_Condition__c</name>
+        <relationshipLabel><!-- Checklist Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Issue Types --></label>
+        <name>Issue_Types__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Type --></label>
+        <name>Item_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Update Date/Time --></label>
+        <name>Last_Update_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Updated From --></label>
+        <name>Last_Updated_From__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number --></label>
+        <name>Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Checklist Item --></label>
+        <name>Parent_Checklist_Item__c</name>
+        <relationshipLabel><!-- Checklist Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Person In Charge --></label>
+        <name>Person_In_Charge__c</name>
+        <relationshipLabel><!-- Checklist Items (Person In Charge) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- S/N --></label>
+        <name>SN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issued</masterLabel>
+            <translation><!-- Issued --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unit --></label>
+        <name>Unit__c</name>
+    </fields>
+    <layouts>
+        <layout>Checklist Item Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Remarks Information --></label>
+            <section>Remarks Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Close_Request --></label>
+        <name>Close_Request</name>
+    </webLinks>
+</CustomObjectTranslation>

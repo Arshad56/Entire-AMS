@@ -1,0 +1,23 @@
+<apex:page controller="RelinkRentSchedulesController" sidebar="false" showHeader="false" docType="html-5.0">
+    <apex:form >
+        <apex:pageBlock >            
+            <apex:outputText value="Error : {!errorMsg}" rendered="{!isError}" style="color:red;"/>
+            <apex:pageBlockSection columns="1">
+                <apex:inputField value="{!elecMeter.Meter_No__c}" required="true"/>
+                <apex:inputField value="{!elecMeter.Status__c}" required="true"/>
+                <apex:inputField value="{!elecMtrUIDt.Start_Date__c}" label="Start Date" required="true"/>
+                <apex:inputField value="{!elecMtrUIDt.End_Date__c}" label="End Date" required="true"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="OK" action="{!save}" />
+                <apex:commandButton value="Cancel" onClick="window.close();"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+    <script>
+        if({!success}){ 
+            window.opener.location.href='/{!elecMeter.Id}'; 
+            window.close();
+        }
+    </script>
+</apex:page>

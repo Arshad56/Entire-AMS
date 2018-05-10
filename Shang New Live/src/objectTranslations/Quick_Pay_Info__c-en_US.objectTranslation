@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quick Pay Info</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quick Pay Info</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account No --></label>
+        <name>Account_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreditAmount --></label>
+        <name>CreditAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- DebitAmount --></label>
+        <name>DebitAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Reason --></label>
+        <name>Error_Reason__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicator for Error in CR generation --></help>
+        <label><!-- Error --></label>
+        <name>Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generated Cash Receipt --></label>
+        <name>Generated_Cash_Receipt__c</name>
+        <relationshipLabel><!-- Quick Pay Info --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Tenant --></help>
+        <label><!-- Reference01 --></label>
+        <name>Reference01__c</name>
+    </fields>
+    <fields>
+        <help><!-- Property --></help>
+        <label><!-- Reference02 --></label>
+        <name>Reference02__c</name>
+    </fields>
+    <fields>
+        <help><!-- Invoice No --></help>
+        <label><!-- Reference03 --></label>
+        <name>Reference03__c</name>
+    </fields>
+    <fields>
+        <help><!-- Remarks --></help>
+        <label><!-- Reference04 --></label>
+        <name>Reference04__c</name>
+    </fields>
+    <fields>
+        <label><!-- Serial --></label>
+        <name>Serial__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicator for Successful CR generation --></help>
+        <label><!-- Success --></label>
+        <name>Success__c</name>
+    </fields>
+    <fields>
+        <label><!-- TxnReference --></label>
+        <name>TxnReference__c</name>
+    </fields>
+    <fields>
+        <help><!-- Format YYYYDDMM --></help>
+        <label><!-- ValueDate --></label>
+        <name>ValueDate__c</name>
+    </fields>
+    <layouts>
+        <layout>Quick Pay Info Layout</layout>
+        <sections>
+            <label><!-- CR CD Generation StatusCR CD Generation Status --></label>
+            <section>CR CD Generation StatusCR CD Generation Status</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

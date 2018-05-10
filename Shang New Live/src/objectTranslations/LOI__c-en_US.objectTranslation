@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>LOI</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>LOIs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Billing Term --></label>
+        <name>Billing_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Type --></label>
+        <name>Business_Type__c</name>
+        <picklistValues>
+            <masterLabel>F&amp;B</masterLabel>
+            <translation><!-- F&amp;B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office</masterLabel>
+            <translation><!-- Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warehouse</masterLabel>
+            <translation><!-- Warehouse --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Charge Method --></label>
+        <name>Charge_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- LOIs (Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created Month --></label>
+        <name>Created_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Year --></label>
+        <name>Created_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day(s) in expired --></label>
+        <name>Day_s_in_expired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Fixed Amount (Need to delete) --></label>
+        <name>Deposit_Fixed_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Pdf --></label>
+        <name>Deposit_Pdf__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Term --></label>
+        <name>Deposit_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposits --></label>
+        <name>Deposits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extended --></label>
+        <name>Extended__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Contact --></label>
+        <name>Financial_Contact__c</name>
+        <relationshipLabel><!-- LOIs (Financial Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Fit-Out Period (Days) --></label>
+        <name>Fit_Out_Period_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fit-Out Period (Months) --></label>
+        <name>Fit_Out_Period_Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generated LOI --></label>
+        <name>Generated_LOI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Handover Client Contact --></label>
+        <name>Handover_Client_Contact__c</name>
+        <relationshipLabel><!-- LOIs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Handover Date --></label>
+        <name>Handover_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Handover Operation In Charge --></label>
+        <name>Handover_Operation_In_Charge__c</name>
+        <relationshipLabel><!-- LOIs (Handover Operation In Charge) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This is used in W/F to generate LOI Agreement No. --></help>
+        <label><!-- LOI Auto --></label>
+        <name>LOI_Auto__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original End Date --></label>
+        <name>LOI_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOI Index --></label>
+        <name>LOI_Index__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOI Signed Date --></label>
+        <name>LOI_Signed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOI Signed-off Date --></label>
+        <name>LOI_Signed_off_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOI Start Date --></label>
+        <name>LOI_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOI Status --></label>
+        <name>LOI_Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Converted</masterLabel>
+            <translation><!-- Converted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation><!-- Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Terminated</masterLabel>
+            <translation><!-- Pre-Terminated --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- LOI Tenure (Days) --></label>
+        <name>LOI_Tenure_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOI Tenure (Mths) --></label>
+        <name>LOI_Tenure_Mths__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populated through W/F
+Validity Week + Created date --></help>
+        <label><!-- LOI Validity (Date) --></label>
+        <name>LOI_Validity_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOI Validity (Week) --></label>
+        <name>LOI_Validity_Week__c</name>
+    </fields>
+    <fields>
+        <label><!-- Landlord’s Address --></label>
+        <name>Landlord_s_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Landlord’s Position --></label>
+        <name>Landlord_s_Position__c</name>
+    </fields>
+    <fields>
+        <label><!-- Landlord’s representative --></label>
+        <name>Landlord_s_representative__c</name>
+    </fields>
+    <fields>
+        <label><!-- Late Payment Interest (%) --></label>
+        <name>Late_Payment_Interest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opening Date --></label>
+        <name>Opening_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Option to Renew (Mths) --></label>
+        <name>Option_to_Renew__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field would be populated only in the case of Extension or Pre-Termination and would show the Revised End Date as per Extension or Pre-Termination. --></help>
+        <label><!-- Revised End Date --></label>
+        <name>Original_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Permitted Use --></label>
+        <name>Permitted_Use__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populated via Property &gt; Pricing Factor table based on Tenant Type --></help>
+        <label><!-- Price Factor --></label>
+        <name>Price_Factor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Id --></label>
+        <name>Property_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Name Text --></label>
+        <name>Property_Name_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Name --></label>
+        <name>Property_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Short Code --></label>
+        <name>Property_Short_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+        <relationshipLabel><!-- LOIs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reason for Cancellation --></label>
+        <name>Reason_for_Termination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renovation Rebates Terms --></label>
+        <name>Renovation_Rebates_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renovation Rebates --></label>
+        <name>Renovation_Rebates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Free End Date --></label>
+        <name>Rent_Free_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Free Start Date --></label>
+        <name>Rent_Free_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Roll --></label>
+        <name>Rent_Roll__c</name>
+        <relationshipLabel><!-- LOIs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>Stage__c</name>
+        <picklistValues>
+            <masterLabel>LA Approval</masterLabel>
+            <translation><!-- LA Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA Approved</masterLabel>
+            <translation><!-- LA Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA Cancelled</masterLabel>
+            <translation><!-- LA Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA Completed</masterLabel>
+            <translation><!-- LA Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA Converted</masterLabel>
+            <translation><!-- LA Converted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA Draft</masterLabel>
+            <translation><!-- LA Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA Sent</masterLabel>
+            <translation><!-- LA Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA Signed</masterLabel>
+            <translation><!-- LA Signed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA Stamped</masterLabel>
+            <translation><!-- LA Stamped --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA Variation</masterLabel>
+            <translation><!-- LA Variation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOI Approval</masterLabel>
+            <translation><!-- LOI Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOI Approved</masterLabel>
+            <translation><!-- LOI Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOI Cancelled</masterLabel>
+            <translation><!-- LOI Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOI Draft</masterLabel>
+            <translation><!-- LOI Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOI Sent</masterLabel>
+            <translation><!-- LOI Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOI Signed</masterLabel>
+            <translation><!-- LOI Signed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Staggered Rent --></label>
+        <name>Staggered_Rent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tenant Address --></label>
+        <name>Tenant_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tenant Id --></label>
+        <name>Tenant_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tenant Name --></label>
+        <name>Tenant_Name_Acceptance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tenant Name --></label>
+        <name>Tenant_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tenant Position --></label>
+        <name>Tenant_Position__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tenant Type --></label>
+        <name>Tenant_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tenant --></label>
+        <name>Tenant__c</name>
+        <relationshipLabel><!-- LOIs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Terms &amp; Conditions --></label>
+        <name>Terms_Conditions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test Approval --></label>
+        <name>Test_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Category --></label>
+        <name>Trade_Category__c</name>
+    </fields>
+    <layouts>
+        <layout>LOI Layout</layout>
+        <sections>
+            <label><!-- Billing Information --></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Tenant and Landlords Info --></label>
+            <section>Tenant and Landlords Info</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Cancel_LOI --></label>
+        <name>Cancel_LOI</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Convert_to_LA --></label>
+        <name>Convert_to_LA</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_LOI_PDF --></label>
+        <name>Generate_LOI_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_LOI_PDF --></label>
+        <name>View_LOI_PDF</name>
+    </webLinks>
+</CustomObjectTranslation>

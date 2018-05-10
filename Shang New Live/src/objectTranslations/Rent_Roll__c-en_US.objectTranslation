@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Rent Roll</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Rent Roll</value>
+    </caseValues>
+    <fields>
+        <help><!-- Actual Invoice Date --></help>
+        <label><!-- Invoice Date --></label>
+        <name>Actual_Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount (Foreign) --></label>
+        <name>Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount (Local) --></label>
+        <name>Amount_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved --></label>
+        <name>Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver --></label>
+        <name>Approver__c</name>
+        <relationshipLabel><!-- Rent Roll --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Populated via Generate Rent Roll process --></help>
+        <label><!-- Billing Type --></label>
+        <name>Billing_Type__c</name>
+        <picklistValues>
+            <masterLabel>Ad-Hoc Invoice</masterLabel>
+            <translation><!-- Ad-Hoc Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Note</masterLabel>
+            <translation><!-- Credit Note --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debit Note</masterLabel>
+            <translation><!-- Debit Note --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GTO Rent</masterLabel>
+            <translation><!-- GTO Rent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late Charge</masterLabel>
+            <translation><!-- Late Charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous</masterLabel>
+            <translation><!-- Miscellaneous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent</masterLabel>
+            <translation><!-- Rent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Comm Tax Applicable --></label>
+        <name>Comm_Tax_Applicable__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate Date --></label>
+        <name>Ex_Rate_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate --></label>
+        <name>Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is populated from &apos;Generate Rent Roll&apos; Page --></help>
+        <label><!-- Invoice Date --></label>
+        <name>Expected_Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Type --></label>
+        <name>Invoice_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoices Emailed --></label>
+        <name>Invoices_Emailed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoices Generated --></label>
+        <name>Invoices_Generated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoices Printed --></label>
+        <name>Invoices_Printed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notified Billing --></label>
+        <name>Notified_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notified Finance --></label>
+        <name>Notified_Finance__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is populated by W/F rule. --></help>
+        <label><!-- Property Name Text --></label>
+        <name>Property_Name_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Name --></label>
+        <name>Property_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+        <relationshipLabel><!-- Rent Roll --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Rent Roll is completely rejected --></help>
+        <label><!-- Rejected --></label>
+        <name>Rejected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Roll Auto --></label>
+        <name>Rent_Roll_Auto__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Roll Date --></label>
+        <name>Rent_Roll_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Roll Index --></label>
+        <name>Rent_Roll_Index__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Roll MM --></label>
+        <name>Rent_Roll_MM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Roll Period --></label>
+        <name>Rent_Roll_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Roll YYYY --></label>
+        <name>Rent_Roll_YYYY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount (Foreign) --></label>
+        <name>Total_Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <help><!-- Amount + Comm Tax --></help>
+        <label><!-- Total Amount --></label>
+        <name>Total_Amount_Formula__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll-up up from related RRD --></help>
+        <label><!-- Amount --></label>
+        <name>Total_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Comm Tax (Foreign) --></label>
+        <name>Total_Comm_Tax_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Comm Tax (Local) --></label>
+        <name>Total_Comm_Tax_Local__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll-up up from related RRD --></help>
+        <label><!-- Comm Tax --></label>
+        <name>Total_Comm_Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Diesel Rate (Foreign) --></label>
+        <name>Total_Diesel_Rate_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Diesel Rate (Local) --></label>
+        <name>Total_Diesel_Rate_Local__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Diesel Rate for the Month. --></help>
+        <label><!-- Total Diesel Rate --></label>
+        <name>Total_Diesel_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Leased Area (Sq. Ft.) --></label>
+        <name>Total_Leased_Area_Sq_Ft__c</name>
+    </fields>
+    <layouts>
+        <layout>Rent Roll Layout</layout>
+        <sections>
+            <label><!-- Billing Information --></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- View_PDF --></label>
+        <name>View_PDF</name>
+    </webLinks>
+</CustomObjectTranslation>

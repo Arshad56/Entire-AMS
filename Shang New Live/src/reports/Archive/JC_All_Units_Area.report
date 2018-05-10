@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Units__c$Property__c</field>
+    </columns>
+    <columns>
+        <field>Units__c$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Units__c$NLA_SQF__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Units__c$Property__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Junction City</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Units__c$Active__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>JC All Units Area</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Units_with_Lease_Units_and_Rent_Schedule__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Units__c$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Units__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

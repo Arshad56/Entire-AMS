@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Invoice Notification (managed via Apex from Invoicing page)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Invoice Notification</name>
+    <style>none</style>
+    <subject>Your Invoice No. {!Invoice__c.Name} is attached</subject>
+    <type>text</type>
+</EmailTemplate>

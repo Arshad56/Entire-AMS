@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Amount_Indicator__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Rollup_Cr_Amount__c  &lt;&gt;  Rollup_Dr_Amount__c , IMAGE(&quot;/servlet/servlet.FileDownload?file=015O00000026Zzj&quot;, &quot;Red&quot;,25, 25) , IMAGE(&quot;/servlet/servlet.FileDownload?file=015O00000026Zzo&quot;, &quot;Green&quot;,25, 25))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Amount Indicator</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cash_Receipt__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Cash Receipt</label>
+        <referenceTo>Cash_Receipt__c</referenceTo>
+        <relationshipLabel>Journal Vouchers</relationshipLabel>
+        <relationshipName>Journal_Vouchers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Company__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Company</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Journal Vouchers</relationshipLabel>
+        <relationshipName>Journal_Vouchers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Currency_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Currency Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Currency_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Deposit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Deposit</label>
+        <referenceTo>Deposit__c</referenceTo>
+        <relationshipLabel>Journal Vouchers</relationshipLabel>
+        <relationshipName>Journal_Vouchers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Document_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Document Description</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Fiscal_Period__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Fiscal Period</label>
+        <referenceTo>Fiscal_Period__c</referenceTo>
+        <relationshipLabel>Journal Vouchers</relationshipLabel>
+        <relationshipName>Journal_Vouchers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Invoice_Line_Item__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Invoice Line Item</label>
+        <referenceTo>Invoice_Line_Item__c</referenceTo>
+        <relationshipLabel>Journal Vouchers</relationshipLabel>
+        <relationshipName>Journal_Vouchers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Invoice__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Invoice</label>
+        <referenceTo>Invoice__c</referenceTo>
+        <relationshipLabel>Journal Vouchers</relationshipLabel>
+        <relationshipName>Journal_Vouchers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Journal_Batch__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Journal Batch</label>
+        <referenceTo>Journal_Batch__c</referenceTo>
+        <relationshipLabel>Journal Vouchers</relationshipLabel>
+        <relationshipName>Journal_Vouchers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Voucher__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Payment Voucher</label>
+        <referenceTo>Payment_Voucher__c</referenceTo>
+        <relationshipLabel>Journal Vouchers</relationshipLabel>
+        <relationshipName>Journal_Vouchers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Posting_Allowed__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (
+				
+ISPICKVAL(Fiscal_Period__r.Allow_Posting__c,  &quot;NO&quot;), &quot;NO&quot;, &quot;YES&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Posting Allowed</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Posting_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Posting Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Posting_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Posting Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Unposted</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Posted</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Void</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Canceled</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Remarks__c</fullName>
+        <externalId>false</externalId>
+        <label>Remarks</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Rollup_Cr_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Rollup Cr Amount</label>
+        <summarizedField>Journal_Entry__c.Cr_Amount__c</summarizedField>
+        <summaryFilterItems>
+            <field>Journal_Entry__c.Cr_Amount__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Journal_Entry__c.Currency_Code__c</field>
+            <operation>equals</operation>
+            <value>MMK</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Journal_Entry__c.Journal_Voucher__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Rollup_Dr_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Rollup Dr Amount</label>
+        <summarizedField>Journal_Entry__c.Dr_Amount__c</summarizedField>
+        <summaryFilterItems>
+            <field>Journal_Entry__c.Dr_Amount__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Journal_Entry__c.Currency_Code__c</field>
+            <operation>equals</operation>
+            <value>MMK</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Journal_Entry__c.Journal_Voucher__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Tenant_Id__c</fullName>
+        <description>Tenant Id based on JV type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Tenant Id based on JV type</inlineHelpText>
+        <label>Tenant Id</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Journal Voucher</label>
+    <nameField>
+        <label>Journal Voucher</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Journal Vouchers</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

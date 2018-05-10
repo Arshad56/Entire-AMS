@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Lease_Unit__c$Tenant__c</field>
+    </columns>
+    <columns>
+        <field>Lease_Unit__c$Unit__c</field>
+    </columns>
+    <columns>
+        <field>Lease_Unit__c$Lease_Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>Lease_Unit__c$Lease_End_Date__c</field>
+    </columns>
+    <columns>
+        <field>Lease_Unit__c$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Lease_Unit__c$Property_Short_Code__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>JMT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lease_Unit__c$Lease_End_Date__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>8/1/2016</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>JMT-Aug Leasing</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Lease_Units__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Lease_Unit__c$Lease_Start_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

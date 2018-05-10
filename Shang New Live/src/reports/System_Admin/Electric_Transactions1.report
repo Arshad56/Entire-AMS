@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Electric_Transaction__c$Name</field>
+    </columns>
+    <columns>
+        <field>Electric_Transaction__c$Unit__c</field>
+    </columns>
+    <columns>
+        <field>Electric_Transaction__c$Meter_No__c</field>
+    </columns>
+    <columns>
+        <field>Electric_Transaction__c$Electric_Meter__c</field>
+    </columns>
+    <columns>
+        <field>Electric_Transaction__c$Meter_Type__c</field>
+    </columns>
+    <columns>
+        <field>Electric_Transaction__c$Start_Unit__c</field>
+    </columns>
+    <columns>
+        <field>Electric_Transaction__c$End_Unit__c</field>
+    </columns>
+    <columns>
+        <field>Electric_Transaction__c$From_Date__c</field>
+    </columns>
+    <columns>
+        <field>Electric_Transaction__c$To_Date__c</field>
+    </columns>
+    <description>JC Monthly Electric Transactions</description>
+    <filter>
+        <criteriaItems>
+            <column>Electric_Transaction__c$Property_Short_Code__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>JC</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Electric Transactions</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Electric_Transactions__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Electric_Transaction__c$Unit__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Electric_Transaction__c$From_Date__c</dateColumn>
+        <endDate>2017-10-25</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-09-26</startDate>
+    </timeFrameFilter>
+</Report>

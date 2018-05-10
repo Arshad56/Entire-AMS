@@ -1,0 +1,1087 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Billing_Term__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Term</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Billing_Term</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Business_Type__c</fullName>
+        <description>Type of business</description>
+        <externalId>false</externalId>
+        <label>Business Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Retail</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>F&amp;B</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Office</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Warehouse</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Charge_Method__c</fullName>
+        <description>managed by Global Picklist</description>
+        <externalId>false</externalId>
+        <label>Charge Method</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Charge_Method</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>LOIs (Contact)</relationshipLabel>
+        <relationshipName>LOIs1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Created_Month__c</fullName>
+        <description>This field is created to be used in Workflow which auto generate LOI Agreement Name, as we want to flash month value</description>
+        <externalId>false</externalId>
+        <formula>CASE(MONTH(DATEVALUE (CreatedDate )),
+1, &quot;01&quot;,
+2, &quot;02&quot;,
+3, &quot;03&quot;, 
+4, &quot;04&quot;, 
+5, &quot;05&quot;, 
+6, &quot;06&quot;,
+7, &quot;07&quot;,
+8, &quot;08&quot;,
+9, &quot;09&quot;,
+10, &quot;10&quot;,
+11, &quot;11&quot;,
+12, &quot;12&quot;,
+&quot;None&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Created Month</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Created_Year__c</fullName>
+        <description>This field is created to be used in Workflow which auto generate LOI Agreement Name, as we want to flash YYYY value</description>
+        <externalId>false</externalId>
+        <formula>TEXT (YEAR( DATEVALUE( CreatedDate ) ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Created Year</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Day_s_in_expired__c</fullName>
+        <externalId>false</externalId>
+        <formula>(LOI_End_Date__c - TODAY() )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Day(s) in expired</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deposit_Fixed_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Deposit Fixed Amount (Need to delete)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Deposit_Pdf__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Deposit Pdf</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Deposit_Term__c</fullName>
+        <externalId>false</externalId>
+        <label>Deposit Term</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Payment_Term</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Deposits__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Deposits</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Extended__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Extended</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Financial_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Financial Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>LOIs (Financial Contact)</relationshipLabel>
+        <relationshipName>LOIs_Financial_Contact</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Fit_Out_Period_Days__c</fullName>
+        <externalId>false</externalId>
+        <label>Fit-Out Period (Days)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Day</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Fit_Out_Period_Months__c</fullName>
+        <externalId>false</externalId>
+        <label>Fit-Out Period (Months)</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Generated_LOI__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>True If LOI Pdf document is already generated</description>
+        <externalId>false</externalId>
+        <label>Generated LOI</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Handover_Client_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Handover Client Contact</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.Tenant__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>LOIs</relationshipLabel>
+        <relationshipName>LOIs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Handover_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Handover Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Handover_Operation_In_Charge__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Handover Operation In Charge</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>LOIs (Handover Operation In Charge)</relationshipLabel>
+        <relationshipName>LOIs2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LOI_Auto__c</fullName>
+        <displayFormat>LA-{MM}{YYYY}-{00000000}</displayFormat>
+        <externalId>false</externalId>
+        <inlineHelpText>This is used in W/F to generate LOI Agreement No.</inlineHelpText>
+        <label>LOI Auto</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>LOI_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(TEXT(LOI_Tenure_Days__c)),0,+ VALUE(TEXT(LOI_Tenure_Days__c))) 
++ 
+(DATE( 
+YEAR( LOI_Start_Date__c ) + FLOOR( ( MONTH ( LOI_Start_Date__c ) + LOI_Tenure_Mths__c - 1 ) / 12 ), 
+MOD( MONTH ( LOI_Start_Date__c ) + LOI_Tenure_Mths__c - 1 + 
+IF( DAY ( LOI_Start_Date__c ) &gt; CASE( MOD( MONTH( LOI_Start_Date__c ) + LOI_Tenure_Mths__c - 1, 12 ) + 1, 
+2, 28, 
+4, 30, 
+6, 30, 
+9, 30, 
+11, 30, 
+31 ), 1, 0 ), 12 ) + 1, 
+IF( DAY( LOI_Start_Date__c ) &gt; CASE( MOD( MONTH( LOI_Start_Date__c) + LOI_Tenure_Mths__c - 1, 12 ) + 1, 
+2, 28, 
+4, 30, 
+6, 30, 
+9, 30, 
+11, 30, 
+31 ), 
+1, DAY( LOI_Start_Date__c ) 
+) 
+)-1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Original End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LOI_Index__c</fullName>
+        <externalId>false</externalId>
+        <label>LOI Index</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LOI_Signed_off_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>LOI Signed-off Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LOI_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>LOI Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LOI_Status__c</fullName>
+        <description>Status of the LOI : 
+Draft : not signed yet 
+Cancelled : cancelled 
+Converted : converted to lease</description>
+        <externalId>false</externalId>
+        <label>LOI Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Converted</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Expired</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Pre-Terminated</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Renewal</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LOI_Tenure_Days__c</fullName>
+        <externalId>false</externalId>
+        <label>LOI Tenure (Days)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Day</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LOI_Tenure_Mths__c</fullName>
+        <externalId>false</externalId>
+        <label>LOI Tenure (Mths)</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LOI_Validity_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Populated through W/F
+Validity Week + Created date</inlineHelpText>
+        <label>LOI Validity (Date)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LOI_Validity_Week__c</fullName>
+        <externalId>false</externalId>
+        <label>LOI Validity (Week)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>LOI_Validity_Week</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Landlord_s_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Landlord’s Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Landlord_s_Position__c</fullName>
+        <externalId>false</externalId>
+        <label>Landlord’s Position</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Landlord_s_representative__c</fullName>
+        <externalId>false</externalId>
+        <label>Landlord’s representative</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Late_Payment_Interest__c</fullName>
+        <externalId>false</externalId>
+        <label>Late Payment Interest (%)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Opening_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Property__r.Actual_Opening_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opening Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Option_to_Renew__c</fullName>
+        <description>Option to renew in number of years</description>
+        <externalId>false</externalId>
+        <label>Option to Renew (Mths)</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Original_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This field would be populated only in the case of Extension or Pre-Termination and would show the Revised End Date as per Extension or Pre-Termination.</inlineHelpText>
+        <label>Revised End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Permitted_Use__c</fullName>
+        <externalId>false</externalId>
+        <label>Permitted Use</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Price_Factor__c</fullName>
+        <description>managed by LOI interface: GenerateLOI</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Populated via Property &gt; Pricing Factor table based on Tenant Type</inlineHelpText>
+        <label>Price Factor</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>Property__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Property Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Name_Text__c</fullName>
+        <externalId>false</externalId>
+        <label>Property Name Text</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Property__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Property Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Short_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Property__r.Short_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Property Short Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Property</label>
+        <referenceTo>Property__c</referenceTo>
+        <relationshipLabel>LOIs</relationshipLabel>
+        <relationshipName>LOIs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Reason_for_Termination__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason for Cancellation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Renovation_Rebates_Terms__c</fullName>
+        <externalId>false</externalId>
+        <label>Renovation Rebates Terms</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Renovation_Rebates__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Renovation Rebates</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Rent_Free_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Rent Free End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Rent_Free_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Rent Free Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Rent_Roll__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Rent Roll</label>
+        <referenceTo>Rent_Roll__c</referenceTo>
+        <relationshipLabel>LOIs</relationshipLabel>
+        <relationshipName>LOIs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Stage__c</fullName>
+        <description>Different stages for Letter of Intent and LOI Agreement</description>
+        <externalId>false</externalId>
+        <label>Stage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>LOI Draft</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>LOI Approval</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LOI Approved</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LOI Sent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LOI Signed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LOI Cancelled</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LA Draft</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LA Sent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LA Cancelled</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LA Variation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LA Signed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LA Approval</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LA Approved</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LA Stamped</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LA Completed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LA Converted</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Staggered_Rent__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Check for staggered rental</description>
+        <externalId>false</externalId>
+        <label>Staggered Rent</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Tenant_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Tenant Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Tenant_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>Tenant__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tenant Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tenant_Name_Acceptance__c</fullName>
+        <externalId>false</externalId>
+        <label>Tenant Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tenant_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Tenant__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tenant Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tenant_Position__c</fullName>
+        <externalId>false</externalId>
+        <label>Tenant Position</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tenant_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Tenant Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Tenant_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tenant__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Tenant</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>LOIs</relationshipLabel>
+        <relationshipName>LOIs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Terms_Conditions__c</fullName>
+        <externalId>false</externalId>
+        <label>Terms &amp; Conditions</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Test_Approval__c</fullName>
+        <externalId>false</externalId>
+        <label>Test Approval</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Trade_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Trade Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Trade_Category</valueSetName>
+        </valueSet>
+    </fields>
+    <label>LOI</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Property__c</columns>
+        <columns>Tenant__c</columns>
+        <columns>Stage__c</columns>
+        <columns>LOI_Status__c</columns>
+        <columns>LOI_Validity_Date__c</columns>
+        <columns>LOI_Tenure_Days__c</columns>
+        <columns>LOI_Tenure_Mths__c</columns>
+        <columns>LOI_Start_Date__c</columns>
+        <columns>LOI_End_Date__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>LOI Agreement No.</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>LOIs</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Tenant__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Property__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LOI_Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LOI_Start_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LOI_End_Date__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <webLinks>
+        <fullName>Cancel_LOI</fullName>
+        <availability>online</availability>
+        <description>Cancel LOI</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Cancel LOI</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/apex.js&quot;)} 
+if(&apos;{!LOI__c.LOI_Status__c}&apos; != &apos;Cancelled&apos;){
+var r = confirm(&quot;Are you sure you want to Cancel this LOI?&quot;); 
+if(r == true){
+ var reason;
+ while(reason == null || reason == &apos;&apos;){
+   reason = prompt(&quot;Please Provide Reason for Cancellation&quot;,&quot; &quot;);
+   if(reason === null)
+      break;
+ }
+ if(reason ===  null){}
+ else{
+  var loiObj = new sforce.SObject(&quot;LOI__c&quot;);
+  loiObj.id = &apos;{!LOI__c.Id}&apos;;
+  loiObj.Reason_for_Termination__c = reason;
+  loiObj.LOI_Status__c = &apos;Cancelled&apos;;
+  
+  var listDep = sforce.connection.query(&quot;SELECT Id,Status__c from Deposit__c where LOI__c = &apos;{!LOI__c.Id}&apos;&quot;);
+
+  records = listDep.getArray(&quot;records&quot;); 
+
+  var checkPaid = false;
+
+  for (var i=0; i&lt; records.length; i++) {
+    if(records[i].Status__c != &apos;Paid&apos;){
+    	records[i].Status__c = &apos;Cancelled&apos;;
+    }else{
+    	checkPaid = true;
+    }
+  }
+  if(!checkPaid){ 
+    var result = sforce.connection.update([loiObj]);
+    var resultDep = sforce.connection.update(records);
+    location.reload(true);
+  }else{
+  	alert(&quot;One or more Deposits are already Paid, cant cancel LOI.&quot;);
+  }
+
+ }
+}
+}
+else{
+ alert(&quot;LOI is already cancelled&quot;);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Convert_to_LA</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Convert to LA</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+
+var loiId = &apos;{!LOI__c.Id}&apos;; 
+
+var left = Number((screen.width/2)-200); 
+var tops = Number((screen.height/2)-250); 
+
+if(&apos;{!LOI__c.LOI_Status__c}&apos; == &apos;Converted&apos;){
+   alert(&apos;The LOI is already converted to LA.&apos;);
+}else if(&apos;{!LOI__c.LOI_Status__c}&apos; == &apos;Cancelled&apos;){
+   alert(&apos;The LOI is Cancelled.&apos;);
+}else{
+    var win=window.open(&apos;/apex/LoiLaConversion_Button?loiId=&apos;+loiId,&apos;&apos;, 
+&apos;width=650,height=250,scrollbars=yes,top=&apos;+tops+&apos;,left=&apos;+left);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Generate_LOI_PDF</fullName>
+        <availability>online</availability>
+        <description>generates the pdf for the LOI</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate LOI PDF</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/apex.js&quot;)} 
+if({!LOI__c.Generated_LOI__c}){
+ alert(&apos;PDF is Already generated&apos;);
+}else if(&apos;{!LOI__c.Charge_Method__c}&apos; == &apos;Monthly Rate - CL&apos; || &apos;{!LOI__c.Charge_Method__c}&apos;== &apos;Daily Rate&apos;){
+alert(&apos;There is no available PDF for Casual Leasing.&apos;);
+}else{
+ sforce.apex.execute(&quot;LoiDocumentGenerator&quot;,&quot;generateLoi&quot;,{parentId:&quot;{!LOI__c.Id}&quot;});
+ var obj = new sforce.SObject(&apos;loi__c&apos;); 
+ obj.id = &quot;{!LOI__c.Id}&quot;; 
+ obj.Generated_LOI__c= &quot;true&quot;;
+ 
+ result = sforce.connection.update([obj]);
+
+ window.location.href=&quot;/{!LOI__c.Id}&quot;; 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>View_LOI_PDF</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>View LOI PDF</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/connection.js&quot;)}
+if({!LOI__c.Generated_LOI__c}){
+try{
+ var result = sforce.connection.query(&quot;Select Id FROM attachment WHERE (ParentId=&apos;{!LOI__c.Id}&apos;) ORDER BY CreatedDate DESC LIMIT 1&quot;);
+
+ if(result.getInt(&quot;size&quot;)==1){
+  var attachment = result.getArray(&quot;records&quot;);
+  
+  window.open(&quot;/servlet/servlet.FileDownload?file=&quot;+attachment[0].Id);
+ }
+ else{
+  if({!LOI__c.Generated_LOI__c}){
+   alert(&quot;PDF is still processing, Please wait for few more seconds&quot;);
+  }
+  else{
+   alert(&quot;Please generate PDF LOI first&quot;);
+  }
+ }
+}
+catch(e){
+ alert(&quot;Please Contact System Administrator &quot;+e);
+}
+}
+else
+alert(&quot;PDF is Not yet generated&quot;);</url>
+    </webLinks>
+</CustomObject>

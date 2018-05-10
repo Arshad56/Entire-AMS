@@ -1,0 +1,13 @@
+Dear {!User.Name}, 
+
+Please proceed to approve Write Off for Equipment: {!Equipment__c.Equipment_Auto__c}.
+Please see details below: 
+
+Requested by: {!User.Name}
+Equipment Id: {!Equipment__c.Equipment_Auto__c}
+Equipment Name: {!Equipment__c.Name}
+Write Off Remark: {!Equipment__c.Remarks__c}
+
+
+Thank you. 
+System Admin

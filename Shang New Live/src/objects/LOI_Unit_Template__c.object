@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Trading_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual Trading Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Area_Sq_Ft__c</fullName>
+        <externalId>false</externalId>
+        <formula>Unit__r.NLA_SQF__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Area (Sq.Ft)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Authorised_Person__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Authorised Person</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>LOI_Unit_Templates</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Charge_Method__c</fullName>
+        <externalId>false</externalId>
+        <label>Charge Method</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Charge_Method</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Day_s_in_expired__c</fullName>
+        <externalId>false</externalId>
+        <formula>(End_Date__c - TODAY())</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Day(s) in expired</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Extended__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Extended</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Extension_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Extension Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Fit_Out_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Fit Out Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Generate_CheckList__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Generate CheckList</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Handover_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Handover Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Handover_Signed_off__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Handover Signed-off</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LOI_Unit_Template_Name__c</fullName>
+        <description>Combination of Unit #; Trade &amp; Sub Trade Cat
+To be managed by W/F</description>
+        <externalId>false</externalId>
+        <label>LOI Template Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Level__c</fullName>
+        <externalId>false</externalId>
+        <formula>Unit__r.Level__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Level</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Original_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Original End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Person_In_Charge__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Person In Charge</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>LOI_Unit_Templates1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Termination__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Pre-Termination</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Property_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Property</label>
+        <referenceTo>Property__c</referenceTo>
+        <relationshipName>LOI_Unit_Templates</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Property_Name_Text__c</fullName>
+        <externalId>false</externalId>
+        <label>Property Name Text</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Short_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Unit__r.Property_Short_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Property Short Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property__c</fullName>
+        <externalId>false</externalId>
+        <formula>Unit__r.Property__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Property</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reason_for_Termination__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason for Termination</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Space_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Space Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Space_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Sub_Trade_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub-Trade Category</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Trade_Category__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Sub_Trade_Category</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Books &amp; Stationery</controllingFieldValue>
+                <valueName>Books &amp; Stationery</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Arts &amp; Crafts</controllingFieldValue>
+                <valueName>Arts &amp; Crafts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Optical</controllingFieldValue>
+                <valueName>Optical</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Education</controllingFieldValue>
+                <valueName>Education</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electricals / Electronics</controllingFieldValue>
+                <valueName>Electricals / Electronics</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Jewellery / Watches</controllingFieldValue>
+                <valueName>Jewellery / Watches</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sundry &amp; Services</controllingFieldValue>
+                <valueName>Sundry &amp; Services</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Shoes &amp; Bags</controllingFieldValue>
+                <valueName>Shoes &amp; Bags</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Supermarket</controllingFieldValue>
+                <valueName>Supermarket</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sporting Goods &amp; Apparel</controllingFieldValue>
+                <valueName>Sporting Goods &amp; Apparel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Music &amp; Videos</controllingFieldValue>
+                <valueName>Music &amp; Videos</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Kids Apparel</controllingFieldValue>
+                <valueName>Kids Apparel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Leisure &amp; Entertainment</controllingFieldValue>
+                <valueName>Leisure &amp; Entertainment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Gifts &amp; Souvenirs</controllingFieldValue>
+                <valueName>Gifts &amp; Souvenirs</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Fashion</controllingFieldValue>
+                <valueName>Fashion &amp; Accessories</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Department Store</controllingFieldValue>
+                <valueName>Department Store</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Target_Trading_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Target Trading Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Trade_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Trade Category</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Trade_Category</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Unit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Unit</label>
+        <referenceTo>Units__c</referenceTo>
+        <relationshipName>LOI_Unit_Templates</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>LOI Template</label>
+    <nameField>
+        <displayFormat>{YYYY}-{MM}-LUT-{000000}</displayFormat>
+        <label>LOI Unit Template No</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>LOI Templates</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+</CustomObject>

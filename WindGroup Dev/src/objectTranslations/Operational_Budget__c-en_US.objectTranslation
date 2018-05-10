@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Operational Budget</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Operational Budget</value>
+    </caseValues>
+    <fields>
+        <label><!-- Budget Category --></label>
+        <name>Budget_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Line --></label>
+        <name>Budget_Line__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Type --></label>
+        <name>Budget_Type__c</name>
+        <picklistValues>
+            <masterLabel>Capex</masterLabel>
+            <translation><!-- Capex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opex</masterLabel>
+            <translation><!-- Opex --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- COA Master --></label>
+        <name>COA_Master__c</name>
+        <relationshipLabel><!-- Operational Budget --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>Company_Name__c</name>
+        <relationshipLabel><!-- Operational Budget --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+    </fields>
+    <layouts>
+        <layout>Operational Budget Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

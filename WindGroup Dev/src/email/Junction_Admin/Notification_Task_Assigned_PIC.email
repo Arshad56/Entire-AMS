@@ -1,0 +1,10 @@
+Dear  PIC,
+
+Task  {!Task.Task_ID__c}
+
+Description: {!Task.Description__c}
+
+You can check Task details here {!Task.Link}
+
+Regards 
+Operation Team

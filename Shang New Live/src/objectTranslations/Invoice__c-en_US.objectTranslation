@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Invoice</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Invoices</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Id --></label>
+        <name>Account_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- AmountRollupForeign --></label>
+        <name>AmountRollupForeign__c</name>
+    </fields>
+    <fields>
+        <label><!-- AmountRollupLocal --></label>
+        <name>AmountRollupLocal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount (Foreign) --></label>
+        <name>Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount (Local) --></label>
+        <name>Amount_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Paid (Foreign) --></label>
+        <name>Amount_Paid_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Paid (Local) --></label>
+        <name>Amount_Paid_Local__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll-Up from related Cash Details --></help>
+        <label><!-- Amount Paid --></label>
+        <name>Amount_Paid__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll-up of Amount from related Invoice Line Item --></help>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Approved Amount --></label>
+        <name>Approved_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Barcode --></label>
+        <name>Barcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Email --></label>
+        <name>Billing_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- From related Rent Roll --></help>
+        <label><!-- Billing Type --></label>
+        <name>Billing_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Method --></label>
+        <name>Charge_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comm Tax Amount (Foreign) --></label>
+        <name>Comm_Tax_Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comm Tax Amount (Local) --></label>
+        <name>Comm_Tax_Amount_Local__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll-Up of Comm Tax Amount from related Invoice Line Item --></help>
+        <label><!-- Comm Tax Amount --></label>
+        <name>Comm_Tax_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current --></label>
+        <name>Current__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate --></label>
+        <name>Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Foreign Exchange Rate --></label>
+        <name>Foreign_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Auto --></label>
+        <name>Invoice_Auto__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is referred in the Backend --></help>
+        <label><!-- FM Invoice No --></label>
+        <name>Invoice_Code_without__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Date --></label>
+        <name>Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Due (Age) --></label>
+        <name>Invoice_Due_Age__c</name>
+    </fields>
+    <fields>
+        <help><!-- This indicates if the Invoice has been Emailed --></help>
+        <label><!-- Invoice Emailed --></label>
+        <name>Invoice_Emailed__c</name>
+    </fields>
+    <fields>
+        <help><!-- This indicates if the Invoice has been generated --></help>
+        <label><!-- Invoice Generated --></label>
+        <name>Invoice_Generated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Index --></label>
+        <name>Invoice_Index__c</name>
+    </fields>
+    <fields>
+        <help><!-- This indicates if the Invoice has been Printed --></help>
+        <label><!-- Invoice Printed --></label>
+        <name>Invoice_Printed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Scan Number --></label>
+        <name>Invoice_Scan_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Type --></label>
+        <name>Invoice_Type__c</name>
+        <picklistValues>
+            <masterLabel>Adhoc Credit Note</masterLabel>
+            <translation><!-- Adhoc Credit Note --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adhoc Deposit</masterLabel>
+            <translation><!-- Adhoc Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adhoc Invoice</masterLabel>
+            <translation><!-- Adhoc Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Generated Advance Rental</masterLabel>
+            <translation><!-- System Generated Advance Rental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Generated Deposit</masterLabel>
+            <translation><!-- System Generated Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Generated Invoice</masterLabel>
+            <translation><!-- System Generated Invoice --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- JV Status --></label>
+        <name>JV_Status__c</name>
+        <picklistValues>
+            <masterLabel>Generated</masterLabel>
+            <translation><!-- Generated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Posted</masterLabel>
+            <translation><!-- Posted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This is used for Journal Voucher process. Used to sync/integrate data with JE Logic and configuration objects. --></help>
+        <label><!-- JV Type --></label>
+        <name>JV_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Payment Date --></label>
+        <name>Last_Payment_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is checked by Default for all Invoices (since all Invoices are applicable for Late Charge, provided there&apos;s a delay in payment)
+Late Charge Invoices will have this field as &apos;unchecked&apos; --></help>
+        <label><!-- Late Charge Applicable --></label>
+        <name>Late_Charge_Applicable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Late Charge Days --></label>
+        <name>Late_Charge_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease --></label>
+        <name>Lease__c</name>
+        <relationshipLabel><!-- Invoices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Total Amount - Withholding Tax Amount --></help>
+        <label><!-- Net Total --></label>
+        <name>Net_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outstanding Amount (Foreign) --></label>
+        <name>Outstanding_Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outstanding Amount (Local) --></label>
+        <name>Outstanding_Amount_Local__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Amount - Amount Paid --></help>
+        <label><!-- Outstanding Amount --></label>
+        <name>Outstanding_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Company --></label>
+        <name>Parent_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Due Date --></label>
+        <name>Payment_Due_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for CL Process
+To be referred in PDF --></help>
+        <label><!-- Price Factor --></label>
+        <name>Price_Factor__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is populated by W/F rule --></help>
+        <label><!-- Property Name Text --></label>
+        <name>Property_Name_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- Created this field to manage Misc Invoice Process - to generate PDF --></help>
+        <label><!-- Property --></label>
+        <name>Property_Name__c</name>
+        <relationshipLabel><!-- Invoices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Property Short Code --></label>
+        <name>Property_Short_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- from related Lease.
+Used in Cash Receipt Interface --></help>
+        <label><!-- Property ID --></label>
+        <name>Property__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Refund Currency Code --></label>
+        <name>Refund_Currency_Code__c</name>
+        <picklistValues>
+            <masterLabel>MMK</masterLabel>
+            <translation><!-- MMK --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Refund Mode --></label>
+        <name>Refund_Mode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Refund Status --></label>
+        <name>Refund_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining Amount --></label>
+        <name>Remaining_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Roll --></label>
+        <name>Rent_Roll__c</name>
+        <relationshipLabel><!-- Invoices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Requested Amount --></label>
+        <name>Requested_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outstanding</masterLabel>
+            <translation><!-- Outstanding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid</masterLabel>
+            <translation><!-- Paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partially Paid</masterLabel>
+            <translation><!-- Partially Paid --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TaxAmountRollupForeign --></label>
+        <name>TaxAmountRollupForeign__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaxAmountRollupLocal --></label>
+        <name>TaxAmountRollupLocal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tenant --></label>
+        <name>Tenant_Name__c</name>
+        <relationshipLabel><!-- Invoices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Used for CL Process
+To be referred in PDF --></help>
+        <label><!-- Tenant Type --></label>
+        <name>Tenant_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- from related Lease.
+Used in Cash Receipt Interface --></help>
+        <label><!-- Tenant ID --></label>
+        <name>Tenant__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalAmountRollupForeign --></label>
+        <name>TotalAmountRollupForeign__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalAmountRollupLocal --></label>
+        <name>TotalAmountRollupLocal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount (Foreign) --></label>
+        <name>Total_Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount (Local) --></label>
+        <name>Total_Amount_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount --></label>
+        <name>Total_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rollup of Refunded Amount on PV --></help>
+        <label><!-- Total Refunded Amount --></label>
+        <name>Total_Refunded_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rollup of Amount on PV (Unvoided) --></help>
+        <label><!-- Total Requested Amount --></label>
+        <name>Total_Requested_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Void Datetime --></label>
+        <name>Void_Datetime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Void Reason --></label>
+        <name>Void_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Voided --></label>
+        <name>Voided__c</name>
+    </fields>
+    <fields>
+        <help><!-- Applicable for Casual Leasing Invoices only. --></help>
+        <label><!-- Withholding Tax Amount --></label>
+        <name>Withholding_Tax_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- 31 - 60 days --></label>
+        <name>X31_60_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- 61 - 90 days --></label>
+        <name>X61_90_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- &gt; 90 days --></label>
+        <name>X90_days__c</name>
+    </fields>
+    <layouts>
+        <layout>Invoice Foreign Layout</layout>
+        <sections>
+            <label><!-- Bardcode --></label>
+            <section>Bardcode</section>
+        </sections>
+        <sections>
+            <label><!-- Currency Information --></label>
+            <section>Currency Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Related Information --></label>
+            <section>Related Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Invoice Local Layout</layout>
+        <sections>
+            <label><!-- Bardcode --></label>
+            <section>Bardcode</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Related Information --></label>
+            <section>Related Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Read Only Invoice Layout</layout>
+        <sections>
+            <label><!-- Bardcode --></label>
+            <section>Bardcode</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Related Information --></label>
+            <section>Related Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Foreign --></label>
+        <name>Foreign</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Local --></label>
+        <name>Local</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Generate_PDF --></label>
+        <name>Generate_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_PDF_Invoice --></label>
+        <name>Generate_PDF_Invoice</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Refund --></label>
+        <name>Refund</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Un_Void --></label>
+        <name>Un_Void</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_PDF --></label>
+        <name>View_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Void --></label>
+        <name>Void</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Void_Invoice --></label>
+        <name>Void_Invoice</name>
+    </webLinks>
+</CustomObjectTranslation>

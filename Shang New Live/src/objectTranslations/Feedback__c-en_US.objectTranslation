@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Feedback</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Feedback</value>
+    </caseValues>
+    <fields>
+        <label><!-- AWS Id --></label>
+        <name>AWS_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback Description --></label>
+        <name>Feedback_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback Option --></label>
+        <name>Feedback_Option__c</name>
+        <relationshipLabel><!-- Feedback --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Feedback Type --></label>
+        <name>Feedback_Type__c</name>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsatisfied</masterLabel>
+            <translation><!-- Unsatisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+        <relationshipLabel><!-- Feedback --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Display --></label>
+        <name>Mobile_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reported Date/Time --></label>
+        <name>Reported_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolved By --></label>
+        <name>Resolved_By__c</name>
+        <relationshipLabel><!-- Feedback --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resolved Date/Time --></label>
+        <name>Resolved_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <layouts>
+        <layout>Feedback Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

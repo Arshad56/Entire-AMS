@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Mobile Module</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Mobile Modules</value>
+    </caseValues>
+    <fields>
+        <label><!-- App --></label>
+        <name>App__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon Image --></label>
+        <name>Icon_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon Url --></label>
+        <name>Icon_Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Mobile Module --></label>
+        <name>Parent_Mobile_Module__c</name>
+        <relationshipLabel><!-- Mobile Modules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Process Type --></label>
+        <name>Process_Type__c</name>
+        <picklistValues>
+            <masterLabel>Daily Check</masterLabel>
+            <translation><!-- Daily Check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Handover</masterLabel>
+            <translation><!-- Handover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parent</masterLabel>
+            <translation><!-- Parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Alert</masterLabel>
+            <translation><!-- System Alert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Takeover</masterLabel>
+            <translation><!-- Takeover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Toilet Cleanliness</masterLabel>
+            <translation><!-- Toilet Cleanliness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iRequest</masterLabel>
+            <translation><!-- iRequest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iTask</masterLabel>
+            <translation><!-- iTask --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- S/N --></label>
+        <name>S_N__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shift Assignment --></label>
+        <name>Shift_Assignment_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Process Type --></label>
+        <name>Type__c</name>
+    </fields>
+    <layouts>
+        <layout>Mobile Module Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

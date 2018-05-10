@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Asset Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Asset Plans</value>
+    </caseValues>
+    <fields>
+        <label><!-- Base Rent --></label>
+        <name>Base_Rent__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exected Rental --></label>
+        <name>Exected_Rental__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease Unit --></label>
+        <name>Lease_Unit__c</name>
+        <relationshipLabel><!-- Asset Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rate (Sqft.) --></label>
+        <name>Rate_Sqft__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>LOI Issued</masterLabel>
+            <translation><!-- LOI Issued --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOI Signed</masterLabel>
+            <translation><!-- LOI Signed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vacant</masterLabel>
+            <translation><!-- Vacant --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Equipment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Equipments</value>
+    </caseValues>
+    <fields>
+        <label><!-- AEI Work Update --></label>
+        <name>AEI_Work_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Air Flow Rate (CMH) --></label>
+        <name>Air_Flow_Rate_CMH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Air - Off Coil (Deg C) --></label>
+        <name>Air_Off_Coil_Deg_C__c</name>
+    </fields>
+    <fields>
+        <label><!-- Air - On Coil (Deg C) --></label>
+        <name>Air_On_Coil_Deg_C__c</name>
+    </fields>
+    <fields>
+        <label><!-- Capacity (KW) --></label>
+        <name>Capacity_KW__c</name>
+    </fields>
+    <fields>
+        <label><!-- Capacity (Litres) --></label>
+        <name>Capacity_Litres__c</name>
+    </fields>
+    <fields>
+        <label><!-- Capacity (RT) --></label>
+        <name>Capacity_RT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Capacity (Channels) --></label>
+        <name>Capacity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checklist --></label>
+        <name>Checklist__c</name>
+        <relationshipLabel><!-- Equipments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Control Panel Tag --></label>
+        <name>Control_Panel_Tag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Purchase --></label>
+        <name>Date_of_Purchase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- The location of the sischarge line or pipe for the Equipment --></help>
+        <label><!-- Discharge Location --></label>
+        <name>Discharge_Location__c</name>
+        <relationshipLabel><!-- Equipments (Discharge Location) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Efficiency (%) --></label>
+        <name>Efficiency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equipment Category --></label>
+        <name>Equipment_Category__c</name>
+        <picklistValues>
+            <masterLabel>AHU</masterLabel>
+            <translation><!-- AHU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chiller</masterLabel>
+            <translation><!-- Chiller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electrical System</masterLabel>
+            <translation><!-- Electrical System --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FCU</masterLabel>
+            <translation><!-- FCU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fire System</masterLabel>
+            <translation><!-- Fire System --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lifts &amp; Escaltors</masterLabel>
+            <translation><!-- Lifts &amp; Escaltors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plumbing</masterLabel>
+            <translation><!-- Plumbing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Equipment ID --></label>
+        <name>Equipment_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equipment Level --></label>
+        <name>Equipment_Level__c</name>
+        <relationshipLabel><!-- Equipments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Location where Equipment is installed --></help>
+        <label><!-- Equipment Location --></label>
+        <name>Equipment_Location__c</name>
+        <relationshipLabel><!-- Equipments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Mode for AHU and FCU --></help>
+        <label><!-- Equipment Mode --></label>
+        <name>Equipment_Mode__c</name>
+        <picklistValues>
+            <masterLabel>Bas</masterLabel>
+            <translation><!-- Bas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual</masterLabel>
+            <translation><!-- Manual --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Equipment Quantity --></label>
+        <name>Equipment_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equipment Type --></label>
+        <name>Equipment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Chilled Water</masterLabel>
+            <translation><!-- Chilled Water --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Close Loop</masterLabel>
+            <translation><!-- Close Loop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Expansion</masterLabel>
+            <translation><!-- Direct Expansion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Loop</masterLabel>
+            <translation><!-- Open Loop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Screw Compressor</masterLabel>
+            <translation><!-- Screw Compressor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Unit the Equipment is located --></help>
+        <label><!-- Equipment Unit --></label>
+        <name>Equipment_Unit__c</name>
+        <relationshipLabel><!-- Equipments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Equipment Value --></help>
+        <label><!-- Equipment Value --></label>
+        <name>Equipment_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Static Pressure (PA) --></label>
+        <name>External_Static_Pressure_PA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fan Speed (RPM) --></label>
+        <name>Fan_Speed_RPM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fixed Asset ID --></label>
+        <name>Fixed_Asset_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fresh Air Flow Rate (CMH) --></label>
+        <name>Fresh_Air_Flow_Rate_CMH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Impeller Diameter (mm) --></label>
+        <name>Impeller_Diameter_mm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Installation Date --></label>
+        <name>Installation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Life Span (years) --></label>
+        <name>Life_Span_years__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manufacturer --></label>
+        <name>Manufacturer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile Module --></label>
+        <name>Mobile_Module__c</name>
+        <relationshipLabel><!-- Equipments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Manufacturer Model --></help>
+        <label><!-- Model --></label>
+        <name>Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Motor (KW) --></label>
+        <name>Motor_KW__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person in charge --></label>
+        <name>Person_in_charge__c</name>
+        <relationshipLabel><!-- Equipments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Picture --></label>
+        <name>Picture__c</name>
+    </fields>
+    <fields>
+        <label><!-- Power Supply (V/Ph/Hz) --></label>
+        <name>Power_Supply_V_Ph_Hz__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is populated by W/F rule --></help>
+        <label><!-- Property Name Text --></label>
+        <name>Property_Name_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+        <relationshipLabel><!-- Equipments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Replacement Parts --></label>
+        <name>Replacement_Parts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sensible Capacity (KW) --></label>
+        <name>Sensible_Capacity_KW__c</name>
+    </fields>
+    <fields>
+        <label><!-- Serial No. --></label>
+        <name>Serial_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Servicing Description --></label>
+        <name>Servicing_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Servicing Intervals (days) --></label>
+        <name>Servicing_Intervals_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Servicing Intervals (months) --></label>
+        <name>Servicing_Intervals_months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Servicing Start Date --></label>
+        <name>Servicing_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Servicing Vendor --></label>
+        <name>Servicing_Vendor__c</name>
+        <relationshipLabel><!-- Equipments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Servicing --></label>
+        <name>Servicing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Serving Description --></label>
+        <name>Serving_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Level the Equipment is serving --></help>
+        <label><!-- Serving Level --></label>
+        <name>Serving_Level__c</name>
+        <relationshipLabel><!-- Equipments (Serving Level) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Location the Equipment is Serving --></help>
+        <label><!-- Serving Location --></label>
+        <name>Serving_Location__c</name>
+        <relationshipLabel><!-- Equipments (Serving Location) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Unit the Equipment is serving --></help>
+        <label><!-- Serving Unit --></label>
+        <name>Serving_Unit__c</name>
+        <relationshipLabel><!-- Equipments (Serving Unit) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sound Power @3 M --></label>
+        <name>Sound_Power_3_M__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stater Type --></label>
+        <name>Stater_Type__c</name>
+        <picklistValues>
+            <masterLabel>DOL</masterLabel>
+            <translation><!-- DOL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Isolator</masterLabel>
+            <translation><!-- Isolator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VSD</masterLabel>
+            <translation><!-- VSD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- For example, 1090X600X425 --></help>
+        <label><!-- Unit Dimension (L x W x H) --></label>
+        <name>Unit_Dimension_L_x_W_x_H__c</name>
+    </fields>
+    <fields>
+        <label><!-- Voltage (Phase) --></label>
+        <name>Voltage_Phase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warranty Expiry --></label>
+        <name>Warranty_Expiry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warranty Number --></label>
+        <name>Warranty_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Water Flow Rate (L/s) --></label>
+        <name>Water_Flow_Rate_L_s__c</name>
+    </fields>
+    <fields>
+        <help><!-- For example, 14.24 --></help>
+        <label><!-- Water - Off Coil (Deg C) --></label>
+        <name>Water_Off_Coil_Deg_C__c</name>
+    </fields>
+    <fields>
+        <help><!-- For example. 14.23 --></help>
+        <label><!-- Water - On Coil (Deg C) --></label>
+        <name>Water_On_Coil_Deg_C__c</name>
+    </fields>
+    <layouts>
+        <layout>Equipment Layout</layout>
+        <sections>
+            <label><!-- Air Flow Specifications --></label>
+            <section>Air Flow Specifications</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Electrical Specifications --></label>
+            <section>Electrical Specifications</section>
+        </sections>
+        <sections>
+            <label><!-- General Specifications --></label>
+            <section>General Specifications</section>
+        </sections>
+        <sections>
+            <label><!-- Identification --></label>
+            <section>Identification</section>
+        </sections>
+        <sections>
+            <label><!-- Locations --></label>
+            <section>Locations</section>
+        </sections>
+        <sections>
+            <label><!-- Manufacturer Information --></label>
+            <section>Manufacturer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Physical Specifications --></label>
+            <section>Physical Specifications</section>
+        </sections>
+        <sections>
+            <label><!-- Remarks --></label>
+            <section>Remarks</section>
+        </sections>
+        <sections>
+            <label><!-- Value --></label>
+            <section>Value</section>
+        </sections>
+        <sections>
+            <label><!-- Water Flow Specifications --></label>
+            <section>Water Flow Specifications</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- New_Equipment --></label>
+        <name>New_Equipment</name>
+    </webLinks>
+</CustomObjectTranslation>

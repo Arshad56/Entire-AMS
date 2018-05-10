@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>AWS Push Object Mapping</value>
+    </caseValues>
+    <fields>
+        <label><!-- AWS Field Label --></label>
+        <name>AWS_Field_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- AWS Object Label --></label>
+        <name>AWS_Object_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Image --></label>
+        <name>Is_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Sort Required? --></label>
+        <name>Object_Sort_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesforce Field --></label>
+        <name>Salesforce_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesforce Object Name --></label>
+        <name>Salesforce_Object_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesforce Sort Field API Name --></label>
+        <name>Salesforce_Sort_Field_API_Name__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

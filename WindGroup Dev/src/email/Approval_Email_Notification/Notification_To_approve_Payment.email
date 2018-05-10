@@ -1,0 +1,13 @@
+Dear {!Invoice_Receipt__c.CreatedBy}, 
+
+Please proceed to approve Payment for Invoice Receipt: {!Invoice_Receipt__c.Name}.
+Please see details below: 
+
+Purchase Order: {!Invoice_Receipt__c.Purchase_OrderId__c}
+Vendor Name: {!Invoice_Receipt__c.Vendor_Name__c}
+Invoice Number: {!Invoice_Receipt__c.Invoice_Number__c}
+Invoice Due Date: {!Invoice_Receipt__c.Invoice_Due_Date__c}
+Total Amount: {!Invoice_Receipt__c.Total_Amount__c}
+
+Thank you. 
+System Admin

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Created to manage Bookings</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Expression of Interest</relationshipLabel>
+        <relationshipName>Expression_of_Interest</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Commencement_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Commencement Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Name__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact Name</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.Account_Name__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Expression of Interest</relationshipLabel>
+        <relationshipName>Expression_of_Interest</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Enquiry_Date__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <externalId>false</externalId>
+        <label>Enquiry Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Expiry_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Expiry Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Lease_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Lease Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Renewal</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Property_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Property Name</label>
+        <referenceTo>Property__c</referenceTo>
+        <relationshipLabel>Expression of Interest</relationshipLabel>
+        <relationshipName>Expression_of_Interest</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Remarks__c</fullName>
+        <externalId>false</externalId>
+        <label>Remarks</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Space_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Space Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Space_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Unit_No__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Unit No.</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.Property_Name__c</field>
+                <operation>equals</operation>
+                <valueField>Units__c.Property__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>$Source.Space_Type__c</field>
+                <operation>equals</operation>
+                <valueField>Units__c.Space_Type__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Units__c</referenceTo>
+        <relationshipLabel>Expression of Interest</relationshipLabel>
+        <relationshipName>Expression_of_Interest</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Expression of Interest</label>
+    <nameField>
+        <displayFormat>{YYYY}{MM}-INT-{000000}</displayFormat>
+        <label>Interest ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Expression of Interest</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>Add_to_LOI</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Add to LOI</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>if(&quot;{!Expression_of_Interest__c.Property_NameId__c}&quot; === &quot;&quot; || &quot;{!Expression_of_Interest__c.Unit_NoId__c}&quot; === &quot;&quot;){
+alert(&quot;Property and Unit are mandatory&quot;);
+}
+else{
+
+var link = &quot;/apex/generateLOIDescription?opr=AddNewLOI&amp;propid={!Expression_of_Interest__c.Property_NameId__c}&amp;unitId={!Expression_of_Interest__c.Unit_NoId__c}&quot;;
+
+if(&quot;{!Expression_of_Interest__c.Account_NameId__c}&quot; === &quot;&quot;){}
+else{
+link+=&quot;&amp;tenantId={!Expression_of_Interest__c.Account_NameId__c}&quot;;
+}
+
+window.location.href = link;
+
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_LOI</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>New LOI</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>if(&quot;{!Expression_of_Interest__c.Account_NameId__c}&quot; === &quot;&quot; || &quot;{!Expression_of_Interest__c.Contact_NameId__c}&quot; === &quot;&quot; || &quot;{!Expression_of_Interest__c.Property_NameId__c}&quot; === &quot;&quot; || &quot;{!Expression_of_Interest__c.Commencement_Date__c}&quot; === &quot;&quot; || &quot;{!Expression_of_Interest__c.Expiry_Date__c}&quot; === &quot;&quot; || &quot;{!Expression_of_Interest__c.Unit_NoId__c}&quot; === &quot;&quot; || &quot;{!Expression_of_Interest__c.Expiry_Date__c}&quot; === &quot;&quot;){
+alert(&quot;Property, Unit, Tenant, Contact, commencement date  and expiry date are mandatory fields&quot;);
+}
+else{
+var link = &quot;/apex/generateLOI?accId={!Expression_of_Interest__c.Account_NameId__c}&amp;conId={!Expression_of_Interest__c.Contact_NameId__c}&amp;propId={!Expression_of_Interest__c.Property_NameId__c}&amp;unitId={!Expression_of_Interest__c.Unit_NoId__c}&quot;;
+
+var temp = (&quot;{!Expression_of_Interest__c.Commencement_Date__c}&quot;).split(&apos;/&apos;);
+var tempDate = temp[2]+&quot;-&quot;+temp[1]+&quot;-&quot;+temp[0];
+link+=&quot;&amp;sDate=&quot;+tempDate;
+
+temp = (&quot;{!Expression_of_Interest__c.Expiry_Date__c}&quot;).split(&apos;/&apos;);
+tempDate = temp[2]+&quot;-&quot;+temp[1]+&quot;-&quot;+temp[0];
+link+=&quot;&amp;eDate=&quot;+tempDate;
+
+window.location.href = link;
+}</url>
+    </webLinks>
+</CustomObject>

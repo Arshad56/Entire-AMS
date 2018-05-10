@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>GR Line Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>GR Line Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Line --></label>
+        <name>Budget_Line__c</name>
+        <picklistValues>
+            <masterLabel>Lift</masterLabel>
+            <translation><!-- Lift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pump</masterLabel>
+            <translation><!-- Pump --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goods Receipt --></label>
+        <name>Goods_Receipt__c</name>
+        <relationshipLabel><!-- GR Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Item Name --></label>
+        <name>Item_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Line Item --></label>
+        <name>PO_Line_Item__c</name>
+        <relationshipLabel><!-- GR Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount --></label>
+        <name>Total_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Void Datetime --></label>
+        <name>Void_Datetime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Void Reason --></label>
+        <name>Void_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Void --></label>
+        <name>Void__c</name>
+    </fields>
+    <layouts>
+        <layout>GR Line Item Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Remarks --></label>
+            <section>Remarks</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- New_GR_Line_Items --></label>
+        <name>New_GR_Line_Items</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Void --></label>
+        <name>Void</name>
+    </webLinks>
+</CustomObjectTranslation>

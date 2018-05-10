@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ApproveRentRollReportId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ApproveRentRollReportId</shortDescription>
+        <value>00OO0000000hGN3</value>
+    </labels>
+    <labels>
+        <fullName>Base_Foreign_Currency</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Base Foreign Currency</shortDescription>
+        <value>USD</value>
+    </labels>
+    <labels>
+        <fullName>Cash_Receipt_Obj_ID_Prefix</fullName>
+        <categories>Property Manual Sharing</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cash Receipt Obj ID Prefix</shortDescription>
+        <value>a0J</value>
+    </labels>
+    <labels>
+        <fullName>Charge_Master_Obj_ID_Prefix</fullName>
+        <categories>Property Manual Sharing</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Charge Master Obj ID Prefix</shortDescription>
+        <value>a09</value>
+    </labels>
+    <labels>
+        <fullName>Checklist_Master_Obj_ID_Prefix</fullName>
+        <categories>Property Manual Sharing</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Checklist Master Obj ID Prefix</shortDescription>
+        <value>a0c</value>
+    </labels>
+    <labels>
+        <fullName>Create_Pull_Log</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create Pull Log</shortDescription>
+        <value>TRUE</value>
+    </labels>
+    <labels>
+        <fullName>Create_Push_Log</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create Push Log</shortDescription>
+        <value>TRUE</value>
+    </labels>
+    <labels>
+        <fullName>DailyCheckListBatchSize</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DailyCheckListBatchSize</shortDescription>
+        <value>200</value>
+    </labels>
+    <labels>
+        <fullName>Default_Currency</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Default Currency</shortDescription>
+        <value>MMK</value>
+    </labels>
+    <labels>
+        <fullName>Default_Payment_Mode</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Default Payment Mode</shortDescription>
+        <value>Cash</value>
+    </labels>
+    <labels>
+        <fullName>Deposit_Obj_ID_Prefix</fullName>
+        <categories>Property Manual Sharing</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Deposit Obj ID Prefix</shortDescription>
+        <value>a0v</value>
+    </labels>
+    <labels>
+        <fullName>Deposit_Refund_Obj_ID_Prefix</fullName>
+        <categories>Property Manual Sharing</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Deposit Refund Obj ID Prefix</shortDescription>
+        <value>a0N</value>
+    </labels>
+    <labels>
+        <fullName>Dummy_Account_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Dummy_Account_Id</shortDescription>
+        <value>001O0000012fFnP</value>
+    </labels>
+    <labels>
+        <fullName>Electric_Meter_Obj_ID_Prefix</fullName>
+        <categories>Property Manual Sharing</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Electric Meter Obj ID Prefix</shortDescription>
+        <value>a0s</value>
+    </labels>
+    <labels>
+        <fullName>Equipment_Default_Property_ID</fullName>
+        <categories>This is primarily created to assign Default Property on Equipment for Procurement Process</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Equipment Default Property ID</shortDescription>
+        <value>a02O000000FIdis</value>
+    </labels>
+    <labels>
+        <fullName>Equipment_Obj_ID_Prefix</fullName>
+        <categories>Property Manual Sharing</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Equipment Obj ID Prefix</shortDescription>
+        <value>a0R</value>
+    </labels>
+    <labels>
+        <fullName>GenerateRentRollReportId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GenerateRentRollReportId</shortDescription>
+        <value>00OO0000000hHAt</value>
+    </labels>
+    <labels>
+        <fullName>InstanceURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>InstanceURL</shortDescription>
+        <value>https://cs5.salesforce.com/</value>
+    </labels>
+    <labels>
+        <fullName>Invoice_Obj_ID_Prefix</fullName>
+        <categories>Property Manual Sharing</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Invoice Obj ID Prefix</shortDescription>
+        <value>a0H</value>
+    </labels>
+    <labels>
+        <fullName>Late_Charge_Batch_Date</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Late Charge Batch Date</shortDescription>
+        <value>30</value>
+    </labels>
+    <labels>
+        <fullName>Lease_POS_Obj_ID_Prefix</fullName>
+        <categories>Property Manual Sharing</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lease POS Obj ID Prefix</shortDescription>
+        <value>a0C</value>
+    </labels>
+    <labels>
+        <fullName>Mobile_Display_Weeks</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Mobile Display Weeks</shortDescription>
+        <value>3</value>
+    </labels>
+    <labels>
+        <fullName>Purchase_Order_Quote_Amount_Validation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Purchase Order Quote Amount Validation</shortDescription>
+        <value>10000</value>
+    </labels>
+    <labels>
+        <fullName>RentRollBatchSize</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RentRollBatchSize</shortDescription>
+        <value>2000</value>
+    </labels>
+    <labels>
+        <fullName>RentScheduleGTORecordType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RentScheduleGTORecordType</shortDescription>
+        <value>GTO Rent</value>
+    </labels>
+    <labels>
+        <fullName>RentScheduleMonthlyRecordType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RentScheduleMonthlyRecordType</shortDescription>
+        <value>Monthly</value>
+    </labels>
+    <labels>
+        <fullName>RentScheduleRentRecordType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RentScheduleRentRecordType</shortDescription>
+        <value>Rent</value>
+    </labels>
+    <labels>
+        <fullName>Rent_Roll_Detail_Obj_ID_Prefix</fullName>
+        <categories>Property Manual Sharing</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Rent Roll Detail Obj ID Prefix</shortDescription>
+        <value>a0r</value>
+    </labels>
+    <labels>
+        <fullName>Rent_Roll_Obj_ID_Prefix</fullName>
+        <categories>Property Manual Sharing</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Rent Roll Obj ID Prefix</shortDescription>
+        <value>a0M</value>
+    </labels>
+    <labels>
+        <fullName>Rent_Schedules_Obj_ID_Prefix</fullName>
+        <categories>Property Manual Sharing</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Rent Schedules Obj ID Prefix</shortDescription>
+        <value>a0T</value>
+    </labels>
+    <labels>
+        <fullName>Request_Obj_ID_Prefix</fullName>
+        <categories>Property Manual Sharing</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Request Obj ID Prefix</shortDescription>
+        <value>a0P</value>
+    </labels>
+    <labels>
+        <fullName>Request_ST_Index</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Request ST Index</shortDescription>
+        <value>0</value>
+    </labels>
+    <labels>
+        <fullName>Task_Activity_History_Obj_ID_Prefix</fullName>
+        <categories>Property Manual Sharing</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Task Activity History Obj ID Prefix</shortDescription>
+        <value>a0q</value>
+    </labels>
+    <labels>
+        <fullName>Task_ST_Index</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Task ST Index</shortDescription>
+        <value>0</value>
+    </labels>
+    <labels>
+        <fullName>Tasklist_Items_Obj_ID_Prefix</fullName>
+        <categories>Property Manual Sharing</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tasklist Items Obj ID Prefix</shortDescription>
+        <value>a0x</value>
+    </labels>
+    <labels>
+        <fullName>Tasklist_Master_Obj_ID_Prefix</fullName>
+        <categories>Property Manual Sharing</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tasklist Master Obj ID Prefix</shortDescription>
+        <value>a0u</value>
+    </labels>
+    <labels>
+        <fullName>TodayInvoiceViewID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TodayInvoiceViewID</shortDescription>
+        <value>00BO0000001O4KJ</value>
+    </labels>
+    <labels>
+        <fullName>VoidPicklistVal</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VoidPicklistVal</shortDescription>
+        <value>Voided</value>
+    </labels>
+    <labels>
+        <fullName>WG_Admin_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WG_Admin_ID</shortDescription>
+        <value>003O000000xv5jG</value>
+    </labels>
+    <labels>
+        <fullName>lease_Obj_ID_Prefix</fullName>
+        <categories>Property Manual Sharing</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>lease Obj ID Prefix</shortDescription>
+        <value>a04</value>
+    </labels>
+</CustomLabels>

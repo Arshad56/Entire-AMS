@@ -1,0 +1,15 @@
+*** NEW REQUEST ASSIGNMENT NOTIFICATION ***  
+
+The following Request has been assigned to you.  
+Property: {!Request__c.Property__c}
+Dept in Charge: {!Request__c.Dept_in_Charge__c} 
+Status: {!Request__c.Status__c} 
+Request Type: {!Request__c.Request_Type__c} 
+Date/Time Opened: {!Request__c.Date_Time_Opened__c} 
+Description: {!Request__c.Description__c}
+Action Remarks: {!Request__c.Action_Remarks__c} 
+
+Click on the link to access the Request Details:  {!Request__c.Link}
+
+Regards
+Operation Team

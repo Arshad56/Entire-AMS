@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Invoice Line Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Invoice Line Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount (Foreign) --></label>
+        <name>Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount (Local) --></label>
+        <name>Amount_Local__c</name>
+    </fields>
+    <fields>
+        <help><!-- Managed by Invoice Trigger (works on Invoice creation only):
+This Amount shows summarized Amount from related RRDs --></help>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- from related Lease Charge --></help>
+        <label><!-- Charge Formula --></label>
+        <name>Charge_Formula__c</name>
+    </fields>
+    <fields>
+        <help><!-- from related Lease Charge --></help>
+        <label><!-- Charge Name --></label>
+        <name>Charge_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Charge Type from related Lease Charge --></help>
+        <label><!-- Charge Type --></label>
+        <name>Charge_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comm Tax Amount (Foreign) --></label>
+        <name>Comm_Tax_Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comm Tax Amount (Local) --></label>
+        <name>Comm_Tax_Amount_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comm Tax Amount --></label>
+        <name>Comm_Tax_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populated from Invoice trigger
+Lease Charge &gt; Charge Description --></help>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- # of Defaulted days for which the Tenant did not pay the Invoice --></help>
+        <label><!-- Due Days --></label>
+        <name>Due_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- Managed by Invoice Trigger to get value from related RRD on Invoice creation --></help>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate --></label>
+        <name>Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- GTO Amount from RS --></help>
+        <label><!-- GTO Amount --></label>
+        <name>GTO_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice --></label>
+        <name>Invoice__c</name>
+        <relationshipLabel><!-- Invoice Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This shows Previous Invoice # and is applicable for Late Charge Invoice creation process. --></help>
+        <label><!-- Old Invoice --></label>
+        <name>Invoice_old__c</name>
+        <relationshipLabel><!-- Invoice Line Items (Late Charge) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Late Payment Interest (%) as defined in Previous Invoice&apos;s related Lease --></help>
+        <label><!-- Late % Rate --></label>
+        <name>Late_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populated from Invoice trigger on creation --></help>
+        <label><!-- Lease Charge --></label>
+        <name>Lease_Charge__c</name>
+        <relationshipLabel><!-- Invoice Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field refers to Old Invoice Name DN/CN. 
+Handled through backend code --></help>
+        <label><!-- Old Invoice Name --></label>
+        <name>Old_Inovoice_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is populated from Late Charge Invoice creation process (CR Interface and monthly batch) and is used to populate &apos;Outstanding Amount&apos; from Previous Invoice. --></help>
+        <label><!-- Outstanding Amount --></label>
+        <name>Outstanding_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Period Start Date --></label>
+        <name>Period_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Schedule --></label>
+        <name>Rent_Schedule__c</name>
+        <relationshipLabel><!-- Invoice Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- sum of POS Transaction amount from RS --></help>
+        <label><!-- Sales Amount --></label>
+        <name>Sales_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Managed by Invoice Trigger to get value from related RRD on Invoice creation --></help>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount (Foreign) --></label>
+        <name>Total_Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount (Local) --></label>
+        <name>Total_Amount_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount --></label>
+        <name>Total_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction End Date --></label>
+        <name>Transaction_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Start Date --></label>
+        <name>Transaction_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Void Datetime --></label>
+        <name>Void_Datetime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Voided --></label>
+        <name>Voided__c</name>
+    </fields>
+    <fields>
+        <help><!-- Created to manage Withholding Amount Roll-up on Invoice --></help>
+        <label><!-- Withholding Tax --></label>
+        <name>Withholding_Tax__c</name>
+    </fields>
+    <fields>
+        <help><!-- = Amount (Local) / Sales Amount
+This field is referred in GTO Invoice PDF % column --></help>
+        <label><!-- % on Invoice --></label>
+        <name>on_Invoice__c</name>
+    </fields>
+    <fields>
+        <label><!-- temp currency field check --></label>
+        <name>temp_currency_field_check__c</name>
+    </fields>
+    <layouts>
+        <layout>Invoice Line Item Layout</layout>
+        <sections>
+            <label><!-- Currency Code --></label>
+            <section>Currency Code</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- GTO Information --></label>
+            <section>GTO Information</section>
+        </sections>
+        <sections>
+            <label><!-- Late Payment --></label>
+            <section>Late Payment</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

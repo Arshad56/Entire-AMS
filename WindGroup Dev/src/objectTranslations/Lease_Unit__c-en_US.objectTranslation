@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Lease Unit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Lease Units</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual Trading Date --></label>
+        <name>Actual_Trading_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Area (Sq.Ft) --></label>
+        <name>Area_Sq_Ft__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tenant&apos;s contact information. --></help>
+        <label><!-- Authorised Person --></label>
+        <name>Authorised_Person__c</name>
+        <relationshipLabel><!-- Lease Units (Handover Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Current Base Rent / Area (Sqft) --></help>
+        <label><!-- Base Rent (sqf) --></label>
+        <name>Base_Rent_sqf__c</name>
+    </fields>
+    <fields>
+        <label><!-- CT Meter No --></label>
+        <name>CT_Meter_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancel Reason --></label>
+        <name>Cancel_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Converted From LOI --></label>
+        <name>Converted_From_LOI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Base Rent --></label>
+        <name>Current_Base_Rent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day(s) in expired --></label>
+        <name>Day_s_in_expired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected GTO --></label>
+        <name>Expected_GTO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extended --></label>
+        <name>Extended__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extension Date --></label>
+        <name>Extension_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fit Out Date --></label>
+        <name>Fit_Out_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generate Handover CheckList --></label>
+        <name>Generate_CheckList__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generate Fit Out LC --></label>
+        <name>Generate_Fit_Out_LC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generate Takeover Shop CheckList --></label>
+        <name>Generate_Takeover_Shop_CheckList__c</name>
+    </fields>
+    <fields>
+        <label><!-- Handover Date --></label>
+        <name>Handover_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Handover Signed-off --></label>
+        <name>Handover_Signed_off__c</name>
+    </fields>
+    <fields>
+        <label><!-- Horse Power --></label>
+        <name>Horse_Power__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease Agreement No. --></label>
+        <name>Lease_Agreement_No__c</name>
+        <relationshipLabel><!-- Lease Units --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Lease Tenure from related Lease --></help>
+        <label><!-- Lease Duration --></label>
+        <name>Lease_Duration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lease End Date
+This is updated via Pre-Termination and Extension process and further related influence LC and RS. --></help>
+        <label><!-- Lease End Date --></label>
+        <name>Lease_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease End Date --></label>
+        <name>Lease_End_Date_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease Start Date --></label>
+        <name>Lease_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease Unit Status --></label>
+        <name>Lease_Unit_Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewed</masterLabel>
+            <translation><!-- Renewed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replaced</masterLabel>
+            <translation><!-- Replaced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vacant</masterLabel>
+            <translation><!-- Vacant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Level --></label>
+        <name>Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Loss --></label>
+        <name>Line_Loss__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile Module --></label>
+        <name>Mobile_Module__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field would be populated only in the case of Extension or Pre-Termination and would show the Original End Date of this Lease Unit. --></help>
+        <label><!-- Original End Date --></label>
+        <name>Original_End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Operation&apos;s contact information. --></help>
+        <label><!-- Person In Charge --></label>
+        <name>Person_In_Charge__c</name>
+        <relationshipLabel><!-- Lease Units (Person In Charge) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pre-Terminated --></label>
+        <name>Pre_Termination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Short Code --></label>
+        <name>Property_Short_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for Terminated --></label>
+        <name>Reason_for_Termination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Free End Date --></label>
+        <name>Rent_Free_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Free Start Date --></label>
+        <name>Rent_Free_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent per Sq. Feet --></label>
+        <name>Rent_per_Sq_Feet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Space Type --></label>
+        <name>Space_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Trading Date --></label>
+        <name>Target_Trading_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tenant --></label>
+        <name>Tenant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit Status --></label>
+        <name>Unit_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit --></label>
+        <name>Unit__c</name>
+        <relationshipLabel><!-- Lease Units --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Update Lease Plans --></label>
+        <name>Update_Lease_Plans__c</name>
+    </fields>
+    <layouts>
+        <layout>Lease Unit Layout</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Leasing Information (Pls key in if you have different info than lease) --></label>
+            <section>Leasing Information (Pls key in if you have different info than lease)</section>
+        </sections>
+        <sections>
+            <label><!-- Rent Free Information --></label>
+            <section>Rent Free Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Cancel --></label>
+        <name>Cancel</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Deposit --></label>
+        <name>Create_Deposit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Deposit_Page --></label>
+        <name>Create_Deposit_Page</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Extension --></label>
+        <name>Extension</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Fit_Out_LC --></label>
+        <name>Generate_Fit_Out_LC</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Handover_Checklist --></label>
+        <name>Generate_Handover_Checklist</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Rent_Schedules --></label>
+        <name>Generate_Rent_Schedules</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Takeover_Shop_CheckList --></label>
+        <name>Generate_Takeover_Shop_CheckList</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Pre_Terminate --></label>
+        <name>Pre_Terminate</name>
+    </webLinks>
+</CustomObjectTranslation>

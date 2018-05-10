@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Units__c$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Units__c$NLA_SQF__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Units__c$Property__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>city</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Units__c$Active__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Units__c$End_Date__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>8/15/2017</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Units__c$Space_Type__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Ad Panel,Promo Space</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Units__c$Property__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Unit NLA</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Units__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Units__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

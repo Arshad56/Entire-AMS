@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_23252264</developerName>
+        <masterLabel>Anchor Tenant</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account$Name</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>City Care</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jaymart</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>JCGV</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Season Bakery</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Swensen&apos;s</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Techno Life</sourceValue>
+            </sourceValues>
+            <value>Anchor Tenant</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Account.Leases__r$Tenant_Name__c</field>
+    </columns>
+    <columns>
+        <field>Account.Leases__r.Lease_Units__r$Unit__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Leases__r.Lease_Units__r$Area_Sq_Ft__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Leases__r$Property__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Junction City,Junction Maw Tin</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Leases__r$Tenant_Name__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>JCGV,Marketplace by city mart,food street,generation concept,sorabol korean restaurant,signiture,shwe nan taw,shwe kaung,coach,kidzon,city mart,kfc,i-planet,season bakery,yoogane</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Leases__r$Property__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>ST Summary of Space Occupied</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_leases_and_lease_unit__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

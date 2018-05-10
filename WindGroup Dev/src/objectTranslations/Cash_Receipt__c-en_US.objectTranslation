@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cash Receipt</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cash Receipts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Cash Receipt Generated --></label>
+        <name>Cash_Receipt_Generated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Matched Status --></label>
+        <name>Invoice_Matched_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- JV Status --></label>
+        <name>JV_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offset Amount --></label>
+        <name>Offset_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Amount (Local) --></label>
+        <name>Payment_Amount_Local__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Paid + Offset Amount --></help>
+        <label><!-- Payment Amount --></label>
+        <name>Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Currency --></label>
+        <name>Payment_Currency__c</name>
+        <picklistValues>
+            <masterLabel>MMK</masterLabel>
+            <translation><!-- MMK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USD</masterLabel>
+            <translation><!-- USD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Date --></label>
+        <name>Payment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Mode --></label>
+        <name>Payment_Mode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Reference --></label>
+        <name>Payment_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+        <relationshipLabel><!-- Cash Receipts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Receipt Number --></label>
+        <name>Receipt_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tenant --></label>
+        <name>Tenant__c</name>
+        <relationshipLabel><!-- Cash Receipts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Roll-up of Amount Paid from related Cash Details --></help>
+        <label><!-- Total Amount --></label>
+        <name>Total_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Void Datetime --></label>
+        <name>Void_Datetime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Void Reason --></label>
+        <name>Void_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Void --></label>
+        <name>Void__c</name>
+    </fields>
+    <layouts>
+        <layout>Payment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- View_Receipt --></label>
+        <name>View_Receipt</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Void_CR --></label>
+        <name>Void_CR</name>
+    </webLinks>
+</CustomObjectTranslation>

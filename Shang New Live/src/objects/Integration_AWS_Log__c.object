@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Integration_Call_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Integration Call Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Push</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pull</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pull HO/TO</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Daily Checklist Pull</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Push Setup</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Push Transaction</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pull Toilet Feedback</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Json_String1__c</fullName>
+        <externalId>false</externalId>
+        <label>Json String1</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Json_String2__c</fullName>
+        <externalId>false</externalId>
+        <label>Json String2</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Last_Synch_Datetime_Criteria__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Synch Datetime Criteria</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Processed_Records1__c</fullName>
+        <externalId>false</externalId>
+        <label>Processed Records1</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Processed_Records2__c</fullName>
+        <externalId>false</externalId>
+        <label>Processed Records2</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Response_String__c</fullName>
+        <externalId>false</externalId>
+        <label>Response String</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Target_URL__c</fullName>
+        <externalId>false</externalId>
+        <label>Target URL</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>created_early__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedDate &lt;=  Last_Synch_Datetime_Criteria__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>created early</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>AWS Integration Log</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Integration_Call_Type__c</columns>
+        <columns>Status__c</columns>
+        <columns>Target_URL__c</columns>
+        <columns>Last_Synch_Datetime_Criteria__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>Log-{00000000}</displayFormat>
+        <label>Integration AWS Log Seq No</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Integration AWS Logs</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Integration_Call_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Last_Synch_Datetime_Criteria__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>Integration_Call_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Last_Synch_Datetime_Criteria__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Response_String__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

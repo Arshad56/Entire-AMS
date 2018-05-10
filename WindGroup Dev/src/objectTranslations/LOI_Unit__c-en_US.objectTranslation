@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>LOI Unit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>LOI Units</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual Trading Date --></label>
+        <name>Actual_Trading_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Area (Sq.Ft) --></label>
+        <name>Area_Sq_Ft__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tenant&apos;s contact information. --></help>
+        <label><!-- Authorised Person --></label>
+        <name>Authorised_Person__c</name>
+        <relationshipLabel><!-- LOI Units (Handover Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current Base Rent --></label>
+        <name>Current_Base_Rent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day(s) in expired --></label>
+        <name>Day_s_in_expired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extended --></label>
+        <name>Extended__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extension Date --></label>
+        <name>Extension_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Fit Out Date --></label>
+        <name>Fit_Out_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generate CheckList --></label>
+        <name>Generate_CheckList__c</name>
+    </fields>
+    <fields>
+        <label><!-- Handover Date --></label>
+        <name>Handover_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Handover Signed-off --></label>
+        <name>Handover_Signed_off__c</name>
+    </fields>
+    <fields>
+        <label><!-- Horse Power --></label>
+        <name>Horse_Power__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOI Agreement No. --></label>
+        <name>LOI_Agreement_No__c</name>
+        <relationshipLabel><!-- LOI Units --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LOI End Date --></label>
+        <name>LOI_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOI Start Date --></label>
+        <name>LOI_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level --></label>
+        <name>Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Loss --></label>
+        <name>Line_Loss__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field would be populated only in the case of Extension or Pre-Termination and would show the Original End Date of this LOI Unit. --></help>
+        <label><!-- Original End Date --></label>
+        <name>Original_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person In Charge --></label>
+        <name>Person_In_Charge__c</name>
+        <relationshipLabel><!-- LOI Units (Person In Charge__c) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pre-Termination --></label>
+        <name>Pre_Termination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Short Code --></label>
+        <name>Property_Short_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for Termination --></label>
+        <name>Reason_for_Termination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Free End Date --></label>
+        <name>Rent_Free_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Free Start Date --></label>
+        <name>Rent_Free_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent per Sq Feet --></label>
+        <name>Rent_per_Sq_Feet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Trading Date --></label>
+        <name>Target_Trading_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tenant --></label>
+        <name>Tenant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit --></label>
+        <name>Unit__c</name>
+        <relationshipLabel><!-- LOI Units --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Update LOI Plans --></label>
+        <name>Update_LOI_Plans__c</name>
+    </fields>
+    <layouts>
+        <layout>LOI Unit Layout</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Leasing Information (Pls key in if you have different info than lease) --></label>
+            <section>Leasing Information (Pls key in if you have different info than lease)</section>
+        </sections>
+        <sections>
+            <label><!-- Rent Free Information --></label>
+            <section>Rent Free Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Lease POS</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Lease POS</value>
+    </caseValues>
+    <fields>
+        <label><!-- Connected --></label>
+        <name>Connected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Email 1 --></label>
+        <name>Contact_Email_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Email 2 --></label>
+        <name>Contact_Email_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select &quot;Yes&quot; if new POS Id required. Otherwise, please select &quot;No&quot; and key in existing POS Id at POS Id field. --></help>
+        <label><!-- Generate POS ID --></label>
+        <name>Generate_POS_ID__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Application Id --></label>
+        <name>Lease_POS__c</name>
+        <picklistValues>
+            <masterLabel>POS-01</masterLabel>
+            <translation><!-- POS-01 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POS-01D</masterLabel>
+            <translation><!-- POS-01D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POS-01M</masterLabel>
+            <translation><!-- POS-01M --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lease Unit --></label>
+        <name>Lease_Unit__c</name>
+        <relationshipLabel><!-- Lease POS --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- POS Submission Frequency --></label>
+        <name>POS_Submission_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>15 mins</masterLabel>
+            <translation><!-- 15 mins --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- POS Submission Type --></label>
+        <name>POS_Submission_Type__c</name>
+        <picklistValues>
+            <masterLabel>CSV File</masterLabel>
+            <translation><!-- CSV File --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web Service API</masterLabel>
+            <translation><!-- Web Service API --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- POS Vendor --></label>
+        <name>POS_Vendor__c</name>
+        <relationshipLabel><!-- Lease POS --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Property Short Code --></label>
+        <name>Property_Short_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tenant Trade Category --></label>
+        <name>Tenant_Trade_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tenant --></label>
+        <name>Tenant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit --></label>
+        <name>Unit__c</name>
+    </fields>
+    <layouts>
+        <layout>Lease POS Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- POS Information --></label>
+            <section>POS Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

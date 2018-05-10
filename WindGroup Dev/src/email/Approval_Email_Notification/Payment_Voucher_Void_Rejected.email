@@ -1,0 +1,16 @@
+Hi {!Payment_Voucher__c.CreatedBy}, 
+ 
+Payment Voucher Void Request is rejected.
+
+Detailed Payment Voucher Information:
+=========================================
+Tenant Name:  {!Payment_Voucher__c.00NO0000002m6r6}
+Property Name:  {!Payment_Voucher__c.Property_Name__c}
+Payment Voucher Currency: {!Payment_Voucher__c.Currency_Code__c}
+Payment Voucher Amount: {!Payment_Voucher__c.Amount__c}
+Void Reason:  {!Payment_Voucher__c.Void_Reason__c}
+
+Click on the link to access the Payment Voucher directly:  {!Payment_Voucher__c.Link}
+
+Thanks,
+System Admin

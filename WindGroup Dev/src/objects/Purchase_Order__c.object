@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Attention_To__c</fullName>
+        <externalId>false</externalId>
+        <label>Attention To</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Balance_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Balance Amount</label>
+        <summarizedField>PO_Line_Item__c.Balance_Amount__c</summarizedField>
+        <summaryForeignKey>PO_Line_Item__c.Purchase_Order__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Balance_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Balance Quantity</label>
+        <summarizedField>PO_Line_Item__c.Balance_Quantity__c</summarizedField>
+        <summaryForeignKey>PO_Line_Item__c.Purchase_Order__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Company_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Company Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Purchase Orders</relationshipLabel>
+        <relationshipName>Purchase_Orders</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Currency_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Currency Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Currency_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Delivery_City__c</fullName>
+        <externalId>false</externalId>
+        <label>Delivery City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Delivery_Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Delivery Country</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Delivery_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Delivery Phone</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Delivery_Street__c</fullName>
+        <externalId>false</externalId>
+        <label>Delivery Street</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Delivery_Zip_Postal_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Delivery Zip/Postal Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Department__c</fullName>
+        <externalId>false</externalId>
+        <label>Department</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Department</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Generate_PO_PDF__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Generate PO PDF</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Min_Quote_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Min Quote Amount</label>
+        <summarizedField>Quote__c.Grand_Total__c</summarizedField>
+        <summaryForeignKey>Quote__c.PO_No__c</summaryForeignKey>
+        <summaryOperation>min</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PO_Amount__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll-up from Line Items</inlineHelpText>
+        <label>PO Amount</label>
+        <summarizedField>PO_Line_Item__c.Total_Amount__c</summarizedField>
+        <summaryForeignKey>PO_Line_Item__c.Purchase_Order__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PO_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Expected Delivery Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PO_Frequency__c</fullName>
+        <externalId>false</externalId>
+        <label>PO Frequency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Monthly</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Quarterly</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Half-Yearly</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Yearly</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PO_Line_Items__c</fullName>
+        <externalId>false</externalId>
+        <label>PO Line Items</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>PO_Line_Validation_Bypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This checkbox is used to bypass PO Line Item validation rule</description>
+        <externalId>false</externalId>
+        <label>PO Line Validation Bypass</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PO_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>PO Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Property__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Property</label>
+        <referenceTo>Property__c</referenceTo>
+        <relationshipLabel>Purchase Orders</relationshipLabel>
+        <relationshipName>Purchase_Orders</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Received_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Received Amount</label>
+        <summarizedField>PO_Line_Item__c.Received_Amount__c</summarizedField>
+        <summaryForeignKey>PO_Line_Item__c.Purchase_Order__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Received_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll-up from PO Line Items</inlineHelpText>
+        <label>Received Quantity</label>
+        <summarizedField>PO_Line_Item__c.Received_Quantity__c</summarizedField>
+        <summaryForeignKey>PO_Line_Item__c.Purchase_Order__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Recommendation__c</fullName>
+        <externalId>false</externalId>
+        <label>Recommendation</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>In-Approval</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Issued</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cancel In-Approval</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tax_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( Tax_Applicable__c,
+ 
+PO_Amount__c *  Tax_Rate__c  , 
+0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>PO Amount * Tax Rate</inlineHelpText>
+        <label>Tax Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Tax_Applicable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Tax Applicable</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Tax_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Tax Rate</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Total_PO_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Tax_Amount__c +  PO_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>PO Amount + Tax Amount</inlineHelpText>
+        <label>Total PO Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll-up from related Line Items: Quantity</inlineHelpText>
+        <label>Total Quantity</label>
+        <summarizedField>PO_Line_Item__c.Quantity__c</summarizedField>
+        <summaryForeignKey>PO_Line_Item__c.Purchase_Order__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Receipt_Amount_With_Tax__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll-up from related Invoice Receipt(s): Total Amount</inlineHelpText>
+        <label>Total Receipt Amount (With Tax)</label>
+        <summarizedField>Invoice_Receipt__c.Total_Amount__c</summarizedField>
+        <summaryFilterItems>
+            <field>Invoice_Receipt__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Paid</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Invoice_Receipt__c.Purchase_Order__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Receipt_Amount__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll-up of Amount from related Invoice Receipt</inlineHelpText>
+        <label>Total Receipt Amount (W/O Tax)</label>
+        <summarizedField>Invoice_Receipt__c.Amount__c</summarizedField>
+        <summaryFilterItems>
+            <field>Invoice_Receipt__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Paid</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Invoice_Receipt__c.Purchase_Order__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>UOM__c</fullName>
+        <externalId>false</externalId>
+        <label>UOM</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>HR</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DY</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>WK</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MH</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Vendor_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Vendor Contact</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.Vendor_Name__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Purchase Orders</relationshipLabel>
+        <relationshipName>Purchase_Orders</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Vendor_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Vendor Name</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.Whitelisted__c</field>
+                <operation>equals</operation>
+                <value>False</value>
+            </filterItems>
+            <filterItems>
+                <field>Account.RecordType.Name</field>
+                <operation>equals</operation>
+                <value>Vendor</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Purchase Orders (Vendor Name)</relationshipLabel>
+        <relationshipName>Purchase_Orders1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>X3_Quotes__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this and attach 3 Quotes</inlineHelpText>
+        <label>3 Quotes</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Purchase Order</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>PO_Amount__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>RECORDTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>PO No.</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Purchase Orders</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>One_Time</fullName>
+        <active>true</active>
+        <description>Create standard purchase orders for one-time purchase of various items</description>
+        <label>One Time</label>
+        <picklistValues>
+            <picklist>Currency_Code</picklist>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JPY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MMK</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>SGD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Department</picklist>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leasing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operations</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PO_Frequency__c</picklist>
+            <values>
+                <fullName>Half-Yearly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yearly</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Cancel In-Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>In-Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issued</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>UOM__c</picklist>
+            <values>
+                <fullName>DY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WK</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Services</fullName>
+        <active>true</active>
+        <description>A recurring purchase order to buy services from a single source</description>
+        <label>Recurring Svc</label>
+        <picklistValues>
+            <picklist>Currency_Code</picklist>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JPY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MMK</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>SGD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Department</picklist>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leasing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operations</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PO_Frequency__c</picklist>
+            <values>
+                <fullName>Half-Yearly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yearly</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Cancel In-Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>In-Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issued</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>UOM__c</picklist>
+            <values>
+                <fullName>DY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WK</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>PO_Start_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Company_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Vendor_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Attention_To__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Department__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Total_PO_Amount__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>Company_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Vendor_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Total_PO_Amount__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PO_Start_Date__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Whitelist_vendor_is_not_allowed</fullName>
+        <active>true</active>
+        <errorConditionFormula>Vendor_Name__r.Whitelisted__c == TRUE</errorConditionFormula>
+        <errorDisplayField>Vendor_Name__c</errorDisplayField>
+        <errorMessage>Whitelisted vendor is not allowed!</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Cancel</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Cancel</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>{!URLFOR($Action.Purchase_Order__c.Submit, Purchase_Order__c.Id)}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Close_PO</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Close PO</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>if(&quot;{!Purchase_Order__c.Status__c}&quot;==&quot;Issued&quot;){
+var left = Number((screen.width/2)-220); 
+var tops = Number((screen.height/2)-200); 
+var win=window.open(&apos;/apex/ClosePO?Id={!Purchase_Order__c.Id}&apos;,&apos;&apos;, 
+&apos;width=500,height=100,scrollbars=yes,top=&apos;+tops+&apos;,left=&apos;+left);
+}else{
+alert(&quot;Only Issued PO can be closed.&quot;);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Generate_PO_PDF</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate PO PDF</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/apex.js&quot;)}
+if(&quot;{!Purchase_Order__c.Status__c}&quot; != &apos;Issued&apos;){
+alert(&quot;Status should be &apos;Issued&apos;&quot;);
+}
+else{
+if({!Purchase_Order__c.Generate_PO_PDF__c}){
+alert(&quot;Purchase Order is already Generated&quot;);
+}else{
+var p = new sforce.SObject(&apos;Purchase_Order__c&apos;);
+p.id = &quot;{!Purchase_Order__c.Id}&quot;;
+p.Generate_PO_PDF__c = &quot;true&quot;;
+result= sforce.connection.update([p]);
+window.location.href=&quot;/{!Purchase_Order__c.Id}&quot;;
+}
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Generate_Payment_Arrangement</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate Payment Arrangement</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/apex.js&quot;)}
+if(&quot;{!Purchase_Order__c.Vendor_Name__c}&quot;){
+if(&quot;{!Purchase_Order__c.Status__c}&quot; == &quot;Draft&quot;  ){
+var check = confirm(&quot;Are you sure?&quot;);
+if(check){
+sforce.apex.execute(&quot;CreatePaymentAssigment&quot;,&quot;createRecord&quot;,{purOrderId:&quot;{!Purchase_Order__c.Id}&quot;});
+
+location.reload();
+}
+}
+else
+alert(&quot;Status should be Draft&quot;);
+}
+else
+alert(&quot;Please select Vendor Name&quot;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Purchase_Order</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Purchase Order</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/a1g/e?Name=--+System+Generated+--&amp;CF00NO0000002nulY={!Account.Name}&amp;CF00NO0000002nulY_lkid={!Account.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>View_PDF</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>View PDF</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/connection.js&quot;)} 
+
+try{ 
+var results = 
+sforce.connection.query( 
+&quot;SELECT Id &quot; + 
+&quot;FROM Attachment &quot; + 
+&quot;WHERE &quot; + 
+&quot;(ParentId = &apos;{!Purchase_Order__c.Id}&apos;) &quot; + 
+&quot;ORDER BY CreatedDate DESC LIMIT 1&quot; 
+); 
+
+if(results.getInt(&quot;size&quot;) ==1 ){ 
+var attachment = results.getArray(&quot;records&quot;); 
+
+window.open( 
+&quot;/servlet/servlet.FileDownload?file=&quot; + attachment[0].Id 
+); 
+} 
+else{ 
+if({!Purchase_Order__c.Generate_PO_PDF__c}){ 
+alert(&quot;PDF is still processing, Please wait for few more seconds.&quot;); 
+}else{ 
+alert(&quot;Please generate PDF Invoice first.&quot;); 
+} 
+} 
+} 
+catch(e){ 
+alert(&quot;Please contact system administrator!&quot; + e); 
+}</url>
+    </webLinks>
+</CustomObject>

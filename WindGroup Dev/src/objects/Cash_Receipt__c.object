@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Cash_Receipt_Generated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Cash Receipt Generated</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Invoice_Matched_Status__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Invoice Matched Status</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>JV_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>JV Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>JV_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Offset_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Offset Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Amount_Local__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Amount (Local)</label>
+        <summarizedField>Cash_Detail__c.Amount_Paid_Local_WF__c</summarizedField>
+        <summaryForeignKey>Cash_Detail__c.Cash_Receipt__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Total_Paid__c +  Offset_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total Paid + Offset Amount</inlineHelpText>
+        <label>Payment Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Currency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>MMK</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>USD</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Payment_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Mode__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Mode</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Payment_Mode</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Payment_Reference__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Reference</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Property</label>
+        <referenceTo>Property__c</referenceTo>
+        <relationshipLabel>Cash Receipts</relationshipLabel>
+        <relationshipName>Cash_Receipts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Receipt_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Receipt Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Remarks__c</fullName>
+        <externalId>false</externalId>
+        <label>Remarks</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Tenant__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Tenant</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Cash Receipts</relationshipLabel>
+        <relationshipName>Cash_Receipts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Total_Paid__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll-up of Amount Paid from related Cash Details</inlineHelpText>
+        <label>Total Amount</label>
+        <summarizedField>Cash_Detail__c.Amount_Paid__c</summarizedField>
+        <summaryForeignKey>Cash_Detail__c.Cash_Receipt__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Void_Datetime__c</fullName>
+        <externalId>false</externalId>
+        <label>Void Datetime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Void_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Void Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Void__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Void</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Cash Receipt</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Property__c</columns>
+        <columns>Payment_Date__c</columns>
+        <columns>Offset_Amount__c</columns>
+        <columns>Payment_Mode__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>CurrentMonthCashReceipts</fullName>
+        <columns>NAME</columns>
+        <columns>Payment_Date__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Payment_Currency__c</columns>
+        <columns>Payment_Amount__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Payment_Date__c</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>Current Month Cash Receipts</label>
+    </listViews>
+    <listViews>
+        <fullName>TodayMonthCashReceipts</fullName>
+        <columns>NAME</columns>
+        <columns>Tenant__c</columns>
+        <columns>Payment_Amount__c</columns>
+        <columns>Offset_Amount__c</columns>
+        <columns>Payment_Date__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Payment_Mode__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>Today Cash Receipts</label>
+    </listViews>
+    <nameField>
+        <label>Receipt Number</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Cash Receipts</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Payment_Date__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Payment_Date__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Payment_Date__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Payment_Date__c</searchFilterFields>
+        <searchResultsAdditionalFields>Payment_Date__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <webLinks>
+        <fullName>View_Receipt</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>View Receipt</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/connection.js&quot;)} 
+
+try{ 
+var results = 
+sforce.connection.query( 
+&quot;SELECT Id &quot; + 
+&quot;FROM Attachment &quot; + 
+&quot;WHERE &quot; + 
+&quot;(ParentId = &apos;{! Cash_Receipt__c.Id}&apos;) &quot; + 
+&quot;ORDER BY CreatedDate DESC LIMIT 1&quot; 
+); 
+
+if(results.getInt(&quot;size&quot;) ==1 ){ 
+var attachment = results.getArray(&quot;records&quot;); 
+
+window.open( 
+&quot;/servlet/servlet.FileDownload?file=&quot; + attachment[0].Id 
+); 
+} 
+else{ 
+alert(&quot;Please generate Cash Receipt PDF first.&quot;); 
+} 
+} 
+catch(e){ 
+alert(&quot;Please contact system administrator!&quot; + e); 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Void_CR</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Void CR</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/33.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/33.0/apex.js&quot;)} 
+
+if(&apos;{!Cash_Receipt__c.JV_Status__c}&apos;!=&apos;Generated&apos; &amp;&amp; &apos;{!Cash_Receipt__c.JV_Status__c}&apos;!=&apos;Posted&apos;){ 
+	
+	var r = confirm(&quot;Are you sure you want to Void this Cash Receipt?&quot;); 
+
+	if(r == true){ 
+		var retVal; 
+		while (retVal == null || retVal == &apos;&apos;) {
+			retVal = prompt(&quot;Please Enter Void Reason* (mandatory):&quot;, &quot;&quot;);
+		  if(retVal === null){
+			break;
+		  }
+		}
+		if(retVal === null){
+			
+		}else{
+			sforce.apex.execute(&quot;CashReceiptButtonClick&quot;,&quot;voidAllCashReceipts&quot;,{crId:&quot;{!Cash_Receipt__c.Id}&quot;,reason:retVal}); 
+			location.reload(true);
+		} 
+	} 
+}else{
+	alert(&apos;Warning : Generated/Posted Cash Receipt cannot be Voided.&apos;);
+}</url>
+    </webLinks>
+</CustomObject>

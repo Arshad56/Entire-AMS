@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>App Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>App Setting</value>
+    </caseValues>
+    <fields>
+        <label><!-- App --></label>
+        <name>App__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the Greetings to display at Main Page. --></help>
+        <label><!-- Greetings Description --></label>
+        <name>Greetings_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image Background --></label>
+        <name>Image_Background__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image Satisfied --></label>
+        <name>Image_Satisfied__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image Unsatisfied --></label>
+        <name>Image_Unsatisfied__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Options --></label>
+        <name>No_of_Options__c</name>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+        <relationshipLabel><!-- App Setting --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This is to key information about rating at Main Page. --></help>
+        <label><!-- Rating Description --></label>
+        <name>Rating_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolved Option Description --></label>
+        <name>Resolved_Option_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Satisfied Text --></label>
+        <name>Satisfied_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the information to display at option submission page. --></help>
+        <label><!-- Select Option Description --></label>
+        <name>Select_Option_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thank you Description --></label>
+        <name>Thank_you_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- URL Background --></label>
+        <name>URL_Background__c</name>
+    </fields>
+    <fields>
+        <label><!-- URL Image Satisfied --></label>
+        <name>URL_Image_Satisfied__c</name>
+    </fields>
+    <fields>
+        <label><!-- URL Image Unsatisfied --></label>
+        <name>URL_Image_Unsatisfied__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unsatisfied Text --></label>
+        <name>Unsatisfied_Text__c</name>
+    </fields>
+    <layouts>
+        <layout>App Setting Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

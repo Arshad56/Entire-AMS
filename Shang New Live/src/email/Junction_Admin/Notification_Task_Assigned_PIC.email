@@ -1,0 +1,11 @@
+*** NEW TASK ASSIGNMENT NOTIFICATION ***
+
+The following Task has been assigned to you. 
+Task ID : {!Task.Task_ID__c}
+Description: {!Task.Description__c}
+Instructions: {!Task.Instructions__c}
+
+Click on the link to access the Task Details: {!Task.Link} 
+
+Regards 
+Operation Team

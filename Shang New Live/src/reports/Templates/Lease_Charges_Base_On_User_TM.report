@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Lease_Charges__c$Name</field>
+    </columns>
+    <columns>
+        <field>Lease_Charges__c$Lease_Unit__c</field>
+    </columns>
+    <columns>
+        <field>Lease_Charges__c$Id</field>
+    </columns>
+    <columns>
+        <field>Lease_Charges__c$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Lease_Charges__c$CreatedDate</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Lease_Charges__c$Property_Short_Code__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>TM</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Lease Charges Base On User (TM)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Lease_Charges__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Lease_Charges__c$Id</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Lease_Charges__c$CreatedDate</dateColumn>
+        <endDate>2017-06-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-01-01</startDate>
+    </timeFrameFilter>
+</Report>

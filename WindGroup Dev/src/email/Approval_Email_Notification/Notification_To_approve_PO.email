@@ -1,0 +1,54 @@
+<messaging:emailTemplate subject="Notification: PO for Approval - {!relatedTo.Name}" recipientType="User" relatedToType="Purchase_Order__c">
+    <messaging:HTMLEmailBody >
+    Dear {!recipient.name}, 
+    <br/><br/>
+    Please proceed to approve Purchase Order: {!relatedTo.Name}. <br/>
+    Please see details below: 
+    <br/>
+    <br/>
+    Company Name: <apex:outputField value="{!relatedTo.Company_Name__c}" />  <br/>
+    Vendor: <apex:outputField value="{!relatedTo.Vendor_Name__c}" /> <br/>
+    Currency Code: <apex:outputField value="{!relatedTo.Currency_Code__c}" /> <br/>
+    Total PO Amount: <apex:outputField value="{!relatedTo.Total_PO_Amount__c}" /> <br/>
+    Recommendation: <apex:outputField value="{!relatedTo.Recommendation__c}" /> <br/>
+    PO Date: <apex:outputField value="{!relatedTo.PO_Start_Date__c}" /> <br/>
+    Expected Delivery Date: <apex:outputField value="{!relatedTo.PO_End_Date__c}" /> <br/>
+    
+    <br/>
+    
+    PO Line Item Details  :<br/>
+    <table border="1" width="80%" style="border-collapse: collapse;">
+        <tr align="left">
+            <th>Product Name</th>
+            <th>Product Type</th>
+            <th>Quantity</th>
+            <th>Amount</th>
+            <th>Total Amount</th>
+            <th>Budget Line:</th>
+        </tr>
+        <apex:repeat value="{!relatedTo.PO_Line_Items__r}" var="pli">
+            <tr>
+                <td>{!pli.Item_Name__c}</td>
+                <td>{!pli.Product_Type__c}</td>
+                <td>{!pli.Quantity__c}</td>
+                <td>{!pli.Amount__c}</td>
+                <td>{!pli.Total_Amount__c}</td>
+                <td>{!pli.Budget_Line__c}</td>
+            </tr>
+        </apex:repeat>
+    </table>
+    
+    <br/><br/>
+        
+    Approval Instruction:<br/>
+    ================================================================================================<br/>
+    1. Reply email with<br/>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Approved: yes<br/>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rejected: reject 'new line' wrong budget balance for PO Line Item 1.<br/>
+    2. OR go to Purchase Order: <apex:outputlink value="https://cs5.salesforce.com/{!relatedTo.Id}">{!relatedTo.Name}</apex:outputlink> is Salesforce to approve or reject the request.<br/>
+       
+    <br/><br/>
+    Thank you. <br/>
+    System Admin
+    </messaging:HTMLEmailBody>
+</messaging:emailTemplate>

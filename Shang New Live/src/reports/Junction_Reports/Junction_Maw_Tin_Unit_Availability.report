@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <colorRanges>
+        <aggregate>Sum</aggregate>
+        <columnName>Rent_Schedules__c.Amount__c</columnName>
+        <highBreakpoint>1.0</highBreakpoint>
+        <highColor>#54C254</highColor>
+        <lowBreakpoint>0.1</lowBreakpoint>
+        <lowColor>#C25454</lowColor>
+        <midColor>#C2C254</midColor>
+    </colorRanges>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Rent_Schedules__c.Amount__c</field>
+    </columns>
+    <columns>
+        <field>Rent_Schedules__c.Property__c</field>
+    </columns>
+    <columns>
+        <field>Rent_Schedules__c.Area_ft__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Rent_Schedules__c.Property__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Junction Maw Tin</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Rent_Schedules__c.Charge_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Advance Rental</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>Rent_Schedules__c.Start_Date__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Rent_Schedules__c.Tenant__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Junction Maw Tin Unit Availability</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>CustomEntity$Rent_Schedules__c@Rent_Schedules__c.Lease_Unit__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Rent_Schedules__c.Billed_Month__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

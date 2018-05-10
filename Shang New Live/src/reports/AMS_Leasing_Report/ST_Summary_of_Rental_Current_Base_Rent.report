@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Lease_Unit__c.Current_Base_Rent__c:MAX</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Max Current Base Rent</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Lease_Unit__c.Current_Base_Rent__c:MIN</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Min Current Base Rent</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Lease_Unit__c.Current_Base_Rent__c:SUM/RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA3</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Average Current Base Rent</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>Units__c$Name</field>
+    </columns>
+    <columns>
+        <field>Units__c.Lease_Units__r$Tenant__c</field>
+    </columns>
+    <columns>
+        <field>Units__c.Lease_Units__r$Area_Sq_Ft__c</field>
+    </columns>
+    <columns>
+        <field>Units__c.Lease_Units__r$Base_Rent_sqf__c</field>
+    </columns>
+    <columns>
+        <field>Units__c.Lease_Units__r$Current_Base_Rent__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Units__c$Property__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Junction city,junction maw tin</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Units__c$Active__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Units__c$Property__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Units__c$Level__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>ST Summary of Rental (Current Base Rent)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Units_with_lease_units__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <sortColumn>Units__c.Lease_Units__r$Current_Base_Rent__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Units__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

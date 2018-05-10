@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quote</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quotes</value>
+    </caseValues>
+    <fields>
+        <help><!-- (Grand Total - Min Quote Amount) / Min Quote Amount --></help>
+        <label><!-- Above Minimum (%) --></label>
+        <name>Above_Minimum_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grand Total --></label>
+        <name>Grand_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO No. --></label>
+        <name>PO_No__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote Date --></label>
+        <name>Quote_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Contact --></label>
+        <name>Vendor_Contact__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vendor Name --></label>
+        <name>Vendor_Name__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Quote Layout</layout>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Quote can only be updated if PO Status is &apos;Draft&apos; or &apos;Rejected&apos; --></errorMessage>
+        <name>Update_only_for_particular_PO_status</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_Quote --></label>
+        <name>New_Quote</name>
+    </webLinks>
+</CustomObjectTranslation>

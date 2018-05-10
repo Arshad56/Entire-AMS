@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Water_Transaction__c$Meter_No__c</field>
+    </columns>
+    <columns>
+        <field>Water_Transaction__c$From_Date__c</field>
+    </columns>
+    <columns>
+        <field>Water_Transaction__c$To_Date__c</field>
+    </columns>
+    <columns>
+        <field>Water_Transaction__c$Start_Unit__c</field>
+    </columns>
+    <columns>
+        <field>Water_Transaction__c$End_Unit__c</field>
+    </columns>
+    <columns>
+        <field>Water_Transaction__c$Property_Short_Code__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Water Templates</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Water_Transactions__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Water_Transaction__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

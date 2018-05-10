@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Bank Information</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Bank Information</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account No --></label>
+        <name>Account_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Address --></label>
+        <name>Bank_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Name --></label>
+        <name>Bank_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Beneficiary Name --></label>
+        <name>Beneficiary_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Name --></label>
+        <name>Branch_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+        <relationshipLabel><!-- Bank Information --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Swift Code --></label>
+        <name>Swift_Code__c</name>
+    </fields>
+    <layouts>
+        <layout>Bank Information Layout</layout>
+        <sections>
+            <label><!-- Bank Information (US$) --></label>
+            <section>Bank Information (US$)</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

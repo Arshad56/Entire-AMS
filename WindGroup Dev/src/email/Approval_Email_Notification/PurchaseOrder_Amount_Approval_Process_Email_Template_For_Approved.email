@@ -1,0 +1,14 @@
+Dear {!Purchase_Order__c.OwnerFullName}
+
+We would like to update that your requested PO has been approved, please see details below:
+
+PO No. : {!Purchase_Order__c.Name}
+Amount : {!Purchase_Order__c.PO_Amount__c}
+Status : {!Purchase_Order__c.Status__c}
+Expected Delivery Date : {!Purchase_Order__c.PO_End_Date__c}
+PO PDF is generated please go to link: 
+{!Purchase_Order__c.Link}
+
+
+Sincerely,
+System Admin

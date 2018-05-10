@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Chart of Accounts Group</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Chart of Accounts Group</value>
+    </caseValues>
+    <fields>
+        <label><!-- COA Group Description --></label>
+        <name>COA_Group_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- COA Group --></label>
+        <name>COA_Group__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

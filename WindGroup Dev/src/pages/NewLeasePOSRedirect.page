@@ -1,0 +1,5 @@
+<apex:page standardController="Lease_POS__c" extensions="NewLeasePOSRedirectController">
+    <script>
+        window.location.href="/a0C/e?Name=--system generated--&CF00NO0000002MbCu={!$CurrentPage.parameters.CF00NO0000002MbCu}&CF00NO0000002MbCu_lkid={!$CurrentPage.parameters.CF00NO0000002MbCu_lkid}&00NO0000002MbCz={!stDate}&00NO0000002MbD4={!endDate}&nooverride=1&retURL=/a0C&save_new_url=/a0C/e?retURL=%2Fa0C"
+    </script>
+</apex:page>

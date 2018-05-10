@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Lease_Charges__c$Id</field>
+    </columns>
+    <columns>
+        <field>Lease_Charges__c$Name</field>
+    </columns>
+    <columns>
+        <field>Lease_Charges__c$RecordType</field>
+    </columns>
+    <columns>
+        <field>Lease_Charges__c$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Lease_Charges__c$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Lease_Charges__c$Charge_Type__c</field>
+    </columns>
+    <description>test report - to be deleted</description>
+    <filter>
+        <criteriaItems>
+            <column>Lease_Charges__c$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Lease_Charges__c.Rent</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lease_Charges__c$Charge_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Advance Rental,Base Rent,Deposit,Security Deposit</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lease_Charges__c$Property_Short_Code__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>JMT - Meter as Rent - Lease Charge</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Lease_Charges__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Lease_Charges__c$Charge_Type__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Lease_Charges__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

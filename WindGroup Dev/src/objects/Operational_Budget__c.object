@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Created to be used in Procurement Process</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Budget_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Budget Category</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Budget_Type__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Budget_Category</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Opex</controllingFieldValue>
+                <valueName>Repairs &amp; Maintenance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opex</controllingFieldValue>
+                <valueName>Projects</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opex</controllingFieldValue>
+                <valueName>Info Subscriptions</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opex</controllingFieldValue>
+                <valueName>Hardware Maintenance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opex</controllingFieldValue>
+                <valueName>Service Expenses</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opex</controllingFieldValue>
+                <valueName>Utilities</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Capex</controllingFieldValue>
+                <valueName>IT Projects</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Capex</controllingFieldValue>
+                <valueName>IT Equipment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Capex</controllingFieldValue>
+                <valueName>IT Software</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Capex</controllingFieldValue>
+                <valueName>Dilapidation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Capex</controllingFieldValue>
+                <valueName>M&amp;E</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Capex</controllingFieldValue>
+                <valueName>Structural</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Capex</controllingFieldValue>
+                <valueName>Fixed Assets</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Budget_Line__c</fullName>
+        <externalId>false</externalId>
+        <label>Budget Line</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Budget_Category__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Budget_Line</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>M&amp;E</controllingFieldValue>
+                <valueName>M&amp;E (IP / FA)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Structural</controllingFieldValue>
+                <valueName>Structural (IP / FA)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Fixed Assets</controllingFieldValue>
+                <valueName>Fixed Assets (NORMAL)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Projects</controllingFieldValue>
+                <controllingFieldValue>Info Subscriptions</controllingFieldValue>
+                <valueName>Software Maintenance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Projects</controllingFieldValue>
+                <controllingFieldValue>Info Subscriptions</controllingFieldValue>
+                <valueName>Hardware Maintenance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hardware Maintenance</controllingFieldValue>
+                <valueName>Hardware Maintenance - IT Equipment - Maintenace &amp; Repair</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hardware Maintenance</controllingFieldValue>
+                <valueName>Hardware Maintenance - Servers Maintenance + Services</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Service Expenses</controllingFieldValue>
+                <valueName>Services Expenses - IT Delivery &amp; Support - Contract Manpower</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Service Expenses</controllingFieldValue>
+                <valueName>Services Expenses - Call Centre</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Utilities</controllingFieldValue>
+                <valueName>Utilities  -  Electricity</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Utilities</controllingFieldValue>
+                <valueName>Utilities  -  Water</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>IT Projects</controllingFieldValue>
+                <valueName>Projects -  AMS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>IT Projects</controllingFieldValue>
+                <valueName>Projects -  iOPS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Repairs &amp; Maintenance</controllingFieldValue>
+                <valueName>Air Con-Repairs &amp; Replacement</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Repairs &amp; Maintenance</controllingFieldValue>
+                <valueName>Bldg-Repairs &amp; Replacement</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Repairs &amp; Maintenance</controllingFieldValue>
+                <valueName>COS-Electrical-Term Contracts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Repairs &amp; Maintenance</controllingFieldValue>
+                <valueName>COS-Electrical-Repairs &amp; Replacement</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Repairs &amp; Maintenance</controllingFieldValue>
+                <valueName>COS-Sys Fire &amp; Security-Repairs &amp; Replacement</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Repairs &amp; Maintenance</controllingFieldValue>
+                <valueName>COS-Sys Fire &amp; Security-Term Contracts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Repairs &amp; Maintenance</controllingFieldValue>
+                <valueName>COS-Plumbing &amp; Sanitary-Repairs &amp; Replacement</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Repairs &amp; Maintenance</controllingFieldValue>
+                <valueName>COS-Plumbing &amp; Sanitary-Statutory fees &amp; Chgs</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Repairs &amp; Maintenance</controllingFieldValue>
+                <valueName>COS-Plumbing &amp; Sanitary-Term Contracts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>IT Equipment</controllingFieldValue>
+                <valueName>Computer Equipment - Hardware (PC)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>IT Equipment</controllingFieldValue>
+                <valueName>Computer Equipment - Hardware (Server)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>IT Software</controllingFieldValue>
+                <valueName>Computer Equipment - Software</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dilapidation</controllingFieldValue>
+                <valueName>Dilapidation (IP / FA)</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Budget_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Budget Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Opex</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Capex</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>COA_Master__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>COA Master</label>
+        <referenceTo>COA_Master__c</referenceTo>
+        <relationshipLabel>Operational Budget</relationshipLabel>
+        <relationshipName>Operational_Budget</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Company_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Company Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Operational Budget</relationshipLabel>
+        <relationshipName>Operational_Budget</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Department__c</fullName>
+        <externalId>false</externalId>
+        <label>Department</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Budget_Category__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Department</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>M&amp;E</controllingFieldValue>
+                <controllingFieldValue>Structural</controllingFieldValue>
+                <controllingFieldValue>Fixed Assets</controllingFieldValue>
+                <controllingFieldValue>Utilities</controllingFieldValue>
+                <controllingFieldValue>Repairs &amp; Maintenance</controllingFieldValue>
+                <controllingFieldValue>Dilapidation</controllingFieldValue>
+                <valueName>Operations</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Projects</controllingFieldValue>
+                <controllingFieldValue>Info Subscriptions</controllingFieldValue>
+                <controllingFieldValue>Hardware Maintenance</controllingFieldValue>
+                <controllingFieldValue>Service Expenses</controllingFieldValue>
+                <controllingFieldValue>IT Projects</controllingFieldValue>
+                <controllingFieldValue>IT Equipment</controllingFieldValue>
+                <controllingFieldValue>IT Software</controllingFieldValue>
+                <valueName>IT</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <label>Operational Budget</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Company_Name__c</columns>
+        <columns>Budget_Type__c</columns>
+        <columns>Budget_Category__c</columns>
+        <columns>Budget_Line__c</columns>
+        <columns>COA_Master__c</columns>
+        <columns>Department__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>OB-{000000}</displayFormat>
+        <label>Operational Budget ID</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Operational Budget</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Company_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Department__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Budget_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>COA_Master__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

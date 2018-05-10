@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Checklist__c$Name</field>
+    </columns>
+    <columns>
+        <field>Checklist__c.Checklist_Items__r$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Checklist__c$Property_Name__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>JUNCTION MAW TIN</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Checklist__c.Checklist_Items__r$Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Week</dateGranularity>
+        <field>Checklist__c.Checklist_Items__r$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Checklist__c$Type__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>JMT Checklist</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Checklist_with_Checklist_Items__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Checklist__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

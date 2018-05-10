@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>POS_Daily_Transaction__c.POS_No__c</field>
+    </columns>
+    <columns>
+        <field>POS_Daily_Transaction__c.Transaction_No__c</field>
+    </columns>
+    <columns>
+        <field>POS_Daily_Transaction__c.No_of_Items_Purchased__c</field>
+    </columns>
+    <columns>
+        <field>POS_Daily_Transaction__c.Total_Bill_Amount__c</field>
+    </columns>
+    <columns>
+        <field>POS_Daily_Transaction__c.Transaction_Date_Time__c</field>
+    </columns>
+    <columns>
+        <field>POS_Daily_Transaction__c.Currency__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>POS Template</name>
+    <params>
+        <name>closed</name>
+        <value>open</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ActivityCustomEntity$POS_Daily_Transaction__c</reportType>
+    <scope>team</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

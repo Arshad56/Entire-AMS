@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Rent Roll Detail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Rent Roll Details</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount (Foreign) --></label>
+        <name>Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount (Local) --></label>
+        <name>Amount_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved --></label>
+        <name>Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Area (ft) --></label>
+        <name>Area_ft__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billed Month --></label>
+        <name>Billed_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Date --></label>
+        <name>Billing_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Month --></label>
+        <name>Billing_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Type --></label>
+        <name>Billing_Type__c</name>
+        <picklistValues>
+            <masterLabel>Ad-Hoc Invoice</masterLabel>
+            <translation><!-- Ad-Hoc Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Note</masterLabel>
+            <translation><!-- Credit Note --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debit Note</masterLabel>
+            <translation><!-- Debit Note --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late Charge</masterLabel>
+            <translation><!-- Late Charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous</masterLabel>
+            <translation><!-- Miscellaneous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent</masterLabel>
+            <translation><!-- Rent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Calc - Cumulative - Tiered --></label>
+        <name>Calc_Cumulative_Tiered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calc - No of Days (Pro-Rated) --></label>
+        <name>Calc_No_of_Days_Pro_Rated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calc - Non Cumulative Tiered --></label>
+        <name>Calc_Non_Cumulative_Tiered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calculated Utility Non Tiered --></label>
+        <name>Calculated_Utility_Non_Tiered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Type --></label>
+        <name>Charge_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comm Tax Amount (Foreign) --></label>
+        <name>Comm_Tax_Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comm Tax Amount (Local) --></label>
+        <name>Comm_Tax_Amount_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comm Tax Amount --></label>
+        <name>Comm_Tax_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comments updated from Generate Invoice Interface --></help>
+        <label><!-- Rejection Reasons --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cumulative --></label>
+        <name>Cumulative__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Base Rent --></label>
+        <name>Current_Base_Rent__c</name>
+    </fields>
+    <fields>
+        <help><!-- # of Defaulted days for which the Tenant did not pay the Invoice --></help>
+        <label><!-- Due Days --></label>
+        <name>Default_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Electric Meter Number --></label>
+        <name>Electric_Meter_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Electric Meter --></label>
+        <name>Electric_Meter__c</name>
+        <relationshipLabel><!-- Rent Roll Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate --></label>
+        <name>Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Amount --></label>
+        <name>Expected_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Charge --></label>
+        <name>Expected_Charge__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rent Schedule GTO Amount. Used in backend code. Hide it from layout --></help>
+        <label><!-- GTO Amount --></label>
+        <name>GTO_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Value taken from associated rent schedule --></help>
+        <label><!-- GTO Rent By --></label>
+        <name>GTO_Rent_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hold --></label>
+        <name>Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Line Item --></label>
+        <name>Invoice_Line_Item__c</name>
+        <relationshipLabel><!-- Rent Roll Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This shows Previous Invoice # and is applicable for Late Charge Invoice creation process. --></help>
+        <label><!-- Invoice --></label>
+        <name>Invoice__c</name>
+        <relationshipLabel><!-- Rent Roll Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Late Payment Interest (%) as defined in Previous Invoice&apos;s related Lease --></help>
+        <label><!-- Late % Rate --></label>
+        <name>Late_Percent_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease Charge --></label>
+        <name>Lease_Charge__c</name>
+        <relationshipLabel><!-- Rent Roll Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lease Unit --></label>
+        <name>Lease_Unit__c</name>
+        <relationshipLabel><!-- Rent Roll Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Level --></label>
+        <name>Level__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is populated from Late Charge Invoice creation process (CR Interface and monthly batch) and is used to populate &apos;Outstanding Amount&apos; from Previous Invoice. --></help>
+        <label><!-- Outstanding Amount --></label>
+        <name>Outstanding_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum of POS transaction amount. Used in backend code hide it from layout. --></help>
+        <label><!-- POS Sales Amount --></label>
+        <name>POS_Sales_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Name Text --></label>
+        <name>Property_Name_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Short Code --></label>
+        <name>Property_Short_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Roll --></label>
+        <name>Rent_Roll__c</name>
+        <relationshipLabel><!-- Rent Roll Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rs Name --></label>
+        <name>Rs_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-Tenancy</masterLabel>
+            <translation><!-- In-Tenancy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoiced</masterLabel>
+            <translation><!-- Invoiced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Rent Roll</masterLabel>
+            <translation><!-- No Rent Roll --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Received</masterLabel>
+            <translation><!-- Payment Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent Roll Generated</masterLabel>
+            <translation><!-- Rent Roll Generated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vacancy</masterLabel>
+            <translation><!-- Vacancy --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Target Rental --></label>
+        <name>Target_Rental__c</name>
+    </fields>
+    <fields>
+        <label><!-- Temp_Cumulative_Cur --></label>
+        <name>Temp_Cumulative_Cur__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tenancy Status --></label>
+        <name>Tenancy_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tenant --></label>
+        <name>Tenant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier2_Upper_Limit --></label>
+        <name>Tier2_Upper_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 2 Rate --></label>
+        <name>Tier_2_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tiered --></label>
+        <name>Tiered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount (Foreign) --></label>
+        <name>Total_Amount_Foreign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount (Local) --></label>
+        <name>Total_Amount_Local__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount --></label>
+        <name>Total_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Units Physical --></label>
+        <name>Total_Units_p__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trading Day(s) --></label>
+        <name>Trading_Day_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction End Date --></label>
+        <name>Transaction_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Start Date --></label>
+        <name>Transaction_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit --></label>
+        <name>Unit__c</name>
+        <relationshipLabel><!-- Rent Roll Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Void Datetime --></label>
+        <name>Void_Datetime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Voided --></label>
+        <name>Voided__c</name>
+    </fields>
+    <fields>
+        <label><!-- Withholding Tax Rate --></label>
+        <name>Withholding_Tax_Rate__c</name>
+    </fields>
+    <layouts>
+        <layout>Rent Roll Detail Layout</layout>
+        <sections>
+            <label><!-- Billing Information --></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Currency Information --></label>
+            <section>Currency Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Late Payment --></label>
+            <section>Late Payment</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

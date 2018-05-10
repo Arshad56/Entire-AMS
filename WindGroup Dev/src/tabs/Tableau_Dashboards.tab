@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Display of tableau dashboards residing in tableau online</description>
+    <frameHeight>700</frameHeight>
+    <hasSidebar>false</hasSidebar>
+    <label>Tableau Dashboards</label>
+    <mobileReady>false</mobileReady>
+    <motif>Custom20: Airplane</motif>
+    <url>https://10az.online.tableau.com/t/windgroup/views/JunctionCityDashboardDemo/LeasingStatus?:embed=y&amp;:showShareOptions=true&amp;:display_count=no&amp;:showVizHome=no</url>
+    <urlEncodingKey>UTF-8</urlEncodingKey>
+</CustomTab>

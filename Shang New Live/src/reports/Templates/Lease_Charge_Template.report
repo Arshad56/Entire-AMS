@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Lease_Charges__c$Id</field>
+    </columns>
+    <columns>
+        <field>Lease_Charges__c$Name</field>
+    </columns>
+    <columns>
+        <field>Lease_Charges__c$Charge_Rate__c</field>
+    </columns>
+    <columns>
+        <field>Lease_Charges__c$Commercial_Tax_Apply__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>Lease_Charges__c$Property_Short_Code__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>JC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lease_Charges__c$Property_Short_Code__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>JMT</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Lease Charge Template</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Lease_Charges__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Lease_Charges__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

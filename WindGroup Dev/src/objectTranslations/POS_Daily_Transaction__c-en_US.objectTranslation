@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>POS Daily Transaction</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>POS Daily Transactions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency --></label>
+        <name>Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease Unit --></label>
+        <name>Lease_Unit__c</name>
+        <relationshipLabel><!-- POS Daily Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lease --></label>
+        <name>Lease__c</name>
+        <relationshipLabel><!-- POS Daily Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- No. of Items Purchased --></label>
+        <name>No_of_Items_Purchased__c</name>
+    </fields>
+    <fields>
+        <label><!-- POS No --></label>
+        <name>POS_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Code --></label>
+        <name>Property_Code__c</name>
+        <relationshipLabel><!-- POS Daily Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Bill Amount --></label>
+        <name>Total_Bill_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Date Time --></label>
+        <name>Transaction_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction No --></label>
+        <name>Transaction_No__c</name>
+    </fields>
+    <layouts>
+        <layout>Transaction Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- POS Data --></label>
+            <section>POS Data</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

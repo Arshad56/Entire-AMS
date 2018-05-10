@@ -1,0 +1,3124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Base_Charge_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Pls select Base Charge Type if the bill is based on other Charge Type. (eg. for GTO and A&amp;P, select Base Charge Type as Advance Rental).</inlineHelpText>
+        <label>Base Charge Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Base_Charge_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Base_Rent_Calculation_Foreign__c</fullName>
+        <externalId>false</externalId>
+        <label>Base Rent Calculation (Foreign)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Base_Rent_Calculation_Local__c</fullName>
+        <externalId>false</externalId>
+        <label>Base Rent Calculation (Local)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Base_Rent_Calculation__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF
+(
+	AND (
+	OR(
+	ISPICKVAL ( Charge_Type__c , &quot;Rent&quot;) ,
+	ISPICKVAL ( Charge_Type__c , &quot;Advance Rental&quot;) ) ,
+	 ISPICKVAL(Type__c, &quot;Fixed&quot;)),
+	Charge_Rate__c ,
+	IF
+(
+	AND (
+	OR(
+	ISPICKVAL ( Charge_Type__c , &quot;Rent&quot;) ,
+	ISPICKVAL ( Charge_Type__c , &quot;Advance Rental&quot;) ) ,
+	 ISPICKVAL(Type__c, &quot;By Area&quot;)),
+	Charge_Rate__c * Lease_Unit__r.Area_Sq_Ft__c,
+0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Base Rent Calculation</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Base_Rent__c</fullName>
+        <externalId>false</externalId>
+        <label>Base Rent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Base_Value_Foreign__c</fullName>
+        <externalId>false</externalId>
+        <label>Base Value (Foreign)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Base_Value_Local__c</fullName>
+        <externalId>false</externalId>
+        <label>Base Value (Local)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Base_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Base Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Base_included__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Base included</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Billing_Days__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select &quot;31&quot; if you want to set the billing date at the end of the month.</inlineHelpText>
+        <label>Billing Days</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Day</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Billing_Frequency__c</fullName>
+        <description>This field is used to create monthly Rent Schedule records via trigger
+To be defaulted to monthly and hidden from layout.</description>
+        <externalId>false</externalId>
+        <label>Rent Schedule Frequency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Billing_Term</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Billing_Terms__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Prorate (1st and last month) 
+Non-prorate (full month)</inlineHelpText>
+        <label>Billing Terms</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Billing_Terms</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cancel_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Cancel Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Cap_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>GTO_Cap__c * Lease_Unit__r.Unit__r.NLA_SQF__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Cap Value * Unit Area (NLA SQF)</inlineHelpText>
+        <label>Cap Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cap_Applicable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Cap Applicable</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Charge_Amount_Applicable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Charge Amount Input Required</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Charge_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Charge Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Charge_Method__c</fullName>
+        <externalId>false</externalId>
+        <label>Charge Method</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Charge_Method</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Charge_Operator__c</fullName>
+        <description>Sum : Amount + Caculated Field
+Multiple : Amount x Parameter
+Highest : Highest of either Amount or Calculated Field
+Special Formula: Excecute Defined special Formula (e.g. aggregate GTO calculation for different products)
+Lowest : Lowest of either Amount or Calculated Field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sum : Amount + Caculated Field
+Multiple : Amount x Parameter
+Highest : Highest of either Amount or Calculated Field
+Special Formula: Excecute Defined special Formula (e.g. aggregate GTO calculation 
+Lowest : Lowest of either Amount or Calculated Field</inlineHelpText>
+        <label>Charge Operator</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sum</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Multiple</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Highest</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lowest</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Special Formula</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fixed</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Charge_Rate_Input_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Charge Rate Input Required</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Charge_Rate__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Rate is either Percentage, for Charge Types By Percent, Value multiplier for Types By Area, or a Fixed Cost for Types Fixed and GTO Percent for GTO Types.</inlineHelpText>
+        <label>Charge Rate</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Charge_Start_Day__c</fullName>
+        <externalId>false</externalId>
+        <label>Charge Start Day</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Day</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Charge_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Charge Type</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Charge_Types</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Charge__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Applicable Charge</label>
+        <referenceTo>Applicable_Charges__c</referenceTo>
+        <relationshipLabel>Lease Charges</relationshipLabel>
+        <relationshipName>Lease_Charges</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Commercial_Tax_Apply__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Comm Tax</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Cumulative_for_each_Tier__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If Cumulative we will calculate the Total at each Tier &amp; Summarize them</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If Cumulative we will calculate the Total at each Tier &amp; Summarize them.
+Example 
+If the Maximum Tier is Tier 2,
+If Cumulative:
+      Tier 1 Total + Tier 2 Total
+If NOT Cumulative:
+      Tier 2 Total
+      Which</inlineHelpText>
+        <label>Cumulative for each Tier</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Currency_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Currency Code</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Currency_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Default_Charge__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Default Charge</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Deposit_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( ISPICKVAL( Type__c , &quot;By Area&quot;),  (Charge_Rate__c *  Lease_Unit__r.Area_Sq_Ft__c) *  No_of_Months__c  ,
+IF ( ISPICKVAL( Type__c , &quot;Fixed&quot;), Charge_Rate__c,
+0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>To be used to calculate Deposit Amount
+Used in Deposit creation process</inlineHelpText>
+        <label>Deposit Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Deposit_Term__c</fullName>
+        <description>No of months for deposit</description>
+        <externalId>false</externalId>
+        <label>Deposit Term</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Payment_Term</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Due_Month_Formula__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This is to set up billing date for rent schedule. 
+(eg. -1: 1 month before rent month; 0: same month as rent month, 1: 1 month after rent month)</inlineHelpText>
+        <label>Due Month Formula</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Due_Month_Formula</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Exchange_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Exchange Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expected_Amount__c</fullName>
+        <description>*Need to check if this is used anywhere*
+Does Not appear on Layout</description>
+        <externalId>false</externalId>
+        <label>Expected Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Expected_Charge__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(CONTAINS( UPPER( Charge__r.Name ) , &quot;ADVANCE&quot;) &amp;&amp;  ISPICKVAL(Billing_Frequency__c, &quot;Monthly&quot;) ,   Charge_Rate__c * Lease_Unit__r.Area_Sq_Ft__c  * 1  ,
+IF(CONTAINS( UPPER( Charge__r.Name ) , &quot;ADVANCE&quot;) &amp;&amp;  ISPICKVAL(Billing_Frequency__c, &quot;Quarterly&quot;) ,   Charge_Rate__c * Lease_Unit__r.Area_Sq_Ft__c  * 3  ,
+IF(CONTAINS( UPPER( Charge__r.Name ) , &quot;ADVANCE&quot;) &amp;&amp;  ISPICKVAL(Billing_Frequency__c, &quot;Half-yearly&quot;) ,   Charge_Rate__c * Lease_Unit__r.Area_Sq_Ft__c  * 6 ,
+IF(CONTAINS( UPPER( Charge__r.Name ) , &quot;ADVANCE&quot;) &amp;&amp;  ISPICKVAL(Billing_Frequency__c, &quot;Yearly&quot;) ,   Charge_Rate__c * Lease_Unit__r.Area_Sq_Ft__c  * 12 ,
+IF( ISPICKVAL(Type__c, &quot;GTO (Sum)&quot;),    MAX(Lease_Unit__r.Current_Base_Rent__c,(Expected_GTO__c * Charge_Rate__c ))   ,
+IF( ISPICKVAL(Type__c, &quot;GTO (Higher)&quot;) ,   Lease_Unit__r.Current_Base_Rent__c + (Expected_GTO__c * Charge_Rate__c )  ,
+IF( ISPICKVAL(Type__c, &quot;Fixed&quot;) ,   Charge_Rate__c  , 
+IF( ISPICKVAL(Type__c, &quot;By Area&quot;) ,   Charge_Rate__c * 	Lease_Unit__r.Area_Sq_Ft__c  , 
+IF( ISPICKVAL(Type__c, &quot;By Percent&quot;) ,(Charge_Rate__c / 100) * Lease_Unit__r.Current_Base_Rent__c  ,
+0)))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Expected Charge (Rent / Taxations)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Expected_GTO_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Expected GTO Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Expected_GTO__c</fullName>
+        <externalId>false</externalId>
+        <label>Expected GTO</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Finance_Accounts_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Accounts Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Finance_Accounts_Desc__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Accounts Desc</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>First_Month_Pro_rated_Rent__c</fullName>
+        <externalId>false</externalId>
+        <label>First Month Pro-rated Rent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Fit_out_Duration__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Fit-out Duration</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Formula_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Formula Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Frequency__c</fullName>
+        <description>This is used to assign Billing Date on Rent Schedule based on Frequency
+i.e. If Billing Frequency is &apos;Quarterly&apos; then system will assign same Billing Date on all 3 Rent Schedule records</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is used to assign Billing Date on Rent Schedule based on Frequency
+i.e. If Billing Frequency is &apos;Quarterly&apos; then system will assign same Billing Date on all 3 Rent Schedule records</inlineHelpText>
+        <label>Billing Frequency</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Billing_Frequency</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>GTO_Cap__c</fullName>
+        <description>Created to managed GTO Cap Cases. This value will be pushed to all related RS on reord creation. Will be referred in formulas to calculate GTO Amount (in respective RS records)</description>
+        <externalId>false</externalId>
+        <label>Cap Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>GTO_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>GTO Percent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Generate_Rent_Schedule__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Generate Rent Schedule</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Last_Month_Pro_rated_Balance__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Month Pro-rated Balance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Lease_Plan__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lease Plan</label>
+        <referenceTo>Lease_Plan__c</referenceTo>
+        <relationshipLabel>Lease Charges</relationshipLabel>
+        <relationshipName>Lease_Charges</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Lease_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Lease_Unit__r.Lease_Status__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Lease Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lease_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT  (Charge__r.Lease_Type__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Lease Type from related Applicable Charge</inlineHelpText>
+        <label>Lease Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lease_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>Lease Unit</label>
+        <referenceTo>Lease_Unit__c</referenceTo>
+        <relationshipLabel>Lease Charges</relationshipLabel>
+        <relationshipName>Lease_Charges</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Multiple_Rental_Schedule__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Applicable for MEPE Cases: 
+Please tick if you want to generate Rent Schedules for each Electric Meter record.
+Un-tick will create 1 record for each month merging multiple meter(s) info.</inlineHelpText>
+        <label>Multiple Rental Schedule</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Multiple_of_Parameter__c</fullName>
+        <externalId>false</externalId>
+        <label>Multiple of Parameter</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Area</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meter Units</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Monthly Base Rent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Monthly GTO</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Phone Units (Local)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Phone Units (Trunk)</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>No_of_Months__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Used for Total Amount Calculation which is later used to create Deposits</inlineHelpText>
+        <label>No. of Months</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parent_Lease_Charge__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Parent Lease Charge</label>
+        <referenceTo>Lease_Charges__c</referenceTo>
+        <relationshipLabel>Lease Charges (Discount)</relationshipLabel>
+        <relationshipName>Lease_Charges</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Termination__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Pre Termination</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Property_Short_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK( Charge__r.Property_Short_Code__c),  Parent_Lease_Charge__r.Charge__r.Property_Short_Code__c ,Charge__r.Property_Short_Code__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Property Short Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Tenant_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lease_Unit__r.Lease_Agreement_No__r.Tenant__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tenant Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_1_Rate__c</fullName>
+        <description>Please update % in decimal value in this field
+e.g. For 10 Percent, add decimal: 0.10
+e.g. For 5 Percent, add decimal: 0.05</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please update % in decimal value in this field
+e.g. For 10 Percent, add decimal: 0.10
+e.g. For 5 Percent, add decimal: 0.05</inlineHelpText>
+        <label>Tier 1 Rate</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_1_Upper_Limit__c</fullName>
+        <externalId>false</externalId>
+        <label>Tier 1 Upper Limit</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_2_Rate__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please update % in decimal value in this field 
+e.g. For 10 Percent, add decimal: 0.10 
+e.g. For 5 Percent, add decimal: 0.05</inlineHelpText>
+        <label>Tier 2 Rate</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_2_Upper_Limit__c</fullName>
+        <externalId>false</externalId>
+        <label>Tier 2 Upper Limit</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_3_Rate__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please update % in decimal value in this field 
+e.g. For 10 Percent, add decimal: 0.10 
+e.g. For 5 Percent, add decimal: 0.05</inlineHelpText>
+        <label>Tier 3 Rate</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_3_Upper_Limit__c</fullName>
+        <externalId>false</externalId>
+        <label>Tier 3 Upper Limit</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_4_Rate__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please update % in decimal value in this field 
+e.g. For 10 Percent, add decimal: 0.10 
+e.g. For 5 Percent, add decimal: 0.05</inlineHelpText>
+        <label>Tier 4 Rate</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_4_Upper_Limit__c</fullName>
+        <externalId>false</externalId>
+        <label>Tier 4 Upper Limit</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_5_Rate__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please update % in decimal value in this field 
+e.g. For 10 Percent, add decimal: 0.10 
+e.g. For 5 Percent, add decimal: 0.05</inlineHelpText>
+        <label>Tier 5 Rate</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_5_Upper_Limit__c</fullName>
+        <externalId>false</externalId>
+        <label>Tier 5 Upper Limit</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_6_Rate__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please update % in decimal value in this field 
+e.g. For 10 Percent, add decimal: 0.10 
+e.g. For 5 Percent, add decimal: 0.05</inlineHelpText>
+        <label>Tier 6 Rate</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_6_Upper_Limit__c</fullName>
+        <externalId>false</externalId>
+        <label>Tier 6 Upper Limit</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_7_Rate__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please update % in decimal value in this field 
+e.g. For 10 Percent, add decimal: 0.10 
+e.g. For 5 Percent, add decimal: 0.05</inlineHelpText>
+        <label>Tier 7 Rate</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_7_Upper_Limit__c</fullName>
+        <externalId>false</externalId>
+        <label>Tier 7 Upper Limit</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_8_Rate__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please update % in decimal value in this field 
+e.g. For 10 Percent, add decimal: 0.10 
+e.g. For 5 Percent, add decimal: 0.05</inlineHelpText>
+        <label>Tier 8 Rate</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_8_Upper_Limit__c</fullName>
+        <externalId>false</externalId>
+        <label>Tier 8 Upper Limit</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_9_Rate__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please update % in decimal value in this field 
+e.g. For 10 Percent, add decimal: 0.10 
+e.g. For 5 Percent, add decimal: 0.05</inlineHelpText>
+        <label>Tier 9 Rate</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tiered_Limit1__c</fullName>
+        <externalId>false</externalId>
+        <formula>Charge__r.Tiered_Limit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tiered Limit</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Tiered_Limit__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Apply Tier Formula</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Tiered_Lower_Limit__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Tier Lower Limit</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <description>Different types of calculation for maintenance, A&amp;P</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used in Amount Calculation
+This Amount is later used in Deposits for LOI Cases.</inlineHelpText>
+        <label>Type</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>By Area</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>By Percent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fixed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>GTO</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>GTO (Sum)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>GTO (Higher)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meter Units</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Special</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Unit_Area__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lease_Unit__r.Area_Sq_Ft__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Unit Area</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Unit__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lease_Unit__r.Unit__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Unit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Withholding_Tax_Applicable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Withholding Tax Applicable</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Withholding_Tax_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Withholding Tax Rate</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <label>Lease Charge</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Property_Short_Code__c</columns>
+        <columns>Charge_Type__c</columns>
+        <columns>Billing_Days__c</columns>
+        <columns>Type__c</columns>
+        <columns>Charge_Rate__c</columns>
+        <columns>Unit_Area__c</columns>
+        <columns>Multiple_of_Parameter__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>AllJCFB</fullName>
+        <columns>Charge__c</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>Tenant_Name__c</columns>
+        <columns>NAME</columns>
+        <columns>Property_Short_Code__c</columns>
+        <columns>Charge_Type__c</columns>
+        <columns>Billing_Days__c</columns>
+        <columns>Type__c</columns>
+        <columns>Charge_Rate__c</columns>
+        <columns>Unit_Area__c</columns>
+        <columns>Multiple_of_Parameter__c</columns>
+        <columns>Generate_Rent_Schedule__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Charge_Type__c</field>
+            <operation>equals</operation>
+            <value>Service</value>
+        </filters>
+        <filters>
+            <field>Property_Short_Code__c</field>
+            <operation>equals</operation>
+            <value>JC</value>
+        </filters>
+        <filters>
+            <field>Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>F&amp;B</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Lease_Charges__c.Monthly</value>
+        </filters>
+        <label>All JC F&amp;B</label>
+    </listViews>
+    <listViews>
+        <fullName>AllJCNOALC</fullName>
+        <columns>OBJECT_ID</columns>
+        <columns>Tenant_Name__c</columns>
+        <columns>NAME</columns>
+        <columns>Currency_Code__c</columns>
+        <columns>Charge__c</columns>
+        <columns>Property_Short_Code__c</columns>
+        <columns>Charge_Type__c</columns>
+        <columns>Billing_Days__c</columns>
+        <columns>Type__c</columns>
+        <columns>Charge_Rate__c</columns>
+        <columns>Unit_Area__c</columns>
+        <columns>Multiple_of_Parameter__c</columns>
+        <columns>Generate_Rent_Schedule__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Charge__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Tenant_Name__c</field>
+            <operation>contains</operation>
+            <value>Test</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Lease_Charges__c.Discount</value>
+        </filters>
+        <label>All JC (no ALC)</label>
+    </listViews>
+    <listViews>
+        <fullName>AllJCNORS</fullName>
+        <booleanFilter>1 AND (2 OR 3) AND 4 AND 5</booleanFilter>
+        <columns>OBJECT_ID</columns>
+        <columns>NAME</columns>
+        <columns>Property_Short_Code__c</columns>
+        <columns>Charge_Type__c</columns>
+        <columns>Billing_Days__c</columns>
+        <columns>Type__c</columns>
+        <columns>Charge_Rate__c</columns>
+        <columns>Unit_Area__c</columns>
+        <columns>Multiple_of_Parameter__c</columns>
+        <columns>Generate_Rent_Schedule__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Generate_Rent_Schedule__c</field>
+            <operation>notEqual</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>Gas</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>Water</value>
+        </filters>
+        <filters>
+            <field>Property_Short_Code__c</field>
+            <operation>equals</operation>
+            <value>JC</value>
+        </filters>
+        <filters>
+            <field>Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All JC (no RS)</label>
+    </listViews>
+    <listViews>
+        <fullName>AllJCSC</fullName>
+        <columns>Tenant_Name__c</columns>
+        <columns>NAME</columns>
+        <columns>Property_Short_Code__c</columns>
+        <columns>Charge_Type__c</columns>
+        <columns>Billing_Days__c</columns>
+        <columns>Type__c</columns>
+        <columns>Currency_Code__c</columns>
+        <columns>Charge_Rate__c</columns>
+        <columns>Unit_Area__c</columns>
+        <columns>Multiple_of_Parameter__c</columns>
+        <columns>Generate_Rent_Schedule__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Property_Short_Code__c</field>
+            <operation>equals</operation>
+            <value>JC</value>
+        </filters>
+        <filters>
+            <field>Charge_Type__c</field>
+            <operation>contains</operation>
+            <value>Service</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Lease_Charges__c.Monthly</value>
+        </filters>
+        <filters>
+            <field>Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All JC Service Charge</label>
+    </listViews>
+    <listViews>
+        <fullName>JunctionMawTinBaseRent</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Frequency__c</columns>
+        <columns>Generate_Rent_Schedule__c</columns>
+        <columns>Multiple_Rental_Schedule__c</columns>
+        <columns>Tenant_Name__c</columns>
+        <columns>Charge_Type__c</columns>
+        <columns>Billing_Days__c</columns>
+        <columns>Base_Value__c</columns>
+        <columns>Base_included__c</columns>
+        <columns>Billing_Frequency__c</columns>
+        <columns>Type__c</columns>
+        <columns>Charge_Rate__c</columns>
+        <columns>Unit_Area__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Property_Short_Code__c</field>
+            <operation>equals</operation>
+            <value>JMT</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>Base Rent</value>
+        </filters>
+        <filters>
+            <field>Tenant_Name__c</field>
+            <operation>equals</operation>
+            <value>KFC</value>
+        </filters>
+        <label>Junction Maw Tin Base Rent</label>
+    </listViews>
+    <nameField>
+        <label>Lease Charge Name</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Lease Charges</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Discount</fullName>
+        <active>true</active>
+        <description>Use this option to define Discount LC</description>
+        <label>Discount</label>
+        <picklistValues>
+            <picklist>Base_Charge_Type</picklist>
+            <values>
+                <fullName>Advance Rental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Billing_Frequency</picklist>
+            <values>
+                <fullName>Half-Yearly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>One Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yearly</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Billing_Term</picklist>
+            <values>
+                <fullName>Bi-monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half-yearly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>One Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yearly</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Billing_Terms</picklist>
+            <values>
+                <fullName>Non-prorate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prorate</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Charge_Method</picklist>
+            <values>
+                <fullName>Daily Rate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Rate - CL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Rate - L</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transaction Rate</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Charge_Operator__c</picklist>
+            <values>
+                <fullName>Fixed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Highest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lowest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multiple</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Formula</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sum</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Charge_Types</picklist>
+            <values>
+                <fullName>A%26P</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Advance Rental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deposit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GTO Rent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Generator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gov Meter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Local</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rebate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sub Meter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trunk</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Water</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_Code</picklist>
+            <values>
+                <fullName>MMK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MVR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Day</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>13</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>14</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>15</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>16</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>17</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>19</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>20</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>21</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>22</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>26</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>27</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>28</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>30</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>31</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Due_Month_Formula</picklist>
+            <values>
+                <fullName>%2B1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2B12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2B3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2B4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2B6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>-1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>-12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>-3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>-6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Multiple_of_Parameter__c</picklist>
+            <values>
+                <fullName>Area</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meter Units</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Base Rent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly GTO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Units %28Local%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Units %28Trunk%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Term</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>By Area</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>By Percent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GTO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GTO %28Higher%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GTO %28Sum%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meter Units</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Monthly</fullName>
+        <active>true</active>
+        <description>Utility Charges</description>
+        <label>Monthly</label>
+        <picklistValues>
+            <picklist>Base_Charge_Type</picklist>
+            <values>
+                <fullName>Advance Rental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Billing_Frequency</picklist>
+            <values>
+                <fullName>Half-Yearly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>One Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yearly</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Billing_Term</picklist>
+            <values>
+                <fullName>Bi-monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half-yearly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>One Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yearly</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Billing_Terms</picklist>
+            <values>
+                <fullName>Non-prorate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prorate</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Charge_Method</picklist>
+            <values>
+                <fullName>Daily Rate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Rate - CL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Rate - L</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transaction Rate</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Charge_Operator__c</picklist>
+            <values>
+                <fullName>Fixed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Highest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lowest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multiple</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Formula</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sum</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Charge_Types</picklist>
+            <values>
+                <fullName>A%26P</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Advance Rental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deposit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GTO Rent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Generator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gov Meter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Local</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rebate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sub Meter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trunk</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Water</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_Code</picklist>
+            <values>
+                <fullName>MMK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MVR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Day</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>13</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>14</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>15</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>16</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>17</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>19</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>20</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>21</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>22</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>26</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>27</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>28</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>30</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>31</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Due_Month_Formula</picklist>
+            <values>
+                <fullName>%2B1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2B12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2B3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2B6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>-1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>-12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>-3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>-6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Multiple_of_Parameter__c</picklist>
+            <values>
+                <fullName>Area</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meter Units</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Base Rent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly GTO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Units %28Local%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Units %28Trunk%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Term</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>By Area</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>By Percent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GTO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GTO %28Higher%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GTO %28Sum%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meter Units</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Rent</fullName>
+        <active>true</active>
+        <description>Base Rent &amp; GTO</description>
+        <label>Rent</label>
+        <picklistValues>
+            <picklist>Base_Charge_Type</picklist>
+            <values>
+                <fullName>Advance Rental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Billing_Frequency</picklist>
+            <values>
+                <fullName>Half-Yearly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>One Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yearly</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Billing_Term</picklist>
+            <values>
+                <fullName>Bi-monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half-yearly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>One Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yearly</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Billing_Terms</picklist>
+            <values>
+                <fullName>Non-prorate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prorate</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Charge_Method</picklist>
+            <values>
+                <fullName>Daily Rate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Rate - CL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Rate - L</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transaction Rate</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Charge_Operator__c</picklist>
+            <values>
+                <fullName>Fixed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Highest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lowest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multiple</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Formula</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sum</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Charge_Types</picklist>
+            <values>
+                <fullName>A%26P</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Advance Rental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deposit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GTO Rent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Generator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gov Meter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Local</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rebate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sub Meter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trunk</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Water</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_Code</picklist>
+            <values>
+                <fullName>MMK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MVR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Day</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>13</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>14</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>15</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>16</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>17</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>19</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>20</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>21</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>22</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>26</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>27</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>28</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>30</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>31</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Due_Month_Formula</picklist>
+            <values>
+                <fullName>%2B1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2B12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2B3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2B6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>-1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>-12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>-3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>-6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Multiple_of_Parameter__c</picklist>
+            <values>
+                <fullName>Area</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meter Units</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Base Rent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly GTO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Units %28Local%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Units %28Trunk%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Term</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>By Area</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>By Percent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GTO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GTO %28Higher%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GTO %28Sum%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meter Units</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Charge_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Billing_Days__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Unit_Area__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Charge_Rate__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Charge_Operator__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Lease_Unit__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Charge_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Start_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Commercial_Tax_Apply__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Frequency__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Lease_Type__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>NAME</lookupFilterFields>
+        <lookupFilterFields>Charge_Type__c</lookupFilterFields>
+        <lookupFilterFields>Frequency__c</lookupFilterFields>
+        <searchResultsAdditionalFields>Charge_Description__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Charge__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Charge_Rate__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Property_Short_Code__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Cap_Applicable_and_Value</fullName>
+        <active>true</active>
+        <description>Please fill Cap Value since Cap is Applicable</description>
+        <errorConditionFormula>AND ( Cap_Applicable__c = TRUE, ISBLANK( GTO_Cap__c  ))</errorConditionFormula>
+        <errorDisplayField>GTO_Cap__c</errorDisplayField>
+        <errorMessage>Please fill Cap Value since Cap is Applicable!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Charge_Rate_Mandatory</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND ( Generate_Rent_Schedule__c ,
+   ISNULL(Charge_Rate__c) ,
+   NOT (  OR ( ISPICKVAL( Type__c , &apos;Special&apos;) ,         Charge__r.Tiered_Limit__c  )))</errorConditionFormula>
+        <errorMessage>If not Special, all Charges should have Charge Rate.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Cancel</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Cancel</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+if({!NOT(Lease_Charges__c.Active__c)}){ 
+alert(&apos;Lease Charge is already cancelled.&apos;); 
+}else{ 
+var left = Number((screen.width/2)-220); 
+var tops = Number((screen.height/2)-250); 
+var win=window.open(&apos;/apex/CancelLeaseCharge?Id={!Lease_Charges__c.Id}&apos;,&apos;&apos;, 
+&apos;width=500,height=350,scrollbars=yes,top=&apos;+tops+&apos;,left=&apos;+left); 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Generate_Rent_Schedules</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate Rent Schedules</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/23.0/connection.js&quot;)} 
+try 
+{ 
+
+if({!Lease_Charges__c.Generate_Rent_Schedule__c}){ 
+alert(&quot;Rent Schedules have already been generated for this Lease Charge&quot;); 
+}else{ 
+var newRecords = []; 
+var ob=new sforce.SObject(&quot;Lease_Charges__c&quot;); 
+ob.Id=&quot;{!Lease_Charges__c.Id}&quot;; 
+ob.Generate_Rent_Schedule__c = true; 
+newRecords.push(ob); 
+var result=sforce.connection.update(newRecords); 
+} 
+if(!result[0].getBoolean(&quot;success&quot;)){
+    alert(result[0].errors.message);
+}
+location.reload(); 
+}catch(er) 
+{ 
+alert(er); 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Discount_LC</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Discount LC</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/a13/e?RecordType=0127F000000hUKU&amp;CF00N2800000J1d6k={!Lease_Charges__c.Name}&amp;CF00N2800000J1d6k_lkid={!Lease_Charges__c.Id}&amp;CF00N7F00000HCewB={!Lease_Charges__c.Lease_Unit__c}&amp;CF00N7F00000HCewB_lkid={!Lease_Charges__c.Lease_UnitId__c}&amp;00N7F00000HCfHO=Discount&amp;00N7F00000HCfHw={!Lease_Charges__c.Start_Date__c}&amp;00N7F00000HCfHX={!Lease_Charges__c.End_Date__c}&amp;00N7F00000HCfHi={!Lease_Charges__c.Frequency__c}&amp;00N7F00000HCfHB={!Lease_Charges__c.Billing_Days__c}&amp;00N7F00000HCfHD={!Lease_Charges__c.Billing_Terms__c}&amp;00N7F00000HCfHW={!Lease_Charges__c.Due_Month_Formula__c}&amp;00N7F00000HCfHQ={!Lease_Charges__c.Commercial_Tax_Apply__c}&amp;00N2800000HHEpx={!Lease_Charges__c.Billing_Frequency__c}&amp;retURL=/{!Lease_Charges__c.Id}&amp;00N2800000J04zB={!Lease_Charges__c.Currency_Code__c}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Populate_Base_Rent_RS</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Populate Base Rent RS</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/13.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&apos;/soap/ajax/22.0/apex.js&apos;)}
+
+var lcid = &apos;{!Lease_Charges__c.Id}&apos;;
+var bct = &apos;{!Lease_Charges__c.Base_Charge_Type__c}&apos;;
+var retVal = sforce.apex.execute(&apos;PopulateBaseRentRsController&apos;, &apos;pplBaseRent&apos;, {lcId:lcid,baseChargeType:bct});
+
+alert(retVal);
+window.location.reload();</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Pre_Terminate</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Pre-Terminate</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+
+if(&apos;{!Lease_Charges__c.Pre_Termination__c}&apos; == true){ 
+alert(&apos;This Lease Charge is already Terminated.&apos;); 
+}else{ 
+var today = new Date(); 
+var parts =&apos;{!Lease_Charges__c.End_Date__c}&apos;.split(&apos;/&apos;); 
+var endDate = new Date(parts[2],parts[0]-1,parts[1]); 
+
+if( endDate &lt;= today ){ 
+alert(&apos;Sorry you cant Pre-Terminate this Lease Charge..&apos;); 
+}else{ 
+var left = Number((screen.width/2)-200); 
+var tops = Number((screen.height/2)-250); 
+var selectedLeaseCharges = &apos;{!Lease_Charges__c.Id}&apos;; 
+var endDate = &apos;{!Lease_Charges__c.End_Date__c}&apos;; 
+
+var win=window.open(&apos;/apex/PreTerminateLC?from=LeaseCharge&amp;selectedLeaseCharges=&apos;+selectedLeaseCharges+&apos;&amp;endDate=&apos;+endDate,&apos;&apos;, 
+&apos;width=500,height=400,scrollbars=yes,top=&apos;+tops+&apos;,left=&apos;+left); 
+} 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Refresh_Rent_Schedules</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Refresh Rent Schedules</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/23.0/connection.js&quot;)} 
+try 
+{ 
+var strLCQuery = &quot;Select id,Commercial_Tax_Apply__c,Lease_Unit__r.Lease_Agreement_No__r.Property__r.Comm_Tax__c,GTO_Cap__c,Cap_Applicable__c from Lease_Charges__c where id=&apos;&quot;+&apos;{!Lease_Charges__c.Id}&apos;+&quot;&apos;&quot;; 
+
+var otherLC = sforce.connection.query(strLCQuery); 
+var lcRecords = otherLC.getArray(&quot;records&quot;); 
+
+var strQuery=&quot;Select Id,Name from Rent_Schedules__c where Lease_Charge__r.Id =&apos;&quot; +&apos;{!Lease_Charges__c.Id}&apos;+&quot;&apos;&quot;; 
+
+var newRecords = []; 
+
+var otherP = sforce.connection.query(strQuery); 
+var records = otherP.getArray(&quot;records&quot;); 
+
+//alert(otherP); 
+for(var i=0; i &lt; records.length ; i ++) 
+{ 
+var ob=new sforce.SObject(&quot;Rent_Schedules__c&quot;); 
+ob.Id=records[i].Id; 
+if(lcRecords[0].Commercial_Tax_Apply__c){ 
+if(lcRecords[0].Lease_Unit__r.Lease_Agreement_No__r.Property__r.Comm_Tax__c!=null){ 
+ob.Comm_Tax__c = lcRecords[0].Lease_Unit__r.Lease_Agreement_No__r.Property__r.Comm_Tax__c; 
+}else{ 
+ob.Comm_Tax__c = 5; 
+} 
+} 
+ob.Cap_Applicable__c = lcRecords[0].Cap_Applicable__c; 
+ob.Cap_Value__c = lcRecords[0].GTO_Cap__c; 
+
+newRecords.push(ob); 
+} 
+
+//alert(newRecords); 
+
+var result=sforce.connection.update(newRecords); 
+//alert(result); 
+location.reload(); 
+}catch(er) 
+{ 
+alert(er); 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Reset_Base_Rent_RS</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Reset Base Rent RS</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>if(&apos;{!Lease_Charges__c.Base_Charge_Type__c}&apos; == &apos;&apos;){ 
+alert(&apos;Please select Base Charge Type before reset Base Rent RS.&apos;); 
+}else{ 
+var left = Number((screen.width/2)-450); 
+var tops = Number((screen.height/2)-300); 
+var win=window.open(&apos;/apex/ResetRSBaseRent?id={!Lease_Charges__c.Id}&apos;,&apos;&apos;, 
+&apos;width=800,height=500,scrollbars=yes,top=&apos;+tops+&apos;,left=&apos;+left); 
+}</url>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Charge Master</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Charge Master</value>
+    </caseValues>
+    <fields>
+        <label><!-- Billing Days of the Month --></label>
+        <name>Billing_Days_of_the_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Frequency --></label>
+        <name>Billing_Frequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Type --></label>
+        <name>Charge_Type__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

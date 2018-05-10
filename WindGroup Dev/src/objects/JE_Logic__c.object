@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Bank_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Application in the case of Transaction: Cash Receipt</inlineHelpText>
+        <label>Bank Name</label>
+        <referenceTo>Bank_Information__c</referenceTo>
+        <relationshipLabel>JE Logic</relationshipLabel>
+        <relationshipName>JE_Logic</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Charge_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Applicable when Transaction: Invoice</inlineHelpText>
+        <label>Charge Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Transaction__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Charge_Types</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>A&amp;P</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>Advance Rental</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>Commercial Tax</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>Deposit</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>Discount</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>Gas</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>Generator</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>Gov Meter</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>GTO Rent</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>Late Charge</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>License Tax</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>Local</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>Maintenance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>Miscellaneous</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>Payment Terms</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>Rebate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>Rent</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>Service</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>Sub Meter</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>Trunk</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>Water</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>Invoice Discount</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Company__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Company</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>JE Logic</relationshipLabel>
+        <relationshipName>JE_Logic</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Convert_Negative_Amount__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>This is primarily used to convert Negative Amount to Positive.
+Used for Charge Type: Discount &amp; Rebate.</inlineHelpText>
+        <label>Convert Negative Amount</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Document_Currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Document Currency</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Currency_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Header_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Header/Detail</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Header</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Detail</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>JV_Creation__c</fullName>
+        <externalId>false</externalId>
+        <label>JV Creation</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Document Date</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Line Item Start Date</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>JV_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Invoice (Normal) - Monthly; Ad-Hoc; Misc; Debit Note
+Credit Note - Credit Note
+Late Payment - Late Payment
+Invoice (Advance Rental) - Rent with Charge Type &apos;Advance Rental&apos;</inlineHelpText>
+        <label>JV Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Transaction__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>JV_Type</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>Invoice (Normal)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>Credit Note</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>Late Payment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice</controllingFieldValue>
+                <valueName>Invoice (Advance Rental)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Deposit</controllingFieldValue>
+                <valueName>Fit-out</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Deposit</controllingFieldValue>
+                <valueName>Renovation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Deposit</controllingFieldValue>
+                <valueName>Security</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Payment Voucher</controllingFieldValue>
+                <valueName>Deposit</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Payment Voucher</controllingFieldValue>
+                <valueName>Invoice Receipt</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Payment_Mode__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Application in the case of Transaction: Cash Receipt</inlineHelpText>
+        <label>Payment Mode</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Transaction__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Payment_Mode</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Cash Receipt</controllingFieldValue>
+                <controllingFieldValue>Payment Voucher</controllingFieldValue>
+                <valueName>Cash</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cash Receipt</controllingFieldValue>
+                <valueName>Credit Note</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cash Receipt</controllingFieldValue>
+                <valueName>Payment Voucher</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cash Receipt</controllingFieldValue>
+                <valueName>Bank</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Payment Voucher</controllingFieldValue>
+                <valueName>Cheque</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Payment Voucher</controllingFieldValue>
+                <valueName>Offset Invoice</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Posting_Period__c</fullName>
+        <externalId>false</externalId>
+        <label>Posting Period</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>-2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>-1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>0</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>+1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>+2</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Transaction__c</fullName>
+        <externalId>false</externalId>
+        <label>Transaction</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Transaction</valueSetName>
+        </valueSet>
+    </fields>
+    <label>JE Logic</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Company__c</columns>
+        <columns>Charge_Type__c</columns>
+        <columns>Document_Currency__c</columns>
+        <columns>Transaction__c</columns>
+        <columns>JV_Type__c</columns>
+        <columns>Convert_Negative_Amount__c</columns>
+        <columns>Posting_Period__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Cash_Receipt_Logic</fullName>
+        <columns>NAME</columns>
+        <columns>Company__c</columns>
+        <columns>Document_Currency__c</columns>
+        <columns>Payment_Mode__c</columns>
+        <columns>Bank_Name__c</columns>
+        <columns>Posting_Period__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Transaction__c</field>
+            <operation>equals</operation>
+            <value>Cash Receipt</value>
+        </filters>
+        <label>Cash Receipt Logic</label>
+    </listViews>
+    <listViews>
+        <fullName>Invoice_Logic</fullName>
+        <columns>NAME</columns>
+        <columns>Company__c</columns>
+        <columns>Charge_Type__c</columns>
+        <columns>Document_Currency__c</columns>
+        <columns>Transaction__c</columns>
+        <columns>JV_Type__c</columns>
+        <columns>Convert_Negative_Amount__c</columns>
+        <columns>Posting_Period__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Transaction__c</field>
+            <operation>equals</operation>
+            <value>Invoice</value>
+        </filters>
+        <label>Invoice Logic</label>
+    </listViews>
+    <nameField>
+        <displayFormat>JEL-{000000}</displayFormat>
+        <label>JE Logic ID</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>JE Logic</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Company__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Transaction__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Charge_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>JV_Creation__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Posting_Period__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Mandate_check_for_Transaction_Cash_Rct</fullName>
+        <active>true</active>
+        <description>Please define Payment Mode and Bank Name</description>
+        <errorConditionFormula>AND (
+ISPICKVAL( Transaction__c , &quot;Cash Receipt&quot;),
+OR(
+ISBLANK( Bank_Name__c ), 
+ISPICKVAL( Payment_Mode__c , &quot;&quot;) 
+)
+)</errorConditionFormula>
+        <errorMessage>Please define Payment Mode and Bank Name</errorMessage>
+    </validationRules>
+</CustomObject>

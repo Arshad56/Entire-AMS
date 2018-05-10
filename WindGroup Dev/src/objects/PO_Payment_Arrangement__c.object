@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Invoice_Created__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Invoice Created</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PO_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Purchase_Order__r.PO_Amount__c *  Payment_Term__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>PO: PO Amount * Payment Term</inlineHelpText>
+        <label>PO Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Arrangement__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Payment Arrangement</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Payment_Arrangement__c.Vendor_Name__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.Vendor_Name__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Payment_Arrangement__c</referenceTo>
+        <relationshipLabel>PO Payment Arrangement</relationshipLabel>
+        <relationshipName>PO_Payment_Terms</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Due__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Due</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Payment_Due</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Payment_Term__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Term</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Purchase_Order__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Purchase Order</label>
+        <referenceTo>Purchase_Order__c</referenceTo>
+        <relationshipName>PO_Payment_Terms</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Seq_No__c</fullName>
+        <externalId>false</externalId>
+        <formula>VALUE( TEXT(Payment_Arrangement__r.Seq_No__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Seq No.</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tax_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Purchase_Order__r.Tax_Amount__c  *  Payment_Term__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>PO: Tax Amount * Payment Term</inlineHelpText>
+        <label>Tax Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_PO_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Purchase_Order__r.Total_PO_Amount__c *  Payment_Term__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total PO Amount * Payment Term</inlineHelpText>
+        <label>Total PO Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Vendor_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Vendor Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>PO Payment Arrangement</relationshipLabel>
+        <relationshipName>PO_Payment_Arrangement</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Vendor_Name_formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>Purchase_Order__r.Vendor_Name__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Vendor Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>PO Payment Arrangement</label>
+    <nameField>
+        <displayFormat>{000000}</displayFormat>
+        <label>PO PT ID</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>PO Payment Arrangement</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Update_only_for_particular_PO_status</fullName>
+        <active>true</active>
+        <description>Cannot update only if the PO status is In-Approval or Issued</description>
+        <errorConditionFormula>AND(OR(ISPICKVAL(Purchase_Order__r.Status__c,&apos;In-Approval&apos;),ISPICKVAL(Purchase_Order__r.Status__c,&apos;Issued&apos;)),NOT(ISNEW()),NOT( Purchase_Order__r.PO_Line_Validation_Bypass__c) )</errorConditionFormula>
+        <errorMessage>PO Payment Arrangement can only be updated when PO status is Draft or Rejected</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>New_PO_Payment_Arrangement</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>New PO Payment Arrangement</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>if(&quot;{!Purchase_Order__c.Status__c}&quot; == &quot;Draft&quot; || &quot;{!Purchase_Order__c.Status__c}&quot; == &quot;Rejected&quot; ){ 
+var str = &quot;a2E/e?CF00NO0000002ohQU={!Purchase_Order__c.Name}&amp;CF00NO0000002ohQU_lkid={!Purchase_Order__c.Id}&amp;retURL={!Purchase_Order__c.Id}&quot;;
+if(&quot;{!Purchase_Order__c.Vendor_Name__c}&quot;)
+str+=&quot;&amp;CF00NO0000002owpj={!Purchase_Order__c.Vendor_Name__c}&quot;;
+window.location.href= str;
+} 
+else 
+alert(&quot;PO status must be Draft or Rejected to create a new record&quot;);</url>
+    </webLinks>
+</CustomObject>

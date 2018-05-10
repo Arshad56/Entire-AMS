@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>iOPS Configuration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>iOPS Configuration</value>
+    </caseValues>
+    <fields>
+        <label><!-- Afternoon Shift Interval --></label>
+        <name>Afternoon_Shift_Interval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Morning Shift Interval --></label>
+        <name>Morning_Shift_Interval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Night Shift Interval --></label>
+        <name>Night_Shift_Interval__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,2513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used to capture Status of a Unit (Vacant, Committed, LOI)
+Managed by Unit creation, LOI process, Lease Unit</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Base_Rent__c</fullName>
+        <externalId>false</externalId>
+        <label>Base Rent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Commited__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Commited</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Currency_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Currency Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Currency_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_10__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 10</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_11__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 11</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_12__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 12</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_13__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 13</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_14__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 14</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_15__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 15</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_16__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 16</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_17__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 17</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_18__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 18</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_19__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 19</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_20__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 20</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_21__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 21</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_22__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 22</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_23__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 23</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_24__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 24</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_25__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 25</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_26__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 26</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_27__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 27</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_28__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 28</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_29__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 29</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_30__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 30</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_31__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 31</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 4</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 5</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_6__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 6</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_7__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 7</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_8__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 8</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Committed_Rate_9__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Committed Rate 9</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_10__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 10</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_11__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 11</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_12__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 12</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_13__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 13</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_14__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 14</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_15__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 15</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_16__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 16</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_17__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 17</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_18__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 18</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_19__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 19</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_20__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 20</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_21__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 21</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_22__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 22</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_23__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 23</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_24__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 24</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_25__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 25</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_26__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 26</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_27__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 27</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_28__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 28</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_29__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 29</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_30__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 30</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_31__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 31</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 4</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 5</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_6__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 6</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_7__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 7</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_8__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 8</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_LOI_Rate_9__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily LOI Rate 9</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_10__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 10</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_11__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 11</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_12__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 12</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_13__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 13</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_14__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 14</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_15__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 15</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_16__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 16</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_17__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 17</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_18__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 18</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_19__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 19</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_20__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 20</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_21__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 21</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_22__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 22</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_23__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 23</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_24__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 24</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_25__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 25</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_26__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 26</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_27__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 27</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_28__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 28</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_29__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 29</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_30__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 30</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_31__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 31</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 4</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 5</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_6__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 6</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_7__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 7</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_8__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 8</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Rate_9__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Rate 9</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Day_10__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 10</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_11__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 11</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_12__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 12</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_13__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 13</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_14__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 14</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_15__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 15</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_16__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 16</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_17__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 17</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_18__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 18</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_19__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 19</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_20__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 20</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_21__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 21</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_22__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 22</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_23__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 23</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_24__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 24</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_25__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 25</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_26__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 26</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_27__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 27</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_28__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 28</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_29__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 29</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_30__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 30</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_31__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 31</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 4</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 5</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_6__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 6</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_7__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 7</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_8__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 8</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_9__c</fullName>
+        <externalId>false</externalId>
+        <label>Day 9</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Exchange_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Exchange Rate</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expected_Rental__c</fullName>
+        <externalId>false</externalId>
+        <label>Expected Rental</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Fit_out__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Fit out</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LOI_Monthly_Budget__c</fullName>
+        <externalId>false</externalId>
+        <label>LOI Monthly Budget</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LOI_Unit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>LOI Unit</label>
+        <referenceTo>LOI_Unit__c</referenceTo>
+        <relationshipLabel>Lease Plans</relationshipLabel>
+        <relationshipName>Lease_Plans</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LOI__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>LOI</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Lease_Unit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lease Unit</label>
+        <referenceTo>Lease_Unit__c</referenceTo>
+        <relationshipLabel>Lease Plans</relationshipLabel>
+        <relationshipName>Lease_Plans</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Monthly_Budget__c</fullName>
+        <description>To be loaded via DL</description>
+        <externalId>false</externalId>
+        <label>Monthly Budget</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Monthly_Committed_Budget__c</fullName>
+        <externalId>false</externalId>
+        <label>Monthly Committed Budget</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>N_A__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>N/A</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Property_Short_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Unit__r.Property__r.Short_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Unit &gt; Property &gt; Short Code</inlineHelpText>
+        <label>Property Short Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property__c</fullName>
+        <externalId>false</externalId>
+        <formula>Unit__r.Property__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Property</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rent_Hurdle__c</fullName>
+        <externalId>false</externalId>
+        <label>Rent Hurdle</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status_10__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 10</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_11__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 11</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_12__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 12</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_13__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 13</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_14__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 14</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_15__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 15</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_16__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 16</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_17__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 17</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_18__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 18</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_19__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 19</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_20__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 20</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_21__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 21</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_22__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 22</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_23__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 23</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_24__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 24</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_25__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 25</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_26__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 26</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_27__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 27</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_28__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 28</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_29__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 29</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_30__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 30</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_31__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 31</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 4</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 5</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_6__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 6</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_7__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 7</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_8__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 8</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_9__c</fullName>
+        <externalId>false</externalId>
+        <label>Status 9</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Lease_Plan_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Unit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Unit</label>
+        <referenceTo>Units__c</referenceTo>
+        <relationshipLabel>Lease Plans</relationshipLabel>
+        <relationshipName>Lease_Plans</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Vacant__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Vacant</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Week_Day_10__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_10__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 10</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_11__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_11__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 11</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_12__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_12__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 12</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_13__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_13__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 13</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_14__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_14__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 14</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_15__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_15__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 15</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_16__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_16__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 16</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_17__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_17__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 17</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_18__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_18__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 18</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_19__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_19__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 19</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_1__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_1__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_20__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_20__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 20</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_21__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_21__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 21</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_22__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_22__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 22</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_23__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_23__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 23</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_24__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_24__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 24</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_25__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_25__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 25</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_26__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_26__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 26</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_27__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_27__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 27</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_28__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_28__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 28</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_29__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_29__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 29</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_2__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_30__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_30__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 30</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_31__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_31__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 31</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_3__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_3__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_4__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_4__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 4</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_5__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_5__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 5</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_6__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_6__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 6</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_7__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_7__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 7</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_8__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_8__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 8</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Week_Day_9__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD(  Day_9__c  - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week Day 9</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Lease Plan</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Property__c</columns>
+        <columns>Unit__c</columns>
+        <columns>Lease_Unit__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>{YYYYMM}-LP-{000000}</displayFormat>
+        <label>Lease Plan ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Lease Plans</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Daily</fullName>
+        <active>true</active>
+        <label>Daily</label>
+        <picklistValues>
+            <picklist>Currency_Code</picklist>
+            <values>
+                <fullName>MMK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lease_Plan_Status</picklist>
+            <values>
+                <fullName>Booking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Committed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fitout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vacant</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Monthly</fullName>
+        <active>true</active>
+        <label>Monthly</label>
+        <picklistValues>
+            <picklist>Currency_Code</picklist>
+            <values>
+                <fullName>MMK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lease_Plan_Status</picklist>
+            <values>
+                <fullName>Booking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Committed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fitout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vacant</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Property__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Unit__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Lease_Unit__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Start_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>End_Date__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

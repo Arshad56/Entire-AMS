@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>POS_Transaction__c$Name</field>
+    </columns>
+    <columns>
+        <field>POS_Transaction__c$POS_Id__c</field>
+    </columns>
+    <columns>
+        <field>POS_Transaction__c$From_Date__c</field>
+    </columns>
+    <columns>
+        <field>POS_Transaction__c$To_Date__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>POS_Transaction__c$GTO_Amount__c</field>
+    </columns>
+    <columns>
+        <field>POS_Transaction__c$Currency__c</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>POS_Transaction__c$Property_Short_Code__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>This Month POS Imported</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>POS_Transaction__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>POS_Transaction__c$From_Date__c</dateColumn>
+        <endDate>2017-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-11-01</startDate>
+    </timeFrameFilter>
+</Report>

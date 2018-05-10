@@ -1,0 +1,83 @@
+<apex:page showHeader="false" sidebar="false" id="pg" standardController="Lease_Unit__c" extensions="PreTerminateLU_Extension" docType="html-5.0">
+    <script src="/soap/ajax/38.0/connection.js"></script>
+    
+    <apex:form id="frm">
+        <apex:pageBlock id="filterblk">
+            <br/>
+            <br/>
+            <script>
+		    if ({!closePage}) {
+		    	   window.opener.location.href = "/{!selectedLU}";
+		           window.close();
+		        }
+		    </script>
+		    <apex:outputPanel rendered="{!error}">
+		    	<apex:pageMessages escape="false"></apex:pageMessages>
+		    </apex:outputPanel>
+		    <apex:outputPanel rendered="{!Not(error)}">
+	            <div class="message warningM3" role="alert">
+	                <table border="0" cellpadding="0" cellspacing="0" class="messageTable" style="padding:0px;margin:0px;">
+	                    <tbody>
+	                        <tr valign="top">
+	                            <td>
+	                                <img alt="WARNING" class="msgIcon" src="/s.gif" title="WARNING" />
+	                            </td>
+	                            <td class="messageCell">
+	                                <div class="messageText">
+	                                    <span style="color:#cc0000">
+					<h4>
+					WARNING:
+					</h4>
+					</span> Are you sure you want to Pre-Terminate this Lease unit.
+	                                    <br/>
+	                                </div>
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <td>
+	                            </td>
+	                            <td>
+	                            </td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+	            </div>
+	         </apex:outputPanel>
+            <br/>
+            <table>
+                <tr>
+                    <td>
+                        Pre-Termination Date &nbsp;
+                    </td>
+                    <td>
+                        <div class="requiredInput">
+                            <div class="requiredBlock">
+                            </div>
+                            <apex:inputfield id="endDate" value="{!lu.Lease_End_Date__c}" style=" border-width: thin; width: 85px;border-color: {!If(error,'red', 'darkgray') };" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="Top">
+                        Reason for Termination &nbsp;
+                    </td>
+                    <td>
+                        <div class="requiredInput">
+                            <div class="requiredBlock">
+                            </div>
+                            <apex:inputfield id="terminationReason" value="{!lu.Reason_for_Termination__c}" style=" border-width: thin;height: 100px;width: 275px; border-color: {!If(termError,'red', 'darkgray') };" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center;">
+                        <br/>
+                        <apex:commandButton value="Proceed" style="border-width:1px;width:60px;text-align: center;" action="{!checkDate}" onclick="this.disabled='true'; this.value='Wait...';" onComplete="CloseAndRefresh();" reRender="filterblk" /> &nbsp;&nbsp;
+                        <apex:commandButton value="Cancel" style="border-width:1px;width:60px;text-align: center;" onClick="window.close();" />
+                    </td>
+                </tr>
+            </table>
+            <br/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

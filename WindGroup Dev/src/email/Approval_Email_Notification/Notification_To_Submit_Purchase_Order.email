@@ -1,0 +1,45 @@
+<messaging:emailTemplate subject="Notification: PO Submitted for Approval - {!relatedTo.Name}" recipientType="User" relatedToType="Purchase_Order__c">
+    <messaging:HTMLEmailBody >
+    Dear {!recipient.name}, 
+    <br/><br/>
+    Please proceed to approve Purchase Order: {!relatedTo.Name}. <br/>
+    Please see details below: 
+    <br/>
+    <br/>
+    Company Name: <apex:outputField value="{!relatedTo.Company_Name__c}" />  <br/>
+    Vendor: <apex:outputField value="{!relatedTo.Vendor_Name__c}" /> <br/>
+    Currency Code: <apex:outputField value="{!relatedTo.Currency_Code__c}" /> <br/>
+    Total PO Amount: <apex:outputField value="{!relatedTo.Total_PO_Amount__c}" /> <br/>
+    Recommendation: <apex:outputField value="{!relatedTo.Recommendation__c}" /> <br/>
+    PO Date: <apex:outputField value="{!relatedTo.PO_Start_Date__c}" /> <br/>
+    Expected Delivery Date: <apex:outputField value="{!relatedTo.PO_End_Date__c}" /> <br/>
+    
+    <br/>
+    
+    PO Line Item Details  :<br/>
+    <table border="1" width="100%" style="border-collapse: collapse;">
+        <tr>
+            <th>Product Name</th>
+            <th>Product Type</th>
+            <th>Quantity</th>
+            <th>Amount</th>
+            <th>Total Amount</th>
+            <th>Budget Balance</th>
+        </tr>
+        <apex:repeat value="{!relatedTo.PO_Line_Items__r}" var="pli">
+            <tr>
+                <td>{!pli.Item_Name__c}</td>
+                <td>{!pli.Product_Type__c}</td>
+                <td>{!pli.Quantity__c}</td>
+                <td>{!pli.Amount__c}</td>
+                <td>{!pli.Total_Amount__c}</td>
+                <td>{!pli.Budget_Balance__c}</td>
+            </tr>
+        </apex:repeat>
+    </table>
+    
+    <br/><br/>
+    Thank you. <br/>
+    System Admin
+    </messaging:HTMLEmailBody>
+</messaging:emailTemplate>

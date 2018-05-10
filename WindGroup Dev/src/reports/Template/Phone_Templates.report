@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Phone_Transaction__c$Extension_No__c</field>
+    </columns>
+    <columns>
+        <field>Phone_Transaction__c$From_Date__c</field>
+    </columns>
+    <columns>
+        <field>Phone_Transaction__c$To_Date__c</field>
+    </columns>
+    <columns>
+        <field>Phone_Transaction__c$Start_Unit__c</field>
+    </columns>
+    <columns>
+        <field>Phone_Transaction__c$End_Unit__c</field>
+    </columns>
+    <columns>
+        <field>Phone_Transaction__c$Property_Short_Code__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Phone Templates</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Phone_Transactions__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Phone_Transaction__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

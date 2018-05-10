@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>J Mall emails</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>J Mall</name>
+    <style>none</style>
+    <subject>J Mall</subject>
+    <textOnly>Hi  {!Contact.Salutation} {!Contact.FirstName},
+
+XXXx</textOnly>
+    <type>custom</type>
+</EmailTemplate>

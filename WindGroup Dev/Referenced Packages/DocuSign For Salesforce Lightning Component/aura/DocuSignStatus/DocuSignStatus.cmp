@@ -1,0 +1,224 @@
+<aura:component access="global" controller="dsfslt.DocuSignStatusBackEndController" implements="force:hasRecordId,force:hasSObjectName,flexipage:availableForAllPageTypes" >
+    <!-- Resources -->
+    <ltng:require styles="/resource/SLDSStyle"/>
+    <ltng:require styles="/resource/DocuLogo"/>
+
+    <!-- Event handlers -->
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+
+    <!-- Internal properties -->
+    <aura:attribute name="recordId" type="String" access="public"/>                     <!-- This comes from force:hasRecordId interface -->
+    <aura:attribute name="sObjectName" type="String" access="public"/>                  <!-- This comes from force:hasSObjectName interface -->
+    <aura:attribute name="envelopesList" type="Object" access="public" />               <!-- This is list of all envelopes, instance of class UIEnvelopeList (main main window) -->
+    <aura:attribute name="envelopesListViewAll" type="Object" access="private" />       <!-- This is list of all envelopes, instance of class UIEnvelopeList (for view all window)-->
+    <aura:attribute name="paginationStartIndex" type="Integer" access="private" default="1"/><!-- Starting index for pagination, starting from 1 -->
+    <aura:attribute name="paginationStopIndex" type="Integer" access="private" />       <!-- Stopping index for pagination, calculated after records are loaded -->
+    <aura:attribute name="componentWidth" type="Integer" access="private" />            <!-- component width for resizing -->
+    <aura:attribute name="isLargeLayout" type="Boolean" access="public"/>
+ 
+    <!-- Global properties -->
+    <aura:attribute name="showRecipients" type="Boolean" default="true" access="global"/> <!--This is no longer used but I cannot delete it because it was global-->
+ 
+    <!-- The component body starts here -->
+    <div class="docusign-component slds"  aura:id="dsfstMain">
+        <div class="container">
+
+            <!--Start main content -->
+            <div class="content">
+                
+                <!-- Start error indicator section-->
+                <div class="dsfstHidden" aura:id="dsfstError">
+                    <article class="slds-card slds-scrollable">
+                        <div class="slds-card__header slds-grid slds-is-sortable slds-is-resizable">
+                            <header class="slds-media slds-media--center slds-has-flexi-truncate">
+                                <div class="slds-media__body">
+                                    <h2>
+                                            <img class="logo" src="/resource/dsfs__m_DocuSign_Logo" alt="Logo"  width="24" height="24"/>
+                                            <span class="slds-text-heading--small">&nbsp; DocuSign Status</span>
+                                            <span aura:id="dsfstEnvelopesCount">({!v.envelopesList.totalEnvelopes})</span>                                            
+                                    </h2>
+                                </div>
+                            </header>
+                        </div>
+                        <div class="error slds-card__body">
+                                {!v.envelopesList.error} 
+                        </div>
+                    </article>
+                </div>
+                <!-- Stop error indicator section-->
+                     
+                <!-- Start loading indicator section-->
+                <div class="info" aura:id="dsfstLoading">
+                    Loading...
+                </div>
+                <!-- Stop loading indicator section-->
+                 
+                <!-- Start Layouts 2/3rd and 1/3rd -->                                                        
+                <div class="dsfstHidden" aura:id="dsfstEnvelopes">
+                        <!-- Contacts 2/3rd Layout -->
+                        <div aura:id="contactsTwoThirdLayout" class="dsfstHidden">
+                            <article class="slds-card slds-scrollable">
+                                <div class="slds-card__header slds-grid slds-is-sortable slds-is-resizable">
+                                    <header class="slds-media slds-media--center slds-has-flexi-truncate">
+                                      <div class="slds-media__body">
+                                        <h2>
+                                                <img class="logo" src="/resource/dsfs__m_DocuSign_Logo" alt="Logo"  width="24" height="24"/>  
+                                                <span class="slds-text-heading--small">&nbsp; DocuSign Status</span>
+                                                <span aura:id="dsfstEnvelopesCount">({!v.envelopesList.totalEnvelopes})</span>                                                
+                                        </h2>
+                                      </div>
+                                    </header>
+                                </div>
+                                <div class="slds-card__body">
+                                    <table class="slds-table slds-table--bordered slds-no-row-hover slds-table--cell-buffer">
+                                        <thead>
+                                            <tr class="slds-text-title--caps">
+                                                <th scope="col">
+                                                    <div class="slds-truncate" title="Envelope Subject">Envelope Subject</div>
+                                                </th>
+                                                <th scope="col">
+                                                    <div class="slds-truncate" title="From">From</div>
+                                                </th>
+                                                <th scope="col">
+                                                    <div class="slds-truncate" title="Last Recipient Activity">Last Activity</div>
+                                                </th>
+                                                <th scope="col">
+                                                    <div class="slds-truncate" title="Envelope Status">Status</div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <!--Table body -->
+                                        <tbody>
+                                            <!-- Iterate over all the envelope list -->
+                                            <aura:iteration items="{!v.envelopesList.envelopes}" var="envelope">
+                                                <!--And show them in a separate component -->
+                                                <dsfslt:DocuSignStatusRow envelope="{!envelope}" />
+                                            </aura:iteration>
+                                        </tbody> 
+                                    </table>
+                                  </div>
+                                  <!-- Footer starts here -->
+                                  <div class="slds-card__footer "><a href="javascript:void(0);" onclick="{!c.openViewAll}">View All <span class="slds-assistive-text">entity type</span></a></div>
+                                  <!-- Footer ends here -->
+                            </article>
+                        </div>
+                        <!-- Contacts 2/3rd Layout ends here-->    
+                    <!-- Contacts 1/3rd Layout -->
+                    <div  aura:id="contactsOneThirdLayout" class="dsfstHidden">  
+                        <article class="slds-card slds-card--narrow">
+                            <div class="slds-card__header slds-grid">
+                                <header class="slds-media slds-media--center slds-has-flexi-truncate">
+                                    <div class="slds-media__body">
+                                        <h2>
+                                                <img class="logo" src="/resource/dsfs__m_DocuSign_Logo" alt="Logo"  width="24" height="24"/>
+                                                <span class="slds-text-heading--small">&nbsp; DocuSign Status</span>
+                                                <span aura:id="dsfstEnvelopesCount">({!v.envelopesList.totalEnvelopes})</span>                                             
+                                        </h2>
+                                    </div>
+                                </header>
+                            </div>
+                                <aura:iteration items="{!v.envelopesList.envelopes}" var="envelope">
+                                    <dsfslt:DocuSignStatusNarrow envelope="{!envelope}" />
+                                </aura:iteration>
+                             <!-- Footer starts here -->
+                            <div class="slds-card__footer"><a href="javascript:void(0)" onclick="{!c.openViewAll}">View All <span class="slds-assistive-text">entity type</span></a></div>
+                            <!-- Footer ends here -->
+                        </article>
+                    </div>
+                    <!-- Contacts 1/3rd Layout ends here--> 
+
+                </div>
+                <!-- Stop Layouts 2/3rd and 1/3rd --> 
+            </div>
+            <!--Stop main content -->
+            
+            <!-- Modal dialog starts here -->
+            <div aria-hidden="true" role="dialog" class="slds-modal slds-modal--large slds-fade-in-hide" aura:id="viewAllContent">                          
+                <div class="slds-modal__container">                    
+                    <div class="slds-modal__content slds-p-around--medium">
+                        <!-- Modal content starts here -->
+                     <div class="slds-scrollable--x">   
+                        <div class="header-label">
+                            &nbsp; DocuSign Status
+                            <div class="dsfstViewAllFooterButton">
+                                 <a href="javascript:void(0)" onclick="{!c.closeViewAll}">
+                                    <img src="{!$Resource.dsfs__Delete}"/>
+                                </a>   
+                            </div>                           
+                            <span aura:id="dsfstViewAllEnvelopesCount" class="dsfstHidden">
+                                ({!v.envelopesListViewAll.totalEnvelopes})
+                            </span>
+                                                       <img class="logo" src="/resource/dsfs__m_DocuSign_Logo" alt="Logo"  width="24" height="24" style="float: left;"/>
+                        </div>
+                        <div class="error dsfstHidden" aura:id="dsfstViewAllError">
+                            {!v.envelopesListViewAll.error}
+                        </div>
+                        <div class="info" aura:id="dsfstViewAllLoading">
+                            Loading...
+                        </div>
+                        <div class="dsfstHidden" aura:id="dsfstViewAllEnvelopes">
+                                            <table class="slds-table slds-table--bordered slds-no-row-hover slds-table--cell-buffer" role="treegrid" aria-owns="tree0-node0 tree0-node1 tree0-node2 tree0-node3" aria-readonly="true">
+                                <!--Table header-->
+                                <thead>
+                                    <tr class="slds-text-title--caps">
+                                        <th class="slds-cell-buffer--left" scope="col">
+                                            <div class="slds-truncate" title="Envelope Subject">Envelope Subject</div>
+                                        </th>
+                                        <th scope="col">
+                                            <div class="slds-truncate" title="From">From</div>
+                                        </th>
+                                        <th scope="col">
+                                            <div class="slds-truncate" title="Last Recipient Activity">Last Activity</div>
+                                        </th>
+                                        <th scope="col">
+                                            <div class="slds-truncate" title="Envelope Status">Status</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <!--Table body -->
+                                <tbody>
+                                    <!-- Iterate over all the envelope list -->
+                                     <aura:iteration items="{!v.envelopesListViewAll.envelopes}" var="envelope">
+                                        <!--And show them in a separate component -->
+                                        <dsfslt:DocuSignStatusRow envelope="{!envelope}" />
+                                    </aura:iteration>
+                                </tbody>
+                            </table>
+                          </div>
+                        </div>
+                    </div>
+                     <!-- Modal content ends here -->
+                    <div class="slds-modal__footer">
+                        <!-- Pagination starts here -->
+                        <div style="display: inline; position: static;">
+                             
+                            <div aura:id="dsfstEnvelopesLast" class="dsfstHidden dsfstViewAllFooterButton">
+                               <ui:button press="{!c.pageLast}">Last </ui:button>
+                            </div>                            
+                            <div aura:id="dsfstEnvelopesNext" class="dsfstHidden dsfstViewAllFooterButton">
+                                <ui:button press="{!c.pageNext}">Next</ui:button>
+                            </div>
+                            <div aura:id="dsfstEnvelopesPrev" class="dsfstHidden dsfstViewAllFooterButton">
+                                <ui:button press="{!c.pagePrev}">Prev</ui:button>
+                            </div> 
+                            <div aura:id="dsfstEnvelopesFirst" class="dsfstViewAllFooterButton">
+                                <ui:button press="{!c.pageFirst}">First</ui:button>
+                            </div>                           
+                        </div>
+                        <div aura:id="dsfstEnvelopesPageInfo" class="dsfstHidden" style="float: left;">
+                            Showing {!v.paginationStartIndex}-{!v.paginationStopIndex} of {!v.envelopesListViewAll.totalEnvelopes}
+                        </div>
+                        <!-- End of pagination -->                             
+                    </div>
+                </div>
+            </div>
+            <div class="slds-backdrop slds-backdrop--hide" aura:id="viewAllContentBackdrop">
+            </div>            
+            <!-- Modal dialog ends here -->
+        </div>
+    </div>
+
+        
+
+    <!-- The component body ends here -->
+</aura:component>

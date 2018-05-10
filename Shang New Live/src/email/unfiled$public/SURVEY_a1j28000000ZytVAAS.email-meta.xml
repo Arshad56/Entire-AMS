@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This is the default email invitation template for survey: Leasing and Billing User Training</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>[Send using Timba Surveys] Leasing and Billing User Training</name>
+    <style>none</style>
+    <subject>Please complete this survey: Leasing and Billing User Training</subject>
+    <textOnly>Dear Attendant,  
+
+Please complete this survey at: %SURVEY_URL%
+_  
+
+
+Thank you. ____________________________________________________________________
+Surveys Made Easy by Timba Surveys
+http://sfproducts.altimetrik.com/forums</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,6 @@
+Dear Billing Executive,
+
+Please proceed to issue PDF Invoices for Rent Roll: {!Rent_Roll__c.Name} at https://c.ap2.visual.force.com/apex/Invoicing?sfdc.tabName=01r28000000mOrn.
+
+Thank you.
+Finance

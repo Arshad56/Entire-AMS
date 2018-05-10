@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Rent_Schedules__c.Occupied_Area__c:SUM / 
+Rent_Schedules__c.Area_ft__c:SUM</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Occupancy Rate %</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <colorRanges>
+        <aggregate>Sum</aggregate>
+        <columnName>Rent_Schedules__c.Tenancy_Status__c</columnName>
+        <highBreakpoint>1.0</highBreakpoint>
+        <highColor>#54C28B</highColor>
+        <lowBreakpoint>0.0</lowBreakpoint>
+        <lowColor>#C25454</lowColor>
+        <midColor>#C25454</midColor>
+    </colorRanges>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Rent_Schedules__c.Occupied_Area__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Rent_Schedules__c.Current_Base_Rent__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Rent_Schedules__c.Tenancy_Status__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Rent_Schedules__c.Area_ft__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <column>Rent_Schedules__c.Property__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Junction City</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Rent_Schedules__c.Lease_Charge__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>base rent</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Rent_Schedules__c.Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Vacancy</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>Rent_Schedules__c.Start_Date__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Rent_Schedules__c.Level__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Rent_Schedules__c.Unit__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>JC Room Availability Report</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>CustomEntity$Rent_Schedules__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Rent_Schedules__c.Start_Date__c</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

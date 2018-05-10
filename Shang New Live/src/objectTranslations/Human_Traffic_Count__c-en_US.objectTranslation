@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Human Traffic Count</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Human Traffic Counts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Date Time --></label>
+        <name>Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+        <relationshipLabel><!-- Human Traffic Counts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Count --></label>
+        <name>Total_Count__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

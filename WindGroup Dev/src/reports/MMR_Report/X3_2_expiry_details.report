@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Lease_Unit__c$Name</field>
+    </columns>
+    <columns>
+        <field>Lease_Unit__c$Unit__c</field>
+    </columns>
+    <columns>
+        <field>Lease_Unit__c$Tenant__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Lease_Unit__c$Area_Sq_Ft__c</field>
+    </columns>
+    <columns>
+        <field>Lease_Unit__c$Lease_End_Date__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Lease_Unit__c$Current_Base_Rent__c</field>
+    </columns>
+    <description>Leases that are expiring and their current status</description>
+    <filter>
+        <criteriaItems>
+            <column>Lease_Unit__c$Property__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Junction Maw Tin</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lease_Unit__c$Unit__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>04-S98</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>3.2 Expiry Details</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Lease_Units__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Lease_Unit__c$Lease_End_Date__c</dateColumn>
+        <endDate>2017-03-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-03-01</startDate>
+    </timeFrameFilter>
+</Report>

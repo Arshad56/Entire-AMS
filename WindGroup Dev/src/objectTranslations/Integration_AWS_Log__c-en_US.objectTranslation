@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Integration AWS Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Integration AWS Logs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Integration Call Type --></label>
+        <name>Integration_Call_Type__c</name>
+        <picklistValues>
+            <masterLabel>Pull</masterLabel>
+            <translation><!-- Pull --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Push</masterLabel>
+            <translation><!-- Push --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Json String1 --></label>
+        <name>Json_String1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Json String2 --></label>
+        <name>Json_String2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Synch Datetime Criteria --></label>
+        <name>Last_Synch_Datetime_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processed Records1 --></label>
+        <name>Processed_Records1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processed Records2 --></label>
+        <name>Processed_Records2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response String --></label>
+        <name>Response_String__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target URL --></label>
+        <name>Target_URL__c</name>
+    </fields>
+    <layouts>
+        <layout>Integration AWS Log Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

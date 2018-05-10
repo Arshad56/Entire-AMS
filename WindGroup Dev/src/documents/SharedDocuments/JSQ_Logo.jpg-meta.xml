@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Junction square logo.</description>
+    <internalUseOnly>false</internalUseOnly>
+    <name>JSQ-Logo</name>
+    <public>true</public>
+</Document>

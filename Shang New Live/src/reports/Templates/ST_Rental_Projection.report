@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <acrossGroupingContext>Lease_Unit__c.Lease_Charges__r.Rent_Schedules__r$Start_Date__c</acrossGroupingContext>
+        <calculatedFormula>PARENTGROUPVAL(Rent_Schedules__c.Amount_Foreign__c:SUM, Lease_Unit__c.Property__c, COLUMN_GRAND_SUMMARY)/Lease_Unit__c.Area_Sq_Ft__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>Lease_Unit__c$Property__c</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Avg. Rental Income (PSF) (Foreign)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <acrossGroupingContext>Lease_Unit__c.Lease_Charges__r.Rent_Schedules__r$Start_Date__c</acrossGroupingContext>
+        <calculatedFormula>PARENTGROUPVAL(Rent_Schedules__c.Amount_Local__c:SUM, Lease_Unit__c.Property__c, COLUMN_GRAND_SUMMARY)/Lease_Unit__c.Area_Sq_Ft__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <downGroupingContext>Lease_Unit__c$Property__c</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Avg. Rental Income (PSF) Local</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Lease_Unit__c.Lease_Charges__r$Charge_Rate__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Lease_Unit__c$Area_Sq_Ft__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Lease_Unit__c.Lease_Charges__r.Rent_Schedules__r$Amount_Foreign__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Lease_Unit__c.Lease_Charges__r.Rent_Schedules__r$Amount_Local__c</field>
+    </columns>
+    <columns>
+        <field>Lease_Unit__c.Lease_Charges__r.Rent_Schedules__r$Lease_Unit__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Lease_Unit__c$Property__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Junction City</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lease_Unit__c.Lease_Charges__r$Name</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Rent,Service Charge,Extra,A&amp;P,rebate</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lease_Unit__c.Lease_Charges__r$Active__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Year</dateGranularity>
+        <field>Lease_Unit__c.Lease_Charges__r.Rent_Schedules__r$Start_Date__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lease_Unit__c.Lease_Charges__r$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lease_Unit__c$Property__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lease_Unit__c.Lease_Charges__r.Rent_Schedules__r$Tenant__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>ST Rental Projection</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>Lease_Units_with_Lease_Charges_with_Rent_Schedules__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Lease_Unit__c.Lease_Charges__r.Rent_Schedules__r$Start_Date__c</dateColumn>
+        <endDate>2017-05-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-05-01</startDate>
+    </timeFrameFilter>
+</Report>

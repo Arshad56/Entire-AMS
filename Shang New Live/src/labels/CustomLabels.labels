@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ApproveRentRollReportId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ApproveRentRollReportId</shortDescription>
+        <value>00O7F000008QeA0</value>
+    </labels>
+    <labels>
+        <fullName>Base_Foreign_Currency</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Base Foreign Currency</shortDescription>
+        <value>USD</value>
+    </labels>
+    <labels>
+        <fullName>Create_Pull_Log</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create Pull Log</shortDescription>
+        <value>TRUE</value>
+    </labels>
+    <labels>
+        <fullName>Create_Push_Log</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create Push Log</shortDescription>
+        <value>TRUE</value>
+    </labels>
+    <labels>
+        <fullName>DailyCheckListBatchSize</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DailyCheckListBatchSize</shortDescription>
+        <value>200</value>
+    </labels>
+    <labels>
+        <fullName>Default_Currency</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Default Currency</shortDescription>
+        <value>MMK</value>
+    </labels>
+    <labels>
+        <fullName>Default_Payment_Mode</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Default Payment Mode</shortDescription>
+        <value>Cash</value>
+    </labels>
+    <labels>
+        <fullName>GenerateRentRollReportId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GenerateRentRollReportId</shortDescription>
+        <value>00O7F000008QeJn</value>
+    </labels>
+    <labels>
+        <fullName>InstanceURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>InstanceURL</shortDescription>
+        <value>https://ap5.salesforce.com/</value>
+    </labels>
+    <labels>
+        <fullName>Late_Charge_Batch_Date</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Late Charge Batch Date</shortDescription>
+        <value>30</value>
+    </labels>
+    <labels>
+        <fullName>Mobile_Display_Weeks</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Mobile Display Weeks</shortDescription>
+        <value>3</value>
+    </labels>
+    <labels>
+        <fullName>RentRollBatchSize</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RentRollBatchSize</shortDescription>
+        <value>2000</value>
+    </labels>
+    <labels>
+        <fullName>RentScheduleGTORecordType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RentScheduleGTORecordType</shortDescription>
+        <value>GTO Rent</value>
+    </labels>
+    <labels>
+        <fullName>RentScheduleMonthlyRecordType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RentScheduleMonthlyRecordType</shortDescription>
+        <value>Monthly</value>
+    </labels>
+    <labels>
+        <fullName>RentScheduleRentRecordType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RentScheduleRentRecordType</shortDescription>
+        <value>Rent</value>
+    </labels>
+    <labels>
+        <fullName>Request_Obj_ID_Prefix</fullName>
+        <categories>Property Manual Sharing</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Request Obj ID Prefix</shortDescription>
+        <value>a07</value>
+    </labels>
+    <labels>
+        <fullName>TodayInvoiceViewID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TodayInvoiceViewID</shortDescription>
+        <value>00B7F000008irRm</value>
+    </labels>
+    <labels>
+        <fullName>VoidPicklistVal</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VoidPicklistVal</shortDescription>
+        <value>Voided</value>
+    </labels>
+    <labels>
+        <fullName>WG_Admin_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WG_Admin_ID</shortDescription>
+        <value>0032800000jbqbu</value>
+    </labels>
+</CustomLabels>

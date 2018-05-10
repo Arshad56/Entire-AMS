@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Units__c$Id</field>
+    </columns>
+    <columns>
+        <field>Units__c$Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>Units__c$End_Date__c</field>
+    </columns>
+    <columns>
+        <field>Units__c$Active__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Units__c$End_Date__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessThan</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Units__c$Active__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Unit to Update</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Units_with_Units_with_Meter__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Units__c$End_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>App_Setting__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>App Setting</label>
+        <referenceTo>App_Setting__c</referenceTo>
+        <relationshipLabel>Feedback Options</relationshipLabel>
+        <relationshipName>Feedback_Options</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Feedback_Description__c</fullName>
+        <description>This is used to key in option.</description>
+        <externalId>false</externalId>
+        <label>Feedback Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Feedback_Option__c</fullName>
+        <externalId>false</externalId>
+        <label>Feedback Option</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No Toilet Paper</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Foul Smell</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Litter Bin Full</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wet Floor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Dirty Basin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Dirty Toilet Bowl</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No Soap</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Faulty Equipment</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Image_Option__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(  URL_Image_Option__c  ) ,&quot;&quot;, IMAGE(URL_Image_Option__c , &quot;Icon&quot;, 75,75) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Image Option</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Property</label>
+        <referenceTo>Property__c</referenceTo>
+        <relationshipName>Toilet_Feedback_Setup</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>S_N__c</fullName>
+        <externalId>false</externalId>
+        <label>S/N</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>URL_Image_Option__c</fullName>
+        <externalId>false</externalId>
+        <label>URL Image Option</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <label>Feedback Option</label>
+    <nameField>
+        <displayFormat>{YYYYMM}-FO-{000000}</displayFormat>
+        <label>Feedback Id</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Feedback Options</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

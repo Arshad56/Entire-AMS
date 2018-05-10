@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Actual_Trading_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual Trading Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Area_Sq_Ft__c</fullName>
+        <externalId>false</externalId>
+        <formula>Unit__r.NLA_SQF__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Area (Sq.Ft)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Authorised_Person__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Tenant&apos;s contact information.</inlineHelpText>
+        <label>Authorised Person</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Lease Units (Handover Contact)</relationshipLabel>
+        <relationshipName>Handover_Lease_Units</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Base_Rent_sqf__c</fullName>
+        <description>Created for Reporting purpose</description>
+        <externalId>false</externalId>
+        <formula>IF ( Area_Sq_Ft__c = 0, 0, 
+Current_Base_Rent__c  /  Area_Sq_Ft__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Current Base Rent / Area (Sqft)</inlineHelpText>
+        <label>Base Rent (sqf)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CT_Meter_No__c</fullName>
+        <externalId>false</externalId>
+        <label>CT Meter No</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cancel_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Cancel Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Converted_From_LOI__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Converted From LOI</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Current_Base_Rent__c</fullName>
+        <description>Used in Rent per Sq. Feet (formula) which is used in Rent PDF to show Rate
+Rate = Rent per Sq. Feet</description>
+        <externalId>false</externalId>
+        <label>Current Base Rent</label>
+        <summarizedField>Lease_Charges__c.Base_Rent__c</summarizedField>
+        <summaryFilterItems>
+            <field>Lease_Charges__c.Active__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Lease_Charges__c.Name</field>
+            <operation>contains</operation>
+            <value>Base Rent</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Lease_Charges__c.Base_Rent__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Lease_Charges__c.Lease_Unit__c</summaryForeignKey>
+        <summaryOperation>min</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Day_s_in_expired__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Lease_End_Date__c - TODAY() )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Day(s) in expired</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expected_GTO__c</fullName>
+        <externalId>false</externalId>
+        <label>Expected GTO</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Extended__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Extended</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Extension_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Extension Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Fit_Out_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Fit Out Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Generate_CheckList__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Generate Handover CheckList</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Generate_Fit_Out_LC__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Generate Fit Out LC</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Generate_Takeover_Shop_CheckList__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Generate Takeover Shop CheckList</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Handover_Date__c</fullName>
+        <description>Date for unit handover to tenant</description>
+        <externalId>false</externalId>
+        <label>Handover Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Handover_Signed_off__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>To be updated via Checklist - Process Builder
+This is used to create Fit-out Deposit records under Lease Unit</description>
+        <externalId>false</externalId>
+        <label>Handover Signed-off</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Horse_Power__c</fullName>
+        <externalId>false</externalId>
+        <label>Horse Power</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lease_Agreement_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Lease Agreement No.</label>
+        <referenceTo>Lease__c</referenceTo>
+        <relationshipLabel>Lease Units</relationshipLabel>
+        <relationshipName>Lease_Units</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Lease_Duration__c</fullName>
+        <description>Created for Reporting purpose</description>
+        <externalId>false</externalId>
+        <formula>TEXT (Lease_Agreement_No__r.Lease_Tenure_Mths__c ) &amp; &quot; months;&quot;
+&amp;&quot; &quot;&amp;
+TEXT (Lease_Agreement_No__r.Lease_Tenure_Days__c )&amp; &quot; days&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Lease Tenure from related Lease</inlineHelpText>
+        <label>Lease Duration</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lease_End_Date__c</fullName>
+        <description>FLS should be Read-Only for all Users</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lease End Date
+This is updated via Pre-Termination and Extension process and further related influence LC and RS.</inlineHelpText>
+        <label>Lease End Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Lease_End_Date_formula__c</fullName>
+        <description>Created to be referred in formula</description>
+        <externalId>false</externalId>
+        <formula>Lease_End_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Lease End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Lease_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Lease Start Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Lease_Unit_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Lease Unit Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Renewed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Replaced</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Vacant</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Level__c</fullName>
+        <externalId>false</externalId>
+        <formula>Unit__r.Level__r.Name</formula>
+        <label>Level</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Line_Loss__c</fullName>
+        <externalId>false</externalId>
+        <label>Line Loss</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mobile_Module__c</fullName>
+        <externalId>false</externalId>
+        <label>Mobile Module</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Checklist_Types</valueSetName>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Original_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This field would be populated only in the case of Extension or Pre-Termination and would show the Original End Date of this Lease Unit.</inlineHelpText>
+        <label>Original End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Person_In_Charge__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Operation&apos;s contact information.</inlineHelpText>
+        <label>Person In Charge</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Lease Units (Person In Charge)</relationshipLabel>
+        <relationshipName>PIC_Contact</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Termination__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Pre-Terminated</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Property_Short_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Unit__r.Property_Short_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Property Short Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lease_Agreement_No__r.Property__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Property</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reason_for_Termination__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason for Terminated</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Rent_Free_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Rent Free End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Rent_Free_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Rent Free Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Rent_per_Sq_Feet__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (Current_Base_Rent__c &gt; 0 , Current_Base_Rent__c  / Area_Sq_Ft__c ,
+      0 )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Rent per Sq. Feet</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Space_Type__c</fullName>
+        <description>Used for reporting
+Space type from related Unit</description>
+        <externalId>false</externalId>
+        <formula>TEXT (  Unit__r.Space_Type__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Space Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Target_Trading_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Target Trading Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Tenant__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(Lease_Agreement_No__r.Tenant__c != null , Lease_Agreement_No__r.Tenant__r.Name, &apos;&apos;)</formula>
+        <label>Tenant</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Unit_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>Unit__r.Active__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Unit Status</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Unit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Unit</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Units__c.Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Units__c</referenceTo>
+        <relationshipLabel>Lease Units</relationshipLabel>
+        <relationshipName>Lease_Units</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Update_Lease_Plans__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Update Lease Plans</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Lease Unit</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Lease_Agreement_No__c</columns>
+        <columns>Unit__c</columns>
+        <columns>Property__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>Fit_Out_Date__c</columns>
+        <columns>Lease_Unit_Status__c</columns>
+        <columns>Lease_Start_Date__c</columns>
+        <columns>Lease_End_Date_formula__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>AllJCLeaseUnits</fullName>
+        <columns>NAME</columns>
+        <columns>Lease_Agreement_No__c</columns>
+        <columns>Unit__c</columns>
+        <columns>Property__c</columns>
+        <columns>Mobile_Module__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Property__c</field>
+            <operation>contains</operation>
+            <value>JC</value>
+        </filters>
+        <label>All JC Lease Units</label>
+    </listViews>
+    <listViews>
+        <fullName>AllJMTLeaseUnits</fullName>
+        <columns>NAME</columns>
+        <columns>Lease_Agreement_No__c</columns>
+        <columns>Unit__c</columns>
+        <columns>Property__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Property__c</field>
+            <operation>contains</operation>
+            <value>JMT</value>
+        </filters>
+        <label>All JMT Lease Units</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>{YYYY}-{MM}-LU-{00000000}</displayFormat>
+        <label>Lease Unit No</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Lease Units</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Lease_Agreement_No__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Property__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Property_Short_Code__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Unit__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Lease_Start_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Lease_End_Date__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>Cancel</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Cancel</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+if(&quot;{!Lease_Unit__c.Lease_Unit_Status__c}&quot;==&apos;Cancelled&apos;){
+alert(&apos;Lease Unit is already cancelled&apos;);
+}else{
+var left = Number((screen.width/2)-220); 
+var tops = Number((screen.height/2)-250); 
+var win=window.open(&apos;/apex/CancelLeaseUnit?Id={!Lease_Unit__c.Id}&apos;,&apos;&apos;, 
+&apos;width=500,height=350,scrollbars=yes,top=&apos;+tops+&apos;,left=&apos;+left);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Create_Deposit</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create Deposit</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+
+var left = Number((screen.width/2)-650); 
+var tops = Number((screen.height/2)-300); 
+var selectedLeaseUnits = {!GETRECORDIDS($ObjectType.Lease_Unit__c)};
+
+if(selectedLeaseUnits.length&lt;1) {
+  alert(&apos;Please select at least one Lease Unit to create Deposit!&apos;);
+}else{
+	var win=window.open(&apos;/apex/BulkDepositInterface?from=Lease&amp;selectedLeaseUnits=&apos;+selectedLeaseUnits,&apos;&apos;, 
+&apos;width=1300,height=550,scrollbars=yes,top=&apos;+tops+&apos;,left=&apos;+left);
+     
+var winClosed = setInterval(function () { 
+if (win.closed) { 
+clearInterval(winClosed); 
+window.location.reload(); 
+} 
+}, 250);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Create_Deposit_Page</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create Deposit</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+
+var left = Number((screen.width/2)-650); 
+var tops = Number((screen.height/2)-300); 
+var selectedLeaseUnits = &apos;{!Lease_Unit__c.Id}&apos;; 
+
+if(selectedLeaseUnits == null) { 
+alert(&apos;Please select at least one Lease Unit to create Deposit!&apos;); 
+}else{ 
+var win=window.open(&apos;/apex/BulkDepositInterface?from=LeaseUnit&amp;selectedLeaseUnits=&apos;+selectedLeaseUnits,&apos;&apos;, 
+&apos;width=1300,height=550,scrollbars=yes,top=&apos;+tops+&apos;,left=&apos;+left); 
+
+var winClosed = setInterval(function () { 
+if (win.closed) { 
+clearInterval(winClosed); 
+window.location.reload(); 
+} 
+}, 250); 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Extension</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Extension</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+if(&apos;{!Lease_Unit__c.Pre_Termination__c}&apos; == true){ 
+alert(&apos;This Lease Unit is Terminated.&apos;); 
+}else{ 
+var left = Number((screen.width/2)-220); 
+var tops = Number((screen.height/2)-250); 
+var win=window.open(&apos;/apex/ExtensionLU?Id={!Lease_Unit__c.Id}&apos;,&apos;&apos;, 
+&apos;width=500,height=300,scrollbars=yes,top=&apos;+tops+&apos;,left=&apos;+left); 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Generate_Fit_Out_LC</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate Fit Out LC</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/23.0/connection.js&quot;)} 
+try 
+{ 
+if({!ISBLANK(Lease_Unit__c.Lease_Start_Date__c)}){ 
+alert(&quot;Please populate Lease Start Date.&quot;);
+}else if({!ISBLANK(Lease_Unit__c.Fit_Out_Date__c)}){ 
+alert(&quot;Please populate Fit Out Date.&quot;);
+}else if({!Lease_Unit__c.Fit_Out_Date__c &gt;= Lease_Unit__c.Lease_Start_Date__c}){
+alert(&quot;Fit Out Date cannot be greater than or equal to Lease Start Date.&quot;);
+}else{ 
+var newRecords = []; 
+var ob=new sforce.SObject(&quot;Lease_Unit__c&quot;); 
+ob.Id=&quot;{!Lease_Unit__c.Id}&quot;; 
+ob.Generate_Fit_Out_LC__c = true; 
+newRecords.push(ob); 
+var result=sforce.connection.update(newRecords); 
+//alert(result);
+for(var j=0;j&lt;result.length;j++){ 
+if(!result[j].getBoolean(&quot;success&quot;)){ 
+if(result[j].errors.message.indexOf(&apos;meter&apos;) != -1){
+alert(&apos;Please create meter records under Unit.&apos;);
+}else{
+alert(result[j].errors.message);
+}
+break;
+}
+}
+
+
+} 
+
+location.reload(); 
+}catch(er) 
+{ 
+alert(er); 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Generate_Handover_Checklist</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate Handover Checklist</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/23.0/connection.js&quot;)} 
+try 
+{ 
+
+if({!Lease_Unit__c.Generate_CheckList__c}){
+alert(&quot;Checklist with Checklist Items have already been created for this Lease Unit&quot;);
+}else{
+var newRecords = []; 
+var ob=new sforce.SObject(&quot;Lease_Unit__c&quot;); 
+ob.Id=&quot;{!Lease_Unit__c.Id}&quot;; 
+ob.Generate_CheckList__c = true; 
+newRecords.push(ob); 
+var result=sforce.connection.update(newRecords); 
+}
+//alert(result); 
+location.reload(); 
+}catch(er) 
+{ 
+alert(er); 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Generate_Rent_Schedules</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate Rent Schedules</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/23.0/connection.js&quot;)}
+try
+{
+var strQuery=&quot;Select Id,Active__c,Start_Date__c,End_Date__c,Charge_Type__c from Lease_Charges__c where Active__c=true and  Lease_Unit__c = &apos;&quot; +&apos;{!Lease_Unit__c.Id}&apos;+&quot;&apos;&quot;;
+
+var newRecords = [];
+
+var otherP = sforce.connection.query(strQuery);
+var records = otherP.getArray(&quot;records&quot;);
+
+//alert(otherP);
+var error = false;
+for(var i=0; i &lt; records.length ; i ++){
+    for(var j=0; j &lt; records.length ; j ++){
+        if(records[j].Id!=records[i].Id &amp;&amp; ((records[i].Charge_Type__c==&apos;Advance Rental&apos; &amp;&amp; records[j].Charge_Type__c==&apos;Advance Rental&apos;) || (records[i].Charge_Type__c==&apos;Rent&apos; &amp;&amp; records[j].Charge_Type__c==&apos;Rent&apos;))){
+            if((records[i].Start_Date__c&lt;records[j].Start_Date__c &amp;&amp; records[i].End_Date__c&gt;records[j].End_Date__c) || (records[i].Start_Date__c&gt;=records[j].Start_Date__c &amp;&amp; records[i].Start_Date__c&lt;=records[j].End_Date__c) || (records[i].End_Date__c&gt;=records[j].Start_Date__c &amp;&amp; records[i].End_Date__c&lt;=records[j].End_Date__c)){
+                error = true;
+                alert(&quot;Kindly review ‘Start and End Date’ conflict in related Advance Rental or Rent (Lease Charges)&quot;);
+                break;
+            }
+        }
+    }
+    if(error){
+        break;
+    }
+}
+
+if(!error){
+strQuery=&quot;Select Id,Active__c,Start_Date__c,End_Date__c,Charge_Type__c from Lease_Charges__c where Active__c=true and Generate_Rent_Schedule__c=false and Lease_Unit__c = &apos;&quot; +&apos;{!Lease_Unit__c.Id}&apos;+&quot;&apos;&quot;;
+
+newRecords = [];
+
+otherP = sforce.connection.query(strQuery);
+records = otherP.getArray(&quot;records&quot;);
+
+    for(var i=0; i &lt; records.length ; i ++){
+	var ob=new sforce.SObject(&quot;Lease_Charges__c&quot;);
+        ob.Id=records[i].Id;
+	ob.Generate_Rent_Schedule__c = records[i].Active__c;
+	newRecords.push(ob);
+    }
+
+
+    var result=sforce.connection.update(newRecords);
+    for(var j=0;j&lt;result.length;j++){
+        if(!result[j].getBoolean(&quot;success&quot;)){
+            var updRecords = [];
+            for(var i=0; i &lt; records.length ; i ++){
+	        var ob=new sforce.SObject(&quot;Lease_Charges__c&quot;);
+                ob.Id=records[i].Id;
+	        ob.Generate_Rent_Schedule__c = false;
+	        updRecords.push(ob);
+            }
+            var result1=sforce.connection.update(updRecords);
+
+            alert(result[j].errors.message);
+
+            break;
+        }
+    }
+    location.reload();
+}
+}catch(er){
+	alert(er);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Generate_Takeover_Shop_CheckList</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate Takeover Shop CheckList</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/23.0/connection.js&quot;)} 
+try 
+{ 
+
+if({!Lease_Unit__c.Generate_Takeover_Shop_CheckList__c}){ 
+alert(&quot;Checklist with Checklist Items have already been created for this Lease Unit&quot;); 
+}else{ 
+var newRecords = []; 
+var ob=new sforce.SObject(&quot;Lease_Unit__c&quot;); 
+ob.Id=&quot;{!Lease_Unit__c.Id}&quot;; 
+ob.Generate_Takeover_Shop_CheckList__c = true; 
+newRecords.push(ob); 
+var result=sforce.connection.update(newRecords); 
+} 
+//alert(result); 
+location.reload(); 
+}catch(er) 
+{ 
+alert(er); 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Pre_Terminate</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Pre-Terminate</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+if(&apos;{!Lease_Unit__c.Pre_Termination__c}&apos; == true){
+   alert(&apos;This Lease Unit is already Terminated.&apos;);
+}else{
+var selectedLeaseUnits = &apos;{!Lease_Unit__c.Id}&apos;; 
+var left = Number((screen.width/2)-200); 
+var tops = Number((screen.height/2)-250); 
+
+	var endDate = &apos;{!Lease_Unit__c.Lease_End_Date__c}&apos;;
+	var OgDate = &apos;{!Lease_Unit__c.Original_End_Date__c}&apos;;
+	if(OgDate != &apos;&apos; &amp;&amp; OgDate != null){
+	   endDate = &apos;{!Lease_Unit__c.Original_End_Date__c}&apos;;
+	}
+	var win=window.open(&apos;/apex/PreTerminateLU?from=LeaseUnit&amp;selectedLeaseUnits=&apos;+selectedLeaseUnits+&apos;&amp;endDate=&apos;+endDate,&apos;&apos;, 
+	&apos;width=500,height=400,scrollbars=yes,top=&apos;+tops+&apos;,left=&apos;+left);
+
+
+
+}</url>
+    </webLinks>
+</CustomObject>

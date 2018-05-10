@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Units__c$Id</field>
+    </columns>
+    <columns>
+        <field>Units__c$Name</field>
+    </columns>
+    <columns>
+        <field>Units__c.Takeover_UnitChecklists__r$Name</field>
+    </columns>
+    <columns>
+        <field>Units__c.Takeover_UnitChecklists__r$Id</field>
+    </columns>
+    <columns>
+        <field>Units__c.Takeover_UnitChecklists__r.Checklist_Items__r$Parent_Checklist_Item__c</field>
+    </columns>
+    <columns>
+        <field>Units__c.Takeover_UnitChecklists__r.Checklist_Items__r$Name</field>
+    </columns>
+    <columns>
+        <field>Units__c.Takeover_UnitChecklists__r.Checklist_Items__r$Condition__c</field>
+    </columns>
+    <columns>
+        <field>Units__c.Takeover_UnitChecklists__r.Checklist_Items__r$Status__c</field>
+    </columns>
+    <columns>
+        <field>Units__c.Takeover_UnitChecklists__r.Checklist_Items__r$SN__c</field>
+    </columns>
+    <columns>
+        <field>Units__c.Takeover_UnitChecklists__r.Checklist_Items__r$Number__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Checklist item report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Units_with_Takeover_Checklists_Checklist_Items__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Units__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

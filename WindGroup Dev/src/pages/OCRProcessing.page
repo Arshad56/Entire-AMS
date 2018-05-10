@@ -1,0 +1,16 @@
+<apex:page controller="OCRProcessing_Controller">
+<apex:form >	
+	<apex:pageblock > 
+		<apex:repeat var="item" value="{!responseTest}">
+		<br/> <apex:outputlabel escape="false" value="{!SUBSTITUTE(JSENCODE(item ), '\\n', '<br/>')}"/>
+		<br/>
+		</apex:repeat>
+		<apex:pageBlockButtons > 
+            <apex:commandButton value="Process" action="{!processImage}"/>
+            <apex:commandButton value="Detect" action="{!detectLabel}"/>
+            <apex:commandButton value="Check" action="{!Check}"/>
+        </apex:pageBlockButtons>
+	</apex:pageblock>
+
+</apex:form>
+</apex:page>

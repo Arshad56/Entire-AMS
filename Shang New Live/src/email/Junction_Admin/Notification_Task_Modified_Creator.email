@@ -1,0 +1,11 @@
+Dear Creator, 
+
+Task {!Task.Task_ID__c} 
+
+Status: {!Task.Status}
+Action Remoarks:{!Task.Action_Remarks__c}
+
+You can check Task details here {!Task.Link} 
+
+Regards 
+Operation Team

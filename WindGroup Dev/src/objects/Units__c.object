@@ -1,0 +1,1259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Authorised_Person_2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Project Manager&apos;s contact information.</inlineHelpText>
+        <label>Authorised Person 2</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Units (Authorised Person 2)</relationshipLabel>
+        <relationshipName>Authorised_Person_2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Authorised_Person__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Contractor&apos;s contact information.</inlineHelpText>
+        <label>Authorised Person 1</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Units (Authorised Person)</relationshipLabel>
+        <relationshipName>Unit_Authorised_Person</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CT_Meter_No__c</fullName>
+        <externalId>true</externalId>
+        <label>CT Meter No</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Charge_Method__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Transaction Rate is not applicable for Unit.</inlineHelpText>
+        <label>Charge Method</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Charge_Method</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <description>Description of space</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Description of space</inlineHelpText>
+        <label>Description</label>
+        <length>128</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Floor_Plan__c</fullName>
+        <externalId>false</externalId>
+        <label>Floor Plan</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Floor__c</fullName>
+        <description>Floor Condition</description>
+        <externalId>false</externalId>
+        <label>Floor</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bare finish</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tiled finish</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Forecast_Charge__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please key in Forecast Charge for vacant unit</inlineHelpText>
+        <label>Forecast Charge</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Gas_Meter_No__c</fullName>
+        <externalId>true</externalId>
+        <inlineHelpText>Please use &quot;;&quot; if more than one meter. (eg. xx123;xx124).</inlineHelpText>
+        <label>Gas Meter No</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Generate_CheckList__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>This is an indicator that Takeover Checklist for this Unit has been generated with Line Items</inlineHelpText>
+        <label>Generated CheckList</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Generate_Lease_Plans__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Generate Lease Plans</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Horse_Power__c</fullName>
+        <externalId>false</externalId>
+        <label>Horse Power</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Level__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Level</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.Property__c</field>
+                <operation>equals</operation>
+                <valueField>Level__c.Property__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Level__c</referenceTo>
+        <relationshipLabel>Units</relationshipLabel>
+        <relationshipName>Units</relationshipName>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Line_Loss__c</fullName>
+        <externalId>false</externalId>
+        <label>Line Loss</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Location</label>
+        <referenceTo>Location__c</referenceTo>
+        <relationshipLabel>Units</relationshipLabel>
+        <relationshipName>Units</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Main_Unit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Main Unit</label>
+        <referenceTo>Units__c</referenceTo>
+        <relationshipLabel>Units</relationshipLabel>
+        <relationshipName>Units</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Mobile_Module__c</fullName>
+        <externalId>false</externalId>
+        <label>Mobile Module</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Checklist_Types</valueSetName>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>NLA_SQF__c</fullName>
+        <externalId>false</externalId>
+        <label>NLA (SQF)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NLA_SQM__c</fullName>
+        <externalId>false</externalId>
+        <formula>NLA_SQF__c / 10.7639</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>NLA (SQM)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The No. of the Unit No.</inlineHelpText>
+        <label>No.</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partition__c</fullName>
+        <description>Partition Condition</description>
+        <externalId>false</externalId>
+        <label>Partition</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Person_In_Charge_2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Landlord&apos;s contact 2 information.</inlineHelpText>
+        <label>Person In Charge 2</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Units (Person In Charge 2)</relationshipLabel>
+        <relationshipName>Person_In_Charge_2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Person_In_Charge__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Landlord&apos;s contact 1 information.</inlineHelpText>
+        <label>Person In Charge 1</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Units (Operation In Charge)</relationshipLabel>
+        <relationshipName>Units_Operation_In_Charge</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Phone_Extension_No__c</fullName>
+        <externalId>true</externalId>
+        <inlineHelpText>Please use &quot;;&quot; if more than one extension no.. (eg. 1123;1124).</inlineHelpText>
+        <label>Phone Extension No</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Power_Factor__c</fullName>
+        <externalId>false</externalId>
+        <label>Power Factor</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_Month_CT_Meter_End_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>Previous Month CT Meter End Unit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_Month_Sub_Meter_End_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>Previous Month Sub Meter End Unit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_In_Charge__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Project In Charge</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Units</relationshipLabel>
+        <relationshipName>Units</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Property_Name_Text__c</fullName>
+        <externalId>false</externalId>
+        <label>Property Name Text</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Short_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Property__r.Short_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Property Short Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property__c</fullName>
+        <externalId>false</externalId>
+        <label>Property</label>
+        <referenceTo>Property__c</referenceTo>
+        <relationshipLabel>Units</relationshipLabel>
+        <relationshipName>Units</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Rent_Hurdle_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Rent Hurdle 1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Rent_Hurdle_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Rent Hurdle 2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Rent_Hurdle_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Rent Hurdle 3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Rent_Hurdle_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Rent_Hurdle__c *  NLA_SQF__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Rent Hurdle Rate * NLA (SQF)</inlineHelpText>
+        <label>Rent Hurdle Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Rent_Hurdle_Lower_Limit__c</fullName>
+        <externalId>false</externalId>
+        <label>Rent Hurdle (Lower Limit)</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Rent_Hurdle_Upper_Limit__c</fullName>
+        <externalId>false</externalId>
+        <label>Rent Hurdle (Upper Limit)</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Rent_Hurdle__c</fullName>
+        <externalId>false</externalId>
+        <label>Rent Hurdle Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Rental_Budget_per_UOM__c</fullName>
+        <externalId>false</externalId>
+        <label>Rental Budget per UOM</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Shop_Front__c</fullName>
+        <description>Shop Front Condition</description>
+        <externalId>false</externalId>
+        <label>Shop Front</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Space_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Space Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Space_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Sub_Meter_No__c</fullName>
+        <externalId>true</externalId>
+        <label>Sub Meter No</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sub_Space_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub Space Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ATM</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>F&amp;B</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Indoor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Outdoor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Outdoor Trolley</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Push Cart</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Retail</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Stalls</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Vending Machine</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sub_Trade_Category_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub-Trade Category 1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Sub_Trade_Category</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sub_Trade_Category_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub-Trade Category 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Trade_Category_2__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Sub_Trade_Category</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Jewellery</controllingFieldValue>
+                <valueName>Jewellery / Watches</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Kids Apparel</controllingFieldValue>
+                <valueName>Kids Apparel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Music &amp; Videos</controllingFieldValue>
+                <valueName>Music &amp; Videos</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Optical</controllingFieldValue>
+                <valueName>Optical</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Shoes &amp; Bags</controllingFieldValue>
+                <valueName>Shoes &amp; Bags</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sporting Goods &amp; Apparel</controllingFieldValue>
+                <valueName>Sporting Goods &amp; Apparel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sundry &amp; Services</controllingFieldValue>
+                <valueName>Sundry &amp; Services</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Arts &amp; Crafts</controllingFieldValue>
+                <valueName>Arts &amp; Crafts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Books &amp; Stationery</controllingFieldValue>
+                <valueName>Books &amp; Stationery</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Department Store</controllingFieldValue>
+                <valueName>Department Store</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Education</controllingFieldValue>
+                <valueName>Education</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electricals / Electronics</controllingFieldValue>
+                <valueName>Electricals / Electronics</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Fashion</controllingFieldValue>
+                <valueName>Fashion &amp; Accessories</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Gifts &amp; Souvenirs</controllingFieldValue>
+                <valueName>Gifts &amp; Souvenirs</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sub_Trade_Category_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub-Trade Category 3</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Trade_Category_3__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Sub_Trade_Category</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Jewellery</controllingFieldValue>
+                <valueName>Jewellery / Watches</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Kids Apparel</controllingFieldValue>
+                <valueName>Kids Apparel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Music &amp; Videos</controllingFieldValue>
+                <valueName>Music &amp; Videos</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Optical</controllingFieldValue>
+                <valueName>Optical</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Shoes &amp; Bags</controllingFieldValue>
+                <valueName>Shoes &amp; Bags</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sporting Goods &amp; Apparel</controllingFieldValue>
+                <valueName>Sporting Goods &amp; Apparel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sundry &amp; Services</controllingFieldValue>
+                <valueName>Sundry &amp; Services</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Arts &amp; Crafts</controllingFieldValue>
+                <valueName>Arts &amp; Crafts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Books &amp; Stationery</controllingFieldValue>
+                <valueName>Books &amp; Stationery</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Department Store</controllingFieldValue>
+                <valueName>Department Store</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Education</controllingFieldValue>
+                <valueName>Education</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electricals / Electronics</controllingFieldValue>
+                <valueName>Electricals / Electronics</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Fashion</controllingFieldValue>
+                <valueName>Fashion &amp; Accessories</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Gifts &amp; Souvenirs</controllingFieldValue>
+                <valueName>Gifts &amp; Souvenirs</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sub_Trade_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub-Trade Category</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Trade_Category__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Sub_Trade_Category</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Jewellery</controllingFieldValue>
+                <valueName>Jewellery / Watches</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Kids Apparel</controllingFieldValue>
+                <valueName>Kids Apparel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Music &amp; Videos</controllingFieldValue>
+                <valueName>Music &amp; Videos</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Optical</controllingFieldValue>
+                <valueName>Optical</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Shoes &amp; Bags</controllingFieldValue>
+                <valueName>Shoes &amp; Bags</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sporting Goods &amp; Apparel</controllingFieldValue>
+                <valueName>Sporting Goods &amp; Apparel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sundry &amp; Services</controllingFieldValue>
+                <valueName>Sundry &amp; Services</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Arts &amp; Crafts</controllingFieldValue>
+                <valueName>Arts &amp; Crafts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Books &amp; Stationery</controllingFieldValue>
+                <valueName>Books &amp; Stationery</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Department Store</controllingFieldValue>
+                <valueName>Department Store</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Education</controllingFieldValue>
+                <valueName>Education</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electricals / Electronics</controllingFieldValue>
+                <valueName>Electricals / Electronics</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Fashion</controllingFieldValue>
+                <valueName>Fashion &amp; Accessories</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Gifts &amp; Souvenirs</controllingFieldValue>
+                <valueName>Gifts &amp; Souvenirs</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Takeover_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Takeover Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Target_Rental__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(UOM__c = &quot;Sq.ft&quot;, Rental_Budget_per_UOM__c *  NLA_SQF__c, Rental_Budget_per_UOM__c * NLA_SQM__c)</formula>
+        <label>Target Rental</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Trade_Category_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Trade Category 1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Trade_Category</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Trade_Category_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Trade Category 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Trade_Category</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Trade_Category_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Trade Category 3</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Trade_Category</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Trade_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Trade Category</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Trade_Category</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type_of_License__c</fullName>
+        <description>License type information for casual leasing space</description>
+        <externalId>false</externalId>
+        <inlineHelpText>License type information for casual leasing space</inlineHelpText>
+        <label>Type of License</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UOM__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Property__r.UOM__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>UOM</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Unique_Selling_Point__c</fullName>
+        <externalId>false</externalId>
+        <label>Unique Selling Point</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Unit_No__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;#&quot;&amp; TEXT( Floor__c ) &amp;&quot;-&quot;&amp; IF( ISPICKVAL(  Space_Type__c  , &quot;ATM&quot;) , &quot;A&quot;, 
+IF(ISPICKVAL(  Space_Type__c  , &quot;Storage&quot;), &quot;S&quot;, IF(ISPICKVAL (  Space_Type__c , &quot;Counter&quot;) , &quot;C&quot;, &quot;&quot;)) )&amp; No__c</formula>
+        <label>Unit No.</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Water_Meter_No__c</fullName>
+        <externalId>true</externalId>
+        <inlineHelpText>Please use &quot;;&quot; if more than one meter. (eg. xx123;xx124).</inlineHelpText>
+        <label>Water Meter No</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Unit</label>
+    <listViews>
+        <fullName>AllUnits2</fullName>
+        <columns>NAME</columns>
+        <columns>Generate_CheckList__c</columns>
+        <columns>Property__c</columns>
+        <columns>Level__c</columns>
+        <columns>Takeover_Date__c</columns>
+        <columns>CT_Meter_No__c</columns>
+        <columns>Rental_Budget_per_UOM__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Active__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Space_Type__c</field>
+            <operation>equals</operation>
+            <value>Promo Space</value>
+        </filters>
+        <label>All Units</label>
+    </listViews>
+    <listViews>
+        <fullName>Orchard_Mall</fullName>
+        <columns>NAME</columns>
+        <columns>Property__c</columns>
+        <columns>Level__c</columns>
+        <columns>Rental_Budget_per_UOM__c</columns>
+        <columns>Takeover_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Property__c</field>
+            <operation>contains</operation>
+            <value>Orchard</value>
+        </filters>
+        <label>Orchard Mall</label>
+    </listViews>
+    <listViews>
+        <fullName>Tiong_Bahru_Plaza</fullName>
+        <columns>NAME</columns>
+        <columns>Generate_Lease_Plans__c</columns>
+        <columns>Property__c</columns>
+        <columns>Level__c</columns>
+        <columns>Takeover_Date__c</columns>
+        <columns>CT_Meter_No__c</columns>
+        <columns>Rental_Budget_per_UOM__c</columns>
+        <columns>Active__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Property__c</field>
+            <operation>contains</operation>
+            <value>Tiong Bahru Plaza</value>
+        </filters>
+        <label>Tiong Bahru Plaza</label>
+    </listViews>
+    <nameField>
+        <label>Unit Number</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Units</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Property__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Level__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>NLA_SQF__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Rental_Budget_per_UOM__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Takeover_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Space_Type__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Property__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>NLA_SQF__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Active__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Start_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>End_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Charge_Method__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>NAME</lookupFilterFields>
+        <searchResultsAdditionalFields>Property__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>NLA_SQF__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Level__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Active__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Start_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>End_Date__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>Generate_Takeover_CheckList</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate Takeover CheckList</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/23.0/connection.js&quot;)} 
+try 
+{ 
+
+if({!Units__c.Generate_CheckList__c}){ 
+alert(&quot;Checklist with Checklist Items have already been created for this Unit&quot;);
+}else{ 
+var newRecords = []; 
+var ob=new sforce.SObject(&quot;Units__c&quot;); 
+ob.Id=&quot;{!Units__c.Id}&quot;; 
+ob.Generate_CheckList__c = true; 
+newRecords.push(ob); 
+var result=sforce.connection.update(newRecords); 
+//alert(result); 
+} 
+location.reload(); 
+}catch(er) 
+{ 
+alert(er); 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Unit</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Unit</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/a03/e?CF00N2800000C5Du8={!Property__c.Name}&amp;CF00N2800000C5Du8_lkid={!Property__c.Id}&amp;00N2800000C5Dz7={!Property__c.End_Date__c}&amp;retURL=%2F{!Property__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Resurvey</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Resurvey</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+var selectedUnits = &apos;{!Units__c.Id}&apos;; 
+var left = Number((screen.width/2)-450); 
+var tops = Number((screen.height/2)-350); 
+
+if({!Units__c.Active__c}){
+win=window.open(&apos;/apex/Resurvey?unitId=&apos;+selectedUnits,&apos;&apos;, 
+&apos;width=1000,height=550,scrollbars=yes,top=&apos;+tops+&apos;,left=&apos;+left);
+}else{
+alert(&apos;This Unit is In-Active&apos;);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SFDC_Link</fullName>
+        <availability>online</availability>
+        <description>Created to test report issue.</description>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>SFDC Link</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00OO0000000hHAt?pv0={!Units__c.Property__c}&amp;pv1=&quot;012O00000005GEX&quot;&amp;pv2=&quot;11/30/2016&quot;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Split_Unit</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Split Unit</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+if(&apos;{!Units__c.Main_Unit__c}&apos; != &apos;&apos;){ 
+alert(&apos;This Unit is already Split Unit.&apos;); 
+}else{ 
+var unitId = &apos;{!Units__c.Id}&apos;; 
+
+var left = Number((screen.width/2)-330); 
+var tops = Number((screen.height/2)-150); 
+
+var win=window.open(&apos;/apex/SplitUnit?unitId=&apos;+unitId,&apos;&apos;, 
+&apos;width=750,height=690,scrollbars=yes,top=&apos;+tops+&apos;,left=&apos;+left); 
+
+}</url>
+    </webLinks>
+</CustomObject>

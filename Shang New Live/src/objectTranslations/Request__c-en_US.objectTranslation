@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Requests</value>
+    </caseValues>
+    <fields>
+        <label><!-- AWS Id --></label>
+        <name>AWS_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action Remarks --></label>
+        <name>Action_Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Backend Last Updated DateTime --></label>
+        <name>Backend_Last_Updated_DateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Origin --></label>
+        <name>Case_Origin__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Checklist Master --></label>
+        <name>Checklist_Master__c</name>
+        <relationshipLabel><!-- Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Checklist --></label>
+        <name>Checklist__c</name>
+        <relationshipLabel><!-- Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Completion Date --></label>
+        <name>Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date/Time Closed --></label>
+        <name>Date_Time_Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date/Time Opened --></label>
+        <name>Date_Time_Opened__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dept in Charge --></label>
+        <name>Dept_in_Charge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equipment Service Contract --></label>
+        <name>Equipment_Service_Contract__c</name>
+        <relationshipLabel><!-- Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Equipment --></label>
+        <name>Equipment__c</name>
+        <relationshipLabel><!-- Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Update Date Time --></label>
+        <name>Last_Update_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Updated Date/Time --></label>
+        <name>Last_Update_Date_Time_c__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Updated By --></label>
+        <name>Last_Updated_By__c</name>
+        <relationshipLabel><!-- Requests (Last Updated By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Updated From --></label>
+        <name>Last_Updated_From__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+        <relationshipLabel><!-- Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Display --></label>
+        <name>Mobile_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notifed --></label>
+        <name>Notifed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person In-Charge --></label>
+        <name>Person_In_Charge__c</name>
+        <relationshipLabel><!-- Requests (Person In-Charge) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Planned Maintenance --></label>
+        <name>Planned_Maintenance__c</name>
+        <relationshipLabel><!-- Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field is populated by W/F rule. --></help>
+        <label><!-- Property Name Text --></label>
+        <name>Property_Name_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+        <relationshipLabel><!-- Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reason --></label>
+        <name>Reason__c</name>
+        <picklistValues>
+            <masterLabel>Complex functionality</masterLabel>
+            <translation><!-- Complex functionality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Existing problem</masterLabel>
+            <translation><!-- Existing problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maintainance</masterLabel>
+            <translation><!-- Maintainance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New problem</masterLabel>
+            <translation><!-- New problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Request Origin --></label>
+        <name>Request_Origin__c</name>
+        <picklistValues>
+            <masterLabel>CS Counter</masterLabel>
+            <translation><!-- CS Counter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Request Type --></label>
+        <name>Request_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select Staff Name --></help>
+        <label><!-- Requested By --></label>
+        <name>Requested_By__c</name>
+        <relationshipLabel><!-- Requests (Requested By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Requested Completion Date --></label>
+        <name>Requested_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Serving Description --></label>
+        <name>Serving_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Severity --></label>
+        <name>Severity__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Shopper Email --></label>
+        <name>Shopper_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shopper Name --></label>
+        <name>Shopper_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shopper Phone --></label>
+        <name>Shopper_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Escalated</masterLabel>
+            <translation><!-- Escalated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KIV (monitoring)</masterLabel>
+            <translation><!-- KIV (monitoring) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Team --></label>
+        <name>Team__c</name>
+        <relationshipLabel><!-- Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Tenant Contact --></label>
+        <name>Tenant_Contact__c</name>
+        <relationshipLabel><!-- Requests (Tenant Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Tenant --></label>
+        <name>Tenant__c</name>
+        <relationshipLabel><!-- Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Ad-hoc</masterLabel>
+            <translation><!-- Ad-hoc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled</masterLabel>
+            <translation><!-- Scheduled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Work Request Date --></label>
+        <name>Work_Request_Date__c</name>
+    </fields>
+    <layouts>
+        <layout>Work Request Layout</layout>
+        <sections>
+            <label><!-- Action --></label>
+            <section>Action</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Other Information --></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label><!-- Remark History --></label>
+            <section>Remark History</section>
+        </sections>
+        <sections>
+            <label><!-- Request Description --></label>
+            <section>Request Description</section>
+        </sections>
+        <sections>
+            <label><!-- Shopper Details --></label>
+            <section>Shopper Details</section>
+        </sections>
+        <sections>
+            <label><!-- Staff Details --></label>
+            <section>Staff Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Tenant Details --></label>
+            <section>Tenant Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Close_Request --></label>
+        <name>Close_Request</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Request --></label>
+        <name>New_Request</name>
+    </webLinks>
+</CustomObjectTranslation>

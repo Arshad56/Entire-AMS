@@ -1,0 +1,1889 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>NewLeaseRedirect</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Billing_Term__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Term</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Billing_Term</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Business_Type__c</fullName>
+        <description>Type of business</description>
+        <externalId>false</externalId>
+        <label>Business Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Retail</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>F&amp;B</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Office</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Warehouse</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cancel_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Cancel Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Change_Lease_Start_Date__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Change Lease Start Date</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Charge_Method__c</fullName>
+        <externalId>false</externalId>
+        <label>Charge Method</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Charge_Method</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Created_Month__c</fullName>
+        <description>This field is created to be used in Workflow which auto generate Lease Agreement Name, as we want to flash month value</description>
+        <externalId>false</externalId>
+        <formula>CASE(MONTH(DATEVALUE (CreatedDate )),
+1, &quot;01&quot;,
+2, &quot;02&quot;,
+3, &quot;03&quot;, 
+4, &quot;04&quot;, 
+5, &quot;05&quot;, 
+6, &quot;06&quot;,
+7, &quot;07&quot;,
+8, &quot;08&quot;,
+9, &quot;09&quot;,
+10, &quot;10&quot;,
+11, &quot;11&quot;,
+12, &quot;12&quot;,
+&quot;None&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Created Month</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Created_Year__c</fullName>
+        <description>This field is created to be used in Workflow which auto generate Lease Agreement Name, as we want to flash YYYY value</description>
+        <externalId>false</externalId>
+        <formula>TEXT (YEAR( DATEVALUE( CreatedDate ) ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Created Year</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Day_s_in_expired__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Lease_End_Date__c - TODAY() )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Day(s) in expired</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deposit_Fixed_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Deposit Fixed Amount (Need to delete)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Deposit_Pdf__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Deposit Pdf</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Deposit_Term__c</fullName>
+        <externalId>false</externalId>
+        <label>Deposit Term</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Payment_Term</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Deposits__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Deposits</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Extended__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Extended</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Financial_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Financial Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Leases (Financial Contact)</relationshipLabel>
+        <relationshipName>Leases_Financial_Contact</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Fit_Out_Period_Days__c</fullName>
+        <externalId>false</externalId>
+        <label>Fit-Out Period (Days)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Day</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Fit_Out_Period_Months__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Fit-Out Period (Months)</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fit_Out_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND(OR(ISBLANK(Fit_Out_Period_Months__c ), Fit_Out_Period_Months__c =0), OR(ISBLANK(TEXT(Fit_Out_Period_Days__c)),ISPICKVAL(Fit_Out_Period_Days__c,&quot;0&quot;))) ,NULL, 
+(DATE( 
+YEAR( Lease_Start_Date__c ) + FLOOR( ( MONTH ( Lease_Start_Date__c ) - Fit_Out_Period_Months__c - 1 ) / 12), 
+
+if(CASE(MOD(MONTH( Lease_Start_Date__c ) - Fit_Out_Period_Months__c, 12 ), 0, 12, MOD(MONTH(Lease_Start_Date__c)- Fit_Out_Period_Months__c, 12 )) &lt; 0, -1 * CASE(MOD(MONTH( Lease_Start_Date__c ) - Fit_Out_Period_Months__c, 12 ), 0, 12, MOD(MONTH(Lease_Start_Date__c)- Fit_Out_Period_Months__c, 12 )),CASE(MOD(MONTH( Lease_Start_Date__c ) - Fit_Out_Period_Months__c, 12 ), 0, 12, MOD(MONTH(Lease_Start_Date__c)- Fit_Out_Period_Months__c, 12 ))) 
+
+, 
+IF( DAY( Lease_Start_Date__c ) &gt; CASE( MOD( MONTH( Lease_Start_Date__c) - Fit_Out_Period_Months__c - 1, 12 ) + 1, 
+2, 28, 
+4, 30, 
+6, 30, 
+9, 30, 
+11, 30, 
+31 ), 
+1, DAY( Lease_Start_Date__c ) 
+)) 
+- IF(ISBLANK(TEXT(Fit_Out_Period_Days__c)),0,+ VALUE(TEXT(Fit_Out_Period_Days__c))) 
+) 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Fit-Out Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>GTO_Billed__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>By Lease (Summary) - only one POS tranx for all units and only one invoice line. 
+By Lease (Lease Unit) - only one POS tranx for all units and one invoice line for each lease unit. 
+By Lease Unit - one POS tranx and one invoice line for each lease units</inlineHelpText>
+        <label>GTO Billed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>By Lease (Summary)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>By Lease (Lease Unit)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>By Lease Unit</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Generated_LA_PDF__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Generated LA PDF</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Handover_Client_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Handover Client Contact</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.Tenant__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Leases</relationshipLabel>
+        <relationshipName>Leases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Handover_Operation_In_Charge__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Handover Operation In Charge</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Leases (Handover Operation In Charge)</relationshipLabel>
+        <relationshipName>Leases2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LOI_Signed_off_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>LOI Signed-off Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LOI__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>LOI</label>
+        <referenceTo>LOI__c</referenceTo>
+        <relationshipLabel>Leases</relationshipLabel>
+        <relationshipName>Leases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Late_Payment_Interest__c</fullName>
+        <externalId>false</externalId>
+        <label>Late Payment Interest (%)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Lease_Auto__c</fullName>
+        <displayFormat>LA-{MM}{YYYY}-{00000000}</displayFormat>
+        <externalId>false</externalId>
+        <inlineHelpText>This is used in W/F to generate Lease Agreement No.</inlineHelpText>
+        <label>Lease Auto</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Lease_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(TEXT(Lease_Tenure_Days__c)),0,+ VALUE(TEXT(Lease_Tenure_Days__c))) 
++ 
+(DATE( 
+YEAR( Lease_Start_Date__c ) + FLOOR( ( MONTH ( Lease_Start_Date__c ) + Lease_Tenure_Mths__c - 1 ) / 12 ), 
+MOD( MONTH ( Lease_Start_Date__c ) + Lease_Tenure_Mths__c - 1 + 
+IF( DAY ( Lease_Start_Date__c ) &gt; CASE( MOD( MONTH( Lease_Start_Date__c ) + Lease_Tenure_Mths__c - 1, 12 ) + 1, 
+2, 28, 
+4, 30, 
+6, 30, 
+9, 30, 
+11, 30, 
+31 ), 1, 0 ), 12 ) + 1, 
+IF( DAY( Lease_Start_Date__c ) &gt; CASE( MOD( MONTH( Lease_Start_Date__c) + Lease_Tenure_Mths__c - 1, 12 ) + 1, 
+2, 28, 
+4, 30, 
+6, 30, 
+9, 30, 
+11, 30, 
+31 ), 
+1, DAY( Lease_Start_Date__c ) 
+) 
+)-1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Original End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Lease_Index__c</fullName>
+        <externalId>false</externalId>
+        <label>Lease Index</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lease_Signed_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Lease Signed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Lease_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Lease Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Lease_Status__c</fullName>
+        <description>Status of the Lease 
+New = New sign-up 
+Cancelled = Lease is cancelled
+Renewed = Lease is renewed 
+Expired = Lease has expired with no renewal</description>
+        <externalId>false</externalId>
+        <label>Lease Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Renewed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Expired</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Extended</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Pre-Terminated</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Lease_Tenure_Days__c</fullName>
+        <externalId>false</externalId>
+        <label>Lease Tenure (Days)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Day</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Lease_Tenure_Mths__c</fullName>
+        <externalId>false</externalId>
+        <label>Lease Tenure (Mths)</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opening_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Property__r.Actual_Opening_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opening Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Option_to_Renew__c</fullName>
+        <description>Option to renew in number of years</description>
+        <externalId>false</externalId>
+        <label>Option to Renew (Mths)</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Original_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This field would be populated only in the case of Extension or Pre-Termination and would show the Revised End Date as per Extension or Pre-Termination.</inlineHelpText>
+        <label>Revised End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Permitted_Use__c</fullName>
+        <externalId>false</externalId>
+        <label>Permitted Use</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Terminated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Pre-Terminated</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Precedent_Lease__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Please define old Lease ID via which this Lease is created</inlineHelpText>
+        <label>Precedent Lease</label>
+        <referenceTo>Lease__c</referenceTo>
+        <relationshipLabel>Renewed Lease</relationshipLabel>
+        <relationshipName>Leases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Price_Factor__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Populated via LOI
+Applicable for CL Process</inlineHelpText>
+        <label>Price Factor</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>Property__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Property Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Name_Text__c</fullName>
+        <description>This field is populated by W/F rule.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is populated by W/F rule.</inlineHelpText>
+        <label>Property Name Text</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Property__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Property Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Short_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Property__r.Short_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Property Short Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Property</label>
+        <referenceTo>Property__c</referenceTo>
+        <relationshipLabel>Leases</relationshipLabel>
+        <relationshipName>Leases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Reason_for_Termination__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason for Termination</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Renovation_Rebates_Terms__c</fullName>
+        <externalId>false</externalId>
+        <label>Renovation Rebates Terms</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Renovation_Rebates__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Renovation Rebates</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Rent_Free_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Rent Free End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Rent_Free_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Rent Free Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Rent_Roll__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Rent Roll</label>
+        <referenceTo>Rent_Roll__c</referenceTo>
+        <relationshipLabel>Leases</relationshipLabel>
+        <relationshipName>Leases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Stage__c</fullName>
+        <description>Different stages for Letter of Intent and Lease Agreement</description>
+        <externalId>false</externalId>
+        <label>Stage</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>LOI Draft</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>LOI Approval</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LOI Approved</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LOI Sent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LOI Signed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LOI Cancelled</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LA Draft</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LA Sent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LA Cancelled</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LA Variation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LA Signed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LA Approval</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LA Approved</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LA Stamped</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LA Completed</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Staggered_Rent__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Check for staggered rental</description>
+        <externalId>false</externalId>
+        <label>Staggered Rent</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Tenant_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>Tenant__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tenant Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tenant_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Tenant__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tenant Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tenant_Type__c</fullName>
+        <description>Global Picklist</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Populated via LOI
+Applicable for CL Process</inlineHelpText>
+        <label>Tenant Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Tenant_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tenant__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Tenant</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Leases</relationshipLabel>
+        <relationshipName>Leases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Terms_Conditions__c</fullName>
+        <externalId>false</externalId>
+        <label>Terms &amp; Conditions</label>
+        <length>131072</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Test_Fitout_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND(OR(ISBLANK(Fit_Out_Period_Months__c ), Fit_Out_Period_Months__c =0), OR(ISBLANK(TEXT(Fit_Out_Period_Days__c)),ISPICKVAL(Fit_Out_Period_Days__c,&quot;0&quot;))) ,NULL, 
+(DATE( 
+YEAR( Lease_Start_Date__c ) + FLOOR( ( MONTH ( Lease_Start_Date__c ) - Fit_Out_Period_Months__c - 1 ) / 12), 
+
+if(CASE(MOD(MONTH( Lease_Start_Date__c ) - Fit_Out_Period_Months__c, 12 ), 0, 12, MOD(MONTH(Lease_Start_Date__c)- Fit_Out_Period_Months__c, 12 )) &lt; 0, -1 * CASE(MOD(MONTH( Lease_Start_Date__c ) - Fit_Out_Period_Months__c, 12 ), 0, 12, MOD(MONTH(Lease_Start_Date__c)- Fit_Out_Period_Months__c, 12 )),CASE(MOD(MONTH( Lease_Start_Date__c ) - Fit_Out_Period_Months__c, 12 ), 0, 12, MOD(MONTH(Lease_Start_Date__c)- Fit_Out_Period_Months__c, 12 )))
+
+, 
+IF( DAY( Lease_Start_Date__c ) &gt; CASE( MOD( MONTH( Lease_Start_Date__c) - Fit_Out_Period_Months__c - 1, 12 ) + 1, 
+2, 28, 
+4, 30, 
+6, 30, 
+9, 30, 
+11, 30, 
+31 ), 
+1, DAY( Lease_Start_Date__c ) 
+)) 
+- IF(ISBLANK(TEXT(Fit_Out_Period_Days__c)),0,+ VALUE(TEXT(Fit_Out_Period_Days__c))) 
+) 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Test Fitout Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>date_formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(CASE(MOD(MONTH( Lease_Start_Date__c ) - Fit_Out_Period_Months__c, 12 ), 0, 12, MOD(MONTH(Lease_Start_Date__c)- Fit_Out_Period_Months__c, 12 )) &lt; 0, -1 * CASE(MOD(MONTH( Lease_Start_Date__c ) - Fit_Out_Period_Months__c, 12 ), 0, 12, MOD(MONTH(Lease_Start_Date__c)- Fit_Out_Period_Months__c, 12 )),CASE(MOD(MONTH( Lease_Start_Date__c ) - Fit_Out_Period_Months__c, 12 ), 0, 12, MOD(MONTH(Lease_Start_Date__c)- Fit_Out_Period_Months__c, 12 )))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>date formula</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Lease</label>
+    <listViews>
+        <fullName>AllLease</fullName>
+        <columns>NAME</columns>
+        <columns>Property__c</columns>
+        <columns>Tenant__c</columns>
+        <columns>Stage__c</columns>
+        <columns>Lease_Status__c</columns>
+        <columns>Lease_Start_Date__c</columns>
+        <columns>Original_End_Date__c</columns>
+        <columns>Lease_Tenure_Days__c</columns>
+        <columns>Lease_Tenure_Mths__c</columns>
+        <columns>Late_Payment_Interest__c</columns>
+        <columns>Fit_Out_Period_Months__c</columns>
+        <columns>Fit_Out_Period_Days__c</columns>
+        <columns>Fit_Out_Start_Date__c</columns>
+        <columns>Test_Fitout_Start_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Lease__c.LA</value>
+        </filters>
+        <label>All Lease</label>
+    </listViews>
+    <listViews>
+        <fullName>AllTMLease</fullName>
+        <columns>NAME</columns>
+        <columns>Property__c</columns>
+        <columns>Tenant__c</columns>
+        <columns>Stage__c</columns>
+        <columns>Lease_Status__c</columns>
+        <columns>Lease_Start_Date__c</columns>
+        <columns>Original_End_Date__c</columns>
+        <columns>Lease_Tenure_Days__c</columns>
+        <columns>Lease_Tenure_Mths__c</columns>
+        <columns>Late_Payment_Interest__c</columns>
+        <columns>Fit_Out_Period_Months__c</columns>
+        <columns>Fit_Out_Period_Days__c</columns>
+        <columns>Fit_Out_Start_Date__c</columns>
+        <columns>Test_Fitout_Start_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Lease__c.LA</value>
+        </filters>
+        <filters>
+            <field>Property_Short_Code__c</field>
+            <operation>equals</operation>
+            <value>TM</value>
+        </filters>
+        <label>All TM Lease</label>
+    </listViews>
+    <listViews>
+        <fullName>Created_Today</fullName>
+        <columns>NAME</columns>
+        <columns>Property__c</columns>
+        <columns>Tenant__c</columns>
+        <columns>Stage__c</columns>
+        <columns>Lease_Start_Date__c</columns>
+        <columns>Lease_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>Created Today</label>
+    </listViews>
+    <listViews>
+        <fullName>Search_by_Shop_Name</fullName>
+        <columns>NAME</columns>
+        <columns>Property__c</columns>
+        <columns>Tenant__c</columns>
+        <columns>Stage__c</columns>
+        <columns>Lease_Start_Date__c</columns>
+        <columns>Lease_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>View by Shop Name</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Lease Agreement No.</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Leases</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>LA</fullName>
+        <active>true</active>
+        <description>Lease Agreement Record</description>
+        <label>LA</label>
+        <picklistValues>
+            <picklist>Business_Type__c</picklist>
+            <values>
+                <fullName>F%26B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warehouse</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Charge_Method</picklist>
+            <values>
+                <fullName>Daily Rate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Rate - CL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Rate - L</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Day</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>13</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>14</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>15</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>16</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>17</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>19</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>20</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>21</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>22</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>26</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>27</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>28</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>30</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>31</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>GTO_Billed__c</picklist>
+            <values>
+                <fullName>By Lease %28Lease Unit%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>By Lease %28Summary%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>By Lease Unit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lease_Status__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Renewed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stage__c</picklist>
+            <values>
+                <fullName>LA Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LA Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LA Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LA Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LA Draft</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>LA Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LA Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LA Stamped</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LA Variation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Tenant_Type</picklist>
+            <values>
+                <fullName>Non-Tenant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Tenant %28Whole Week%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tenant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tenant %28Whole Week%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VIP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>LOI</fullName>
+        <active>false</active>
+        <description>Letter of Intent Record</description>
+        <label>LOI</label>
+        <picklistValues>
+            <picklist>Business_Type__c</picklist>
+            <values>
+                <fullName>F%26B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warehouse</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Charge_Method</picklist>
+            <values>
+                <fullName>Daily Rate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Rate - CL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Rate - L</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Day</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>13</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>14</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>15</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>16</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>17</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>19</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>20</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>21</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>22</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>26</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>27</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>28</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>30</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>31</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>GTO_Billed__c</picklist>
+            <values>
+                <fullName>By Lease %28Lease Unit%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>By Lease %28Summary%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>By Lease Unit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lease_Status__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Renewed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stage__c</picklist>
+            <values>
+                <fullName>LA Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LA Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LA Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LA Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LA Draft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LA Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LA Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LA Stamped</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LA Variation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOI Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOI Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOI Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOI Draft</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>LOI Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOI Signed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Tenant_Type</picklist>
+            <values>
+                <fullName>Non-Tenant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Tenant %28Whole Week%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tenant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tenant %28Whole Week%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VIP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Tenant__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Lease_Start_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Lease_Tenure_Mths__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Lease_Status__c</customTabListAdditionalFields>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <listViewButtons>New_Lease</listViewButtons>
+        <lookupDialogsAdditionalFields>Tenant__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Property__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Stage__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Lease_Start_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Lease_End_Date__c</lookupDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <webLinks>
+        <fullName>Cancel</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Cancel</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+if(&quot;{!Lease__c.Lease_Status__c}&quot;==&quot;Cancelled&quot;){
+alert(&quot;Lease is already cancelled.&quot;);
+}else{
+var left = Number((screen.width/2)-220); 
+var tops = Number((screen.height/2)-250); 
+var win=window.open(&apos;/apex/CancelLease?Id={!Lease__c.Id}&apos;,&apos;&apos;, 
+&apos;width=500,height=350,scrollbars=yes,top=&apos;+tops+&apos;,left=&apos;+left);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Change_Lease_Start_Date</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Change Lease Start Date</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+
+var left = Number((screen.width/2)-200); 
+var tops = Number((screen.height/2)-250); 
+var selectedLease = &apos;{!Lease__c.Id}&apos;; 
+var tenureMth = &apos;{!Lease__c.Lease_Tenure_Mths__c}&apos;; 
+var tenureDay = &apos;{!Lease__c.Lease_Tenure_Days__c}&apos;; 
+
+var win=window.open(&apos;/apex/ChangeLeaseStartDate?from=Lease&amp;selectedLease=&apos;+selectedLease +&apos;&amp;tenureMth=&apos;+tenureMth+&apos;&amp;tenureDay=&apos;+tenureDay,&apos;&apos;, 
+&apos;width=550,height=400,scrollbars=yes,top=&apos;+tops+&apos;,left=&apos;+left);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Conga_Composer_LA_PDF</fullName>
+        <availability>online</availability>
+        <description>Created by Conga Solution Manager. Record link: https://apxtconga4.cs5.visual.force.com/a2UO0000000mcMVMAY.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>false</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>660</height>
+        <isResizable>false</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>LA PDF</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/APXTConga4__Conga_Composer?SolMgr=1
+&amp;serverUrl={!API.Partner_Server_URL_370}
+&amp;Id={!Lease__c.Id}</url>
+        <width>900</width>
+    </webLinks>
+    <webLinks>
+        <fullName>Extension</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Extension</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+var left = Number((screen.width/2)-220); 
+var tops = Number((screen.height/2)-250); 
+var win=window.open(&apos;/apex/LeaseExtension?Id={!Lease__c.Id}&apos;,&apos;&apos;, 
+&apos;width=500,height=350,scrollbars=yes,top=&apos;+tops+&apos;,left=&apos;+left);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Generate_LA_PDF</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate LA PDF</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/apex.js&quot;)} 
+if({!Lease__c.Generated_LA_PDF__c}){ 
+    alert(&apos;PDF is already generated&apos;); 
+}else if(&apos;{!Lease__c.Charge_Method__c}&apos; == &apos;Monthly Rate - CL&apos; || &apos;{!Lease__c.Charge_Method__c}&apos;== &apos;Daily Rate&apos;){ 
+    alert(&apos;There is no available PDF for this Lease.&apos;); 
+}else{ 
+    var msg = sforce.apex.execute(&quot;LAPDFGenerator&quot;,&quot;generatePDF&quot;,{leaseId:&quot;{!Lease__c.Id}&quot;}); 
+				
+    if(msg!=null &amp;&amp; msg!=&apos;&apos;){
+        alert(msg);
+    }else{
+        var obj = new sforce.SObject(&apos;lease__c&apos;); 
+        obj.id = &quot;{!Lease__c.Id}&quot;; 
+        obj.Generated_LA_PDF__c= &quot;true&quot;; 
+
+        var result = sforce.connection.update([obj]); 
+
+        window.location.href=&quot;/{!Lease__c.Id}&quot;; 
+    }
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Generate_Pdf</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate Pdf</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/apex.js&quot;)}
+
+if (&apos;{!Lease__c.Deposit_Pdf__c}&apos; == &apos;1&apos;){
+   alert(&quot;Deposit is already Generated&quot;);
+}else{
+   var r = confirm(&quot;Are you sure you want to Generated Deposit for this Lease?&quot;);
+   if(r == true){
+	   sforce.apex.execute(&quot;DownloadDeposit&quot;, &quot;generateFromDeposit&quot;, {
+			leaseId: &quot;{!Lease__c.Id}&quot;
+		});
+               var depObj = new sforce.SObject(&quot;Lease__c&quot;);
+	   depObj.Id = &apos;{!Lease__c.Id}&apos;;
+	   depObj.Deposit_Pdf__c = true;
+            var result = sforce.connection.update([depObj]);
+		location.reload(true);
+   }
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Lease</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Lease</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/a04/e?CF00N2800000C5HbG={!Property__c.Name}&amp;CF00N2800000C5HbG_lkid={!Property__c.Id}&amp;CF00N2800000C5IAy={!Account.Name}&amp;CF00N2800000C5IAy_lkid={!Account.Id}&amp;Name=--+System+Generated+--&amp;retURL=%2F{!Property__c.Id}{!Account.Id}&amp;cancelURL=%2F{!Property__c.Id}{!Account.Id}&amp;CF00NO0000002hf01={!Lease__c.Id}&amp;CF00NO0000002hf01_lkid={!Lease__c.Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Renewed_Lease</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Lease1</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/a04/e?Name=--+System+Generated+--&amp;retURL=%2F{!Property__c.Id}{!Account.Id}{!Lease__c.Id}&amp;cancelURL=%2F{!Property__c.Id}{!Account.Id}{!Lease__c.Id}&amp;CF00NO0000002hf01={!Lease__c.Id}&amp;CF00NO0000002hf01_lkid={!Lease__c.Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Pre_Terminate</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Pre-Terminate</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+if({!Lease__c.Pre_Terminated__c}){
+   alert(&apos;This Lease Unit is already Terminated.&apos;);
+}else{
+var selectedLease = &apos;{!Lease__c.Id}&apos;;
+
+var left = Number((screen.width/2)-200); 
+var tops = Number((screen.height/2)-250); 
+ 
+var endDate = &apos;{!Lease__c.Lease_End_Date__c}&apos;;
+var OgDate = &apos;{!Lease__c.Original_End_Date__c}&apos;;
+if(OgDate != &apos;&apos; &amp;&amp; OgDate != null){
+   endDate = &apos;{!Lease__c.Original_End_Date__c}&apos;;
+}
+
+
+var win=window.open(&apos;/apex/PreTerminateLease?from=Lease&amp;selectedLease=&apos;+selectedLease+&apos;&amp;endDate=&apos;+endDate,&apos;&apos;, 
+&apos;width=550,height=400,scrollbars=yes,top=&apos;+tops+&apos;,left=&apos;+left);
+
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Rent_Free</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Rent Free</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+var left = Number((screen.width/2)-220); 
+var tops = Number((screen.height/2)-250); 
+var win=window.open(&apos;/apex/RentFreeLease?Id={!Lease__c.Id}&apos;,&apos;&apos;, 
+&apos;width=500,height=300,scrollbars=yes,top=&apos;+tops+&apos;,left=&apos;+left);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>View_LA_PDF</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>View LA PDF</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/connection.js&quot;)} 
+if({!Lease__c.Generated_LA_PDF__c}){ 
+try{ 
+var result = sforce.connection.query(&quot;Select Id FROM attachment WHERE (ParentId=&apos;{!Lease__c.Id}&apos;) ORDER BY CreatedDate DESC LIMIT 1&quot;); 
+
+if(result.getInt(&quot;size&quot;)==1){ 
+var attachment = result.getArray(&quot;records&quot;); 
+window.open(&quot;/servlet/servlet.FileDownload?file=&quot;+attachment[0].Id); 
+} 
+else{ 
+if({!Lease__c.Generated_LA_PDF__c}){ 
+alert(&quot;PDF is still processing, Please wait for few more seconds&quot;); 
+} 
+else{ 
+alert(&quot;Please generate PDF first.&quot;); 
+} 
+} 
+} 
+catch(e){ 
+alert(&quot;Please Contact System Administrator &quot;+e); 
+} 
+} 
+else 
+alert(&quot;PDF is Not yet generated&quot;);</url>
+    </webLinks>
+</CustomObject>

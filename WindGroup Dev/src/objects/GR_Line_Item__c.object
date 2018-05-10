@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Budget_Line__c</fullName>
+        <externalId>false</externalId>
+        <label>Budget Line</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Lift</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pump</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Currency_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Currency Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Currency_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Remarks</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Goods_Receipt__c</fullName>
+        <externalId>false</externalId>
+        <label>Goods Receipt</label>
+        <referenceTo>Goods_Receipt__c</referenceTo>
+        <relationshipLabel>GR Line Items</relationshipLabel>
+        <relationshipName>GR_Line_Items</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Item_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Item Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PO_Line_Item__c</fullName>
+        <externalId>false</externalId>
+        <label>PO Line Item</label>
+        <referenceTo>PO_Line_Item__c</referenceTo>
+        <relationshipLabel>GR Line Items</relationshipLabel>
+        <relationshipName>GR_Line_Items</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Amount__c * Quantity__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Void_Datetime__c</fullName>
+        <externalId>false</externalId>
+        <label>Void Datetime</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Void_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Void Reason</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Void__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Void</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>GR Line Item</label>
+    <nameField>
+        <displayFormat>{YYYY}{MM}-GRI-{000000}</displayFormat>
+        <label>GR Item ID</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>GR Line Items</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>New_GR_Line_Items</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>New GR Line Items</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;soap/ajax/24.0/connection.js&quot;)}
+ var gr = sforce.connection.query(&quot;SELECT id FROM Goods_Receipt__c WHERE purchase_order__r.status__c = &apos;Issued&apos; AND id = &apos;{!Goods_Receipt__c.Id}&apos; &quot;);
+
+if(gr.size&gt;0){
+window.location.href=&quot;/a26/e?CF00NO0000002oPB2={!Goods_Receipt__c.Name}&amp;CF00NO0000002oPB2_lkid={!Goods_Receipt__c.Id}&amp;retURL={!Goods_Receipt__c.Id}&quot;;
+}
+else
+alert(&quot;Purchase Order status should be Issued&quot;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Void</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Void</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/apex.js&quot;)} 
+
+var r = confirm(&quot;Are you sure you want to Void this GR Line Item?&quot;); 
+if(r == true){ 
+var retVal = &apos;{!GR_Line_Item__c.Void_Reason__c}&apos;;
+while (retVal == null || retVal == &apos;&apos;) { 
+    retVal = prompt(&quot;Please Enter Void Reason* (mandatory):&quot;, &quot;&quot;); 
+    if(retVal == null){ 
+        break; 
+    } 
+} 
+if(retVal != null){ 
+var poLineItem = sforce.connection.query(&quot;SELECT id, Purchase_Order__c FROM PO_Line_Item__c WHERE Id = &apos;{!PO_Line_Item__c.Id}&apos; LIMIT 1&quot;); 
+var records = poLineItem.getArray(&quot;records&quot;); 
+var poId = records[0].Purchase_Order__c; 
+
+var po = sforce.connection.query(&quot;SELECT id, Status__c FROM Purchase_Order__c WHERE Id = &apos;&quot; + poId + &quot;&apos;&quot;); 
+var porecords = po.getArray(&quot;records&quot;); 
+var poStatus = porecords[0].Status__c; 
+
+var grlineitemid = &quot;{!GR_Line_Item__c.Id}&quot;;
+var equipmentIssue = false;
+var eq = sforce.connection.query(&quot;SELECT id, Action__c, GR_Line_Item__c FROM Equipment__c WHERE GR_Line_Item__c = &apos;&quot; + grlineitemid + &quot;&apos;&quot;); 
+var eqrecords = eq.getArray(&quot;records&quot;); 
+
+
+for(var i=0; i&lt;eqrecords.length; i++)
+{
+
+if(eqrecords[i].Action__c == &apos;Issue&apos; || eqrecords[i].Action__c == &apos;Install&apos;){
+		equipmentIssue = true;
+		break;
+}	
+} 
+
+var ir = sforce.connection.query(&quot;SELECT id FROM Invoice_Receipt__c WHERE Purchase_order__c =&apos;&quot; + poId +&quot;&apos;&quot;); 
+
+if(equipmentIssue == false){
+if(poStatus == &apos;Issued&apos;){ 
+if({!GR_Line_Item__c.Void__c} == false){ 
+if(ir.size == 0){ 				
+		sforce.apex.execute(&quot;GRLineItemController&quot;,&quot;updateRecord&quot;,{grLineItemId:&quot;{!GR_Line_Item__c.Id}&quot;, action:&quot;Void&quot;, poId:poId,voidReason:retVal}); 
+		location.reload();
+			
+} else { 
+alert(&apos;Invoice Receipt is created.&apos;); 
+} 
+
+} else { 
+alert(&apos;GR Line Item is Void previously.&apos;); 
+} 
+}else{ 
+alert(&apos;PO status must be Issued.&apos;); 
+}} else {
+alert(&apos;Equipment is installed/issued.&apos;)
+}
+}
+}</url>
+    </webLinks>
+</CustomObject>

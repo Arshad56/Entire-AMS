@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Create to be managed in Procurement process</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Available_Qty__c</fullName>
+        <externalId>false</externalId>
+        <formula>In_Qty__c  -  Out_Qty__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>In Qty - Out Qty</inlineHelpText>
+        <label>Available Qty</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default__c</fullName>
+        <externalId>false</externalId>
+        <formula>Stock_Warehouse__r.Default__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Info from related Stock</inlineHelpText>
+        <label>Default</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>In_Qty__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll-up of &apos;In&apos; Qty from related Tracking records</inlineHelpText>
+        <label>In Qty</label>
+        <summarizedField>Inventory_Tracking__c.Quantity__c</summarizedField>
+        <summaryFilterItems>
+            <field>Inventory_Tracking__c.IN_OUT__c</field>
+            <operation>equals</operation>
+            <value>In</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Inventory_Tracking__c.Inventory_ID__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Out_Qty__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll-up of Out Qty from related Tracking records</inlineHelpText>
+        <label>Out Qty</label>
+        <summarizedField>Inventory_Tracking__c.Quantity__c</summarizedField>
+        <summaryFilterItems>
+            <field>Inventory_Tracking__c.IN_OUT__c</field>
+            <operation>equals</operation>
+            <value>Out</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Inventory_Tracking__c.Inventory_ID__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Product_Decription__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Description</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Product_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product Name</label>
+        <referenceTo>Item_Catalogue__c</referenceTo>
+        <relationshipLabel>Inventory</relationshipLabel>
+        <relationshipName>Inventory</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT (Product_Name__r.Product_Type__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>From related Product Name</inlineHelpText>
+        <label>Product Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Property</label>
+        <referenceTo>Property__c</referenceTo>
+        <relationshipLabel>Inventory</relationshipLabel>
+        <relationshipName>Inventory</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Write Off In-Approval</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Write-off Approved</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Stock_Warehouse__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Warehouse/Store</label>
+        <referenceTo>Stock__c</referenceTo>
+        <relationshipLabel>Inventory</relationshipLabel>
+        <relationshipName>Inventory</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Write_Off_Qty__c</fullName>
+        <externalId>false</externalId>
+        <label>Write Off Qty</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Write_Off_Remark__c</fullName>
+        <externalId>false</externalId>
+        <label>Write Off Remark</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <label>Inventory</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Stock_Warehouse__c</columns>
+        <columns>Default__c</columns>
+        <columns>Product_Name__c</columns>
+        <columns>Product_Type__c</columns>
+        <columns>Available_Qty__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Inventory Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Inventory</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Consumable</fullName>
+        <active>true</active>
+        <label>Consumable</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Write Off In-Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Write-off Approved</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Equipment</fullName>
+        <active>true</active>
+        <label>Equipment</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Write Off In-Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Product_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>In_Qty__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Out_Qty__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Available_Qty__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Default__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>New_Inventory</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Inventory</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/a2H/e?Name=--+System+Generated+--&amp;CF00NO0000002pIjY={!Item_Catalogue__c.Name}&amp;CF00NO0000002pIjY_lkid={!Item_Catalogue__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Stock_In</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Stock In</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+
+var left = Number((screen.width/2)-200); 
+var tops = Number((screen.height/2)-250); 
+var productType= &apos;{!Inventory__c.Product_Type__c}&apos;; 
+
+var win=window.open(&apos;/apex/StockIn?Id={!Inventory__c.Id}&amp;productType=&apos;+productType,&apos;&apos;, 
+&apos;width=550,height=320,scrollbars=yes,top=&apos;+tops+&apos;,left=&apos;+left);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Stock_Out</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Stock Out</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+
+if(&quot;{!Inventory__c.Product_Type__c}&quot;==&quot;Consumable&quot;){ 
+var left = Number((screen.width/2)-220); 
+var tops = Number((screen.height/2)-250); 
+var win=window.open(&apos;/apex/ConsumableStockOut?Id={!Inventory__c.Id}&apos;,&apos;&apos;, 
+&apos;width=500,height=350,scrollbars=yes,top=&apos;+tops+&apos;,left=&apos;+left); 
+}else{ 
+alert(&quot;Stock out can be done for Consumable Type Inventory only.&quot;); 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Transfer</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Transfer</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+
+if(&quot;{!Inventory__c.Product_Type__c}&quot;==&quot;Consumable&quot;){
+var left = Number((screen.width/2)-220); 
+var tops = Number((screen.height/2)-250); 
+var win=window.open(&apos;/apex/ConsumableTransfer?Id={!Inventory__c.Id}&apos;,&apos;&apos;, 
+&apos;width=500,height=350,scrollbars=yes,top=&apos;+tops+&apos;,left=&apos;+left);
+}else{
+alert(&quot;Transfer can be done for Consumable Type Inventory only.&quot;);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Write_Off</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Write Off</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+
+if(&quot;{!Inventory__c.Product_Type__c}&quot;==&quot;Consumable&quot;){
+if(&quot;{!Inventory__c.Status__c}&quot;==&quot;Active&quot;){
+var left = Number((screen.width/2)-220); 
+var tops = Number((screen.height/2)-250); 
+var win=window.open(&apos;/apex/WriteOff?InvId={!Inventory__c.Id}&apos;,&apos;&apos;, 
+&apos;width=500,height=350,scrollbars=yes,top=&apos;+tops+&apos;,left=&apos;+left); 
+}else{
+alert(&quot;Write Off In Approval&quot;); 
+}
+}else{ 
+alert(&quot;Write Off can be done for Consumable Type Inventory only.&quot;); 
+}</url>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Servicing</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Servicing</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Servicing --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Intervals (days) --></label>
+        <name>Intervals_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intervals (months) --></label>
+        <name>Intervals_months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Servicing Description --></label>
+        <name>Servicing_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warranty Expiry --></label>
+        <name>Warranty_Expiry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warranty Number --></label>
+        <name>Warranty_Number__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

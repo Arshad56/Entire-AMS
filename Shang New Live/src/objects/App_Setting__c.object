@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>App__c</fullName>
+        <externalId>false</externalId>
+        <label>App</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>App</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Greetings_Description__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Greetings to display at Main Page.</inlineHelpText>
+        <label>Greetings Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Image_Background__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(  URL_Background__c  ) ,&quot;&quot;, IMAGE(URL_Background__c , &quot;Satisfied&quot;, 75,75) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Image Background</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Image_Satisfied__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(  URL_Image_Satisfied__c ) ,&quot;&quot;, IMAGE(URL_Image_Satisfied__c  , &quot;Satisfied&quot;, 75,75) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Image Satisfied</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Image_Unsatisfied__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK( URL_Image_Unsatisfied__c ) ,&quot;&quot;, IMAGE(URL_Image_Unsatisfied__c, &quot;Icon&quot;, 75,75) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Image Unsatisfied</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_of_Options__c</fullName>
+        <externalId>false</externalId>
+        <label>No. of Options</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>8</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>10</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Property__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Property</label>
+        <referenceTo>Property__c</referenceTo>
+        <relationshipLabel>App Setting</relationshipLabel>
+        <relationshipName>App_Setting</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Rating_Description__c</fullName>
+        <description>This is to key information about rating at Main Page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is to key information about rating at Main Page.</inlineHelpText>
+        <label>Rating Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Resolved_Option_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Resolved Option Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Satisfied_Text__c</fullName>
+        <externalId>false</externalId>
+        <label>Satisfied Text</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Select_Option_Description__c</fullName>
+        <description>This is the information to display at option submission page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the information to display at option submission page.</inlineHelpText>
+        <label>Select Option Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Thank_you_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Thank you Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>URL_Background__c</fullName>
+        <externalId>false</externalId>
+        <label>URL Background</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>URL_Image_Satisfied__c</fullName>
+        <externalId>false</externalId>
+        <label>URL Image Satisfied</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>URL_Image_Unsatisfied__c</fullName>
+        <externalId>false</externalId>
+        <label>URL Image Unsatisfied</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Unsatisfied_Text__c</fullName>
+        <externalId>false</externalId>
+        <label>Unsatisfied Text</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <label>App Setting</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>{YYYYMM}-AS-{000000}</displayFormat>
+        <label>App Setting Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>App Setting</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Property__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Greetings_Description__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>No_of_Options__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Rating_Description__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Unsatisfied_Text__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>URL_Image_Unsatisfied__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Satisfied_Text__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>URL_Image_Satisfied__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Property__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>App__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Greetings_Description__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Rating_Description__c</lookupDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

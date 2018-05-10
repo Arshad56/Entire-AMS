@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>JE Logic</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>JE Logic</value>
+    </caseValues>
+    <fields>
+        <help><!-- Application in the case of Transaction: Cash Receipt --></help>
+        <label><!-- Bank Name --></label>
+        <name>Bank_Name__c</name>
+        <relationshipLabel><!-- JE Logic --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Applicable when Transaction: Invoice --></help>
+        <label><!-- Charge Type --></label>
+        <name>Charge_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company --></label>
+        <name>Company__c</name>
+        <relationshipLabel><!-- JE Logic --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This is primarily used to convert Negative Amount to Positive.
+Used for Charge Type: Discount &amp; Rebate. --></help>
+        <label><!-- Convert Negative Amount --></label>
+        <name>Convert_Negative_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is used to design JE Logic based on Document Currency --></help>
+        <label><!-- Document Currency Old --></label>
+        <name>Document_Currency_Old__c</name>
+        <picklistValues>
+            <masterLabel>MMK</masterLabel>
+            <translation><!-- MMK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USD</masterLabel>
+            <translation><!-- USD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Document Currency --></label>
+        <name>Document_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Header/Detail --></label>
+        <name>Header_Detail__c</name>
+        <picklistValues>
+            <masterLabel>Detail</masterLabel>
+            <translation><!-- Detail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Header</masterLabel>
+            <translation><!-- Header --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- JV Creation --></label>
+        <name>JV_Creation__c</name>
+        <picklistValues>
+            <masterLabel>Document Date</masterLabel>
+            <translation><!-- Document Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Line Item Start Date</masterLabel>
+            <translation><!-- Line Item Start Date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Invoice (Normal) - Monthly; Ad-Hoc; Misc; Debit Note
+Credit Note - Credit Note
+Late Payment - Late Payment
+Invoice (Advance Rental) - Rent with Charge Type &apos;Advance Rental&apos; --></help>
+        <label><!-- JV Type --></label>
+        <name>JV_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Application in the case of Transaction: Cash Receipt --></help>
+        <label><!-- Payment Mode --></label>
+        <name>Payment_Mode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Posting Period --></label>
+        <name>Posting_Period__c</name>
+        <picklistValues>
+            <masterLabel>+1</masterLabel>
+            <translation><!-- +1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>+2</masterLabel>
+            <translation><!-- +2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-1</masterLabel>
+            <translation><!-- -1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-2</masterLabel>
+            <translation><!-- -2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transaction --></label>
+        <name>Transaction__c</name>
+    </fields>
+    <layouts>
+        <layout>JE Logic Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

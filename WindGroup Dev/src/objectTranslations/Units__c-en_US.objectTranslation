@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Unit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Units</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Project Manager&apos;s contact information. --></help>
+        <label><!-- Authorised Person 2 --></label>
+        <name>Authorised_Person_2__c</name>
+        <relationshipLabel><!-- Units (Authorised Person 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Contractor&apos;s contact information. --></help>
+        <label><!-- Authorised Person 1 --></label>
+        <name>Authorised_Person__c</name>
+        <relationshipLabel><!-- Units (Authorised Person) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CT Meter No --></label>
+        <name>CT_Meter_No__c</name>
+    </fields>
+    <fields>
+        <help><!-- Transaction Rate is not applicable for Unit. --></help>
+        <label><!-- Charge Method --></label>
+        <name>Charge_Method__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description of space --></help>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Floor Plan --></label>
+        <name>Floor_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Floor --></label>
+        <name>Floor__c</name>
+        <picklistValues>
+            <masterLabel>Bare finish</masterLabel>
+            <translation><!-- Bare finish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tiled finish</masterLabel>
+            <translation><!-- Tiled finish --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please key in Forecast Charge for vacant unit --></help>
+        <label><!-- Forecast Charge --></label>
+        <name>Forecast_Charge__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please use &quot;;&quot; if more than one meter. (eg. xx123;xx124). --></help>
+        <label><!-- Gas Meter No --></label>
+        <name>Gas_Meter_No__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is an indicator that Takeover Checklist for this Unit has been generated with Line Items --></help>
+        <label><!-- Generated CheckList --></label>
+        <name>Generate_CheckList__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generate Lease Plans --></label>
+        <name>Generate_Lease_Plans__c</name>
+    </fields>
+    <fields>
+        <label><!-- Horse Power --></label>
+        <name>Horse_Power__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level --></label>
+        <name>Level__c</name>
+        <relationshipLabel><!-- Units --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Line Loss --></label>
+        <name>Line_Loss__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+        <relationshipLabel><!-- Units --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Main Unit --></label>
+        <name>Main_Unit__c</name>
+        <relationshipLabel><!-- Units --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Module --></label>
+        <name>Mobile_Module__c</name>
+    </fields>
+    <fields>
+        <label><!-- NLA (SQF) --></label>
+        <name>NLA_SQF__c</name>
+    </fields>
+    <fields>
+        <label><!-- NLA (SQM) --></label>
+        <name>NLA_SQM__c</name>
+    </fields>
+    <fields>
+        <help><!-- The No. of the Unit No. --></help>
+        <label><!-- No. --></label>
+        <name>No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partition --></label>
+        <name>Partition__c</name>
+    </fields>
+    <fields>
+        <help><!-- Landlord&apos;s contact 2 information. --></help>
+        <label><!-- Person In Charge 2 --></label>
+        <name>Person_In_Charge_2__c</name>
+        <relationshipLabel><!-- Units (Person In Charge 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Landlord&apos;s contact 1 information. --></help>
+        <label><!-- Person In Charge 1 --></label>
+        <name>Person_In_Charge__c</name>
+        <relationshipLabel><!-- Units (Operation In Charge) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Please use &quot;;&quot; if more than one extension no.. (eg. 1123;1124). --></help>
+        <label><!-- Phone Extension No --></label>
+        <name>Phone_Extension_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Power Factor --></label>
+        <name>Power_Factor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Month CT Meter End Unit --></label>
+        <name>Previous_Month_CT_Meter_End_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Month Sub Meter End Unit --></label>
+        <name>Previous_Month_Sub_Meter_End_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project In Charge --></label>
+        <name>Project_In_Charge__c</name>
+        <relationshipLabel><!-- Units --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Property Name Text --></label>
+        <name>Property_Name_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Short Code --></label>
+        <name>Property_Short_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+        <relationshipLabel><!-- Units --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rent Hurdle 1 --></label>
+        <name>Rent_Hurdle_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Hurdle 2 --></label>
+        <name>Rent_Hurdle_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Hurdle 3 --></label>
+        <name>Rent_Hurdle_3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rent Hurdle Rate * NLA (SQF) --></help>
+        <label><!-- Rent Hurdle Amount --></label>
+        <name>Rent_Hurdle_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Hurdle (Lower Limit) --></label>
+        <name>Rent_Hurdle_Lower_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Hurdle (Upper Limit) --></label>
+        <name>Rent_Hurdle_Upper_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Hurdle Rate --></label>
+        <name>Rent_Hurdle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rental Budget per UOM --></label>
+        <name>Rental_Budget_per_UOM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shop Front --></label>
+        <name>Shop_Front__c</name>
+    </fields>
+    <fields>
+        <label><!-- Space Type --></label>
+        <name>Space_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Meter No --></label>
+        <name>Sub_Meter_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Space Type --></label>
+        <name>Sub_Space_Type__c</name>
+        <picklistValues>
+            <masterLabel>ATM</masterLabel>
+            <translation><!-- ATM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F&amp;B</masterLabel>
+            <translation><!-- F&amp;B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indoor</masterLabel>
+            <translation><!-- Indoor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outdoor</masterLabel>
+            <translation><!-- Outdoor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outdoor Trolley</masterLabel>
+            <translation><!-- Outdoor Trolley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Push Cart</masterLabel>
+            <translation><!-- Push Cart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stalls</masterLabel>
+            <translation><!-- Stalls --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vending Machine</masterLabel>
+            <translation><!-- Vending Machine --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub-Trade Category 1 --></label>
+        <name>Sub_Trade_Category_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Trade Category 2 --></label>
+        <name>Sub_Trade_Category_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Trade Category 3 --></label>
+        <name>Sub_Trade_Category_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Trade Category --></label>
+        <name>Sub_Trade_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Takeover Date --></label>
+        <name>Takeover_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Rental --></label>
+        <name>Target_Rental__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Category 1 --></label>
+        <name>Trade_Category_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Category 2 --></label>
+        <name>Trade_Category_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Category 3 --></label>
+        <name>Trade_Category_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Category --></label>
+        <name>Trade_Category__c</name>
+    </fields>
+    <fields>
+        <help><!-- License type information for casual leasing space --></help>
+        <label><!-- Type of License --></label>
+        <name>Type_of_License__c</name>
+    </fields>
+    <fields>
+        <label><!-- UOM --></label>
+        <name>UOM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Selling Point --></label>
+        <name>Unique_Selling_Point__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit No. --></label>
+        <name>Unit_No__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please use &quot;;&quot; if more than one meter. (eg. xx123;xx124). --></help>
+        <label><!-- Water Meter No --></label>
+        <name>Water_Meter_No__c</name>
+    </fields>
+    <layouts>
+        <layout>Unit Layout</layout>
+        <sections>
+            <label><!-- Allowable Trade Category --></label>
+            <section>Allowable Trade Category</section>
+        </sections>
+        <sections>
+            <label><!-- Budget &amp; Forecast --></label>
+            <section>Budget &amp; Forecast</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Other Meter Information --></label>
+            <section>Other Meter Information</section>
+        </sections>
+        <sections>
+            <label><!-- Picture --></label>
+            <section>Picture</section>
+        </sections>
+        <sections>
+            <label><!-- Takeover Information --></label>
+            <section>Takeover Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Generate_Takeover_CheckList --></label>
+        <name>Generate_Takeover_CheckList</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Unit --></label>
+        <name>New_Unit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Resurvey --></label>
+        <name>Resurvey</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SFDC_Link --></label>
+        <name>SFDC_Link</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Split_Unit --></label>
+        <name>Split_Unit</name>
+    </webLinks>
+</CustomObjectTranslation>

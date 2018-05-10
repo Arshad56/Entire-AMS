@@ -1,0 +1,9 @@
+*** TASK COMPLETED NOTIFICATION *** 
+
+Dear PIC,
+
+Your task  {!Task.Subject} is Completed for {!Task.Request_Name__c}.
+You can check Task details here {!Task.Link}
+
+Regards
+Operation Team

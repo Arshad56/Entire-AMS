@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>POS_Transaction__c$Name</field>
+    </columns>
+    <columns>
+        <field>POS_Transaction__c$POS_Id__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>POS_Transaction__c$GTO_Amount__c</field>
+    </columns>
+    <columns>
+        <field>POS_Transaction__c$From_Date__c</field>
+    </columns>
+    <columns>
+        <field>POS_Transaction__c$To_Date__c</field>
+    </columns>
+    <columns>
+        <field>POS_Transaction__c$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>POS_Transaction__c$Rent_Schedule__c</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>POS_Transaction__c$Property_Short_Code__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Today POS Transaction</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>POS_Transaction__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>POS_Transaction__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Carpark transaction</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Carpark transactions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Date Time --></label>
+        <name>Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+        <relationshipLabel><!-- Carpark transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Car(s) --></label>
+        <name>Total_Car_s__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

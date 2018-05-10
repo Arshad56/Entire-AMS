@@ -1,0 +1,1039 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Unit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Units</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Project Manager&apos;s contact information. --></help>
+        <label><!-- Authorised Person 2 --></label>
+        <name>Authorised_Person_2__c</name>
+        <relationshipLabel><!-- Units (Authorised Person 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Contractor&apos;s contact information. --></help>
+        <label><!-- Authorised Person 1 --></label>
+        <name>Authorised_Person__c</name>
+        <relationshipLabel><!-- Units (Authorised Person) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- BOH Area (SQF) --></label>
+        <name>BOH_Area_SQF__c</name>
+    </fields>
+    <fields>
+        <label><!-- BOH Area (SQM) --></label>
+        <name>BOH_Area_SQM__c</name>
+    </fields>
+    <fields>
+        <label><!-- CT Meter No --></label>
+        <name>CT_Meter_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>1 Bedroom Executive</masterLabel>
+            <translation><!-- 1 Bedroom Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 Bay Suite</masterLabel>
+            <translation><!-- 2 Bay Suite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 Bedroom Executive</masterLabel>
+            <translation><!-- 2 Bedroom Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 Bay Suite</masterLabel>
+            <translation><!-- 3 Bay Suite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 Bay Shangri-la Suite</masterLabel>
+            <translation><!-- 5 Bay Shangri-la Suite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATM</masterLabel>
+            <translation><!-- ATM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adventure zone</masterLabel>
+            <translation><!-- Adventure zone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All-Day Dining</masterLabel>
+            <translation><!-- All-Day Dining --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Babaros Suite - Y1K</masterLabel>
+            <translation><!-- Babaros Suite - Y1K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ballroom</masterLabel>
+            <translation><!-- Ballroom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banquet Areas</masterLabel>
+            <translation><!-- Banquet Areas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bar</masterLabel>
+            <translation><!-- Bar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beauty Salon</masterLabel>
+            <translation><!-- Beauty Salon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bosphorus Duplex Suite - U1K</masterLabel>
+            <translation><!-- Bosphorus Duplex Suite - U1K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Centre</masterLabel>
+            <translation><!-- Business Centre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese</masterLabel>
+            <translation><!-- Chinese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counter</masterLabel>
+            <translation><!-- Counter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deluxe</masterLabel>
+            <translation><!-- Deluxe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deluxe Bosphorus Suite - X1K</masterLabel>
+            <translation><!-- Deluxe Bosphorus Suite - X1K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deluxe Bosphorus – DWK &amp; DWT</masterLabel>
+            <translation><!-- Deluxe Bosphorus – DWK &amp; DWT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deluxe City - DCK &amp; DCT</masterLabel>
+            <translation><!-- Deluxe City - DCK &amp; DCT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deluxe City View King</masterLabel>
+            <translation><!-- Deluxe City View King --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deluxe City View Twin</masterLabel>
+            <translation><!-- Deluxe City View Twin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deluxe King</masterLabel>
+            <translation><!-- Deluxe King --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deluxe King / Twin</masterLabel>
+            <translation><!-- Deluxe King / Twin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deluxe King / Twin / Queen</masterLabel>
+            <translation><!-- Deluxe King / Twin / Queen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deluxe Sea View Twin (Grand Villa)</masterLabel>
+            <translation><!-- Deluxe Sea View Twin (Grand Villa) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deluxe Suite</masterLabel>
+            <translation><!-- Deluxe Suite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deluxe Suite King</masterLabel>
+            <translation><!-- Deluxe Suite King --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deluxe Twin</masterLabel>
+            <translation><!-- Deluxe Twin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deluxe –DXK &amp; DXT</masterLabel>
+            <translation><!-- Deluxe –DXK &amp; DXT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Double Room</masterLabel>
+            <translation><!-- Double Room --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive</masterLabel>
+            <translation><!-- Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Bosphorus Suite - VWK</masterLabel>
+            <translation><!-- Executive Bosphorus Suite - VWK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive King</masterLabel>
+            <translation><!-- Executive King --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive King / Twin</masterLabel>
+            <translation><!-- Executive King / Twin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive King / Twin / Queen</masterLabel>
+            <translation><!-- Executive King / Twin / Queen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Suite</masterLabel>
+            <translation><!-- Executive Suite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Suite (2 Bay King Suite)</masterLabel>
+            <translation><!-- Executive Suite (2 Bay King Suite) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Suite - VEK</masterLabel>
+            <translation><!-- Executive Suite - VEK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Suite King (Grand Villa)</masterLabel>
+            <translation><!-- Executive Suite King (Grand Villa) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Twin</masterLabel>
+            <translation><!-- Executive Twin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F&amp;B Store</masterLabel>
+            <translation><!-- F&amp;B Store --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Function Room</masterLabel>
+            <translation><!-- Function Room --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grand Premier - GRK</masterLabel>
+            <translation><!-- Grand Premier - GRK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grand Premier Bosphorus - GWK</masterLabel>
+            <translation><!-- Grand Premier Bosphorus - GWK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greeting Facilities</masterLabel>
+            <translation><!-- Greeting Facilities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guangxi Suites</masterLabel>
+            <translation><!-- Guangxi Suites --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Club</masterLabel>
+            <translation><!-- Health Club --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Horizon Deluxe King</masterLabel>
+            <translation><!-- Horizon Deluxe King --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Horizon Deluxe King / Twin</masterLabel>
+            <translation><!-- Horizon Deluxe King / Twin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Horizon Deluxe Twin</masterLabel>
+            <translation><!-- Horizon Deluxe Twin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Horizon Executive King</masterLabel>
+            <translation><!-- Horizon Executive King --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Horizon Executive Suite King</masterLabel>
+            <translation><!-- Horizon Executive Suite King --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Horizon Executive Suite Twin</masterLabel>
+            <translation><!-- Horizon Executive Suite Twin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Horizon King</masterLabel>
+            <translation><!-- Horizon King --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Horizon King / Twin</masterLabel>
+            <translation><!-- Horizon King / Twin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Horizon Premier King</masterLabel>
+            <translation><!-- Horizon Premier King --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Horizon Premier Twin</masterLabel>
+            <translation><!-- Horizon Premier Twin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Horizon Specialty Suite</masterLabel>
+            <translation><!-- Horizon Specialty Suite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Horizon Twin</masterLabel>
+            <translation><!-- Horizon Twin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality/Horizon Lounge</masterLabel>
+            <translation><!-- Hospitality/Horizon Lounge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese</masterLabel>
+            <translation><!-- Japanese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lobby Lounge</masterLabel>
+            <translation><!-- Lobby Lounge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lounge</masterLabel>
+            <translation><!-- Lounge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Main Supporting Kitchen and Pastry</masterLabel>
+            <translation><!-- Main Supporting Kitchen and Pastry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Convertible King (W)</masterLabel>
+            <translation><!-- New Convertible King (W) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Recreation</masterLabel>
+            <translation><!-- Other Recreation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patisserie/Gourmet Shop</masterLabel>
+            <translation><!-- Patisserie/Gourmet Shop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier</masterLabel>
+            <translation><!-- Premier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier Bosphorus – RWK &amp; RWT</masterLabel>
+            <translation><!-- Premier Bosphorus – RWK &amp; RWT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier City View King</masterLabel>
+            <translation><!-- Premier City View King --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier City View Twin</masterLabel>
+            <translation><!-- Premier City View Twin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier King</masterLabel>
+            <translation><!-- Premier King --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier King / Twin</masterLabel>
+            <translation><!-- Premier King / Twin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier Twin</masterLabel>
+            <translation><!-- Premier Twin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>President Suites</masterLabel>
+            <translation><!-- President Suites --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presidential Suite (Beijing Suite, Grand Villa)</masterLabel>
+            <translation><!-- Presidential Suite (Beijing Suite, Grand Villa) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presidential suite</masterLabel>
+            <translation><!-- Presidential suite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular Suites-Haikou Suites</masterLabel>
+            <translation><!-- Regular Suites-Haikou Suites --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Apartment</masterLabel>
+            <translation><!-- Service Apartment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Apartment (1 Bedroom)</masterLabel>
+            <translation><!-- Service Apartment (1 Bedroom) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Apartment (2 Bedroom)</masterLabel>
+            <translation><!-- Service Apartment (2 Bedroom) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Apartment (Studio)</masterLabel>
+            <translation><!-- Service Apartment (Studio) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Apartment 1 Bed room (1 King)</masterLabel>
+            <translation><!-- Service Apartment 1 Bed room (1 King) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Apartment 2 Bed room (1 King+1 foldable Bed)</masterLabel>
+            <translation><!-- Service Apartment 2 Bed room (1 King+1 foldable Bed) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Apartment 2 Bed room (2 King)</masterLabel>
+            <translation><!-- Service Apartment 2 Bed room (2 King) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Apartment 2 Bed room (2 King+1 Twin)</masterLabel>
+            <translation><!-- Service Apartment 2 Bed room (2 King+1 Twin) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Apartment 3 Bed room (2 King+1 Study)</masterLabel>
+            <translation><!-- Service Apartment 3 Bed room (2 King+1 Study) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Apartment 3 Bed room (2 King+1Twin)</masterLabel>
+            <translation><!-- Service Apartment 3 Bed room (2 King+1Twin) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shangri-La - Z2S</masterLabel>
+            <translation><!-- Shangri-La - Z2S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shangri-La Suites</masterLabel>
+            <translation><!-- Shangri-La Suites --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shop</masterLabel>
+            <translation><!-- Shop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Executive</masterLabel>
+            <translation><!-- Single Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Room</masterLabel>
+            <translation><!-- Single Room --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spa Treatment Room</masterLabel>
+            <translation><!-- Spa Treatment Room --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialty</masterLabel>
+            <translation><!-- Specialty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialty Suites</masterLabel>
+            <translation><!-- Specialty Suites --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialty Suites (3 Bay King Suite)</masterLabel>
+            <translation><!-- Specialty Suites (3 Bay King Suite) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialty Suites (4 Bay King Suite)</masterLabel>
+            <translation><!-- Specialty Suites (4 Bay King Suite) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialty Suites (Shangri-la)</masterLabel>
+            <translation><!-- Specialty Suites (Shangri-la) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialty Suites (Yangcheng)</masterLabel>
+            <translation><!-- Specialty Suites (Yangcheng) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialty Suites - Hainan Suites</masterLabel>
+            <translation><!-- Specialty Suites - Hainan Suites --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialty Suites - Shangri-la Suites</masterLabel>
+            <translation><!-- Specialty Suites - Shangri-la Suites --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard King</masterLabel>
+            <translation><!-- Standard King --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard King / Twin</masterLabel>
+            <translation><!-- Standard King / Twin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard King / Twin / Queen</masterLabel>
+            <translation><!-- Standard King / Twin / Queen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard Twin</masterLabel>
+            <translation><!-- Standard Twin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suite</masterLabel>
+            <translation><!-- Suite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Superior Sea View King</masterLabel>
+            <translation><!-- Superior Sea View King --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Superior Sea View Twin</masterLabel>
+            <translation><!-- Superior Sea View Twin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swimming Pool</masterLabel>
+            <translation><!-- Swimming Pool --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tennis Court</masterLabel>
+            <translation><!-- Tennis Court --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Twin Delux</masterLabel>
+            <translation><!-- Twin Delux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vila</masterLabel>
+            <translation><!-- Vila --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Charge Method --></label>
+        <name>Charge_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cuisine --></label>
+        <name>Cuisine__c</name>
+        <picklistValues>
+            <masterLabel>Chinese</masterLabel>
+            <translation><!-- Chinese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French</masterLabel>
+            <translation><!-- French --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese</masterLabel>
+            <translation><!-- Japanese --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Description of space --></help>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Efficiency --></label>
+        <name>Efficiency__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- FOH Area (SQF) --></label>
+        <name>FOH_Area_SQF__c</name>
+    </fields>
+    <fields>
+        <label><!-- FOH Area (SQM) --></label>
+        <name>FOH_Area_SQM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Floor Plan --></label>
+        <name>Floor_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Floor --></label>
+        <name>Floor__c</name>
+        <picklistValues>
+            <masterLabel>Bare finish</masterLabel>
+            <translation><!-- Bare finish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tiled finish</masterLabel>
+            <translation><!-- Tiled finish --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please key in Forecast Charge for vacant unit --></help>
+        <label><!-- Forecast Charge --></label>
+        <name>Forecast_Charge__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please use &quot;;&quot; if more than one meter. (eg. xx123;xx124). --></help>
+        <label><!-- Gas Meter No --></label>
+        <name>Gas_Meter_No__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is an indicator that Takeover Checklist for this Unit has been generated with Line Items --></help>
+        <label><!-- Generated CheckList --></label>
+        <name>Generate_CheckList__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generate Lease Plans --></label>
+        <name>Generate_Lease_Plans__c</name>
+    </fields>
+    <fields>
+        <help><!-- A - Urban
+B - Suburban
+C - Others --></help>
+        <label><!-- Group Hub --></label>
+        <name>Group_Hub__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Horse Power --></label>
+        <name>Horse_Power__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Renovation Period --></label>
+        <name>Last_Renovation_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- LegacyId --></label>
+        <name>LegacyId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level --></label>
+        <name>Level__c</name>
+        <relationshipLabel><!-- Units --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Line Loss --></label>
+        <name>Line_Loss__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+        <relationshipLabel><!-- Units --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Unit --></label>
+        <name>Main_Unit__c</name>
+        <relationshipLabel><!-- Units --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Module --></label>
+        <name>Mobile_Module__c</name>
+    </fields>
+    <fields>
+        <label><!-- NLA (SQF) --></label>
+        <name>NLA_SQF__c</name>
+    </fields>
+    <fields>
+        <label><!-- NLA (SQM) --></label>
+        <name>NLA_SQM__c</name>
+    </fields>
+    <fields>
+        <help><!-- The No. of the Unit No. --></help>
+        <label><!-- No. --></label>
+        <name>No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occupancy --></label>
+        <name>Occupancy__c</name>
+    </fields>
+    <fields>
+        <label><!-- PDRs --></label>
+        <name>PDRs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partition --></label>
+        <name>Partition__c</name>
+    </fields>
+    <fields>
+        <help><!-- Landlord&apos;s contact 2 information. --></help>
+        <label><!-- Person In Charge 2 --></label>
+        <name>Person_In_Charge_2__c</name>
+        <relationshipLabel><!-- Units (Person In Charge 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Landlord&apos;s contact 1 information. --></help>
+        <label><!-- Person In Charge 1 --></label>
+        <name>Person_In_Charge__c</name>
+        <relationshipLabel><!-- Units (Operation In Charge) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Please use &quot;;&quot; if more than one extension no.. (eg. 1123;1124). --></help>
+        <label><!-- Phone Extension No --></label>
+        <name>Phone_Extension_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Power Factor --></label>
+        <name>Power_Factor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prefunction Area (SQF) --></label>
+        <name>Prefunction_Area_SQF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prefunction Area (SQM) --></label>
+        <name>Prefunction_Area_SQM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Month CT Meter End Unit --></label>
+        <name>Previous_Month_CT_Meter_End_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Month Sub Meter End Unit --></label>
+        <name>Previous_Month_Sub_Meter_End_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project In Charge --></label>
+        <name>Project_In_Charge__c</name>
+        <relationshipLabel><!-- Units --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Property Name Text --></label>
+        <name>Property_Name_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Short Code --></label>
+        <name>Property_Short_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+        <relationshipLabel><!-- Units --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- REVPAR --></label>
+        <name>REVPAR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>East</masterLabel>
+            <translation><!-- East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North</masterLabel>
+            <translation><!-- North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South</masterLabel>
+            <translation><!-- South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West</masterLabel>
+            <translation><!-- West --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renovation Scope --></label>
+        <name>Renovation_Scope__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Hurdle 1 --></label>
+        <name>Rent_Hurdle_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Hurdle 2 --></label>
+        <name>Rent_Hurdle_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Hurdle 3 --></label>
+        <name>Rent_Hurdle_3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rent Hurdle Rate * NLA (SQF) --></help>
+        <label><!-- Rent Hurdle Amount --></label>
+        <name>Rent_Hurdle_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Hurdle (Lower Limit) --></label>
+        <name>Rent_Hurdle_Lower_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Hurdle (Upper Limit) --></label>
+        <name>Rent_Hurdle_Upper_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent Hurdle Rate --></label>
+        <name>Rent_Hurdle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rental Budget per UOM --></label>
+        <name>Rental_Budget_per_UOM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Room Size (SQF) --></label>
+        <name>Room_Size_SQF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Room Size (SQM) --></label>
+        <name>Room_Size_SQM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seat Ratio --></label>
+        <name>Seat_Ratio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seats --></label>
+        <name>Seats__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shop Front --></label>
+        <name>Shop_Front__c</name>
+    </fields>
+    <fields>
+        <label><!-- Space Type --></label>
+        <name>Space_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Meter No --></label>
+        <name>Sub_Meter_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Space Type --></label>
+        <name>Sub_Space_Type__c</name>
+        <picklistValues>
+            <masterLabel>ATM</masterLabel>
+            <translation><!-- ATM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F&amp;B</masterLabel>
+            <translation><!-- F&amp;B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indoor</masterLabel>
+            <translation><!-- Indoor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outdoor</masterLabel>
+            <translation><!-- Outdoor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outdoor Trolley</masterLabel>
+            <translation><!-- Outdoor Trolley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Push Cart</masterLabel>
+            <translation><!-- Push Cart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stalls</masterLabel>
+            <translation><!-- Stalls --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vending Machine</masterLabel>
+            <translation><!-- Vending Machine --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub-Trade Category 1 --></label>
+        <name>Sub_Trade_Category_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Trade Category 2 --></label>
+        <name>Sub_Trade_Category_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Trade Category 3 --></label>
+        <name>Sub_Trade_Category_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Trade Category --></label>
+        <name>Sub_Trade_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Takeover Date --></label>
+        <name>Takeover_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Rental --></label>
+        <name>Target_Rental__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total GFA (SQF) --></label>
+        <name>Total_GFA_SQF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total GFA (SQM) --></label>
+        <name>Total_GFA_SQM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tower/Block --></label>
+        <name>Tower_Block__c</name>
+        <relationshipLabel><!-- Units --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Trade Category 1 --></label>
+        <name>Trade_Category_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Category 2 --></label>
+        <name>Trade_Category_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Category 3 --></label>
+        <name>Trade_Category_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Category --></label>
+        <name>Trade_Category__c</name>
+    </fields>
+    <fields>
+        <help><!-- License type information for casual leasing space --></help>
+        <label><!-- Type of License --></label>
+        <name>Type_of_License__c</name>
+    </fields>
+    <fields>
+        <label><!-- UOM --></label>
+        <name>UOM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Selling Point --></label>
+        <name>Unique_Selling_Point__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit Name --></label>
+        <name>Unit_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit No. --></label>
+        <name>Unit_No__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please use &quot;;&quot; if more than one meter. (eg. xx123;xx124). --></help>
+        <label><!-- Water Meter No --></label>
+        <name>Water_Meter_No__c</name>
+    </fields>
+    <layouts>
+        <layout>Hotel Layout</layout>
+        <sections>
+            <label><!-- Area information --></label>
+            <section>Area information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Other Section --></label>
+            <section>Other Section</section>
+        </sections>
+        <sections>
+            <label><!-- Statics --></label>
+            <section>Statics</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Read Only Unit Layout</layout>
+        <sections>
+            <label><!-- Budget &amp; Forecast --></label>
+            <section>Budget &amp; Forecast</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Other Meter Information --></label>
+            <section>Other Meter Information</section>
+        </sections>
+        <sections>
+            <label><!-- Picture --></label>
+            <section>Picture</section>
+        </sections>
+        <sections>
+            <label><!-- Takeover Information --></label>
+            <section>Takeover Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Unit Layout</layout>
+        <sections>
+            <label><!-- Allowable Trade Category --></label>
+            <section>Allowable Trade Category</section>
+        </sections>
+        <sections>
+            <label><!-- Budget &amp; Forecast --></label>
+            <section>Budget &amp; Forecast</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Other Meter Information --></label>
+            <section>Other Meter Information</section>
+        </sections>
+        <sections>
+            <label><!-- Picture --></label>
+            <section>Picture</section>
+        </sections>
+        <sections>
+            <label><!-- Takeover Information --></label>
+            <section>Takeover Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Hotel --></label>
+        <name>Hotel</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Mall --></label>
+        <name>Mall</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Office --></label>
+        <name>Office</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter Unit Name --></errorMessage>
+        <name>Enter_Unit_Name_in_case_of_FnB</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Generate_Takeover_CheckList --></label>
+        <name>Generate_Takeover_CheckList</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Unit --></label>
+        <name>New_Unit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SFDC_Link --></label>
+        <name>SFDC_Link</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Split_Unit --></label>
+        <name>Split_Unit</name>
+    </webLinks>
+</CustomObjectTranslation>

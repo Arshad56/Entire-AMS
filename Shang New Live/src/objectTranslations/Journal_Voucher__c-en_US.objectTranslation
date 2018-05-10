@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Journal Voucher</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Journal Vouchers</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount Indicator --></label>
+        <name>Amount_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Receipt --></label>
+        <name>Cash_Receipt__c</name>
+        <relationshipLabel><!-- Journal Vouchers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Company --></label>
+        <name>Company__c</name>
+        <relationshipLabel><!-- Journal Vouchers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit --></label>
+        <name>Deposit__c</name>
+        <relationshipLabel><!-- Journal Vouchers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Document Description --></label>
+        <name>Document_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fiscal Period --></label>
+        <name>Fiscal_Period__c</name>
+        <relationshipLabel><!-- Journal Vouchers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoice Line Item --></label>
+        <name>Invoice_Line_Item__c</name>
+        <relationshipLabel><!-- Journal Vouchers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoice --></label>
+        <name>Invoice__c</name>
+        <relationshipLabel><!-- Journal Vouchers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Journal Batch --></label>
+        <name>Journal_Batch__c</name>
+        <relationshipLabel><!-- Journal Vouchers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Payment Voucher --></label>
+        <name>Payment_Voucher__c</name>
+        <relationshipLabel><!-- Journal Vouchers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Posting Allowed --></label>
+        <name>Posting_Allowed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Posting Date --></label>
+        <name>Posting_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Posting Status --></label>
+        <name>Posting_Status__c</name>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Posted</masterLabel>
+            <translation><!-- Posted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unposted</masterLabel>
+            <translation><!-- Unposted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Void</masterLabel>
+            <translation><!-- Void --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rollup Cr Amount --></label>
+        <name>Rollup_Cr_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rollup Dr Amount --></label>
+        <name>Rollup_Dr_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tenant Id based on JV type --></help>
+        <label><!-- Tenant Id --></label>
+        <name>Tenant_Id__c</name>
+    </fields>
+    <layouts>
+        <layout>Journal Voucher Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

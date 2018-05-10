@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Translation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Translations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Checklist Item --></label>
+        <name>Checklist_Item__c</name>
+        <relationshipLabel><!-- Translations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Checklist Master Item --></label>
+        <name>Checklist_Master_Item__c</name>
+        <relationshipLabel><!-- Translations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Checklist Master --></label>
+        <name>Checklist_Master__c</name>
+        <relationshipLabel><!-- Translations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Checklist --></label>
+        <name>Checklist__c</name>
+        <relationshipLabel><!-- Translations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Condition --></label>
+        <name>Condition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label Description --></label>
+        <name>Label_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language --></label>
+        <name>Language__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short Label --></label>
+        <name>Short_Label__c</name>
+    </fields>
+    <layouts>
+        <layout>Checklist Labels Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Lookup Section --></label>
+            <section>Lookup Section</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

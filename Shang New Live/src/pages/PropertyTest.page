@@ -1,0 +1,17 @@
+<apex:page standardController="Account" showHeader="false" sidebar="false">
+
+<script language='javascript' async='true' type='text/javascript' src='//whatfix.com/embed/embed.nocache.js'></script>
+
+<script language='javascript'>
+window._wfx_widget={
+    "color":"#0088C3", 
+    "position":"rtm", 
+    "label":"WIND AMS Help",
+    "title":"WIND AMS Help",
+    "mode":"live",
+    "ent_id":"f48eff70-ad2b-11e6-993b-04013d24cf02",
+    "order":["f48eff70-ad2b-11e6-993b-04013d24cf02","6ef39080-696b-11e3-9d2e-386077c653fe"]
+};
+</script>
+
+</apex:page>

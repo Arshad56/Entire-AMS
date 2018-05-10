@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Lease_Unit__c.Lease_Charges__r$Id</field>
+    </columns>
+    <columns>
+        <field>Lease_Unit__c$Unit__c</field>
+    </columns>
+    <columns>
+        <field>Lease_Unit__c.Lease_Charges__r$Unit_Area__c</field>
+    </columns>
+    <columns>
+        <field>Lease_Unit__c$Tenant__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Lease_Unit__c$Property_Short_Code__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>JMT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lease_Unit__c.Lease_Charges__r$Charge_Type__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>GTO Rent</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>Lease Charge with Units</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Lease_Units_with_Lease_Charges__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Lease_Unit__c$Actual_Trading_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

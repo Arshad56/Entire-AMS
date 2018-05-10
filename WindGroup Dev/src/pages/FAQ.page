@@ -1,0 +1,78 @@
+<apex:page controller="FAQController" id="pg" sidebar="false">
+    <apex:form id="frm">
+    <center><div style="font-size:18px;padding-top: 10px; padding-right: 30px; padding-bottom: 10px; padding-left: 80px;">FAQ</div></center>
+      <apex:pageBlock title="Find Me A Question & Answer!" mode="edit">
+
+
+
+  <table width="100%" border="0">
+  <tr>
+    <td width="200" valign="top">
+
+      <apex:pageBlock title="Parameters" mode="edit" id="criteria">
+
+      <script type="text/javascript">
+      function doSearch() {
+        searchServer(
+          document.getElementById("question").value,
+          document.getElementById("answer").value);
+      }
+      </script>
+
+      <apex:actionFunction name="searchServer" action="{!runSearch}" rerender="results,debug,errors">
+          <apex:param name="Question__c" value="" />
+          <apex:param name="Answer__c" value="" />
+        
+        
+      </apex:actionFunction>
+
+      <table cellpadding="0" cellspacing="0">
+      <tr>
+        <td style="font-weight:bold;">QUESTION<br/>
+        <input type="text" id="question" onkeyup="doSearch();"/>
+        </td>
+      </tr>
+      <tr>
+        <td style="font-weight:bold;">ANSWER<br/>
+       <input type="text" id="answer" onkeyup="doSearch();"/>
+        </td>
+      </tr>
+            </table>
+
+      </apex:pageBlock>
+
+    </td>
+    <td valign="top">
+
+    <apex:pageBlock mode="edit" id="results">
+
+        <apex:pageBlockTable value="{!faq}" var="faqs">
+
+            <apex:column >
+                <apex:facet name="header">
+                    <apex:commandLink value="Question" action="{!toggleSort}" rerender="results,debug">
+                        <apex:param name="sortField" value="question" assignTo="{!sortField}"/>
+                    </apex:commandLink>
+                </apex:facet>
+
+            </apex:column>
+
+            <apex:column >
+                <apex:facet name="header">
+                    <apex:commandLink value="Answer" action="{!toggleSort}" rerender="results,debug">
+                        <apex:param name="sortField" value="answer" assignTo="{!sortField}"/>
+                    </apex:commandLink>
+                </apex:facet>
+
+            </apex:column>
+        </apex:pageBlockTable>
+
+    </apex:pageBlock>
+
+    </td>
+  </tr>
+  </table>
+        
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

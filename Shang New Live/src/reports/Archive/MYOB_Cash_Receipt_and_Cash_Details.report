@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Cash_Receipts__r.Cash_Details__r$Invoice__c</field>
+    </columns>
+    <columns>
+        <field>Account$Customer_Code__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cash_Receipts__r.Cash_Details__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Cash_Receipts__r.Cash_Details__r$Remarks__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cash_Receipts__r.Cash_Details__r$Payment_Mode__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cash_Receipts__r$Payment_Currency__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cash_Receipts__r.Cash_Details__r$Parent_Exchange_Rate__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cash_Receipts__r$Remarks__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cash_Receipts__r.Cash_Details__r$Amount_Paid__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>Account.Cash_Receipts__r$Property__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Junction Maw Tin</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cash_Receipts__r$Property__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Junction City</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>MYOB Cash Receipt and Cash Details</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Cash_Receipt_and_Cash_Details__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

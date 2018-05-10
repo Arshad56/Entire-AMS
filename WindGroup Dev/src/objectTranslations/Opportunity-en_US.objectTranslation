@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Letter of Intent</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Letters of Intent</value>
+    </caseValues>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Access</value>
+        </caseValues>
+        <name>opportunity_access</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Access Level</value>
+        </caseValues>
+        <name>opportunity_access_level</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Alert</value>
+        </caseValues>
+        <name>opportunity_alert</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Amount</value>
+        </caseValues>
+        <name>opportunity_amount</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent-based Briefcase</value>
+        </caseValues>
+        <name>opportunity_based_briefcase</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Close Date</value>
+        </caseValues>
+        <name>opportunity_close_date</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Closed</value>
+        </caseValues>
+        <name>opportunity_closed</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Competitor</value>
+        </caseValues>
+        <name>opportunity_competitor</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Competitor Report</value>
+        </caseValues>
+        <name>opportunity_competitor_report</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Contact</value>
+        </caseValues>
+        <name>opportunity_contact</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Contact Report</value>
+        </caseValues>
+        <name>opportunity_contact_report</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Contact Role</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Letter of Intent Contact Roles</value>
+        </caseValues>
+        <name>opportunity_contact_role</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Creator</value>
+        </caseValues>
+        <name>opportunity_creator</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Currency</value>
+        </caseValues>
+        <name>opportunity_currency</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Description</value>
+        </caseValues>
+        <name>opportunity_description</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Detail Page</value>
+        </caseValues>
+        <name>opportunity_detail_page</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Division</value>
+        </caseValues>
+        <name>opportunity_division</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Edit</value>
+        </caseValues>
+        <name>opportunity_edit</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Field</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Letter of Intent Fields</value>
+        </caseValues>
+        <name>opportunity_field</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Field History</value>
+        </caseValues>
+        <name>opportunity_field_history</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Field History ID</value>
+        </caseValues>
+        <name>opportunity_field_history_id</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Field History Report</value>
+        </caseValues>
+        <name>opportunity_field_history_report</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Forecast</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Letter of Intent Forecasts</value>
+        </caseValues>
+        <name>opportunity_forecast</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Forecast Category</value>
+        </caseValues>
+        <name>opportunity_forecast_category</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Forecast Edit</value>
+        </caseValues>
+        <name>opportunity_forecast_edit</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent History</value>
+        </caseValues>
+        <name>opportunity_history</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent History ID</value>
+        </caseValues>
+        <name>opportunity_history_id</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent History Information</value>
+        </caseValues>
+        <name>opportunity_history_information</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent History Report</value>
+        </caseValues>
+        <name>opportunity_history_report</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent ID</value>
+        </caseValues>
+        <name>opportunity_id</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Info</value>
+        </caseValues>
+        <name>opportunity_info</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Information</value>
+        </caseValues>
+        <name>opportunity_information</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Lead Source</value>
+        </caseValues>
+        <name>opportunity_lead_source</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Line Item</value>
+        </caseValues>
+        <name>opportunity_line_item</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Line Item Field</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Letter of Intent Line Item Fields</value>
+        </caseValues>
+        <name>opportunity_line_item_field</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Line Item ID</value>
+        </caseValues>
+        <name>opportunity_line_item_id</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Name</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Letter of Intent Names</value>
+        </caseValues>
+        <name>opportunity_name</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Owner</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Letter of Intent Owners</value>
+        </caseValues>
+        <name>opportunity_owner</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Owner Alias</value>
+        </caseValues>
+        <name>opportunity_owner_alias</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Owner Email</value>
+        </caseValues>
+        <name>opportunity_owner_email</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Partner Report</value>
+        </caseValues>
+        <name>opportunity_partner_report</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Picklists</value>
+        </caseValues>
+        <name>opportunity_picklists</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Pipeline</value>
+        </caseValues>
+        <name>opportunity_pipeline</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Pipeline Trend</value>
+        </caseValues>
+        <name>opportunity_pipeline_trend</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Product Name</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Letter of Intent Product Names</value>
+        </caseValues>
+        <name>opportunity_product_name</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Quantity</value>
+        </caseValues>
+        <name>opportunity_quantity</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Record Type</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Letter of Intent Record Types</value>
+        </caseValues>
+        <name>opportunity_record_type</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Report</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Letter of Intent Reports</value>
+        </caseValues>
+        <name>opportunity_report</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Schedule Report</value>
+        </caseValues>
+        <name>opportunity_schedule_report</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Source</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Letter of Intent Sources</value>
+        </caseValues>
+        <name>opportunity_source</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Stage</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Letter of Intent Stages</value>
+        </caseValues>
+        <name>opportunity_stage</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Stage Duration Report</value>
+        </caseValues>
+        <name>opportunity_stage_duration_report</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Stage ID</value>
+        </caseValues>
+        <name>opportunity_stage_id</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Stage Name</value>
+        </caseValues>
+        <name>opportunity_stage_name</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Stage Status</value>
+        </caseValues>
+        <name>opportunity_stage_status</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Status</value>
+        </caseValues>
+        <name>opportunity_status</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Team</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Letter of Intent Teams</value>
+        </caseValues>
+        <name>opportunity_team</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Team Member</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Letter of Intent Team Members</value>
+        </caseValues>
+        <name>opportunity_team_member</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Team Member Field</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Letter of Intent Team Member Fields</value>
+        </caseValues>
+        <name>opportunity_team_member_field</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Team Member ID</value>
+        </caseValues>
+        <name>opportunity_team_member_id</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letters of Intent with Oppportunity Teams and Products Report</value>
+        </caseValues>
+        <name>opportunity_team_product_report</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Team Report</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Letter of Intent Team Reports</value>
+        </caseValues>
+        <name>opportunity_team_report</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Territory</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Letter of Intent Territories</value>
+        </caseValues>
+        <name>opportunity_territory</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Territory</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Letter of Intent Territories</value>
+        </caseValues>
+        <name>opportunity_territory2</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Territory</value>
+        </caseValues>
+        <name>opportunity_territory_report</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Trend</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Letter of Intent Trends</value>
+        </caseValues>
+        <name>opportunity_trend</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Trend Information</value>
+        </caseValues>
+        <name>opportunity_trend_information</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Trend Report</value>
+        </caseValues>
+        <name>opportunity_trend_report</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent Type</value>
+        </caseValues>
+        <name>opportunity_type</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Letter of Intent View</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Letter of Intent Views</value>
+        </caseValues>
+        <name>opportunity_view</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Budget Confirmed --></label>
+        <name>Budget_Confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discovery Completed --></label>
+        <name>Discovery_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loss Reason --></label>
+        <name>Loss_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Lost to Competitor</masterLabel>
+            <translation><!-- Lost to Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Budget / Lost Funding</masterLabel>
+            <translation><!-- No Budget / Lost Funding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Decision / Non-Responsive</masterLabel>
+            <translation><!-- No Decision / Non-Responsive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ROI Analysis Completed --></label>
+        <name>ROI_Analysis_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason --></label>
+        <name>Reason__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Vowel</startsWith>
+    <webLinks>
+        <label><!-- Conga_Composer_Composer_SP_Proposal --></label>
+        <name>Conga_Composer_Composer_SP_Proposal</name>
+    </webLinks>
+</CustomObjectTranslation>

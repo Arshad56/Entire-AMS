@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Invoice Refund Approved Notification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CN Refund Approved</name>
+    <style>none</style>
+    <subject>Notification: Your Credit Note Refund: {!Invoice__c.Name} Request is approved</subject>
+    <type>text</type>
+</EmailTemplate>

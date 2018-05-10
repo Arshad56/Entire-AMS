@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>IF ( Rent_Schedules__c.Transaction_Unit__c:SUM= 0, 0,
+IF ( Rent_Schedules__c.Area_ft__c:SUM= 0, 0,
+
+
+Rent_Schedules__c.Transaction_Unit__c:SUM / Rent_Schedules__c.Area_ft__c:SUM))</calculatedFormula>
+        <datatype>currency</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>GTO psf</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>IF ( Rent_Schedules__c.Current_Base_Rent__c:SUM= 0,0, 
+IF ( Rent_Schedules__c.Transaction_Unit__c:SUM= 0,0,
+ 
+Rent_Schedules__c.Current_Base_Rent__c:SUM / Rent_Schedules__c.Transaction_Unit__c:SUM))</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Occupancy Cost</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Rent_Schedules__c.Amount__c</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Rent_Schedules__c.Start_Date__c</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Rent_Schedules__c.Lease_Charge__c</field>
+    </columns>
+    <columns>
+        <field>Rent_Schedules__c.Charge_Type__c</field>
+    </columns>
+    <columns>
+        <field>CUST_RECORDTYPE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Rent_Schedules__c.Area_ft__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Rent_Schedules__c.Amount__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Rent_Schedules__c.Transaction_Unit__c</field>
+    </columns>
+    <description>(Last month)</description>
+    <filter>
+        <criteriaItems>
+            <column>Rent_Schedules__c.Charge_Type__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>GTO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Lease_Unit__c.Property__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Junction Maw Tin</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>Rent_Schedules__c.Start_Date__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Rent_Schedules__c.Property__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Summary of GTO (Last month)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Rent_Schedules__c@Rent_Schedules__c.Lease_Unit__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Rent_Schedules__c.Start_Date__c</dateColumn>
+        <endDate>2017-04-25</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-11-01</startDate>
+    </timeFrameFilter>
+</Report>

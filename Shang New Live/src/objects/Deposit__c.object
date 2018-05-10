@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Created for AMS process to manage Deposit Amount under a Lease Unit, will be linked to Lease Charge too.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Tenant</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Deposits</relationshipLabel>
+        <relationshipName>Deposits</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Paid_Foreign__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount Paid (Foreign)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Amount_Paid_Local__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount Paid (Local)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Amount_Paid__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll-up from related Cash Details</inlineHelpText>
+        <label>Amount Paid</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Approved_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Approved Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Charge_Method__c</fullName>
+        <description>This is used to separate user data access.</description>
+        <externalId>false</externalId>
+        <label>Charge Method</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Charge_Method</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Currency_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Currency Code</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Currency_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Deposit_Amount_Foreign__c</fullName>
+        <externalId>false</externalId>
+        <label>Deposit Amount (Foreign)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deposit_Amount_Local__c</fullName>
+        <externalId>false</externalId>
+        <label>Deposit Amount (Local)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deposit_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Deposit Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Deposit_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Deposit Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Deposit_Formula_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Deposit Formula Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>By Base Rent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>By Area</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>By Fixed</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Deposit_Generated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Deposit Generated</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Deposit_Index__c</fullName>
+        <externalId>false</externalId>
+        <label>Deposit Index</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deposit_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Deposit Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deposit_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Deposit Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fit-out</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Renovation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Security</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Formula Description from related Lease Charge</inlineHelpText>
+        <label>Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Exchange_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Exchange Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>JV_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>JV Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>JV_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LOI_Unit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>LOI Unit</label>
+        <referenceTo>LOI_Unit__c</referenceTo>
+        <relationshipLabel>Deposits</relationshipLabel>
+        <relationshipName>Deposits</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LOI__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>LOI</label>
+        <referenceTo>LOI__c</referenceTo>
+        <relationshipLabel>Deposits</relationshipLabel>
+        <relationshipName>Deposits</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Landlord__c</fullName>
+        <externalId>false</externalId>
+        <formula>if( Lease__r.Property__r.Landlord__c  != null , 
+CASESAFEID(Lease__r.Property__r.Landlord__c ), 
+CASESAFEID( LOI__r.Property__r.Landlord__c ) 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Landlord</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lease_Charge__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Show related Lease Unit&apos;s &gt; Lease Charges with Type as &apos;LOI&apos;</inlineHelpText>
+        <label>Lease Charge</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Lease_Charges__c.Lease_Unit__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.Lease_Unit__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Lease_Charges__c</referenceTo>
+        <relationshipLabel>Deposits</relationshipLabel>
+        <relationshipName>Deposit_Charges</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Lease_Unit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lease Unit</label>
+        <referenceTo>Lease_Unit__c</referenceTo>
+        <relationshipName>Deposit_Charges</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Lease__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lease</label>
+        <referenceTo>Lease__c</referenceTo>
+        <relationshipLabel>Deposits</relationshipLabel>
+        <relationshipName>Deposits</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Months__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Months</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Outstanding_Amount_Foreign__c</fullName>
+        <externalId>false</externalId>
+        <label>Outstanding Amount (Foreign)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Outstanding_Amount_Local__c</fullName>
+        <externalId>false</externalId>
+        <label>Outstanding Amount (Local)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Outstanding_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Deposit_Amount__c  -  Amount_Paid__c) -  Total_Refunded_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>(Deposit Amount - Amount Paid) - Total Refunded Amount</inlineHelpText>
+        <label>Outstanding Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PV_Currency_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Refund Currency Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>MMK</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Payment_Due_Date__c</fullName>
+        <description>Deposit Date + 7 to be generated from system on creation</description>
+        <externalId>false</externalId>
+        <label>Payment Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Property_Name_Text__c</fullName>
+        <description>This field is populated by W/F rule</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is populated by W/F rule</inlineHelpText>
+        <label>Property Name Text</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Lease_Unit__r.Lease_Agreement_No__r.Property__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Lease Unit &gt; Lease Agreement &gt; Property</inlineHelpText>
+        <label>Property ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Refund_Mode__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Refund Mode</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Refund_Mode</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Refund_Status__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Refund Status should be &apos;Requested&apos; with Requested Amount to Submit for an Approval</inlineHelpText>
+        <label>Last Refund Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Refund_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Remaining_Deposit__c</fullName>
+        <externalId>false</externalId>
+        <formula>Amount_Paid__c  - Total_Refunded_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Amount Paid - Total Refunded Amount</inlineHelpText>
+        <label>Remaining Deposit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Requested_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Requested Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>Status managed by Approval Process
+In-Review, Approved and Rejected</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Submitted</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Balance</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Paid</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Outstanding</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Partially Paid</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tenant_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(Lease__r.Tenant__r.Name != null,
+Lease__r.Tenant__r.Name,
+LOI__r.Tenant__r.Name
+)</formula>
+        <label>Tenant Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tenant__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Lease_Unit__r.Lease_Agreement_No__r.Tenant__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Lease Unit &gt; Lease Agreement &gt; Tenant</inlineHelpText>
+        <label>Tenant ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Refunded_Amount__c</fullName>
+        <description>Managed by Trigger on Deposit Refund</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll-up from related Deposit Refund</inlineHelpText>
+        <label>Total Refunded Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Unit__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lease_Unit__r.Unit__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Unit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Void_Datetime__c</fullName>
+        <externalId>false</externalId>
+        <label>Void Datetime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Void_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Void Reason</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Voided__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Voided</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Deposit</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Currency_Code__c</columns>
+        <columns>Deposit_Amount__c</columns>
+        <columns>Status__c</columns>
+        <columns>Total_Refunded_Amount__c</columns>
+        <columns>Charge_Method__c</columns>
+        <columns>Lease__c</columns>
+        <columns>Lease_Charge__c</columns>
+        <columns>Lease_Unit__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Deposit ID</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Deposits</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <webLinks>
+        <fullName>Deposit</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Refund</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>if({!Deposit__c.Voided__c}){ 
+alert(&quot;Deposit is already voided so it cannot be refunded.&quot;); 
+}else if({!(ISBLANK(Deposit__c.Amount_Paid__c) || Deposit__c.Amount_Paid__c=0)}){ 
+alert(&quot;No available deposit amount for refund.&quot;); 
+}else{ 
+window.location=&apos;/apex/DepositRefund?id={!Deposit__c.Id}&apos;; 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Generate_Pdf</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate PDF</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/apex.js&quot;)}
+
+if (&apos;{!Deposit__c.Deposit_Generated__c}&apos; == &apos;1&apos;){
+   alert(&quot;Deposit is already Generated&quot;);
+}else{
+   var r = confirm(&quot;Are you sure you want to Generated this Deposit?&quot;);
+   if(r == true){
+	   
+               var depObj = new sforce.SObject(&quot;Deposit__c&quot;);
+	   depObj.Id = &apos;{!Deposit__c.Id}&apos;;
+	   depObj.Deposit_Generated__c = true;
+            var result = sforce.connection.update([depObj]);
+		location.reload(true);
+   }
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Deposit</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Deposit</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!$Site.BaseUrl}/a0Y/e?Name=--System Generated--&amp;CF00N7F00000HCf6Y={!Lease_Unit__c.Name}&amp;CF00N7F00000HCf6Y_lkid={!Lease_Unit__c.Id}&amp;retURL=%2F{!Lease_Unit__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Un_Void</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Un-Void</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/apex.js&quot;)}
+
+if((&apos;{!Deposit__c.Voided__c}&apos; != &apos;1&apos;)){ 
+alert(&apos;Only voided Deposits can be Un-Voided.&apos;);  
+}else{  
+var r = confirm(&quot;Are you sure you want to Un-Void this Deposit?&quot;); 
+if(r == true){ 
+	var depObj = new sforce.SObject(&quot;Deposit__c&quot;); 
+	depObj.Id = &apos;{!Deposit__c.Id}&apos;; 
+	depObj.Void_Reason__c = null; 
+	depObj.Voided__c = false; 
+        depObj.Void_Datetime__c = null;
+	var result = sforce.connection.update([depObj]); 
+	location.reload(true); 
+} 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>View_PDF</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>View PDF</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/apex.js&quot;)} 
+
+var DT = &apos;{!DATETIMEVALUE(Deposit__c.CreatedDate)}&apos; 
+var DTStr = DT.split(&quot; &quot;); 
+var DTStr1 = DTStr[0].split(&quot;/&quot;); 
+var DTStr2 = DTStr[1].split(&quot;:&quot;); 
+
+vardtCode = DTStr1[2]+DTStr1[1]+parseInt(DTStr1[0])+DTStr2[0] 
+
+var depId = &apos;{!Deposit__c.Id}&apos;; 
+var strQuery = &quot;Select Id,Lease__r.Name,Lease_Unit__r.Unit__r.Name from Deposit__c where Id =&apos;&quot; + depId + &quot;&apos;&quot;; 
+var records = sforce.connection.query(strQuery).getArray(&quot;records&quot;); 
+
+var depCode = records[0].Lease__r.Name+&apos; - &apos;; 
+depCode += records[0].Lease_Unit__r.Unit__r.Name+&apos; - &apos;; 
+depCode += vardtCode; 
+depCode += &apos;.PDF&apos;; 
+
+strQuery = &quot;SELECT Id FROM Attachment where ParentId =&apos;&quot; +depId+&quot;&apos; Limit 1&quot;; 
+console.log(strQuery ); 
+records = sforce.connection.query(strQuery).getArray(&quot;records&quot;); 
+console.log(records); 
+if(records.length &gt; 0){ 
+window.open(&apos;/servlet/servlet.FileDownload?file=&apos;+records[0].Id, &apos;_blank &apos;); 
+}else{ 
+alert(&apos;Attachment Not found. Please make sure Attachment is generated.&apos;); 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Void</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Void</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/apex.js&quot;)} 
+if((&apos;{!Deposit__c.Voided__c}&apos; == &apos;1&apos;)){ 
+	alert(&apos;This Deposit is already Voided.&apos;); 
+}else if(&apos;{!Deposit__c.Status__c}&apos; == &apos;Cancelled&apos; || &apos;{!Deposit__c.Status__c}&apos; == &apos;Rejected&apos;){
+	alert(&apos;Cancelled or Rejected Deposits can\&apos;t be Voided.&apos;); 
+}else if(&apos;{!Deposit__c.Amount_Paid__c}&apos;!=&apos;$0.00&apos; &amp;&amp; &apos;{!Deposit__c.Amount_Paid__c}&apos;!= &apos;&apos;){
+	alert(&apos;Deposit already paid, can\&apos;t be Voided.&apos;); 
+}else{ 
+	if((&apos;{!Deposit__c.Amount_Paid__c}&apos;==&apos;$0.00&apos; || &apos;{!Deposit__c.Amount_Paid__c}&apos;==&apos;&apos;) &amp;&amp; (&apos;{!Deposit__c.Status__c}&apos; != &apos;Cancelled&apos; &amp;&amp; &apos;{!Deposit__c.Status__c}&apos; != &apos;Rejected&apos;)){ 
+		var r = confirm(&quot;Are you sure you want to Void this Invoice?&quot;); 
+
+		if(r == true){ 
+			var retVal; 
+			while (retVal == null || retVal == &apos;&apos;) { 
+			retVal = prompt(&quot;Please Enter Void Reason* (mandatory):&quot;, &quot;&quot;); 
+			if(retVal === null){ 
+				break; 
+			} 
+			} 
+			if(retVal === null){ 
+
+			}else{ 
+				var depObj = new sforce.SObject(&quot;Deposit__c&quot;); 
+				depObj.Id = &apos;{!Deposit__c.Id}&apos;; 
+				depObj.Void_Reason__c = retVal; 
+				depObj.Voided__c = true; 
+                                depObj.Void_Datetime__c = new Date().toISOString(); 
+				var result = sforce.connection.update([depObj]); 
+				location.reload(true); 
+			}
+		}
+	}
+}</url>
+    </webLinks>
+</CustomObject>

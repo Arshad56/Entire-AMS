@@ -1,0 +1,38 @@
+<!-- This component represents list of DocuSign statuses -->
+<aura:component access="public">
+
+    <!-- Internal properties -->
+    <aura:attribute name="envelopesList" type="Object" access="public" /> <!-- This is List<UIEnvelope> -->
+
+    <!-- Component body starts here -->
+    <table class="slds-table slds-table--bordered slds-table--fixed-layout" role="treegrid" aria-owns="tree0-node0 tree0-node1 tree0-node2 tree0-node3" aria-readonly="true">
+        <!--Table header-->
+        <thead>
+            <tr class="slds-text-title--caps">
+                <th class="slds-cell-buffer--left" scope="col">
+                    <div class="slds-truncate" title="Document Subject">Document Subject</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="From">From</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Last Activity">Last Activity</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Status">Status</div>
+                </th>
+            </tr>
+        </thead>
+        <!--Table body -->
+        <tbody>
+            <!-- Iterate over all the envelope list -->
+            <aura:iteration items="{!v.envelopesList}" var="envelope">
+
+                <!--And show them in a separate component -->
+                <dsfslt:DocuSignStatusRow envelope="{!envelope}" />
+            </aura:iteration>
+        </tbody>
+    </table>
+    <!-- Component body ends here -->
+
+</aura:component>

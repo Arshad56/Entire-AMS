@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>LOI Template</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>LOI Templates</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Trading Date --></label>
+        <name>Actual_Trading_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Area (Sq.Ft) --></label>
+        <name>Area_Sq_Ft__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorised Person --></label>
+        <name>Authorised_Person__c</name>
+        <relationshipLabel><!-- LOI Templates (Authorised Person) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Charge Method --></label>
+        <name>Charge_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day(s) in expired --></label>
+        <name>Day_s_in_expired__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extended --></label>
+        <name>Extended__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extension Date --></label>
+        <name>Extension_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fit Out Date --></label>
+        <name>Fit_Out_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generate CheckList --></label>
+        <name>Generate_CheckList__c</name>
+    </fields>
+    <fields>
+        <label><!-- Handover Date --></label>
+        <name>Handover_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Handover Signed-off --></label>
+        <name>Handover_Signed_off__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOI Template Name --></label>
+        <name>LOI_Unit_Template_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level --></label>
+        <name>Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original End Date --></label>
+        <name>Original_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person In Charge --></label>
+        <name>Person_In_Charge__c</name>
+        <relationshipLabel><!-- LOI Templates (Person In Charge) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pre-Termination --></label>
+        <name>Pre_Termination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property_Lookup__c</name>
+        <relationshipLabel><!-- LOI Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Property Name Text --></label>
+        <name>Property_Name_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Short Code --></label>
+        <name>Property_Short_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for Termination --></label>
+        <name>Reason_for_Termination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Space Type Text --></label>
+        <name>Space_Type_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Space Type --></label>
+        <name>Space_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Trade Category --></label>
+        <name>Sub_Trade_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Trading Date --></label>
+        <name>Target_Trading_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Category --></label>
+        <name>Trade_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit --></label>
+        <name>Unit__c</name>
+        <relationshipLabel><!-- LOI Templates --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>LOI Unit Template Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Unit Details --></label>
+            <section>Unit Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

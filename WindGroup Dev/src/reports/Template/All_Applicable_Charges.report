@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Property__c.Charges__r$Id</field>
+    </columns>
+    <columns>
+        <field>Property__c.Charges__r$Name</field>
+    </columns>
+    <columns>
+        <field>Property__c.Charges__r$Charge_Type__c</field>
+    </columns>
+    <columns>
+        <field>Property__c.Charges__r$Type__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>All Applicable Charges</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Property_with_Applicable_Charges__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Property__c$Acquisition_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

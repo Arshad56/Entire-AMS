@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Mobile_Module__c.Daily_Checklists__r$Id</field>
+    </columns>
+    <columns>
+        <field>Mobile_Module__c.Daily_Checklists__r.Daily_Checklist_Items__r$Id</field>
+    </columns>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Mobile_Module__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Mobile_Module__c.Daily_Checklists__r$Target_Date__c</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Mobile_Module__c.Daily_Checklists__r$Property_Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Mobile Modules with Checklist</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Mobile_Modules_with_Checklist__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Mobile_Module__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

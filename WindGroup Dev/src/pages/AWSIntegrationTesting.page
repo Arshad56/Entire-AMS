@@ -1,0 +1,86 @@
+<apex:page controller="AWSIntegrationVFController" sidebar="true" showheader="true" action="{!queryDateandEndPoint}">
+    <apex:form >
+<!--      <apex:pageBlock title="AWS Integration Push/Pull Page">
+          <apex:pageblockButtons location="top">
+              //<!--<apex:commandButton value="Invoke Push" action="{!invokePushCall}" reRender="pageSection"/>//
+              <apex:commandButton value="Invoke" action="{!invokeAction}" reRender="pageSection2"/>
+          </apex:pageblockButtons>
+          <apex:pageblockSection id="pageSection1">
+          <apex:outputPanel ><b>Action:&nbsp;&nbsp;&nbsp; </b>
+                          <apex:selectList value="{!actionType}" size="1" id="values">
+                             <apex:actionSupport event="onchange" action="{!assignDateTime}" reRender="refreshDatesandEndPoint" />
+                             <apex:selectOptions value="{!ActionTypes}"/>     
+                          </apex:selectList>
+            </apex:outputPanel>              
+                          <br/><br/>
+                          
+              <apex:outputpanel id="refreshDatesandEndPoint">
+               <b>Start Date:&nbsp;&nbsp;&nbsp;</b>   <apex:inputfield Label="Start Date" value="{!TempawsCredRec.PUSH_Setup_StartDateTime__c}"/><br/><br/>
+               <b>End Date:&nbsp;&nbsp;&nbsp;</b>   <apex:inputfield Label="End Date" value="{!TempawsCredRec.PUSH_Setup_EndDateTime__c}"/><br/><br/>
+                 <b>End Point URL:&nbsp;&nbsp;&nbsp;</b>  <apex:outputtext value="{!endPointURL}"/>
+               </apex:outputpanel>   
+          </apex:pageblockSection>
+          <apex:pageblockSection id="pageSection2">
+              <apex:pageblocksectionItem >
+                  <apex:outputText value="{!message}"/>
+              </apex:pageblocksectionItem>
+          </apex:pageblockSection>
+-->
+<!--Description-->
+      <style>
+           tr.dataRow { 
+               background-color:white; 
+            }
+            tr.dataRow:hover { 
+                    background-color: #e3f3ff;
+             };
+       </style>
+        <apex:outputpanel id="refreshDatesandEndPoint">                    
+            <apex:pageBlock title="AWS Integration Push/Pull Page">
+                <table class="list " border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr class="headerRow">
+                        <th class="headerRow"> Description</th>
+                        <th class="headerRow">          
+                            <apex:pageblockButtons location="top">
+                                <apex:commandButton value="Invoke" action="{!invokeAction}" reRender="pageSection2"/>
+                            </apex:pageblockButtons>
+                        </th>
+                    </tr>
+                    <tr class="dataRow">
+                        <th class="dataCell">Action:</th>
+                        <td class="dataCell">                          
+                            <apex:selectList value="{!actionType}" size="1" id="values" style="width: 15%;">
+                            <apex:actionSupport event="onchange" action="{!assignDateTime}" reRender="refreshDatesandEndPoint" />
+                            <apex:selectOptions value="{!ActionTypes}"/>     
+                            </apex:selectList>
+                        </td>
+                    </tr>
+                    <tr class="dataRow">
+                        <th class="dataCell">Start Date:</th>
+                        <td class="dataCell">
+                            <apex:inputfield Label="Start Date" value="{!TempawsCredRec.PUSH_Setup_StartDateTime__c}" style="width: 15%;"/>
+                        </td>
+                    </tr>           
+                    <tr class="dataRow">
+                        <th class="dataCell">End Date:</th>
+                        <td class="dataCell">
+                            <apex:inputfield Label="End Date" value="{!TempawsCredRec.PUSH_Setup_EndDateTime__c}" style="width: 15%;"/>
+                        </td>
+                    </tr>
+                    <tr class="dataRow">
+                        <th class="dataCell">End Point URL:</th>
+                        <td class="dataCell">
+                            <apex:outputtext value="{!endPointURL}"/>
+                        </td>
+                    </tr>
+                </table>
+                <apex:pageblockSection id="pageSection2">
+                    <apex:pageblocksectionItem >
+                        <apex:outputText value="{!message}"/>
+                    </apex:pageblocksectionItem>
+                </apex:pageblockSection>    
+        </apex:pageBlock>
+    </apex:outputpanel>               
+<!--</apex:pageBlock>-->
+</apex:form>
+</apex:page>

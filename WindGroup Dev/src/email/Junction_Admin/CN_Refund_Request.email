@@ -1,0 +1,15 @@
+Dear {!ApprovalRequest.Process_Approver}, 
+
+The following Credit Note is requested for refund.
+Please review and approve/reject as required. 
+
+Tenant Name: {!Invoice__c.Tenant_Name__c} 
+Credit Note No: {!Invoice__c.Name}
+Invoice Currency: {!Invoice__c.Currency_Code__c} 
+Requested Refund Amount: {!Invoice__c.Requested_Amount__c} 
+Total Refunded Amount: {!Invoice__c.Total_Refunded_Amount__c}
+
+Click on the link to access the Invoice directly: {!Invoice__c.Link} 
+
+Thanks, 
+Finance Department

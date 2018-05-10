@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Amount_Foreign__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount (Foreign)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Amount_Local__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount (Local)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Charge_Method__c</fullName>
+        <externalId>false</externalId>
+        <label>Charge Method</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Charge_Method</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cheque_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Cheque No</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Currency_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Currency Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Currency_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Default_Amount_Foreign__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Default Amount (Foreign)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deposit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Deposit</label>
+        <referenceTo>Deposit__c</referenceTo>
+        <relationshipLabel>Payment Vouchers</relationshipLabel>
+        <relationshipName>Payment_Vouchers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Exchange_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Exchange Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Gain_Loss__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(Default_Amount_Foreign__c != 0, ((Amount_Foreign__c * -1) -  (Default_Amount_Foreign__c * -1)), 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Gain/Loss (Foreign)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Invoice</label>
+        <referenceTo>Invoice__c</referenceTo>
+        <relationshipLabel>Payment Vouchers</relationshipLabel>
+        <relationshipName>Payment_Vouchers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>JV_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>JV Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>JV_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Lease_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lease__r.Id</formula>
+        <label>Lease Id</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lease__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lease</label>
+        <referenceTo>Lease__c</referenceTo>
+        <relationshipLabel>Payment Vouchers</relationshipLabel>
+        <relationshipName>Payment_Vouchers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Outstanding_Amount_Foreign__c</fullName>
+        <externalId>false</externalId>
+        <formula>Amount_Foreign__c -  Refunded_Amount_Foreign__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Remaining Amount (Foreign)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Outstanding_Amount_Local__c</fullName>
+        <externalId>false</externalId>
+        <formula>Amount_Local__c -  Refunded_Amount_Local__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Remaining Amount (Local)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Outstanding_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Amount__c -  Refunded_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Remaining Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payment_Mode__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Mode</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cash</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cheque</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Offset Invoice</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Payment_Voucher__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Payment Voucher</label>
+        <referenceTo>Payment_Voucher__c</referenceTo>
+        <relationshipLabel>Payment Vouchers</relationshipLabel>
+        <relationshipName>Payment_Vouchers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Property_Name_Text__c</fullName>
+        <externalId>false</externalId>
+        <label>Property Name Text</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK( Lease__r.Property__r.Name)), Lease__r.Property__r.Name, 
+ Invoice__r.Lease__r.Property__r.Name )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Property Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Property</label>
+        <referenceTo>Property__c</referenceTo>
+        <relationshipLabel>Payment Vouchers</relationshipLabel>
+        <relationshipName>Payment_Vouchers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Refund_Mode__c</fullName>
+        <externalId>false</externalId>
+        <label>Refund Mode</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cash</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cheque</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Offset Invoice</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Refunded_Amount_Foreign__c</fullName>
+        <externalId>false</externalId>
+        <label>Refunded Amount (Foreign)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Refunded_Amount_Local__c</fullName>
+        <externalId>false</externalId>
+        <label>Refunded Amount (Local)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Refunded_Amount__c</fullName>
+        <defaultValue>0.0</defaultValue>
+        <externalId>false</externalId>
+        <label>Refunded Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Void</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Paid</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tenant_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK( Lease__r.Tenant__r.Id)), CASESAFEID(Lease__r.Tenant__r.Id), 
+CASESAFEID ( Invoice__r.Lease__r.Tenant__r.Id))</formula>
+        <label>Tenant Id</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transaction_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Transaction Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Deposit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Invoice Receipt</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Invoice</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Void_Datetime__c</fullName>
+        <externalId>false</externalId>
+        <label>Void Datetime</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Void_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Void Reason</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Void__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Void</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Payment Voucher</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>Refund_Mode__c</columns>
+        <columns>Currency_Code__c</columns>
+        <columns>Amount__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Payment Voucher No.</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Payment Vouchers</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Refund_Mode__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Currency_Code__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Amount__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>Paid_Cash_Cheque_PV</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Paid (Cash/Cheque PV)</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/connection.js&quot;)} 
+
+if(&quot;{!Payment_Voucher__c.Void__c}&quot;==true){
+alert(&quot;This voucher is already Voided.&quot;);
+}else if(&quot;{!Payment_Voucher__c.Status__c}&quot;==&quot;Closed&quot;){
+alert(&quot;This Voucher is already Closed.&quot;);
+}else if(&quot;{!Payment_Voucher__c.Status__c}&quot;==&quot;Paid&quot;){
+alert(&quot;This Voucher is already refunded.&quot;);
+}else if(&quot;{!Payment_Voucher__c.Status__c}&quot;==&quot;New&quot; &amp;&amp; &quot;{!Payment_Voucher__c.Refund_Mode__c}&quot;!=&quot;Offset Invoice&quot;){ 
+
+if(&quot;{!Payment_Voucher__c.Refund_Mode__c}&quot;==&quot;Cheque&quot;){ 
+var retVal; 
+while (retVal == null || retVal == &apos;&apos;) { 
+retVal = prompt(&quot;Please Enter Cheque No* (mandatory):&quot;, &quot;&quot;); 
+if(retVal === null){ 
+break; 
+} 
+} 
+
+if(retVal != null){ 
+var p = new sforce.SObject(&apos;Payment_Voucher__c&apos;); 
+p.id = &quot;{!Payment_Voucher__c.Id}&quot;; 
+p.Status__c = &quot;Paid&quot;; 
+p.cheque_no__c = retVal; 
+result = sforce.connection.update([p]); 
+location.reload(true); 
+} 
+
+}else{ 
+
+var p = new sforce.SObject(&apos;Payment_Voucher__c&apos;); 
+p.id = &quot;{!Payment_Voucher__c.Id}&quot;; 
+p.Status__c = &quot;Paid&quot;; 
+p.cheque_no__c = retVal; 
+result = sforce.connection.update([p]); 
+location.reload(true); 
+
+} 
+
+}else{ 
+alert(&apos;Refund Mode must be Cash/Cheque&apos;); 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Refund_Offset_PV</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Refund (Offset PV)</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+
+if(&quot;{!Payment_Voucher__c.Void__c}&quot;==true){ 
+alert(&quot;This voucher is already Voided.&quot;); 
+}else if(&quot;{!Payment_Voucher__c.Refund_Mode__c}&quot; == &quot;Offset Invoice&quot; &amp;&amp; &quot;{!Payment_Voucher__c.Status__c}&quot; == &quot;New&quot;){
+
+var left = Number((screen.width/2)-220); 
+var tops = Number((screen.height/2)-250); 
+ 
+var win=window.open(&apos;/apex/PaymentVoucherRefund?pvId={!Payment_Voucher__c.Id}&amp;pvLeaseId={!Payment_Voucher__c.Lease_Id__c}&amp;pvTenantId={!Payment_Voucher__c.Tenant_Id__c}&amp;pvBalance={!Payment_Voucher__c.Outstanding_Amount__c}&amp;pvStatus={!Payment_Voucher__c.Status__c}&amp;pvCurrency={!Payment_Voucher__c.Currency_Code__c}&apos;,&apos;&apos;, 
+&apos;width=650,height=300,scrollbars=yes,top=&apos;+tops+&apos;,left=&apos;+left);
+
+   
+}else{
+    alert(&quot;Refund Mode must be Offset Invoice.&quot;);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Void</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Void</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/15.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/15.0/apex.js&quot;)} 
+
+if(&quot;{!Payment_Voucher__c.Void__c}&quot;==true){ 
+alert(&quot;This voucher is already Voided.&quot;); 
+}else if (&quot;{!Payment_Voucher__c.Status__c}&quot;==&quot;Paid&quot;){ 
+alert(&quot;This voucher is refunded so it cannot be voided.&quot;); 
+}else if (&quot;{!Payment_Voucher__c.Refunded_Amount__c}&quot; != 0){ 
+alert(&quot;Payment Voucher is used. It is not allow for void.&quot;); 
+}else{ 
+
+var r = confirm(&quot;Are you sure you want to Void this Payment Voucher?&quot;);
+	if(r == true){
+		var retVal; 
+		while (retVal == null || retVal == &apos;&apos;) {
+			retVal = prompt(&quot;Please Enter Void Reason* (mandatory):&quot;, &quot;&quot;);
+		  if(retVal == null){
+			break;
+		  }
+		}
+		if(retVal != null){
+			var p= new sforce.SObject(&quot;Payment_Voucher__c&quot;); 
+			p.Id = &apos;{!Payment_Voucher__c.Id}&apos;; 
+			p.Void_Reason__c = retVal;
+			p.Void__c = true;
+                        p.Void_Datetime__c = new Date().toISOString();
+			sforce.connection.update([p]);
+			var result = sforce.apex.execute(&quot;VoidpaymentVoucherController&quot;,&quot;void&quot;,{pvId:&quot;{!Payment_Voucher__c.Id}&quot;}); 
+			alert(result); 
+		}
+	} 
+} 
+window.location = &apos;/{!Payment_Voucher__c.Id}&apos;;</url>
+    </webLinks>
+</CustomObject>

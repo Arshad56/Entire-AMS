@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Checklist Remark</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Checklist Remarks</value>
+    </caseValues>
+    <fields>
+        <label><!-- AWS Id --></label>
+        <name>AWS_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Backend Last Updated DateTime --></label>
+        <name>Backend_Last_Updated_DateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checklist Item --></label>
+        <name>Checklist_Item__c</name>
+        <relationshipLabel><!-- Checklist Remarks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Daily Checklist Item --></label>
+        <name>Daily_Checklist_Item__c</name>
+        <relationshipLabel><!-- Checklist Remarks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Image1 Url --></label>
+        <name>Image1_Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image1 --></label>
+        <name>Image1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Type --></label>
+        <name>Issue_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Update Date/Time --></label>
+        <name>Last_Update_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Updated From --></label>
+        <name>Last_Updated_From__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person In Charge --></label>
+        <name>Person_In_Charge__c</name>
+        <relationshipLabel><!-- Checklist Remarks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request --></label>
+        <name>Request__c</name>
+        <relationshipLabel><!-- Checklist Remarks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Task --></label>
+        <name>Task__c</name>
+    </fields>
+    <layouts>
+        <layout>Checklist Remark Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Checklist Remarks Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Remarks &amp; Photos Attached --></label>
+            <section>Remarks &amp; Photos Attached</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

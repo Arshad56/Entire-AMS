@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Expression of Interest</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Expression of Interest</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- Expression of Interest --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Commencement Date --></label>
+        <name>Commencement_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact_Name__c</name>
+        <relationshipLabel><!-- Expression of Interest --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Enquiry Date --></label>
+        <name>Enquiry_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiry Date --></label>
+        <name>Expiry_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease Status --></label>
+        <name>Lease_Status__c</name>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation><!-- Renewal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Property Name --></label>
+        <name>Property_Name__c</name>
+        <relationshipLabel><!-- Expression of Interest --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Space Type --></label>
+        <name>Space_Type__c</name>
+        <picklistValues>
+            <masterLabel>ATM</masterLabel>
+            <translation><!-- ATM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ad Panel</masterLabel>
+            <translation><!-- Ad Panel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash Sponsorship</masterLabel>
+            <translation><!-- Cash Sponsorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counter</masterLabel>
+            <translation><!-- Counter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital Display</masterLabel>
+            <translation><!-- Digital Display --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promo Space</masterLabel>
+            <translation><!-- Promo Space --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shop</masterLabel>
+            <translation><!-- Shop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Storage</masterLabel>
+            <translation><!-- Storage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unit No. --></label>
+        <name>Unit_No__c</name>
+        <relationshipLabel><!-- Expression of Interest --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Expression of Interest Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Space Usage Details --></label>
+            <section>Marketing Space Usage Details</section>
+        </sections>
+        <sections>
+            <label><!-- Property &amp; Unit Details --></label>
+            <section>Property &amp; Unit Details</section>
+        </sections>
+        <sections>
+            <label><!-- Remarks --></label>
+            <section>Remarks</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Add_to_LOI --></label>
+        <name>Add_to_LOI</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_LOI --></label>
+        <name>New_LOI</name>
+    </webLinks>
+</CustomObjectTranslation>

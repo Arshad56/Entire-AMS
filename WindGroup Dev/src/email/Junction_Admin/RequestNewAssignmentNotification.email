@@ -1,0 +1,9 @@
+Description                        : {!Request__c.Description__c}
+Status                                : {!Request__c.Status__c}
+Date/Time Opened            : {!Request__c.Date_Time_Opened__c}
+Action Remarks                 : {!Request__c.Action_Remarks__c}
+
+Click on the link for details:  {!Request__c.Link}
+
+Regards
+Operation Team

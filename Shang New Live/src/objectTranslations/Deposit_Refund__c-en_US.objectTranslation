@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Deposit Refund</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Deposit Refund</value>
+    </caseValues>
+    <fields>
+        <label><!-- Deposit --></label>
+        <name>Deposit__c</name>
+        <relationshipLabel><!-- Deposit Refund --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field is populated by W/F rule --></help>
+        <label><!-- Property Name Text --></label>
+        <name>Property_Name_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refund Mode --></label>
+        <name>Refund_Mode__c</name>
+        <picklistValues>
+            <masterLabel>Cash/Cheque</masterLabel>
+            <translation><!-- Cash/Cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Note</masterLabel>
+            <translation><!-- Credit Note --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Refunded Amount --></label>
+        <name>Refunded_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <layouts>
+        <layout>Deposit Refund Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
